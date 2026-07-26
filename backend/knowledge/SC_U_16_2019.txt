@@ -1,0 +1,155 @@
+Source document: SC_U_16_2019.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Circular No. U-/-6/2019
+
+From
+The Chief Engineer (Comm.)
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs(OP)/Xens(OP)/SDOs (OP),
+JEs-I, Incharge in UHBVN
+
+Memo No.: Ch-24/TR-90/HERC/PRO-87/17/M/s K.B/SE/C-I
+Dated: 29.04.2019
+
+Subject: - Clarification regarding sharing cost & charges for applicant taking connection on an already existing independent feeder.
+
+The instruction regarding charges for new connections have been issued vide sales circular no. U-35/2016, vide which HERC regulations on power to recover expenditure have been circulated. However, it has been observed that when a new consumer is added to the already existing independent feeder, calculations are done for the link line only considering it as normal feeder and in some cases the share cost is not being taken and also the benefit of service connection charges taken by original consumers is also not considered. Therefore, for such cases, the following guidelines are hereby prescribed: -
+
+(a) In respect of independent feeders, all the calculations are to be undertaken from the substation end.
+(b) The separate record of independent feeder is to be maintained for every consumer connected on independent feeder with respect to following information: -
+    (i) Estimated cost approved for the applicant
+    (ii) Work done departmentally / self execution
+    (iii) Amount deposited as supervision charges
+    (iv) Amount deposited as estimated cost
+    (v) Amount deposited as service connection charges
+    (vi) Amount deposited as metering charges
+(c) The sketch of the independent feeder is to be maintained depicting following information: -
+    (i) Length of each section
+    (ii) Cable/conductor size used in each section
+
+(d) When a new applicant applies for connection to an already existing
+independent feeder, the charges is to be calculated as per following:
+
+(i) For works commissioned under self –execution, the original
+cost of independent feeder after excluding metering
+charges, departmental charges (10%) and overhead charges
+(16.5%) is to be proportioned between the various sections
+of the independent feeder based on the length of the line. If
+in any section different size of cable is used than that should
+also be factored in.
+
+(ii) The apportioned cost for any section of line is to be
+apportioned between the consumers based on the KVA
+capacity of the consumers connected on that section of line.
+
+(iii) In case for new consumer, if the augmentation of common
+portion is required, then the complete augmentation cost is
+required to be apportioned to the new applicant.
+
+(iv) The service connection charges based on applicable per KVA
+rate is to be calculated for the new consumer as per the
+existing rate.
+
+(v) The additional service connection charges are to be
+calculated for the complete length of feeder for every
+section. The benefit of 150 meter will be given for the
+section of the line originating from the substation. The
+additional service connection charges for every section is to
+be apportioned among consumers connected to that section
+in the ratio of their KVA capacity.
+
+(vi) Thus, for every applicant after adding their contribution in
+every section, the estimated cost and additional service
+connection charges will be worked out.
+
+(vii) The difference of total estimated cost to any applicant
+[shared+ new] and estimate cost of his new portion is the
+shared cost which is to be passed on to the original
+consumers/Nigam.
+
+(viii) Wherever the applicable service connection charges (fix +
+additional) is greater than the total estimated cost
+[shared+new], the difference is also payable.
+
+(ix) For original consumers, the service connection charges are
+to be calculated as per the old applicable rate and only the
+positive difference of revised estimated cost and service
+connection charges is payable from the shared cost
+deposited by new applicants and balance will be kept by
+Nigam.
+Accordingly, the calculations are to be done as per the above
+guidelines so that there is no revenue loss to the Nigam, when the
+applicants have opted their connection through already existing
+independent feeder.
+
+The above instructions should be brought to the notice of all
+concerned for strict and meticulous compliance.
+
+Chief Engineer / Commercial
+UHBVN, Panchkula
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: gmcommercialuhbvn@gmail.com, secommercial@uhbvn.org.in
+Endst. No. Ch-24/TR-90/HERC/PRO-87/17/M/s K.B/SE/C-I
+Dated: 29.04.2019
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Power), HPUs, Panchkula.
+2. PS to CMD in UHBVN & DHBVN.
+3. SPS to MD, HVPNL, Panchkula.
+4. SPS to MD, HPGCL, Panchkula.
+5. Dir.Vigilance, HVPN, Panchkula.
+6. SPS to Director (T-I)/Director (T-II) in UHBVN & DHBVN.
+7. CE/Comm., UHBVN, Hisar.
+8. CE/P&D&C UHBVN, Panchkula.
+9. CE/HPPC, Panchkula.
+10. CFO, UHBVN, Panchkula.
+11. CTO, UHBVN, Panchkula.
+12. Chief Electricity Inspector, Govt. of Haryana Sector-17, Chandigarh.
+13. SE/Monitoring, UHBVN, Panchkula.
+14. SE/Commercial, UHBVN, Hisar.
+15. SE/Admn., UHBVN, Panchkula.
+16. SE/SO, UHBVN, Panchkula.
+17. SE/R workshop and store UHBVN Dhulkote (Ambala)
+18. SE/RA, UHBVN, Panchkula.
+19. SE/Const. Circle, Room no. 105, Vidyut Sadan C-16 Sector-6 Panchkula.
+20. SE(M&P), UHBVN, Panchkula.
+21. SE/R-ADPRP, UHBVN, Panchkula.
+22. Legal Remembrance, HVPN, Panchkula.
+23. F.A (HQR), UHBVN, Panchkula.
+24. Chief Auditor, UHBVN, Panchkula & Rohtak.
+25. Chief Account Officer, UHBVN, Panchkula.
+26. Chairman, CGRF, Kurukshetra.
+27. Company Secretary, UHBVN, Panchkula.
+28. XEN/IT, UHBVN, Panchkula.
+29. Deputy Secy. (Technical), UHBVN, Panchkula.
+30. Deputy Secy. (Project), UHBVN, Panchkula.
+31. Deputy Secy. (OP), HVPN, Panchkula.
+32. All XEN's (M&P) in UHBVN.
+33. PAC Office of G.A., Haryana, SCO.No.33, Illrd floor, Chandigarh
+34. CPRD, UHBVN, Panchkula.
+35. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+36. Haryana Chamber of Commerce and Industries O/ O VPS Agro Oil Ind.(P) Ltd., Dhanwanti Bhawan Railway Road, Kurukshetra.
+37. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+38. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+39. Y.Nagar- Jagadhri Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+40. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+41. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+42. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+43. Confederation of Indian Industries, Sector-31, Chandigarh.
+44. President Manufacturing Association, Sonepat.
+45. Director, Industries Association, Yamunanagar.
+46. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+47. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+48. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+49. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+50. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+51. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Shamn Nagar, GT Road, Karnal-132 001.
+52. All Billing Agencies NIELIT centre, Hartron, HCL (T) and TCS.
+
+Executive Engineer/Comm.
+for SE/Comm., UHBVN, Panchkula.

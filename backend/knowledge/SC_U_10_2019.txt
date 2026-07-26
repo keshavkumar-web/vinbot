@@ -1,0 +1,1522 @@
+Source document: SC_U_10_2019.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM LIMITED
+
+Sales Circular No. U- 10 / 2019
+
+From
+Superintending Engineer/Commercial,
+UHBVN, Panchkula.
+
+To
+All CEs/ (OP)/SEs (OP) XENs/SDOs/OP,
+JEs-I, Incharge Sub-offices in UHBVN
+
+Memo No: Ch-23|TR-95|90|Apf 2019|C|E|C-I
+Dated: 14.03.2019
+
+Subject: Release of tube-well connection.
+
+Please refer to sales circular No. U-06/2019 dated 22.02.2019 wherein it
+was decided that the demand notices shall be issued by 31.03.2019 to all tubewell
+applicants who have applied up to 31.12.2018. Field offices sought clarification on
+certain issues like amount to be deposited by the applicant, maximum capacity of
+transformers, etc. The requisite clarifications are as under: -
+
+1. All AP supply connections shall be released as per HERC Regulation No.
+HERC/34/2016 dated 11.07.16 on Duty to Supply Electricity on request, Power to
+recover expenditure in providing supply and power to require security Regulation,
+2016 circulated vide Sales Circular No. U-35/2016 and the expenditure shall be
+recovered as under: -
+
+“Actual expenditure to be incurred for release of connection which shall
+include cost of L/T/HT line and that of distribution transformer. In case more
+than one consumers are released connections from the same transformer,
+the cost of distribution transformer shall be shared on pro rata basis
+corresponding to the load of each consumer.”
+
+2. On account of excessive exploitation of ground water and huge burden of RE
+subsidy, the following provisions have been made mandatory which need to be
+ensured before release of new tubewell connections:
+i. New tubewell applicants shall mandatorily install 5 star rated energy
+efficient pump sets along with smart control panel which shall be procured
+from the firms empanelled by the Nigam, the list of which is enclosed as
+Annexure-I. The applicant shall submit original bills in support of
+purchase and installation of 5 star rated energy efficient pump sets and
+smart control panel.
+ii. The new tubewell applicants shall also install Micro Irrigation system.
+iii. In the paddy growing blocks, applicants shall have the option to install
+Underground Pipeline (UGPL) system in place of Micro Irrigation system.
+The list of paddy growing blocks as supplied by the Agricultural
+Department, Haryana vide their office memo No. Ch-207/ (SC) dated
+10.01.2019 is enclosed as Annexure-II.
+
+iv.  The micro irrigation system or as the case may be the Under Ground
+     Pipeline system, will be got installed from the firms empanelled by the
+     Agricultural Department, list of which is enclosed as Annexure-III.
+v.   The applicant shall submit a certificate issued by the Agricultural
+     Department certifying the installation of micro irrigation system or as the
+     case may be of the Under Ground Pipeline system.
+vi.  It shall also be ensured by the SDO (OP) concerned that the new tubewell
+     applicant is not in default of any kind of dues with the Nigam.
+vii. No tubewell connection will be released in the notified area as per Sales
+     circular No. U-06/2017.
+viii. All new tubewell connections shall be metered.
+
+3.   Length of LT line emanating from the transformer for release of tubewell
+     connection shall remain within a radius of 300 meters i.e. no LT line shall exceed
+     300 meters.
+4.   Distribution Transformer up to 100 KVA capacity only shall be allowed with
+     maximum loading of 100% of its capacity. Existing Transformer can also be
+     augmented as per requirement while releasing the connection.
+5.   The span of HT/LT line is to be taken as 70 meters. The ACSR conductor to be
+     used shall be of size 50 mm².
+6.   Connection will be released from nearest LT / HT / Transformer irrespective of
+     jurisdiction of sub-division and application shall be transferred to the sub-division
+     under jurisdiction of which transformer falls for release of connection.
+7.   Consent of interested applicants be sought on the attached consent form
+     (Annexure-IV) with a deposit of Rs.30000/- as consent money, which will be
+     finally adjusted in the estimated cost. In case of excess payment, the refund shall
+     be given to the applicant through cheque at the time of issuance of SCO.
+8.   The estimate shall be framed in order of deposit of consent money and demand
+     for balance amount be made accordingly. However, the original seniority of
+     applications shall remain intact.
+9.   Separate seniority list shall be maintained for following categories:
+     a) Single connection per transformer where the consumer meets the full cost
+        of release of the connection.
+     b) In case where spare capacity is available on the existing transformer and
+        only cable upto 20mtr is required.
+     c) In case where spare capacity is available on the existing transformer and
+        only LT span are required.
+     d) In case where spare capacity is not available on the existing transformer
+        and augmentation of the T/F is required and cable upto 20 mtr.
+     e) Augmentation of existing T/F & erection of LT Line (2 connections or
+        more).
+
+f) Providing additional T/F & erection of LT line (2 or more Tube Well connections).
+g) As per the capacity of T/F i.e., separate seniority for 10 KVA, 16 KVA, 20 KVA, 25 KVA, 63 KVA & 100 KVA T/F shall be maintained.
+
+10. All demand notices shall be issued within the stipulated time i.e. by 31.03.2019 failing which officers/officials concerned shall be liable for disciplinary action.
+
+The above instructions may be brought to the notice of all concerned for strict and meticulous compliance.
+DA / As above
+
+Superintending Engineer / Comml.
+UHBVN, Panchkula.
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: gmcommercialuhbvn@gmail.com, secommercial@uhbvn.org.in
+Endst. No. Ch. 23/TR-95/90/AP/2019/CE/C-I
+Date: 14.03.2019
+
+Copy of the above is forwarded to the following:-
+1.  SPS to Additional Chief Secretary (Power), HPUs, Panchkula.
+2.  SPS to CMD in UHBVN & DHBVN.
+3.  SPS to MD, HVPNL, Panchkula.
+4.  SPS to MD, HPGCL, Panchkula.
+5.  Dir./Vigilance, HVPN, Panchkula.
+6.  SPS to Director (T-I)/Director (T-II) in UHBVN & DHBVN.
+7.  CE/Comm., DHBVN, Hisar.
+8.  CE/P&D, UHBVN, Panchkula.
+9.  CE/MM, UHBVN, Panchkula.
+10. CE/HPPC, Panchkula.
+11. CFO, UHBVN, Panchkula.
+12. CTO, UHBVN, Panchkula.
+13. Chief Electricity Inspector, Govt. of Haryana Sector-17, Chandigarh.
+14. SE/Commercial, DHBVN, Hisar.
+15. SE/Admn., UHBVN, Panchkula.
+16. SE/SO, UHBVN, Panchkula.
+17. S.E /workshop and store UHBVN Dhulkote (Ambala)
+18. SE/RA, UHBVN, Panchkula.
+19. SE/Const. Circle, Room no. 105, Vidyut Sadan C-16 Sector-6 Panchkula.
+20. SE(M&P), UHBVN, Panchkula.
+21. SE/R-APDRP, UHBVN, Panchkula.
+22. Legal Remembrance, HVPN, Panchkula.
+23. F.A (HQR), UHBVN, Panchkula.
+24. Chief Auditor, UHBVN, Panchkula & Rohtak.
+25. Chief Account Officer, UHBVN, Panchkula.
+26. Chairman, CGRF, Kurukshetra.
+27. Company Secretary, UHBVN, Panchkula.
+28. XEN/IT, UHBVN, Panchkula.
+29. Deputy Secy. (Technical), UHBVN, Panchkula.
+30. Deputy Secy. (Project), UHBVN, Panchkula.
+31. Deputy Secy. (OP), HVPN, Panchkula.
+32. All XEN's (M&P) in UHBVN.
+33. RAO, Office of A.G., Haryana, SCO.No.33, IIIrd floor, Chandigarh
+34. CPRO, UHBVN, Panchkula.
+35. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+36. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhanwanti Bhawan Railway Road, Kurukshetra.
+37. The Haryana Chamber of Commerce and Industry (Distt.Unt Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+38. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+39. Y.Nagar- Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd.,
+    Indl. Area, Y.Nagar, Haryana- 136001.
+40. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+41. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+42. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+43. Confederation of Indian Industries, Sector-31, Chandigarh.
+44. President Manufacturing Association, Sonepat.
+45. Director, Industries Association, Yamunanagar.
+46. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+47. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+48. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+49. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+50. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+51. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+52. All Billing Agencies NIELIT centre, Hartron, HCL (T) and TCS.
+
+Executive Engineer/Comm.
+for SE/Comml., UHBVN, Panchkula.
+
+Uttar Haryana Bijli Vitran Nigam
+Office of The Chief Engineer/MM, Shakti Bhawan, Sector 6, Panchkula.
+Tel.: 25619139, 2560438 Fax: 0172 2560644 email: ceumm@hry.nic.in
+Regd. & Corp. Office: C-16, VidyutSadan, Sector 6, Panchkula, Haryana.
+CIN No. J 140149HR1999SGC03466161 0172-3019173, 75. Fax: 0172-3019174, website: www.uhbvn.org.in
+
+Memo No. Ch/73/XEN/P-II/EOI-224
+Dated: 02/2019
+
+To
+1. The Chief Engineer/Commercial, UHBVN, Panchkula.
+2. The Chief Engineer/Commercial, DHBVN, Hisar.
+3. The CEs (Op) UHBVN, Panchkula/Rohtak.
+4. The CEs (Op) DHBVN, Gurugram/Hisar.
+5. The SE/M&P, UHBVN, Panchkula.
+6. All SEs (Op) Circle, under UHBVN.
+7. All XENs (Op) under UHBVN.
+8. All SDOs (Op) under UHBVN.
+
+Subject: Empanelment of firms for supply of 5 star rated motor pump sets alongwith smart control panels against EOI No. 224 /UHM/MM/XEN/P-II dated 12.09.2018.
+
+This is with reference to EOI No. 224 /UHM/MM/XEN/P-II dated 12.09.2018 floated for Empanelment of firms for supply of following 5 star rated motor pumps alongwith smart control panels for AgDSM project in Haryana opened on 22/10/2018.
+
+Description of item
+Design, manufacture and supply of BEE 5 Star Rated Submersible Pump Sets from 3 HP to 50 HP alongwith Smart Control Panels with 5 years warranty to be used for release of tube-well connections with micro/drip irrigation system in the State of Haryana.
+Note: Some motors of 3 HP & 5 HP may be of monoblock type or open well submersible type.
+
+It has been decided to empanel following firms for sale of 5 star rated motor pump sets alongwith smart control panels to consumers in UHBVN & DHBVN for the ratings mentioned against each:
+
+S. No.  Name of the firm (M/s)                     Ratings
+1.      Aquasub Engineering, Coimbatore            3 HP to 20 HP
+2.      CRI Pumps (P) Ltd. Faridabad                3 HP to 20 HP
+3.      Duke Plasto Technique Pvt. Ltd. Palanpur    3 HP to 10 HP
+4.      Shakti Pumps (I) Ltd., Pithampur            3 HP to 10 HP
+5.      Crompton Greaves Consumer Electricals Ltd. Ahmednagar 3 HP to 12.5 HP
+6.      La-Gajjar Machineries Pvt. Ltd., Ahmedabad    3 HP to 12.5 HP
+
+The firms are empanelled for a period of one year effective from the date of empanelment which can be extended for one more year with mutual consent. The empanelled firms are required to deposit a non-refundable application fee and processing charges of Rs. 25,000/- alongwith a refundable security of Rs. 10,00,000/- in each utility which will be refunded on successful completion of empanelment but after expiry of warranty period subject to compliance with all formalities.
+
+Nigam reserves the right to get the Motor Pump Sets and Panels type tested from NABL accredited lab pursuant to provisions of the BEE standards and labeling scheme and its subsequent amendments during the validity of empanelment at firm's cost in order ensure the quality of material
+Inspection/ Supply/ commissioning:
+(a) The successfully empaneled firms will contact the concerned SE/Ops for the list of Consumers to whom the material is to be supplied.
+(b) After interaction with the end users the pump selection will be made by the firm fulfilling the requirements of the consumer. The consumer wise selected 5 star pump sets shall be documented and be got signed by the JE/SDO incharge of UHBVN/DHBVN, farmer/Consumer and representative of the supplier to avoid any dispute at later stage.
+(c) The firm will manufacture the pumps and panels as per requirement finalized (point b above) and offer material for inspection to CE/MM, UHBVN/DHBVN. Minimum lot to be offered for inspection/testing should be 50 • 100 Pump Sets with Control Panels. The Nigam may get material inspected at Firm's premises or may get the sample from one or more offered lots tested from NABL Lab. as per provision in technical specifications of the EOI. The inspection of the Pumps and Panels will be conducted as per sampling plan of IS: 2500.
+(d) If the Inspection of material is carried out by Nigam's officers/authorised representative and the material offered for inspection fails to meet the specifications stipulated in EOI and the samples are rejected by the Inspecting officer(s)/testing agency, the Nigam will have the right to de-empanel the firm.
+(e) Only the Pumps and Panels with serial nos. offered for inspection shall be authorized to dispatch to dealers in Haryana. The Pump set and Panel serial numbers so ascertained will be circulated to all the operation circles by the Nigam and concerned sub-divisions will be instructed to accept these Pump sets and Panels only. The dispatch authorization/clearance by CE/MM UHBVN/DHBVN will not absolve the firm for ensuring the quality of the dispatched lot. In case the sample fails at NABL testing Lab, the firm has to revoke/replace the complete lot including the pump sets already installed at its own cost.
+(f) The installation and commissioning will be monitored by the representative of the firm alongwith Nigam's official. A certificate alongwith photographs authenticating the installation of authorized motor-Pumps and Panels will be signed by the Consumer/Farmer, Rep. of Firm and Nigam's official. However, The Installation and commissioning is in the scope of the Consumer/Farmer.
+(g) Manufacturers/Dealers shall ensure availability of sufficient stock of Pump sets and Panels alongwith frequently replaceable parts at their respective outlets to meet with the warranty obligations with stipulated time and smoother grievance redressal.
+
+case of any space constraints, the Nigam will provide storage space at its Central /
+Divisional stores for storage of the pumpsets, panels and spares free of cost.
+
+Warranty, Repair & Maintenance:
+
+The free of cost onsite guarantee / warranty of the Pump Sets and Panels
+along with accessories shall be 5 years from the date of commissioning. The warranty
+shall cover against all manufacturing defects and operational repair and maintenance.
+The Firm will provide a customer care No. to consumers and the call registered will be
+attended by the representative of the firm within 48 Hrs. at site.
+
+The warranty claim as per technical specifications of material shall be
+settled by consumer directly with the Firm/ Dealer. The Manufacturer / dealer shall ensure
+immediate (not exceeding 72 hours) replacement/ rectification of the defective material
+on site. The lowering / un-lowering of the pump set from the borewell and to and fro
+transportation from the service centre shall be in the scope of bidders only for entire
+warranty period.
+
+A comprehensive report on the service calls received indicating type of
+complaint, resolution, time of complaint time of final resolution and total time taken be
+submitted quarterly to office of the CE/MM, UHBVN/DHBVN.
+
+The Nigam reserves the right to check the site after rectification of the
+complaints for performance parameters of the Pump sets to ensure the efficiency of same
+in line with declared parameters after rewinding of pump sets or replacement of any parts
+etc.
+
+The warranty period shall be calculated from the date of commissioning of
+the Motor Pump sets and Panels at site.
+
+The failure rate of Motor Pump sets and Panels should not be more than
+3% calculated on annual basis for each financial year.
+
+The damage rate with in warranty period will be compiled by the office of
+the concerned SE/OPs for respective Circles and will be supplied to the CE/MM
+DHBVN/UHBVN for taking further action accordingly.
+
+The performance will be reviewed annually. If the failure rate is found more
+than 3%, the Nigam may take following penal actions against the supplier which may
+include blacklisting of the firm:
+• At first instance the firm will be de-empanelled for 3 months and 50% of
+the security deposited by the firm shall be forfeited.
+• At second instance the balance security amount deposited by the firm shall
+be forfeited and the firm will not be considered for further empanelment.
+The Nigam has the right to cancel the empanelment and blacklisting of the
+firms along with forfeiture of the security deposit, in case of poor performance in
+fulfilment of warranty obligations in stipulated timelines vis-à-vis damage rate more than
+
+prescribed limit as stipulated in above mentioned para. The performance will be reviewed
+annually by the office of CE/MM.
+
+This issues with the approval of WTDs of UHBVN in its meeting held on
+12/02/2019.
+
+DA/ Technical Specifications
+Format for inspection call
+
+CC:
+1. SPS to C.M.D., UHBVN/DHBVN, Panchkula for information of C.M.D. please.
+2. SPS to Director/Tech-I, UHBVN, Panchkula for information of Director please.
+3. SPS to Director/Tech-II, UHBVN, Panchkula for information of Director please.
+4. SPS to Director/Projects, DHBVN, Hisar for information of Director please.
+5. Chief Auditor, UHBVN, Panchkula.
+6. Chief Engineer/PDBC, UHBVN, Panchkula.
+7. Chief Engineer/MM, DHBVN, Hisar.
+8. The Company Secy., UHBVN, Panchkula
+9. The Chief Technology Officer, UHBVN Panchkula for further necessary action on the
+development of back end system/infrastructure for capturing data and MIS reports.
+10. SE/Stores & Workshop, UHBVN Dhulkote.
+11. SE/Energy Audit, UHBVN/DHBVN for post installation analysis of MIS reports/data.
+12. FA & CAO/MM, UHBVN, Panchkula.
+13. FA & CAO/MM, DHBVN, Hisar.
+14. All Xens, Central Stores, UHBVN.
+15. Supdt./MM, UHBVN Panchkula.
+16. M/s Shakti Pumps (India) Ltd., 401, 402 & 413, Sector III, Ind. Area, Pithampur (MP)-454774
+   vivek.dadhich@shaktipumps.com, tenders@shaktipumps.com. The demand drafts in
+   favour of AO/Cash UHBVN/DHBVN towards processing charges and refundable security may
+   be deposited within 15 days of issue of this letter.
+17. M/s Crompton Greaves Consumer Electricals Ltd. C-19, MIDC, Ahmednagar-414111
+   remanand.bhat@crompton.co.in The demand drafts in favour of AO/Cash UHBVN/ DHBVN
+   towards processing charges and refundable security may be deposited within 15 days of
+   issue of this letter.
+18. M/s Aquasub Engineering, Tudiyalur Post, Coimbatore - 641034,
+   marketing@aquagroup.com The demand drafts in favour of AO/Cash UHBVN/ DHBVN
+   towards processing charges and refundable security may be deposited within 15 days of
+   issue of this letter.
+19. M/s CRI Pumps Pvt. Ltd. SCO 9 1st Floor, Huda Market, Sec - 16, Faridabad,
+   harish@cripumps.com The demand drafts in favour of AO/Cash UHBVN/ DHBVN towards
+   processing charges and refundable security may be deposited within 15 days of issue of this
+   letter.
+20. M/s Duke Plasto Technique Pvt. Ltd. NH-14, Deesa Highway, Opp. Green Wood Hotel,
+   Badarpura, Palanpur - 385511. parth@dukeplast.com The demand drafts in favour of
+   AO/Cash UHBVN/ DHBVN towards processing charges and refundable security may be
+   deposited within 15 days of issue of this letter.
+21. M/s La Gajjar Machineries Pvt. Ltd., Acidwala estate, Nagar ve Hanuman Road, Amraiwadi,
+   Ahmedabad, crm@lajjar.com The demand drafts in favour of AO/Cash UHBVN/ DHBVN
+   towards processing charges and refundable security may be deposited within 15 days of
+   issue of this letter.
+
+Format for raising Inspection Call by the Vendor / Supplier
+
+From,
+Name of the Firm with Complete Address
+
+To,
+Concerned Department (CE/MM)
+Address
+
+Subject:- Inspection Call for ____ No [items] as Empanelment No - _______ dt.
+
+Sir,
+This is with reference to subject cited empanelment. We would like to inform that below mentioned material is ready for Inspection:
+
+Sr No | Item Description | Quantity already - Inspected & supplied | Quantity offered for Inspection Now | Empanelment validity Period
+----- | ---------------- | ---------------------------------------- | ---------------------------------- | ---------------------------
+
+It is requested to kindly depute an officer for inspection of the materials. The name and contact details of the person responsible for getting the inspection conducted is -
+__________ [Contact Details of Person]
+__________ [Date and Place for Inspection]
+
+Signature
+Name
+Designation
+Company Seal
+
+Specification No. CSC-...../DH/UH/P&D/2018-19
+
+TECHNICAL SPECIFICATION
+
+FOR
+
+5 STAR RATED MOTOR PUMP SETS
+ALONGWITH
+SMART CONTROL PANELS
+
+Issue Month:                     Common Specification Committee
+(CSC Approval date .2018)      UHBVN & DHBVN
+
+उत्तरी दक्शिन हरियाणा बिजली वितरण निगम
+TECHNICAL SPECIFICATIONS FOR MOTOR PUMP SETS.
+1. All pump sets must have BEE (Bureau of Energy Efficiency) star label along with
+   the logo of pump manufacturer.
+2. The logo of the pump set should be as per BEE guidelines.
+   (kindly refer http://www.beestarlabel.com/Content/Files/Schedule-7.pdf)
+3. The pump sets supplied under the project should be only BEE 5 star rating.
+4. For better life of pump set, selected bidder(s) may apply special coatings on pump
+   impeller and casing of pump set. This is for reduction in repair & maintenance cost
+   during the project.
+5. The impellers should be of stainless Steel of minimum 410 grade.
+6. Polywrap submersible winding, wire with virgin copper shall be used for winding of
+   the motors.
+7. Other recommended materials of Construction is given below.
+   > Impeller bowl or Diffuser : CI Grade FG 200
+   > NRV: CI Grade FG 200
+   > Shaft: SS
+   > Upper & Lower bearing housing CI Grade FG 200
+   > Rotor: Copper
+   > Thrust Bearing Carbon or SS combination of both
+8. Pump sets shall operate at wide voltage. It should be capable of delivering rated
+   output with voltage and frequency variation as defined in Category 8 as per IS
+   9283: 2013. Power Factor should be greater than or equal to 0.75 at rated
+   conditions. The power factor should be greater than 0.93 with suitable rating of
+   capacitor.
+9. The pump and motor shall be embossed with UHBVN/DHBVN and make Govt.
+   Scheme, Empanelment No. & date, unique serial number of the pump set etc shall
+   be engraved on the set. The designs shall be approved by UHBVN/DHBVN upon
+   award of work.
+10. The pump set shall be of special color, as decided by the UHBVN.
+11. The selected bidder(s) has to specify the resistance and no-load power for each
+    phase of the pump set(s) and submit the records to UHBVN at the time of
+    submission of tender Pump Set(s) will be supplied in proper packing to avoid any
+    damage during loading, unloading transit and for storage.
+12. Bidder should provide following documents for each pump set:
+    12.1 Operation and maintenance manual.
+    12.2 Material test certificate, dynamic balancing records, surface finish certificate
+         for pump shafts.
+    12.3 Performance report/curve along with actual characteristic curves as specified.
+    12.4 Pump free of cost onsite warranty certificate for 60 months from the date of
+         commissioning.
+
+TECHNICAL SPECIFICATION OF ELECTRIC SMART CONTROL PANELS.
+1) Each pump set is to be provided with a new DOL (Direct on Line) Starter based
+   electric smart control panel with 3 phase 3 wire for rating upto 5 HP. Star-Delta
+   Starter is to be provided for rating of 7.5 HP and above.
+2) The new electric control panel should have a powder coated enclosure, wall
+   mounting type & vermin proof.
+3) The Enclosure should be "IP54 is testing with IK6" as per JEC 62 262/ZIEC 62
+   208/IEC 60 529 and for equivalent Indian or International Standards.
+4) The starter should be fitted with a Contactor and Thermal Overload Relay for
+   respective rating of pump set. Contactor and Thermal Overload Relay shall comply
+   with IS/IEC60947-4-1 and/or equivalent Indian or International Standards. The
+   contactor shall have a minimum mechanical life of 5 million operations and
+   Electrical Life (AC-3) of typically 1 million operations. for higher durability it should
+
+उत्त र द क् शि न हर याणा बिल्ली वि त र निगम
+DHBVN
+have adequate termination capacity to terminate copper cable with lugs as per
+device rating.
+5) The Contactor AC3 (for highly inductive load) current rating (at 415 v) for should
+be as per applicable calculations w.r.t. respective rating of the pump set.
+6) The AC 1 (for resistive load) rating of the Contactor should be as per applicable
+calculations w.r.t. respective HP rating of the pump set.
+7) The Relay current ratings should be provided according to the FLC (Full Load
+Current) of the respective rating of the motor.
+8) The relay range shall be selected in such a way that maximum operational current
+shall fall within relay range.
+9) The class of Overload Relay should be 10 A or 10.
+10) LED Lamps to be given in the front of the panel for the following:
+   • R-Phase availability.
+   • Y-Phase availability.
+   • B-Phase availability.
+   • Motor ON Indication.
+   • Power ON indication.
+11) The metering unit shall have one line LED display capable of showing the
+following values:
+   • 3 Line-to-Line voltages
+   • Phase-wise currents
+   • Phase wise kilo-watt
+   • Phase-wise Power factor
+   The metering unit shall have the required buttons to be able to change the
+displayed parameter. The meter should be Class 2 accuracy.
+12) Following protections shall be provided for:
+   12.1 Under voltage and over voltage under voltage and over voltage.
+   12.2 Under load (dry run protection)
+   12.3 Overload protection (inverse Definite Minimum time-IDMT Characteristics) to be
+provided through thermal overload relay.
+   12.4 Phase reversal fault.
+   12.5 Phase failure fault on voltage and current.
+   12.6 Phase to phase unbalance for both voltage and current.
+   12.7 Suitable locked rotor protection.
+   12.8 Adjustable Power ON delay timer (30-300 sec)
+   12.9 Single Phase preventer with auto & manual mode
+   12.10 master switch for emergency switching 'OFF' control panel when in auto mode.
+13) Capacitor of cylindrical type of suitable rating complying with ISI 3340-1 having ISI
+mark inside the box. The recommended KVA rating is as follows:-
+   3 HP                1.5 KVA
+   5 HP                2 KVA
+   7.5 HP              3 KVA
+   10 HP               4 KVA
+   12.5 HP            4.5 KVA
+   15 HP               5 KVA
+   17.5 HP            5.5 KVA
+   20 HP               6 KVA
+14) Control and power wires for internal wiring shall be as per IS 694:1990 or
+equivalent international standards and of reputed make. All the plastic components and
+wires/cables used inside the control panel should be of fire retardant grade.
+15) Control panel should be provided with in built GPRS module with following:-
+   15.1 On/Off operation: GPRS module should provide the remote interface to starter
+via GPRS mobile network. This module shall be capable of remotely turning the
+motor ON/OFF through Interactive Voice Response System (IVRS) and SMS in
+both English and regional language.
+
+उत्तरी दक्शिण हरियाणा बिजली वितरण निगम
+
+15.2 The SIM Card slot in the module should be of Machine to Machine (M2M) SIM embedded type and non accessible such that it can't be used in other mobile phones. Sim management including post-paid/prepaid data and talk-time plan for 5 years shall be undertaken by selected vendor(s).
+
+15.3 GPRS unit can be operated by minimum 4 no. of persons.
+15.4 The system shall have two types of Schedulers:
+• Time Scheduler: Capability to pre set upto 4 different switching ON/OFF time cycles in 24 hours can be set by the farmer through the mobile application.
+• Run time Scheduler: Capability to pre set the run time (sleep time) while remote starting the pump.
+• Both Time Scheduler and Run time Scheduler shall be capable of operating simultaneously. In case of overlap, Run time Scheduler shall supersede the Time Scheduler.
+• Data/Information has to be sent as Data packets to the UHBVN/DHBVN number (Data such as phase wise Voltage, Current, Power Factor, KW, Run time fault, etc.) whenever the pump is switched ON/OFF. UHBVN/DHBVN number should also be capable to fetch the data as and when required. The information shall be in minute's KB's of data and should be capable of sending at low mobile signals also. In case the network is not available/weak, information may be stored and sent whenever the mobile network resumes. All software's applications, gateways, servers, IVRS, SMS codes shall be developed by UHBVN/DHBVN. UHBVN/DHBVN shall provide the voice recordings and numbers and SMS codes for which the panel shall operate to the successful bidder. The successful bidder has to cooperate with UHBVN/DHBVN in synchronising its development tools with the Smart Control Panel supplied by them.
+
+15.5 Real time SMS alerts of all the events (ON/OFF, Site Voltage, Motor current phase wire, GPRS network %, Power present or absent , any electrical faults, etc.) in regional language should be available to the farmer and/or UHBVN/DHBVN.
+15.6 GPRS unit should have password protection and anti-theft feature An SMS should be sent to the farmer and/or UHBVN/DHBVN when any wire is disconnected from the motor starter from input/output side. Further a GPS shall be installed in the panel capable of sending coordinates to the UHBVN/DHBVN,
+Unit shall be provided with suitable power back up facility to sent Power Fail when there is no power. The power backup should be of rechargeable type with minimum standby time of 24 hours. It is expected that power shall resume once in a day, hence, standby time required is 24 hours. Events, Alerts and data shall be sent during power failure and single phasing also.
+15.8 Facility to set timer parameters by sending SMS and using Android iOS application (operated through SMS in English and/or regional language) to unit (e.g. Timers such as Motor ON time, etc.)
+15.9 Inbuilt motor and cable theft protection i.e if the wire is disconnected from starter panel or Motor Terminal there will be SMS to the farmer and/or Siren via Android/iOS application.
+15.10 All motor related data like total Hours meter, fault, power failure can be monitored via SMS as Android/iOS application and report can be generated on website for multiple motors in the field without GPRS or Internet connection at farmer site.
+15.11 Reliable signal interface.
+16) The new electric control panel or its components such as protections, relay etc. may need adjustment in settings at field depending upon the 5HP rating of the pump sets, site conditions, input power quality etc. All the critical components (Contactors/OL/Relays/SPRP/Circuit breakers) used in the new electric control panel shall be either L&T/BCG/ Havells /Siemens/Milburn/Schneider Electric / ABB ICAS / Anchor / Crabtree/ Legrand/ Hager/ EATON/ EPCOS/V-Guard Make. They shall be duly certified by NRBL.
+
+उत्त र द स्सं ह र याणा बि ल्ली यु व र न इ गा म  D H B V N
+
+accredited laboratory. All the individual components shall be " MADE IN INDIA".
+Spares should be easily available.
+18) The selected bidder(s) have to furnish test certificate for quality of the new
+electric smart control panels with guarantee certificate for 100% consignment
+duly undertaking free replacement of material used in the new electric smart
+control panel for any manufacturing defects or any deviation from relevant IS
+specification of electric smart control panel and components under it.
+19) The product supplied shall carry free of cost onsite warranty against
+manufacturing defects for a period of 60 months from the date of commissioning.
+20) The front panel of the control panel shall be as per design decided by
+UHBVN/DHBVN, which shall be in full color.
+21) Electric Smart Control Panel(s) will be supplied in proper packing to avoid any
+damage during loading, unloading transit and/or storage.
+22) The Control Panel shall be capable of Remote Firmware/Software up gradation
+through GPRS, as and when required.
+23) Due to project requirement & learnings from the field, corrective measures may
+be taken in the specification of the smart control panel. Subsequent lots may be
+manufactured accordingly.
+24) The smart control panel shall have feature to receive a data packet from
+UHBVN/DHBVN which would be the Flow of the pump set. Accordingly, the smart
+control panel should send data of flow after multiplying with the running hours/run
+time to the farmer through SMS and UHBVN/DHBVN through data packet. This
+shall enable the farmer to analyse the water output.
+
+The Director,
+Agriculture and Farmers Welfare Department,
+Haryana, Panchkula.
+
+To,
+The Superintending Engineer, Commercial,
+UHBVN, Shakti Bhawan,
+Sector-6, Panchkula.
+
+Memo No.  2 0 7  / (SC)
+Dated: Panchkula, the 10/1/19
+
+Subject: List of blocks in the Haryana State for release of Tube-well connection with Micro-irrigation.
+
+Please refer to the subject cited above.
+
+It is hereby informed that a meeting was scheduled on dated 02.01.2019 at 12:00 Noon in the Conference Hall, Shakti Bhawan (HPVNL), Sector-6, Panchkula under the Chairmanship of Worthy Additional Chief Secretary, Power to the Govt. of Haryana. It was decided in the meeting that UGPL Micro Irrigation is mandatory for availing the new Tube-well connections in the State. The Paddy growing blocks are mandatory for availing the new Tube-well connection with UGPL is mandatory; Whereas, the rest of the blocks those facing water scarcity is mandatory to adopt Micro Irrigation system for availing the new Tube-well connection in the State.
+
+Encl: List of Paddy growing blocks.
+
+Joinder Director (SC)
+for Director, Agriculture & Farmers Welfare Department, Haryana, Panchkula
+
+List of Blocks:
+
+Sr. No.   District        Blocks
+1         Ambala         1. Ambala-I
+                       2. Ambala-II
+                       3. Barara
+                       4. Naraingarh
+                       5. Saha
+                       6. Sahazadpur
+2         Kurukshetra    1. Babain
+                       2. Ladwa
+                       3. Pehowa
+                       4. Shahbad
+                       5. Thanesar
+                       6. Ismailbad
+3         Karnal         1. Assandh
+                       2. Gharaunda
+                       3. Karnal
+                       4. Nijkheri
+                       5. Nissing
+                       6. Indri
+                       7. Chirao
+                       8. Bilaspur
+                       9. Chhachrauli
+                       10. Jagadhari
+                       11. Mustafabad
+                       12. Raipur
+                       13. Sadhura (Part)
+4         Yamunanagar    1. Guhla
+5         Kaithal        1. Kaithal
+                       2. Kalayat
+                       3. Punhri
+                       4. Rajound
+                       5. Siwan
+6         Fatehabad      1. Bhattu Kalan
+
+1.  Tohana
+2.  Fatehabad
+3.  Jakhal
+4.  Ratia
+5.  Bhuna
+6.  Alewa
+7.  Jind
+8.  Julana
+9.  Narwana
+10. Pillu khera
+11. Safidon
+12. Uchana
+13.  Gohana
+14.  Kalukta
+15.  Kharkhoda
+16.  Mundlana
+17.  Rai
+18.  Sonipat
+19.  Gannaur
+20.  Bapoli
+21.  Israna
+22.  Madlauda
+23.  Panipat
+24.  Samalkha
+25.  Adampur
+26.  Agraha
+27.  Bawla
+28.  Hansi-I
+29.  Hansi-II
+30.  Hisar-I
+31.  Hisar-II
+32.  Narnaund
+33.  Uklana
+34.  Barugudha
+
+1.  Dabwali
+2.  Ellenabad
+3.  Odhan
+4.  Rania
+5.  Sirsa
+6.  Nathusari
+7.  Chopta
+8.  Kalanaur
+9.  Lakhan Majra
+10. Mahian
+11. Sainjla
+12. Rohtak
+13. Meham
+14. Dadri
+
+Sprinkler Irrigation system
+From
+The Director,
+Agriculture and Farmers' Welfare Department,
+Haryana, Krishi Bhawan, Sector-21, Panchkula.
+To
+The Divisional Soil Conservation Officers,
+Bhiwani, Gurgaon, Rohtak, Karnal, Ambala & Panchkula.
+
+Memo No.:  338 & 843  /TA-III(SC)
+Dated: Panchkula the:  09/03/2020
+
+Subject: Registration of Firms for the supply of Sprinkler irrigation system in the State regarding.
+
+Please refer to the subject cited above.
+
+It is informed that the department of Agriculture & Farmers Welfare being the Nodal Department for implementation of PMKSY is responsible for promotion of Micro-irrigation in the State of Haryana. In pursuance to that the department finalized the rates of various micro-irrigation systems and the same is being circulated for adoption and implementation in the State by all concerned departments/agencies till 31.03.2020. 43 firms are empanelled for supply of HDPE & Aluminium based Sprinkler Irrigation System in the State. The maximum rates of pipe and accessories chargeable by manufacturers/suppliers for different sizes based on the quoted/approved rates are as under:-
+
+A) HDPE based Sprinkler system (2.5 kg/cm²)
+Component                     Unit     Rate (Rs.)                     Remarks
+Coupled Pipe                  6 m length  75mm   90mm
+                               1 pc      457     600
+Nozzle (Metal)                1 pc      278     278
+Nozzle (Plastic)              1 pc      108     100
+Riser pipe                    1 pc      88      88
+Tee coupled                   1 pc      234     297
+Bend coupled                  1 pc      163     196
+End Cap                       1 pc      64      74
+PCN                           1 pc      213     271
+Attachments                   1 pc      200     225     M/s Balson Polyplast
+                               1 pc      280     340     M/s Syram Imtech
+                               1 pc      260     320     M/s Shree Shyam Irrigation
+
+B) Aluminium based Sprinkler system (75mm)
+Component                     Unit     Rate (Rs.)
+Pipe 6m with MLC            6 m length  1407
+Pipe 6m with SLC            1 pc      1600
+Nozzle (Plastic)             1 pc      1600
+Nozzle (Metal)               1 pc      273
+Riser Pipe                   1 pc      100
+Screwed coupler              1 pc      88
+Tee coupled (clamp & rubber) 1 pc      588
+Bend 90° clamp & rubber      1 pc      470
+End plug                     1 pc      190
+
+C) Unit Cost
+Area                     Unit Cost (Rs.)
+                        75 mm      90 mm
+upto 1 ha              17843      22638
+upto 2 ha              25454      32062
+upto 3 ha              36746      33474
+upto 4 ha              33711      42192
+upto 5 ha              37745      47201
+
+D) Pattern of Assistance
+Sr.  Farmer Category      Subsidy      Remarks
+No.
+1    General Category     60%         85% subsidy will be admissible for Badhra,
+     Farmer                          Behlol, Kairu, Loharo, Tosha, Tohana,
+                                    Farukh Nagar, Patadi, Sohana, Gurgaon,
+                                    Guhka, Rajaund, Lawdo, Pehwa, Shahabad,
+                                    Karnal, Bapoli, Samalkha, Elanabad,
+                                    Municipal Corporation of Faridabad,
+                                    Ballabgarh, Nangal Chaudhary, Narnual,
+                                    Katina, Ateli, Mahendergarh, Khol, Paliwal,
+                                    Hassanpur, Hathin, Hodal, Jagadri,
+                                    Mustafabad, Kadu, Sadhura blocks for all
+                                    category of farmers without limit of 5 ha.
+2    Small & Marginal     70%         (i) The subsidy will be admissible on the basis of actual material procured as per
+     Farmer                          discharge of the tube-well and dimensions of the field for General, Small &
+                                    Marginal and SC farmers with a limit of 5 ha. However, in case of
+                                    Aluminium based Sprinkler irrigation system, the maximum subsidy will be
+                                    admissible @ Rs. 20,225/- for General Category farmers; Rs. 23,600/- for
+                                    Small & Marginal Farmers and Rs. 28,650/- for SC Category farmers.
+3    SC Farmer            85%         Subsidy @ 85% for all categories of the farmers without the limit of the 5 ha
+                                    HDPE based Sprinkler irrigation system only. However, in case of
+                                    Aluminium based Sprinkler irrigation system, the maximum subsidy will be
+                                    admissible @ Rs. 28.650/- per beneficiary.
+
+It is made clear that-
+1. It is a farmer's purchase and the farmers will be free to purchase Sprinkler
+   irrigation system from any of the registered firms of their choice and are free
+   to further negotiate the above mentioned maximum rates.
+2. The water management programme will be implemented through online
+   system on www.agriharyana.gov.in web Portal.
+3. The rates quoted by the firm or maximum rate mentioned above whichever is
+   higher.
+4. The maximum rates are excluding GST i.e. the applicable tax shall be
+   01.07.2017 (i.e. after implementation of GST) on the firms of which the
+   registration extended up to 31.03.2018.
+5. No subsidy will be granted on the GST/applicable tax.
+6. The validity of empanelment will be up to 31.03.2020.
+7. The subsidy will be credited directly in the bank account of beneficiary
+   farmers.
+8. The Assistant Soil Conservation Officers will compare the list of
+   beneficiaries with Horticulture Department before releasing the subsidy to
+   the farmers. So that duplicity is prevented.
+9. The quoted / maximum rates approved by Government shall be applicable in
+   both Agriculture and Horticulture Departments.
+
+1.  The quoted / maximum rates approved by Government shall be applicable for
+    PMKSY as well as other schemes.
+12. The copy of Guidelines, Registered Firms, Check List and Quoted/Maximum
+    Rates are available on the departmental website i.e.
+    www.agriharyana.gov.in / www.agriharyana.nic.in under Icon UGPL.
+Encl.: i) Check List
+        ii) Guidelines
+
+Endst. No.: 284-  32  (TA-III(SC) Dated Panchkula, the  27/11/18
+a) Where the validity of BIS Licence has expired, the Firms must submit copy of
+   their renewed BIS Licence within a period of one month.
+b) The grace period will be of two months for submission of renewed copy of BIS
+   stand withheld.
+c) Firms categorized as Rates withheld would be considered only after the
+   submission of their deficient documents/decision on pending issues.
+d) If registered firm quotes/charges lesser rates from any other Govt.
+   department/organization, the same shall be intimated to this office immediately
+   in such case, the maximum rates will be reduced accordingly in respect of
+   initiated against the firm.
+
+1.  Balson Polyfab Pvt. Ltd., Survey No.- 270, Plot No. 2-3, National Highway,
+    Bhiwani.
+2.  Balaji Agro-Systems Pvt. Ltd. 177-178, Industrial Area, Sector-26, Bhiwani.
+3.  Balaji Irritech Pvt. Ltd., 13 Old Housing Isarul, Opp. District Court, Bhiwani,
+    Jhajjar 302121
+4.  Jharni Drip Irrigation and Agro, G-1-185, Road No.-10, RICCO Industrial
+    Area, Bhiwani- Jaipur (Raj.)
+5.  Captain Pipe Ltd., Survey No. 27, Plot No. 25-28, NH- 27, Shapar, District-
+    Rajkot, Gujrat.
+6.  Dinesh Irrigation (P) Ltd., 36-8-11, Industrial Area Jhotwara, Jaipur
+    (Raj.) 302013
+7.  Finolex Plasson Industries Pvt. Ltd., Plot No. 390, URSE Taluka Maval,
+    District- Pune.
+8.  Ganpati Industries, F-799 (A), Road No.-14, VKI Area, Jaipur.
+9.  Ganesha Irrigation, Loharu Road, Gohad, Gwalior.
+10. Himalaya Plastics Ltd, 301-304, Meghdut-94, Nehru Place, New Delhi,
+    172213
+11. Jain Irrigation Systems Ltd., Jain Plastic Park, P.O. Box No.72, NH No.6,
+    Jalgaon (Mah)
+12. Janna Industries, F-132 C, Road No.-12, VKI Area, Jaipur.
+13. Kisan Irrigation, VPO- Jhoju Kalan (Bhiwani).
+14. Maruti Irrigation Co., #1962, Sector-14, Hisar.
+15. M. S Mahavir Pipes, Nahar Road, Kosli Bus Stand, Jhal Teh.Kosli,Rewari.
+16. Metro Irrigation Pvt. Ltd. Plot No.37, Industrial Area Sector-26
+17. Mohit India, F-21-D, Industrial Area, Bhiwadi, Alwar (Raj).
+
+21. Moongipa Irrigation Cr. Siwani Road Tosham, Distt. Bhiwani.
+22. Nagarjuna Fertilizers & Chemicals Ltd, Nagarjuna Hills Panjagutta Hyderabad
+23. National Irrigation Equipment Co., 2 Km Milestone Delhi Road, Rewari.
+24. Nimbus Pipes Limited, G-9C, Kabir Marg, Bani Park, Jaipur (Raj.).
+25. Nirmal Polyfab Pvt. Ltd., 2 KM Mile Stone, Utam Nagar, Delhi Road, Rewari.
+26. Pavan Polytex Pvt. Ltd., F-20, RIICO Industrial Area, Nokha, Rajasthan.
+27. Purva Plast. Pvt. Ltd., Plot No. B-494, RIICO, Industrial Area, Phase-I,
+    Alwar.
+28. Rajkewal Irrigation, Street No. 11, Champapuri, Rohtak Road Charkhi Dadri.
+29. Rungta Irrigation Ltd. 101, Pragati Tower 26, Rajindra Palace, New Delhi
+    110092.
+30. Sarna Marbles Pvt. Ltd., C/o Ashok Kumar Pvt. Ltd., D-84, Road No. 8-C,
+    V.K.I Area, Jaipur.
+31. Sagar Polytechnic Ltd., Plot No.- 2819-26, Lodhika GIDC Kalavad Road,
+    Metoda, District- Rajkot, Gujarat.
+32. Shiv Shakti Pipe Industries,G-1-121RIICO Industrial Area, Ph-1, Behlor,
+    Alwar (Raj.)
+33. Shree Balaji Trading Company, Rohtak Road, Ch. Dadri.
+34. Shree Bhagwati Irrigation, G-510(E-1) Road No. 9, V.K.I Area, Jaipur 302013.
+35. Shri Jagdamba Enterprises, F-132(H), Road No. 12, V.K.I Area, Jaipur-302013
+36. Siyaram Irrigation, 106, New Grain Market Hisar -125001
+37. SRM Plastochem Pvt. Ltd., J-375-B, IPIA Road No.-7, Kota (Raj.)
+38. Sturdy Industries Ltd., 55 Industria Area, Sector-1, Parwanoo, District- Solan
+39. Swastic Sprinkler System, V.P.O. Sadat Nagar, Nahar Road, Kosli. Rewari
+40. Swati Enterprises, Delhi Road, Uttam Nagar, Rewari, Haryana.
+41. Triputi Structurals Ltd., Plot No.-81, FIE Patparganj, Delhi-110092.
+
+Agriculture & Farmers Welfare Department
+Haryana, Panchkula
+
+Fndst. No. 388-45E /TA-IHSC) Dated Panchkula the: 49/10/18
+A copy of the above is forwarded to the following for information and
+necessary action:-
+1. The Director General, Rural Development Department (SLNA), Haryana, 30
+   Bays Building, Sector-17 C. Chandigarh.
+2. The Director General Horticulture, Udyan Bhawan, Sector-21, Panchkula
+3. The Financial Deputy Commissioners in the State.
+4. The Managing Director, Haryana State Agricultural and Rural Development
+   Bank, Sector-2, Panchkula.
+5. The Director, Bureau of Indian Standard, Sector-34-A, Chandigarh for
+   information.
+6. All Deputy Directors of Agriculture in the State.
+7. All Assistant Soil Conservation Officers in the State.
+
+Director
+Agriculture & Farmers Welfare Department
+Haryana, Panchkula
+
+Drip Irrigation System
+
+From
+The Director,
+Agriculture and Farmers' Welfare Department,
+Haryana, Krishi Bhawan, Sector-21, Panchkula.
+
+To
+The Divisional Soil Conservation Officers,
+Bhiwani, Gurgaon, Rohtak, Karnal, Ambala & Panchkula.
+
+Memo No.: 18-23
+Dated, Panchkula the: 9/1/2020
+
+Subject: Registration of Firms for the supply of Drip Irrigation System in the State regarding.
+
+Please refer to the subject cited above.
+
+It is informed that the department of Agriculture & Farmers Welfare being the Nodal Department for implementation of PMKSY is responsible for promotion of Micro-irrigation in the State of Haryana. In pursuance to that the department finalized the rates of various micro-irrigation systems and the same is being circulated for adoption and implementation in the State by all concerned departments / agencies till 31.03.2020. 21 firms are registered for supply of PVC based Drip Irrigation system. The maximum rates of pipe and accessories chargeable by manufacturers suppliers for different sizes are as under:
+
+A) Pipes & Laterals
+Sr.  No.  Component                Unit  Size (mm)  Rate
+1.   PVC (1.0 kg / cm²)         Per Meter   63        42
+2.   PVC (4.0 kg / cm²)         Per Meter   75        60
+3.   PVC (6.0 kg / cm²)         Per Meter   90        87
+4.   Plain Lateral (2.5 kg / cm) Per Meter   16        6.50
+5.   Inline Lateral (1.25 kg / cm) Per Meter  16(30cm)  8.84
+6.   Inline Lateral (1.25 kg / cm) Per Meter  16(40cm)  8.52
+7.   Inline Lateral (1.25 kg / cm) Per Meter  16(61cm)  8.19
+
+B) Fittings: Head Control Unit and Optional Items
+Sr.  Item                     Unit  Size (mm)  Rate  Remarks
+1.  Control Valve
+    1 Each                  63        400    M/s Balson Polyplast
+    1 Each                  63        330    M/s Saga Polytechnic
+    1 Each                  63        225    M/s Swati Enterprises
+    1 Each                  63        125    M/s Swati Enterprises
+    1 Each                  75        600    M/s Balson Polyplast
+    1 Each                  75        523    M/s Saga Polytechnic
+    1 Each                  75        170    M/s Swati Enterprises
+    1 Each                  96        800    M/s Swati Enterprises
+    1 Each                  90        210    M/s Swati Enterprises
+    1 Each                  63        65     M/s Nimbus Pipes
+    1 Each                  63        62     M/s Sagar Polytechnic
+    1 Each                  75        55     M/s Sagar Polytechnic
+
+Male                     1 Each  90
+ Female                   1 Each  63  35
+ Threaded Adaptor         1 Each  63  29  M/s Baison Polyplast
+                         1 Each  63  29  M/s Jain Irrigation System
+                         1 Each  63  25  M/s Harvel Agua India Pvt. Ltd.
+                         1 Each  63  26  M/s Jain Polytechinc
+                         1 Each  63  17  M/s Sagar Polytechinc
+                         1 Each  63  30  M/s Nimbus Pipes
+                         1 Each  63  40
+                         1 Each  63  36  M/s Baison Polyplast
+                         1 Each  63  34  M/s Jain Irrigation System
+                         1 Each  63  55  M/s Harvel Agua India Pvt. Ltd.
+                         1 Each  63  49  M/s Jain Irrigation System
+                         1 Each  63  55  M/s Sagar Polytechinc
+ Bend/Elbow              1 Each  35
+                         1 Each  35  M/s Jain Irrigation System
+ Tee                     1 Each  35
+                         1 Each  35  M/s Sagar Polytechinc
+                         1 Each  35
+                         1 Each  35  M/s Sagar Polytechinc
+                         1 Each  35  M/s Sagar Polytechinc
+ End Cap (PVC)          1 Each
+                         1 Each  63  16  M/s Jain Irrigation System
+                         1 Each  63  21  M/s Nimbus Pipes
+                         1 Each  75  30
+                         1 Each  90  35
+ Head Control Unit
+ 7. Screen/Disc Filter   1 Each  20 m  1530
+    with Inlet &        1 Each  per hr
+    Outlet Fittings      1 Each  25 m  1900
+                         1 Each  per hr
+                         1 Each  30 m  2200
+ 8. Header Assembly
+    Manifold             1 Each  1.5  1600
+                         1 Each  1.5  1380  M/s Dinesh Irrigation System, Jaipur
+                         1 Each  1.5  1380  M/s Ganesh Irrigation System, Ch. Dadri
+                         1 Each  1.5  1150  M/s Purma Plast Pvt. Ltd.
+                         1 Each  1.5  1060  M/s SRM Plastochem Pvt. Ltd.
+                         1 Each  1.5  961   M/s Sturdy Industries, parwanoo
+                         1 Each  1.5  2100
+                         1 Each  2.0  180  M/s Dinesh Irrigation System, Jaipur
+                         1 Each  2.0  1830  M/s Ganesh Irrigation
+
+| Size   | Quantity | Description                          | Manufacturer                |
+|--------|----------|--------------------------------------|-----------------------------|
+| inch   | Each     | 2.0                                  | 1270                        | M/s Purma Plast Pvt. Ltd.   |
+| inch   | Each     | 2.0                                  | 1360                        | M/s SRM Plastochem Pvt. Ltd. |
+| inch   | Each     | 2.0                                  | 1251                        | M/s Sturdy Industries,       |
+|        |          |                                      | Parwanoo                    |
+| inch   | Each     | 2.5                                  | 2400                        |                             |
+| inch   | Each     | 3.5                                  | 2157                        | M/s Dinesh Irrigation        |
+|        |          |                                      | System, Jaipur              |
+| inch   | Each     | 3.5                                  | 2157                        | M/s Ganesh Irrigation        |
+|        |          |                                      | System, Ch. Dadri           |
+| inch   | Each     | 5.5                                  | 1340                        | M/s Purma Plast Pvt. Ltd.    |
+| inch   | Each     | 2.5                                  | 1690                        | M/s SRM Plastochem Pvt. Ltd. |
+| inch   | Each     | 3.5                                  | 1660                        | M/s Sturdy Industries,       |
+|        |          |                                      | Parwanoo                    |
+| inch   | Each     | 1.5                                  | 600                          |                             |
+| inch   | Each     | 1.5                                  | 315                          | M/s Balaji Agro System       |
+|        |          |                                      | Bhivani                     |
+| inch   | Each     | 1.5                                  | 315                          | M/s Balaji Irritech Pvt. Ltd.|
+| inch   | Each     | 1.5                                  | 385                          | M/s Metro Irrigation         |
+|        |          |                                      | System, Bhivani             |
+| inch   | Each     | 2.0                                  | 800                          | M/s Balaji Agro System       |
+|        |          |                                      | Bhivani                     |
+| inch   | Each     | 2.0                                  | 750                          | M/s Purma Plast Pvt. Ltd.    |
+| inch   | Each     | 2.5                                  | 100                          |                             |
+| inch   | Each     | 2.5                                  | 415                          | M/s Balaji Agro System       |
+|        |          |                                      | Bhivani                     |
+| inch   | Each     | 2.5                                  | 415                          | M/s Balaji Irritech Pvt. Ltd.|
+| inch   | Each     | 2.5                                  | 350                          | M/s Metro Irrigation         |
+|        |          |                                      | System, Bhivani             |
+| inch   | Each     | 2.5                                  | 800                          | M/s Purma Plast Pvt. Ltd.    |
+| inch   | Each     | 2.0                                  | 235                          |                             |
+| inch   | Each     | 2.0                                  | 180                          |                             |
+| inch   | Each     | 0.75                                 | 800                          |                             |
+| inch   | Each     | 1.0                                  | 1200                         |                             |
+| inch   | Each     | 1.5                                  | 850                          |                             |
+| inch   | Each     | 1.25                                 | 1500                         | M/s Purma Plast Pvt. Ltd.    |
+| inch   | Each     | 1.25                                 | 1800                         | M/s Sagar Polytechnic        |
+| inch   | Each     | 1.25                                 | 1500                         | M/s Sturdy Industries        |
+
+inch                     Parwanoo
+1 Each        25        1700      M/s Swati Enterprises
+1 Each        25        2200      M/s Purma Plast Pvt. Ltd.
+1 Each        1.5       1600      M/s Purma Plast Pvt. Ltd.
+1 Each        1.5       1800      M/s Sagar Polytechnic
+1 Each        1.5       1733      M/s Sturdy Industries, Parwanoo
+1 Each        5         1900      M/s Swati Enterprises
+1 Each        2.0       2350      M/s Purma Plast Pvt. Ltd.
+1 Each        2.0       2000      M/s Sagar Polytechnic
+1 Each        2.0       2309      M/s Sturdy Industries, Parwanoo
+1 Each        2.0       2200      M/s Swati Enterprises
+13. Reducing Socket
+1 Each        As per    90
+1 Each        As per    75       M/s Nimbus Pipes Pvt. Ltd.
+1 Each        As per    85       M/s Swati Enterprises
+14. Grouping
+1 Each        1.5       85
+10. Connector
+1 Each        16 mm    1.50
+10. Nipple Joiner
+1 Each        16 mm    5.00
+17. End Cap
+1 Each        16 mm    1.29
+18. Lateral Cock
+1 Each        16 mm    3.00      M/s Jai Irrigation System
+Optional Item
+19. Fertilizer Tank
+1 Each        30 Ltr.   2500
+1 Each        60 Ltr.   3900
+20. Hydro Cyclone
+1 Each        20 m     2700      per hr.
+1 Each        25 m     3000      per hr.
+1 Each        30 m     3481      per hr.
+21. Sand Filter with
+Inlet & Outlet
+1 Each        20 m     8796      per hr.
+1 Each        25 m     9796      per hr.
+1 Each        30 m     10800     per hr.
+
+C) Unit Cost
+Particular                (Amount in Rs.)
+                         Spacing
+                         0.4 Ha   1 Ha   2 Ha   3 Ha   4 Ha   5 Ha
+COST OF DRIP
+IRRIGATION MATERIAL
+Fittings                  41630   92148  171965 260697 353602 448295
+
+Endst. No: 2-4-11/ITA-HISC Dated Panchkula, the 6th 18
+
+A copy is endorsed to all the Firms with the following directions -
+
+a) Where the validity of BIS License has expired, the Firms must submit copy of their renewed BIS License within a period of one month.
+b) The grace period will be of two months for submission of renewed copy of BIS Licence from the date of expiry, failing which their Rates shall automatically stand withheld.
+c) Firms categorized as Rates withheld would be considered only after the submission of their deficient documents/decision on pending issues.
+d) If registered firm quotes charges lesser rates from any other Govt. department organization, the same shall be intimated to this office immediately and in such case, the maximum rates will be reduced accordingly in respect of such firm. In case of failure, the action for suspension/withheld of rates will be initiated against the firm.
+
+1. Balson Polyplast Pvt. Ltd., Survey No.- 270, Plot No. 2-3, National Highway
+   8/B. Shapar, District- Rajkot, Gujarat.
+2. Balaji Agro-Systems Pvt. Ltd. 177-178, Industrial Area, Sector-26, Bhiwani.
+3. Balaji Irritech Pvt. Ltd., 13 Old Housing Board, Opp. District Court, Bhiwani.
+4. Captain Polyplast Ltd., 267, Plot No.-10A, 108 & 11. N1-27, Shapar, District-
+   Rajkot, Gujarat.
+5. Dinesh Irrigation (P) Ltd., 86-B-II, Industrial Area Jhotwara Jaipur
+   (Raj.)302013
+6. Finolex Plasson Industries Pvt. Ltd., Plot No. 399, URSE Taluka Maval,
+   District- Pune.
+7. Ganesh Irrigation, Loharu Road, Ch. Dadri.
+8. Harn & Agra India Ltd. 87, Mehdud-91, Nehru Place, New Delhi.
+9. Jai Irrigation System Ltd., 1st Floor, P.O. Box No.72, NTH No.6,
+   Jajgaon (Madh).
+10. M. S Mahavir Pipes, Nahar Road, Kosli Bus Stand, Jhat, Teh.Kosli,Rewari.
+11. Metro Irrigation Pvt. Ltd. Plot No.37, Industrial Area Sector-26
+    Bhiwani,172201.
+12. Nagarjuna Fertilizers & Chemicals Ltd., Nagarjuna Hills Panjagutta,
+    Hyderabad.
+13. Netalm Irrigation India Pvt. Ltd., 268-270, 271 B, GIDC Manjusar Savli,
+    District- Vadodara.
+14. Nimbus Pipes Limited. G-9C, Kabir Marg, Bani Park, Jaipur (Raj.)
+15. Purna Plast Pvt. Ltd. Plot No. B-494, RIICO, Industrial Area, Phase-I,
+    Bhiwadi, Alwar.
+16. Sagar Polytechnic Ltd. Plot No.- 2819-26, Lodhika GIDC Kalavad Road,
+    Metoda, District- Rajkot, Gujarat.
+17. SRM Plastochem Pvt. Ltd., J-375-B, IPIA Road No.-7, Kota (Raj.)
+18. Shree Bhandari Plastic Pvt. Ltd., 504, 5th Floor, Alankar Plaza, Central Spin,
+    Vidhyadhar Nagar, Jaipur.
+19. Sturdy Industries Ltd., 55 Industria Area, Sector-1, Parwanoo, District- Solan
+    (HP).
+20. Swati Enterprises, Delhi Road, Uttam Nagar, Rewari, Haryana.
+21. Triputi Structurals LTD., Plot No.-81, HIF Patparganj, Delhi-110092.
+
+                                                        Director
+                                        Agriculture & Farmers Welfare Department
+                                                      Haryana, Panchkula
+
+Mini-Sprinkler
+From
+The Director,
+Agriculture and Farmers' Welfare Department,
+Haryana, Krishi Bhawan, Sector-21, Panchkula.
+To
+The Divisional Soil Conservation Officers,
+Bhiwani, Gurgaon, Rohtak, Karnal, Ambala & Panchkula.
+Memo No.: 2412-47
+Dated, Panchkula the: 9/1/2020
+Subject: Registration of Firms for the supply of Mini-Sprinkler in the State-regarding.
+
+Please refer to the subject cited above.
+
+It is informed that the department of Agriculture & Farmers Welfare being the Nodal Department for implementation of PMKSY is responsible for promotion of Micro-irrigation in the State of Haryana. In pursuance to that the department finalized the rates of various micro-irrigation systems and the same is being circulated for adoption and implementation in the State by all concerned departments / agencies till 31.03.2020. 21 firms are empanelled for supply of HDPE & PVC based Mini-Sprinkler in the State. The maximum rates of pipe and accessories chargeable by manufacturers/suppliers for different sizes based on the quoted/approved rates are as under:-
+A) Mini-Sprinkler Irrigation System
+Sr. No.  Component                Unit   Size (mm)   Rate (Rs.)   Remarks
+HDPE / PVC / LLDPE pipe
+1.  HDPE Pipe (3.2 kg / cm²)        Per Meter   63          51
+2.  HDPE Pipe (2.5 kg / cm²)        Per Meter   75          68
+3.  HDPE Pipe (2.5 kg / cm²)        Per Meter   75          67  M/s M.S. Mahavir Pipes
+4.  PVC (4 kg / cm²)                Per Meter   90          90  M/s M.S. Mahavir Pipes
+5.  PVC (4 kg / cm²)                Per Meter   90          88
+6.  PVC (4 kg / cm²)                Per Meter   63          42
+7.  PVC (4 kg / cm²)                Per Meter   90          60
+8.  LLDPE (2.5 kg / cm²)           Per Meter   32          28
+
+Hend Unit Fittings
+8.  Control Valve
+    1 Each                          63          400
+    1 Each                          63          330  M/s Balson Poiplast
+    1 Each                          63          225  M/s Sagar Polytechnic Pvt. Ltd.
+    1 Each                          63          125  M/s Swati Enterprises
+    1 Each                          75          600
+    1 Each                          75          562  M/s Balson Poiplast
+    1 Each                          225         M/s Sagar Polytechnic Pvt. Ltd.
+    1 Each                          70          M/s Swati Enterprises
+    1 Each                          90          800
+
+| S.No | Item Description                | Quantity | Rate | Amount | Supplier Name                  |
+|------|----------------------------------|----------|------|--------|--------------------------------|
+|  9   | Flush Valve                     | 1 Each   | 90   | 210    | M/s Swati Enterprises          |
+|      |                                 | 1 Each   | 63   | 65     | M/s Nimbus Pipes Ltd. Jaipur   |
+|      |                                 | 1 Each   | 63   | 62     | M/s Nimbus Pipes Ltd. Jaipur   |
+|      |                                 | 1 Each   | 63   | 50     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 75     | M/s Sugar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 55     | M/s Sugar Polytechnic Pvt. Ltd.|
+| 10   | Male / Female                   |          |      |        |                                |
+|      | Threaded Adaptor                | 1 Each   | 90   | 90     |                                |
+|      |                                 | 1 Each   | 63   | 29     | M/s Balson Polyplast           |
+|      |                                 | 1 Each   | 63   | 25     | M/s Jain Irrigation Systems    |
+|      |                                 | 1 Each   | 63   | 26     | M/s Iarvel Agua India Ltd.     |
+|      |                                 | 1 Each   | 63   | 30     | M/s Nimbus Pipes Ltd. Jaipur   |
+|      |                                 | 1 Each   | 63   | 17     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 40     | M/s Balson Polyplast           |
+|      |                                 | 1 Each   | 75   | 36     | M/s Jain Irrigation Systems    |
+|      |                                 | 1 Each   | 75   | 31     | M/s Harvel Agua India Ltd.     |
+|      |                                 | 1 Each   | 75   | 34     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 25     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 90   | 55     |                                |
+|      |                                 | 1 Each   | 90   | 50     | M/s Balson Polyplast           |
+|      |                                 | 1 Each   | 90   | 49     | M/s Jain Irrigation Systems    |
+|      |                                 | 1 Each   | 90   | 49     | M/s Harvel Agua India Ltd.     |
+|      |                                 | 1 Each   | 90   | 49     | M/s Sagar Polytechnic Pvt. Ltd.|
+| 11   | Bend Elbow                      | 1 Each   | 63   | 35     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 63   | 35     | M/s Jain Irrigation Systems     |
+|      |                                 | 1 Each   | 63   | 28     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 53     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 37     | M/s Sagar Polytechnic Pvt. Ltd.|
+| 12   | Tee                             | 1 Each   | 90   | 67     |                                |
+|      |                                 | 1 Each   | 63   | 35     |                                |
+|      |                                 | 1 Each   | 63   | 32     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 55     | M/s Sagar Polytechnic Pvt. Ltd.|
+|      |                                 | 1 Each   | 75   | 47     | M/s Sagar Polytechnic Pvt. Ltd.|
+| 13   | End Cap (PVC)                  | 1 Each   | 90   | 70     |                                |
+|      |                                 | 1 Each   | 63   | 25     |                                |
+|      |                                 | 1 Each   | 63   | 16     | M/s Jain Irrigation Systems     |
+|      |                                 | 1 Each   | 62   | 21     | M/s Nimbus Pipes Jaipur         |
+|      |                                 | 1 Each   | 75   | 39     |                                |
+|      |                                 | 1 Each   | 90   | 35     |                                |
+|      |                                 | 1 Each   | 63   | 159    |                                |
+|      |                                 | 1 Each   | 75   | 215    |                                |
+
+15. Bend /Elbow (HDPE)                1 Each  90   271
+                                      1 Each  63    59
+                                      1 Each  75    80
+                                      1 Each  90   101
+16. Tee (HDPE)                       1 Each  63    66
+                                      1 Each  75    94
+17. End Cap (HDPE)                  1 Each  90   122
+                                      1 Each  63    48
+                                      1 Each  75    57
+                                      1 Each  90    66
+                                      1 Each  63    65
+18. Service Saddle (PVC)            1 Each  75    75  M/s Jain Irrigation Systems
+                                      1 Each  75    64  M/s Jain Irrigation Systems
+                                      1 Each  90    85  M/s Jain Irrigation Systems
+                                      1 Each  90    73  M/s Jain Irrigation Systems
+19. Air Release Valve                1 Each  235
+20. Mini-sprinkler Nozzle with       1 Each  ¾ inch  150
+    complete Assembly                 1 Each  ½ inch  142  M/s Jain Irrigation System
+21. Riser /Stake                     1 Each  8 mm   52
+                                      1 Each  8 mm   48  M/s Jain Irrigation System
+                                      1 Each  8 mm   45  M/s Sturdy Industries, Parwanoo
+22. Screen Filter with               1 Each  20 m   1530 per hr.
+    inlet & outlet                   1 Each  25 m   1900 per hr.
+                                      1 Each  30 m   2200 per hr.
+23. Reducing Socket                  1 Each  As per  2025  M/s Puma Plast Pvt. Ltd.
+                                      1 Each  As per  90
+                                      1 Each  As per  75  M/s Nimbus Pipes Ltd., Jaipur
+                                      1 Each  As per  85  M/s Swati Enterprises
+24. Lateral Valve (PVC/PP)          1 Each  32 mm  140
+25. Male / Female                    1 Each  32 mm   80  M/s Puma Plast Pvt. Ltd.
+    Threaded Adaptor (PVC/PP)       1 Each  32    48
+                                      1 Each  32 mm   36  M/s Jain Irrigation System
+                                      1 Each  32 mm   33  M/s Nimbus Pipes Ltd., Jaipur
+                                      1 Each  32 mm   45  M/s Dinesh Irrigation, Jaipur
+                                      1 Each  32 mm   35  M/s Ganesh Irrigation, Ch. Badri
+26. Joint Coupler                    1 Each  32    47
+
+|   (PVC/Pr)   | mm  |   Each   | 32 mm | 44 | M/s Jain Irrigation System |
+|              |     |   Each   | 32 mm | 35 | M/s Nimbus Pipes Ltd., Jaipur |
+|              |     |   Each   | 32 mm | 40 | M/s Sturdy Industries, Parwanoo |
+| 27. End Cap (PVC/PP) | mm  |   Each   | 32 | 30 |
+|              |     |   Each   | 32 mm | 20 | M/s Ganesh Irrigation, Ch. Dadri |
+|              |     |   Each   | 32 mm | 28 | M/s Nimbus Pipes Ltd., Jaipur |
+| 28. Tee (PVC/PP) | mm  |   Each   | 32 | 58 |
+|              |     |   Each   | 32 mm | 54 | M/s Jain Irrigation System |
+|              |     |   Each   | 32 mm | 42 | M/s Nimbus Pipes Ltd., Jaipur |
+|              |     |   Each   | 32 mm | 50 | M/s Shree Bhandari Plastic Pvt. Ltd. |
+|              |     |   Each   | 32 mm | 50 | M/s Sturdy Industries, Parwanoo |
+| 29. Bend Elbow (PVC/PP) | mm  |   Each   | 32 | 45 |
+|              |     |   Each   | 32 mm | 36 | M/s Jain Irrigation System |
+|              |     |   Each   | 32 mm | 37 | M/s Nimbus Pipes Ltd., Jaipur |
+
+B) Unit cost
+(i) 8m X 8m spacing
+| Particular | HDPE/ PVC | 0.4 Ha | 1 Ha | 2 Ha | 3 Ha | 4 Ha | 5 Ha |
+|------------|-----------|--------|------|------|------|------|------|
+| Cost of Mini Sprinkler Material | PVC | 36538 | 83182 | 160541 | 251985 | 330790 | 409797 |
+|            | HDPE | 37372 | 84652 | 161981 | 255175 | 334835 | 414567 |
+| Accessories / Secondary Transportation |   |   |   |   |   |   |   |
+|            |   | 5% |   |   |   |   |   |
+
+(iii) 10m X 10m spacing
+| Particular | HDPE/ PVC | 0.04 Ha | 1 Ha | 2 Ha | 3 Ha | 4 Ha | 5 Ha |
+|------------|-----------|---------|------|------|------|------|------|
+| Cost of Mini Sprinkler Material | PVC | 28821 | 64300 | 126950 | 194565 | 256780 | 317345 |
+|            | HDPE | 29646 | 65776 | 128390 | 197755 | 260845 | 322115 |
+| Accessories / Secondary Transportation |   |   |   |   |   |   |   |
+|            |   | 5% |   |   |   |   |   |
+
+C) Pattern of Assistance
+
+Sr.  Farmer Category        Subsidy   Remarks
+No.
+1    General Category       66%      85% subsidy will be admissible for Badhra.
+     Farmer
+     Small & Marginal      71%      Behal, Kairu, Joharu, Tosham, Tohana,
+     Farmer                          Farukhnagar, Pataudi, Sohana, Gurgaon,
+                                     Gulha, Rajound, Lawda, Pehwa, Shahabad,
+                                     Karnal, Rajpuri, Samalkha, Rania, Firozabad,
+                                     Municipal Corporation of Faridabad,
+                                     Ballabgarh, Nangli Chaudhary, Narnaund,
+                                     Kanina, Ateli, Mahendergarh, Khol, Palwal,
+                                     Hassnupur, Hithin, Hoda, Jagadhri,
+                                     Mustafabad, Radeer, Sudhura blocks for all
+                                     category of farmers without limit of 5 ha.
+3    SC Farmer             85%
+
+(i)  The subsidy will be admissible as mentioned in table above for General
+     Category, Small & Marginal Farmers and SC Farmers up to 5 ha per
+     beneficiary farmer.
+(ii) Subsidy @ 85% for all categories of the farmers without the limit of 5 ha will
+     be admissible in the blocks mentioned in remarks column.
+(iii) The charges for fittings and secondary transportation will be admissible as
+     per actual cost but not exceed @ 5% of the unit cost in any case.
+
+It is made clear that-
+
+1.  It is a farmer's purchase and the farmers will be free to purchase Mini-
+    Sprinkler irrigation system from any of the registered firms of their choice and
+    are free to further negotiate the above mentioned maximum rates.
+2.  The water management programme will be implemented through online
+    system on www.agr Haryana.gov.in web Portal.
+3.  The rates quoted by the firm or maximum rate approval whichever is less shall
+    be applicable.
+4.  The minimum rates are excluding GST i.e. the applicable tax shall be charged
+    extra.
+5.  No subsidy will be granted on the GST/Applicable tax.
+6.  The validity of empanelment will be up to 31.03.2020.
+7.  The subsidy will be credited directly in the bank account of beneficiary
+    farmers.
+8.  The Assistant Soil Conservation Officers will compare the list of beneficiaries
+    with Horticulture Department before releasing the subsidy to the farmers. So
+    that duplicity is prevented.
+9.  The rates approved by the government shall be applicable in both Agriculture
+    and Horticulture Departments.
+10. The quoted / maximum rates approved by Government shall be applicable for
+    PMKSY as well as other schemes.
+11. The copy of Guidelines, Registered Firms, Check List and Quoted/Maximum
+    Rates are available on the departmental website i.e.
+    www.agr Haryana.gov.in / www.agr Haryana.nic.in under item Mini-
+    Sprinkler 2017-18.
+
+Encl.: i) Check List
+        ii) Guidelines
+
+Director
+Agriculture & Farmers Welfare Department
+Haryana, Panchkula
+
+Finds. No.: 2. 148 - E 8 /TA-III(SC)  Dated Panchkula, the- 9 | | | 2 0 1 8
+
+A copy is endorsed to all the Firms with the following directions
+
+a) Where the validity of BIS Licence has expired, the Firms must submit copy of their renewed BIS License within a period of one month.
+b) The grace period will be of two months for submission of renewed copy of BIS Licence from the date of expiry, failing which their Rates shall automatically stand withheld.
+c) Firms categorized as Rates withheld would be considered only after the submission of their deficient documents/decision on pending issues.
+d) If registered firm quotes/charges lesser rates from any other Govt. department/organization, the same shall be intimated to this office immediately and in such case, the maximum rates will be reduced accordingly in respect of such firm. In case of failure, the action for suspension/withheld of rates will be initiated against the firm.
+
+1.  Balson Polyplast Pvt. Ltd., Survey No.- 270, Plot No. 2-3, National Highway
+    B/H, Shapar, District- Rajkot, Gujrat.
+2.  Balaji Agro-Systems Pvt. Ltd. 177-178, Industrial Area, Sector-26, Bhiwani.
+3.  Balaji Irritech Pvt. Ltd., 13 Old Housing Board, Opp. District Court, Bhiwani.
+4.  Captain Polyplast Ltd., 267, Plot-No.-10A, 108 & 1, NH-27, Shapar, District-
+    Rajkot, Gujrat.
+5.  Dinesh Irrigation (P) Ltd., 86-B-I, Industrial Area Jhotwara, Jaipur
+    (Raj.) 302013
+6.  Finolex Plasson Industries Pvt. Ltd., Plot No. 399, URS! Taluka Maval,
+    District- Pune.
+7.  Chands Irrigation, Loharu Road, Ch. Dadri.
+8.  Haveri Area India Ltd. 301-304, Meghdut-94, Nehru Place, New Delhi.
+9.  Jain Irrigation Systems Ltd., Iain Plastic Park, P.O. Box No.72, NI No.6,
+    Jalgaon (Mah)
+10. M. O. M S Mahavir Pipes, Nahar Road, Kosli Bus Stand, Jhal, Teh.Kosli,Rewari,
+    Bhiwani, 127201.
+11. Metro Irrigation Pvt. Ltd. Plot No.37, Industrial Area Sector-26
+12. Nagarjuna Fertilizers & Chemicals Ltd., Nagarjuna Hills Panjagutta Hyderabad
+    District- Vadodara.
+13. Nimbus Pipes Limited, G-9-C, Kabir Marg, Bani Park, Jaipur (Raj).
+14. Purnas Plast Pvt. Ltd, Plot No. B-494, RIICO, Industrial Area, Phase-I,
+    Bhiwani, Alwar.
+15. Sagar Polytechnic Ltd., Plot No.- 2819-26, Lodhika GIDC Kalavad Road,
+    Metoda, District- Rajkot, Gujrat.
+16. S.R. Plastobent Pvt. Ltd., J-375-B, IPIA Road No.-7, Kots (Raj.)
+17. Shree Bhandari Plastic Pvt. Ltd., 504, 5th Floor, Alankar Plaza, Central Spin,
+    Vidhyadhar Nagar, Jaipur.
+18. Sturdy Industries Ltd., 55 Industria Area, Sector-1, Parwanoo, District- Solan
+19. Swati Enterprises, Delhi Road, Uttam Nagar, Rewari, Haryana.
+20. Triputi Structurals Ltd., Plot No.-81, FIE Patpargani, Delhi-110092.
+
+                                             Director
+                       Agriculture & Farmers Welfare Department
+                                   Haryana, Panchkula
+
+Lndst. No.: 2 F 9 - 33 7 /TA-II(SC) Dated Panchkula the:  4/1/2018
+A copy of the above is forwarded to the following for information and
+necessary action:-
+1. The Director General, Rural Development Department (SLNA), Haryana, 30
+   Bays Building, Sector-17 C, Chandigarh.
+2. All Additional Deputy Commissioners in the State.
+3. The Director General Horticulture, Udyan Bhawan, Sector-21, Panchkula
+4. The Managing Director, Haryana State Agricultural and Rural Development
+   Bank, Sector-2, Panchkula.
+5. The Director, Bureau of Indian Standard, Sector-34-A, Chandigarh for
+   information.
+6. All Deputy Directors of Agriculture in the State.
+7. All Assistant Soil Conservation Officers in the State.
+
+                                 Director
+                     Agriculture & Farmers Welfare Department
+                                   Haryana, Panchkula
+
+UGPL
+
+To,
+The Director,
+Agriculture and Farmers' Welfare Department,
+Haryana, Krishi Bhawan, Sector-21, Panchkula.
+
+The Divisional Soil Conservation Officers,
+Bhiwani, Gurgaon, Rohtak, Karnal, Ambala & Panchkula.
+
+Memo No.: 114-19 TA-III/SC
+Dated, Panchkula the: 09.01.2018
+
+Subject: Registration of Firms for the supply of Underground Pipeline Systems in the State-regarding.
+
+Please refer to the subject cited above.
+
+It is intimated that the Water Management Programme will be implemented through online systems on www.agriharyanagov.com website. 53 firms are registered for supply of HDPE & PVC based Underground Pipe line system. The maximum rates of pipe and accessories chargeable by manufacturers/suppliers for different sizes are as under:
+
+A) HDPE based UGPL System
+
+1. M/s Jain Irrigation Systems Ltd.
+   Sr  Component                     Size (mm)          Amount (Rs.)
+   No.
+   1   Pipe (m)                     75  90  110  125  140  161  180  200
+       (CASA mm)                     408  490  780  990  1242  1538  1935  2394
+   2   PCN (PE)                     (455) (660) (810) (1215) (1194) (1935) (2313) (2889)
+   3   Tees (1")                     1.66  1.66  1.66  0.64  0.64  0.64  0.64  0.64
+   4   Bend (1")                     36  36  36  36  36  36  36  36
+   5   End Cap (1")                 48  56  67  74  108  122  178  205
+   6   Quick Coupler                101  122  150  178  205  233
+   7   Air Release                   235  235  235  235  235  235
+       Figures in parentheses are the rate of 3.2 kg/cm² Pressure Class.
+
+2. M/s Balson Polyplast Pvt. Ltd.
+   Sr  Component                     Size (mm)          Amount (Rs.)
+   No.
+   1   Pipe (m)                     75  90  110  125  140  161  180  200
+       (CASA mm)                     408  490  780  990  1242  1538  1935  2394
+   2   PCN (PE)                     (491) (692) (810) (1215) (1194) (1935) (2313) (2889)
+   3   Tees (1")                     200  225  275  428  524  661  720  820
+   4   Bend (1")                     80  101  150  164  192  205  247  275
+   5   End Cap (1")                 57  66  82  94  108  122  133  164
+   6   Quick Coupler                87  101  122  150  178  205  233
+   7   Air Release                   235  235  235  235  235  235
+       Figures in parentheses are the rate of 3.2 kg/cm² Pressure Class.
+
+3.  Other Firms
+Sr  Component                     Size (mm)                     Amount (Rs.)
+No.
+1   Pipe 6 m (2.5 kg/ cm²)      408  540  778  999  1242  1548  1935  2394
+2   PCN (1 pc)                  215  271  346  428  522  604  720  820
+3   Tee (1 pc)                  94   122  150  164  152  205  247  275
+4   Bend (1 pc)                 80   102  136  164  178  219  261  290
+5   End Cap (1 pc)             87   110  122  150  178  205  233  261
+6   Quick Coupler (1 pc)       61   87   94   108  122  143  164
+7   Air Release Valve (1 pc)    235  235  235  235  235  235  235  235
+Figures in parentheses are the rate of 3.2 kg/ cm² Pressure Class.
+
+B)  PVC based UGPL System
+Sr  Component                     Size (mm)                     Amount (Rs.)
+No.
+1   Pipe 6 m (2.5 kg/ cm²)      354  513  630  810  1035  1242  1521
+2   Pipe 6 m (4 kg/ cm²)        366  747  936  1188 1503  1800 2268
+
+It is made clear that-
+1.  It is a farmer's purchase and the farmers will be free to purchase UGPL system from
+    any of the registered firms of their choice and are free to further negotiate the above
+    mentioned maximum rates.
+2.  The rates quoted by the firm or maximum rate mentioned above whichever is less
+    shall be applicable.
+3.  The maximum rates are excluding GST i.e. the applicable tax shall be charged extra.
+4.  These maximum rates will also be applicable for raising the bills after implementation
+    of GST on the firms of which the registration extended up
+    to 31.03.2018.
+5.  No subsidy will be granted on the GST/ applicable tax.
+6.  Assistance of 50% cost of the system limited to Rs. 25,000/- per hectare with a
+    maximum of Rs. 60,000/- per beneficiary shall be applicable.
+7.  The validity of empanelment will be up to 31.03.2020.
+8.  The subsidy will be credited directly in the bank account of beneficiary farmers.
+9.  The quoted maximum rates approved by Government shall be applicable in both
+    Agriculture and Horticulture Departments.
+10. The copy of Guidelines, Registered Firms, Check List and Quoted/ Maximum Rates
+    are available on the departmental website i.e. www.agriharyanagov.com /
+    www.agriharyana.nic.in under UGPL 2017-18.
+
+Encl.: i) Check List
+        ii) Guidelines
+
+Endst. No. 120-171 / TA-HI(SC)  Dated Panchkula, the 09.01.2018
+A copy is endorsed to all the Firms with the following directions:
+a)  Where the validity of BIS License is nearing, the Firm must submit copy of their
+    renewed BIS License within a period of one month.
+b)  The grace period will be of two months for submission of renewed copy of BIS License
+    from the date of expiry, failing which the later shall amount to stand withheld.
+
+c) Firms categorized as Rates withheld would be considered only after the submission of their deficient documents/details on pending issues.
+d) If registered firm quotes/charges lesser rates from any other Govt. department/organization, the same shall be intimated to this office immediately and in such case, the maximum rates will be reduced accordingly in respect of such firm. In case of failure, the action for suspension/withheld of rates will be initiated against the firm.
+
+1. Ajay Polymers, 14 Km. stone, Delhi Road, Hisar (Haryana)
+2. Ashwani Kumar Ashok Kumar Pvt. Ltd., 555, Udyog Nagar behind Shish Mehal, Delhi Road, Hisar.
+3. Baison Polyplast Pvt. Ltd., Survey No.- 270, Plot No. 2-3, National Highway 8/8, Shapar, District. Rajkot, Gujarat. Agro-Systems Pvt. Ltd., 177-178, Industrial Area, Sector-26, Bhiwani.
+4. Balaji Irritech Pvt. Ltd., 13 Old Housing Board, Opp. District Court, Bhiwani.
+5. Balaji Agro-Systems Pvt. Ltd., 177-178, Industrial Area, Sector-26, Bhiwani.
+6. Bharat Polymers, Plot No. 256, Sector-7, HSIIDC, Karnal (Haryana)
+7. Captain Pipe Ltd., Survey No. 257, Plot No. 23-28, NH-27, Shapar, District-Rajkot, Gujarat.
+8. Dinesh Irrigation (P) Ltd., 86-B-14, Industrial Area Jhotwara, Jaipur (Raj.) 302013
+9. Finolex Plasson Industries Pvt. Ltd., Plot No. 399, URSC Taluka Maval, District-Pune.
+10. Ganesh Irrigation, Loharu Road, Ch. Dadri.
+11. Harvel Aqua India Ltd., 301-304, Meghdut-91, Nehru Place, New Delhi.
+12. Haryana Plast Pvt. Ltd., Ladwa Road, Mathana, Kurukshetra (HR).
+13. Himalayan Plastics Ltd., 6 B, Industrial Estate, Chamha Chat, Solan (HP)-172213
+14. Jain Agro, Jhajjar Road, Rohtak.
+15. Jain Irrigation Systems Ltd., Jain Plastic Park, P.O. Box No. 72 NH No. 6, Jalgaon (Maharashtra).
+16. J. M. S. Rathi Trading Company, Jhansi Mandi, Jhajjar Road, Kotak.
+17. Kailer Electronics Pvt. Ltd., 1-2, RIICO Industrial Area, Sikar, Rajasthan.
+18. Kisan Irrigation, VPO- Dhakla (Bhiwani).
+19. KTT Industries India Ltd., K R T V, Jind, Haryana.
+20. Metro Irrigation Pvt. Ltd., Plot No. 37, Industrial Area Sector-26 Bhiwani-127021.
+21. Narmada Irrigation Co., 1-2-1, Industrial Area, Bhiwani, Alwar (Raj.).
+22. M. S. Mahavir Pipes, Nahar Kosi Bus Stand, Jhal, Teh.Kosi, Rewari.
+23. National Irrigation Equipments Co., 2 K.M Mile Stone, Jhajjar Road, Rewari.
+24. Nandgiri Fertilizers & Chemicals Ltd., Nagarjuna Hills Panjagutta, Hyderabad.
+25. Nimbus Pipes Limited, G.K. Kabir Marg, Bani Park, Jaipur (Raj.).
+26. Nirmal Polyfab Pvt. Ltd., 2 KM Mile Stone, Utlam Nagar, Delhi Road, Rewari.
+27. Prince Pipe and Fittings Pvt. Ltd., Plot No.-1, Honda Industrial Estate, Phase-I, Hiwadi, Alwar (Raj.).
+28. Purma Plast Pvt. Ltd., Plot No. B-194, RIICO, Industrial Area, Phase-I, Bhiwadi.
+29. Rajekee Irrigation, Street No. 11, Chhapparpur, Rohtak Road Charkhi Dadri, Bhiwani.
+30. Runga Irrigation Ltd. 101, Pragati Tower 28, Rajendra Palace, New Delhi 110092.
+31. Kukamali Polytube, Pvt. Ltd., 5/5/102, Lacha Mandal, Narian, New Delhi.
+32. Sagar Polytechnik Ltd., Plot No. 8219-26, Ludhika GIDC Kalavad Road, Metoda, District- Rajkot, Gujarat.
+33. Shat Sood, 420, Guru Jhandha, Jindala Cantt, Haryana.
+34. Sitaram Pipes Pvt. Ltd., 1-2, New Grain Market, Hisar.
+35. Shiv Sukh Pipe Industries, 1-2, RIICO Industrial Area, P.H. Jaisher, Alwar (Raj).
+36. Shree Shyam Irrigation, Jhar Saran, Bhiwani.
+
+40. Shree Ram Pipe Factory, G-1, 130 RIICO Industrial Area, Phasc-I, Behror, Alwar (Raj.)
+41. Shree Raaj Enterprises, Near Ram Singh Colony, Bhiwani Road, Hansi.
+42. Surdy Industries Ltd., 55 Industria Area, Sector-1, Parwanoo, District- Solan (HP).
+43. Supreme Industries Ltd., 22, Deepak Building, 13-Nehr Place, New Delhi-110019.
+44. Suresh Pipes Pvt. Ltd., Siwani Road, Chaudharywas, Hisar.
+45. Swastic Sprinkler System, V.P.O. Sauda Nagar, Nahar Road, Kosli, Rewari 123302
+46. Swati Enterprises, Delhi Road, Ustam Nagar, Rewari, Haryana.
+47. Sarin Marbles Pvt. Ltd., C/o Aksh Kumar Pvt. Ltd., D-84, Road No.-8C, V.K.I Area, Jaipur.
+48. Shri Jagdamba Enterprises, F-132 (II), Road No. 12, VKI Area, Jaipur-302013
+49. SRM Plastchem Pvt. Ltd., J-375-B, IPIA Road No.-7, Kota (Raj.)
+50. Vishal Pipes Ltd., 32, Nishant Kunj, Nola Enclave, Pitan Pura, New Delhi 110034
+51. Vinayak Industries, Gkn Behind Jindal Strips Ltd., Delhi Road.
+52. Tijaria Polypipes Ltd., 112, 1st Floor, Krishna Square, Subhash Nagar Shoping Center, Jaipur (Raj.) 302016.
+53. Triputi Structures I.Td., Plot No.-81, FIE Patparganj, Delhi-110092.
+
+Director
+Agriculture & Farmers Welfare Department
+Haryana, Panchkula
+
+Endst. No.: 172-241 /TA-III(SC) Dated Panchkula the: 09.01.2018
+A copy of the above is forwarded to the following for information and necessary action:-
+1. The Director General, Rural Development Department (SLNA), Haryana, 30 Bays Building, Sector-17 C, Chandigarh.
+2. All Additional Deputy Commissioners in the State.
+3. The Director General Horticulture, Udyan Bhawan, Sector-21, Panchkula
+4. The Managing Director, Haryana State Agricultural and Rural Development Bank, Sector-2, Panchkula.
+5. The Director, Bureau of Indian Standard, Sector-34-A, Chandigarh for information.
+6. All Deputy Directors of Agriculture in the State.
+7. All Assistant Soil Conservation Officers in the State.
+
+Director
+Agriculture & Farmers Welfare Department
+Haryana, Panchkula
+
+Annexure-IV
+Consent Form
+
+Name of the Applicant…………………………………….…………………….….…………
+Father’s name……………………………………………………………………..….…………
+Address………………………………………………………………………….…..……………
+A&A Number and date…………………….……………………………….…………..………
+Mobile Number……………………………..…………………………………………..…………
+Aadhar Number………………………………………………………………..….……..………..
+
+Email Address(optional)…………………………………………………………….…..………
+
+Subject: Consent regarding release of new tubewell connection.
+
+  I.................................S/o Sh................................, R/o .................................. hereby
+submit that I have applied for new tubewell connection against the aforementioned A&A form for
+........BHP. I hereby tender  my consent to deposit Rs. 30,000/ - as consent money through Cash
+/ DD number .............. dated....... I also tender my consent to abide on the following terms and
+conditions of the Nigam:-
+i. I will install 5 star rated energy efficient pump sets along with smart control panel
+which shall be procured from the firms empanelled by t he Nigam, and submit
+original bills in support of purchase and installation of the same.
+ii. I will install capacitors of appropriate capacity according to size of motor.
+iii. I will install Micro Irrigation system  or Underground Pipeline  (in paddy growing
+blocks) from the firms empanelled by the Agricultural Department  and submit a
+certificate issued by the Agricultural Department certifying the same.
+iv. I will deposit the difference of estimated cost after adjusting Rs 30000/-
+
+Date                  Signature of the applicant
+
+For office use only
+………………………………………………………………………………………………………
+The above mentioned applicant has deposited Rs. 30,000/- vide BA-16 No. ……………
+dated……………….
+
+              Signature of cashier
+        O/o SDO/OP, UHBVN,S/D…………

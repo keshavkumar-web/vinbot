@@ -1,0 +1,291 @@
+Source document: SC_I_01_2026.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+Sales Instruction No. U-01/2026
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs (OP)/XENs (OP)/SDOs (OP),
+JE-I Incharge Sub office in UHBVNL.
+
+Memo No: -Ch-21/XEN/CBO/MIS-302/CE/C-I
+Dated: - 15 .01.2026
+
+Subject: Electricity Supply Code - Regulation No. 29/2014 and amendment
+thereof (S.C. No. U-02/2020) - Provisional billing shall not continue
+for more than two billing cycles at a stretch.
+
+The Electricity Supply Code - Regulation No. 29/2014 and amendment
+thereof (S.C. No. U-02/2020) has provided that provisional billing shall not continue for
+more than two billing cycles at a stretch. The relevant clause is as under:-
+5.4.6 In case, for any reason, the meter is not read during a
+billing cycle, the licensee shall prepare a provisional bill in the
+manner as prescribed under Regulation 6.9. Such provisional
+billing shall not continue for more than two billing cycles at a
+stretch.
+
+However, it has been observed that the said direction of the Hon'ble
+Commission has not been followed meticulously. Hon'ble Haryana Right to Service
+Commission has taken concern in this regard. So to comply with the Regulation of
+Hon'ble Commission as well as Haryana Right to Service Commission directions, the
+following SoP has been prepared:-
+To ensure that provisional billing is restricted to a maximum of two billing
+cycles, as mandated under Clause 5.4.6 of the HERC Supply Code Regulations, the
+following measures shall be taken: -
+(I) Preparatory /cooling period
+
+A preparatory period shall be allowed to the field offices for streamlining
+processes, identifying long-pending provisional billing cases, and
+preparing action plans for timely clearance.
+(i) For pending cases greater than 6 billing cycles, the same would be
+cleared within 1 month of notification of this policy,
+(ii) For pending cases greater than 3 billing cycles and less than 6 billing
+cycles, the same would be cleared within 2 months of notification of
+this policy,
+(iii) For pending cases greater than 2 billing cycles and less than 3 billing
+cycles, the same would be cleared within 3 months of notification of
+this policy,
+(iv) After 31.03.2026, there would not be any consumer on provisional
+billing more than 2 billing cycles. Also during this period, every
+
+(II) Procedure for Handling Provisional Billing Cases Beyond Two Billing Cycles
+
+(i) After completion the preparatory period, all provisional billing cases pending for more than two billing cycles shall be examined monthly by the Commercial Assistant (CA) - Designated Officer (DO) the service under the RTS Act, at the sub-division level. The DO shall compile and submit the report to the Sub-Divisional Officer by the 15th of the following month. The monthly report shall clearly specify the reasons for provisional billing in each case that exceeds two billing cycles, along with the current status and action taken.
+
+(ii) Review by FGRA (SDO Operations): The First Grievance Redressal Authority (FGRA) i.e. SDO (Operations), shall review the report, verify the reasons, incorporate necessary amendments, and confirm its accuracy within 15 days. Thereafter, the confirmed report shall be forwarded to the Second Grievance Redressal Authority (SGRA) i.e. XEN/Operations.
+
+(iii) Decision by SGRA (XEN Operations): The SGRA shall examine each case and take a decision within 15 days, following due procedure, including giving an opportunity of hearing to the concerned meter reading agency, employee, or consumer, as applicable. The SGRA shall decide the cases as under: (a) Cases where the fault lies with the Meter Reading Agency:
+• Penalty shall be imposed and recovered as per the provisions of the existing contract.
+• For future contracts, the CBO office shall incorporate a clear provision for consumer compensation in such cases. (b) Cases where the delay is attributable to negligence of the employee:
+• Upon concluding negligence, the SGRA shall exercise the powers vested under the RTS Act (S.C. No. U-10/2025, Sr. No.16 i.e. redressal of consumer complaint regarding billing i.e. non-receipt, wrong bill etc.) to levy penalty on the Designated Officer (DO).
+• The SGRA shall also award compensation to the affected consumer, as provided under the RTS Act (S.C. No. U-08/2017 dated 07.02.2017, clause 9 (1) to (4) is reproduced as under:
+
+“9.(1) Where the Second Grievances Redressal Authority is of the opinion that the Designated Officer and/ or any other official involved in the process of
+
+providing such service has failed to provide
+service without sufficient and reasonable cause .
+it may impose a lump sum penalty on the
+Designated Officer and / or any other official
+involved in the process of providing such service,
+which shall not be less than two hundred fifty
+rupees and not more than five thousand rupees
+in each case.
+
+(2) Where the Second Grievance Redressal Authority
+is of the opinion that the Designated Officer and/
+or any official involved in the process of providing
+such service has/ have caused under delay in
+providing the service, it may impose a penalty up
+to the rate of two hundred and fifty rupees per day
+for such delay on the Designated Officer and/ or
+any official involved in the process of providing
+such services, which shall not be more than five
+thousand rupees in each case.
+
+Provided that the Designated Officer and/ or any
+other official involved in the process of providing
+such service shall be given a reasonable
+opportunity of being heard before any penalty is
+imposed under sub- sections (1) and (2).
+
+(3) The Second Grievance Redressal Authority may,
+be an order, give as compensation an amount
+to one thousand rupees to the appellant to be
+paid by the Designated Officer or any other official
+as the case may be.
+
+(4) The Second Grievances Redressal Authority may,
+if it is satisfied that the Designated Officer and/
+or any other official involved in the process of
+providing such service has/ have failed to
+discharge the duties assigned under this Act
+without sufficient and reasonable cause,
+recommend the disciplinary action against the
+defaulters under the service rules applicable to
+them in addition to the penalty imposed under
+sub - section (1)."
+
+(III) Online Portal Facility
+To ensure transparency, timely monitoring, and accountability in handling
+provisional billing cases beyond two billing cycles, the following online
+system shall be implemented:
+
+• Automatic MIS Generation:
+An online module shall be developed in the CBO office, where
+a system-generated MIS will automatically list all provisional
+billing cases pending beyond two billing cycles at the end of
+each month.
+For each listed case, the Designated Officer (DO) / Commercial
+Assistant (CA) shall enter the specific reasons for provisional
+billing in the portal. These reasons must be consistent with
+and duly approved by the FGRA.
+
+• Recording of SGRA’s Final Decision:
+The SGRA shall record the final decision in the same online
+module, after due examination and hearing, similar to the
+mechanism followed on the Auto Appeal Portal. This will
+ensure end-to-end digital tracking, accountability, and
+disposal of cases within prescribed timelines.
+
+(IV) Also, in cases of erroneous/disputed bills, the procedure defined in the
+HERC Supply Code Regulation (S.C. No. U-02/2020, clause 6.10) may also
+be followed. The relevant clause is as under: -
+
+6.10 Erroneous / Disputed Bills
+6.10.1 In case a consumer does not agree with the amount billed
+(barring cases of theft of electricity, unauthorized use of
+electricity and where the consumer is found at fault for
+damage to meter and apparatus), he shall lodge a
+complaint in this regard and deposit under protest –
+
+(a) an amount equal to the sum claimed from him, or
+(b) the electricity charges due from him for each month
+calculated on the basis of average charge for electricity
+paid by him during the preceding six months,
+
+whichever is less, pending disposal of any dispute
+between the consumer and the licensee.
+
+6.10.2 On review of the complaint, if the licensee finds that the
+consumer has paid any excess amount, such excess
+amount along with the interest at saving bank rate of
+State Bank of India as on the 1st of April of the financial
+year shall be adjusted in the subsequent bill(s).
+
+Provided that in case the amount to be refunded exceeds
+the electricity charges due for next 6 months calculated
+on the basis of average consumption for previous 6
+months, such excess amount shall be refunded through
+cheque.
+
+6.10.3 If the licensee finds the bill to be correct, the consumer
+shall be intimated accordingly to pay the balance
+amount, if any, with surcharge on such balance for
+delayed payment from the due date, if applicable.
+
+6.10.4 If the licensee establishes during review or otherwise or
+as a result of audit observation that a consumer has been
+under-charged, a 15 days notice shall be served upon the
+consumer to enable him to contest the demand. However,
+in case of additional demand being made out by internal
+audit in respect of any consumer, the office concerned
+shall satisfy himself in the matter before giving notice to
+the consumer. After receipt of reply from the consumer,
+the licensee shall review the amount charged after taking
+into account the facts submitted by the consumer. For the
+amount which is chargeable, after considering reply of
+the consumer, the licensee shall recover the amount
+without levy of surcharge from the consumer by issuing
+a separate bill and in such cases at least 30 days shall
+be given to the consumer to pay the bill. In case the
+consumer fails to pay the bill by the due date, he shall be
+
+liable to pay, in addition, surcharge for the period of
+delay.
+
+6.10.5 While issuing bill under Regulation 6.10.4, the
+licensee
+(a) shall specify the amount to be recovered with an
+explanation and breakup for the amount.
+(b) shall not charge interest on the undercharged amount if
+paid within 30 days.
+(c) on the request of the consumer shall allow installment
+option.
+i) If the amount charged is less than average amount
+chargeable for two billing cycles - two installments.
+ii) If the amount charged is more than average amount
+chargeable for two billing cycles but less than four billing
+cycles - three installments.
+iii) If the amount charged is more than average amount
+chargeable for four billing cycles but less than six billing
+cycles - four installments.
+iv) If the amount charged is more than average amount
+chargeable for six billing cycles and above - five
+installments.
+These installments shall be calculated without adding
+any interest or surcharge.
+However, if any installment is delayed there will be
+surcharge on it.
+
+6.10.6 While communicating the decision on the review of the
+bill, the licensee shall advise the consumer in writing his
+right to prefer an appeal against the decision of the
+licensee to Consumer Grievance Redressal Forum.
+The above instructions should be brought to the notice of all concerned for
+careful and meticulous compliance with immediate effect.
+
+          (Deepak Popli)
+          Chief Engineer/Commercial,
+          UHBVN, Panchkula
+
+UBHVN web site address: www.uhbvn.org.in
+e-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. C-21/XEN/CBO/MIS-302/CE/C-I
+Dated:  15.01.2026
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, HPYNL, Panchkula.
+5. SPS to MD, HPGCL, Panchkula.
+6. Pr. /Vigilance, UHBVN, Panchkula.
+7. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+8. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula – 134112 (Haryana)
+9. CE/Comm., UHBVN, Hisar.
+10. CE/PD&C UHBVN, Panchkula.
+11. CE/ M, UHBVN, Panchkula.
+12. CE/HPPC, Panchkula.
+13. CE/ IT, UHBVN, Panchkula.
+14. Company Secretary, UHBVN, Panchkula.
+15. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+16. SE/Monitoring, UHBVN, Panchkula.
+17. SE/Commercial, UHBVN, Hisar.
+18. CE/Admin., UHBVN, Panchkula.
+19. CE/ SO, UHBVN, Panchkula
+20. SE/ workshop and store UHBVN Dhulkote (Ambala)
+21. SE/RA, UHBVN, Panchkula.
+22. SE/Const. Circle, UHBVN Panchkula.
+23. SE (M&P), UHBVN Dhulkote ( Ambala ).
+24. SE/ R-APDRP, UHBVN, Panchkula.
+25. Legal Remembrancer, HVPNL, Panchkula.
+26. F.A/HO, UHBVN, Panchkula.
+27. Chief Auditor, UHBVN, Panchkula & Rohtak.
+28. Senior Accounts Officer, UHBVN, Panchkula.
+29. Chairman, GRGF, Kurukshetra.
+30. XI XEN, UHBVN, Panchkula.
+31. Deputy Secy. (Technical), UHBVN, Panchkula.
+32. Deputy Secy. (Project), UHBVN, Panchkula
+33. Deputy Secy. (OP), HVPN, Panchkula.
+34. All XEN's (M&P) in UHBVN.
+35. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoca@gmail.com).
+36. CPCO, UHBVN, Panchkula.
+37. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+38. Haryana Chamber of Commerce and Industries O/O VPS Agro Ind. (P) Ltd., Dhawanit Basawan Railway Road, Kurukshetra.
+39. The Haryana Chamber of Commerce and Industry (Dist.Unit Panchkula), 239, Industrial Area,
+    Phase-I, Panchkula-134113
+40. Chief Coordinator IG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+41. Y.Nagar-Jagadhri Chamber of Commerce and Indl. C/O the Oriental Engg. Works (P) Ltd., Indl. Area,
+    Y.Nagar, Haryana- 136001.
+42. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+43. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+44. Haryana Chamber of Commerce Ltd. C/O M/s Liberty Enterprises Railway Road, Karnal.
+45. Confederation of Indian Industries, Sector-31, Chandigarh.
+46. President Manufacturing Association, Sonepat.
+47. Director, Industries Association, Yamunanagar
+48. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+49. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road,
+    Ambala.
+50. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+51. Secretary, Ambala Electrical Dealers & Manufacturers Association, 872, URBAN ESTATE, Sector -7,
+    Ambala City.
+52. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+53. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture
+    Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+54. All Billing Agencies NIELT centre, Hattron and HCL (T)
+
+Executive Engineer/Comm.
+UHBVN, Panchkula.

@@ -1,0 +1,211 @@
+ELECTRICITY DEPARTMENT ABBREVIATIONS
+(Focus: Haryana Power Sector & Central Power Sector Bodies)
+=====================================================================
+
+
+1. HARYANA STATE POWER SECTOR ENTITIES
+---------------------------------------------------------------------
+UHBVN     - Uttar Haryana Bijli Vitran Nigam Limited
+DHBVN     - Dakshin Haryana Bijli Vitran Nigam Limited
+HVPNL     - Haryana Vidyut Prasaran Nigam Limited
+HPGCL     - Haryana Power Generation Corporation Limited
+HPPC      - Haryana Power Purchase Centre
+HERC      - Haryana Electricity Regulatory Commission
+HPUC      - Haryana Power Utilities Coordination (umbrella coordination of Nigams)
+HPU       - Haryana Power Utilities
+
+
+2. CENTRAL POWER SECTOR MINISTRIES / REGULATORS / AGENCIES
+---------------------------------------------------------------------
+MoP       - Ministry of Power (Government of India)
+CEA       - Central Electricity Authority
+CERC      - Central Electricity Regulatory Commission
+SERC      - State Electricity Regulatory Commission
+REC       - REC Limited (formerly Rural Electrification Corporation Limited)
+PFC       - Power Finance Corporation Limited
+POSOCO    - Power System Operation Corporation Limited (now merged into Grid India)
+Grid India- Grid Controller of India Limited
+NLDC      - National Load Despatch Centre
+RLDC      - Regional Load Despatch Centre
+SLDC      - State Load Despatch Centre
+NRLDC     - Northern Regional Load Despatch Centre
+CTU       - Central Transmission Utility
+STU       - State Transmission Utility
+PGCIL     - Power Grid Corporation of India Limited
+NTPC      - National Thermal Power Corporation Limited
+NPTI      - National Power Training Institute
+BEE       - Bureau of Energy Efficiency
+CPRI      - Central Power Research Institute
+
+
+3. TARIFF, REGULATION & COMMERCIAL TERMS
+---------------------------------------------------------------------
+ARR       - Annual Revenue Requirement
+MYT       - Multi Year Tariff
+PPA       - Power Purchase Agreement
+PSA       - Power Sale Agreement
+FSA       - Fuel Supply Agreement
+RPO       - Renewable Purchase Obligation
+REC (Cert)- Renewable Energy Certificate
+DSM       - Deviation Settlement Mechanism
+UI        - Unscheduled Interchange (legacy term, replaced by DSM)
+OA        - Open Access
+CSS       - Cross Subsidy Surcharge
+FPPCA/FSA - Fuel & Power Purchase Cost Adjustment
+ToD       - Time of Day (Tariff)
+ABR       - Aggregate Billing Rate
+ACS       - Average Cost of Supply
+ARR-ABR Gap- Gap between Average Revenue Realised and Average Cost of Supply
+
+
+4. LOSSES, PERFORMANCE & RELIABILITY INDICES
+---------------------------------------------------------------------
+AT&C Loss - Aggregate Technical & Commercial Loss
+T&D Loss  - Transmission & Distribution Loss
+SAIFI     - System Average Interruption Frequency Index
+SAIDI     - System Average Interruption Duration Index
+CAIDI     - Customer Average Interruption Duration Index
+MAIFI     - Momentary Average Interruption Frequency Index
+DT Failure Rate - Distribution Transformer Failure Rate
+
+
+5. INFRASTRUCTURE & TECHNICAL TERMS
+---------------------------------------------------------------------
+HT        - High Tension
+LT        - Low Tension
+EHT       - Extra High Tension
+DT        - Distribution Transformer
+PT        - Power Transformer
+S/S       - Sub-Station
+GSS       - Grid Sub-Station
+kV        - Kilovolt
+MW        - Megawatt
+MVA       - Mega Volt Ampere
+MU        - Million Units
+SCADA     - Supervisory Control and Data Acquisition
+AMR       - Automatic Meter Reading
+AMI       - Advanced Metering Infrastructure
+DTR       - Distribution Transformer (Metering context)
+RMU       - Ring Main Unit
+FRT       - Feeder Renovation & Modernisation / Fault Ride Through (context dependent)
+GIS       - Gas Insulated Substation (also Geographic Information System in RDSS context)
+
+
+6. CONSUMER SERVICES & GRIEVANCE REDRESSAL
+---------------------------------------------------------------------
+CGRF      - Consumer Grievance Redressal Forum
+Ombudsman - Electricity Ombudsman
+NOC       - No Objection Certificate
+SLA       - Service Level Agreement
+CSC       - Common Service Centre
+BPL       - Below Poverty Line (subsidised connection category)
+
+
+7. GOVERNMENT SCHEMES RELEVANT TO DISCOMS
+---------------------------------------------------------------------
+UDAY      - Ujwal DISCOM Assurance Yojana
+IPDS      - Integrated Power Development Scheme
+DDUGJY    - Deen Dayal Upadhyaya Gram Jyoti Yojana
+RDSS      - Revamped Distribution Sector Scheme
+SAUBHAGYA - Pradhan Mantri Sahaj Bijli Har Ghar Yojana
+
+
+8. FINANCIAL & PROJECT MANAGEMENT TERMS
+---------------------------------------------------------------------
+DPR       - Detailed Project Report
+FRP       - Financial Restructuring Plan
+CAPEX     - Capital Expenditure
+OPEX      - Operational Expenditure
+LC        - Letter of Credit
+BG        - Bank Guarantee
+GFA       - Gross Fixed Assets
+
+
+9. ORGANIZATIONAL HIERARCHY / DESIGNATIONS
+---------------------------------------------------------------------
+CMD       - Chairman-cum-Managing Director
+MD        - Managing Director
+Dir/OP    - Director/Operations
+Dir/Fin   - Director/Finance
+CE        - Chief Engineer
+ACE       - Additional Chief Engineer
+SE        - Superintending Engineer
+XEN/XE    - Executive Engineer
+AEE       - Assistant Executive Engineer
+AE        - Assistant Engineer
+JE        - Junior Engineer
+SDO       - Sub Divisional Officer
+ALM       - Assistant Lineman
+LM        - Lineman
+FA        - Finance Advisor
+CAO       - Chief Accounts Officer
+CVO       - Chief Vigilance Officer
+PRO       - Public Relations Officer
+
+
+10. LEGAL, POLICY & REGULATORY FRAMEWORK
+---------------------------------------------------------------------
+EA 2003   - Electricity Act, 2003
+APTEL     - Appellate Tribunal for Electricity
+NEP       - National Electricity Policy
+NTP       - National Tariff Policy
+NEP (Plan)- National Electricity Plan
+IEGC      - Indian Electricity Grid Code
+DISCOM    - Distribution Company
+GENCO     - Generation Company
+TRANSCO   - Transmission Company
+IPP       - Independent Power Producer
+PPP       - Public Private Partnership
+SOP       - Standard of Performance (Regulations)
+
+
+11. METERING, BILLING & POWER QUALITY
+---------------------------------------------------------------------
+MRI       - Meter Reading Instrument
+ToU       - Time of Use
+MDI       - Maximum Demand Indicator
+CT        - Current Transformer
+PT        - Potential Transformer
+kWh       - Kilowatt Hour
+kVAh      - Kilovolt Ampere Hour
+PF        - Power Factor
+HVDS      - High Voltage Distribution System
+DLMS      - Device Language Message Specification (smart meter protocol)
+
+
+12. RENEWABLE ENERGY & MARKET OPERATIONS
+---------------------------------------------------------------------
+RE        - Renewable Energy
+MNRE      - Ministry of New and Renewable Energy
+SECI      - Solar Energy Corporation of India
+DAM       - Day Ahead Market
+RTM       - Real Time Market
+GNA       - General Network Access
+LTA       - Long Term Access
+MTOA      - Medium Term Open Access
+STOA      - Short Term Open Access
+IEX       - Indian Energy Exchange
+PXIL      - Power Exchange India Limited
+HPX       - Hindustan Power Exchange
+VRE       - Variable Renewable Energy
+
+
+13. GOVERNMENT PORTALS, APPS & MISCELLANEOUS
+---------------------------------------------------------------------
+NPP       - National Power Portal
+PRAAPTI   - Payment Ratification And Analysis in Power procurement for
+            bringing Transparency in Invoicing of generators
+GARV      - Grameen Vidyutikaran (rural electrification monitoring app)
+UJALA     - Unnat Jyoti by Affordable LEDs for All
+TARANG    - Transmission App for Real time monitoring and Growth
+VIDYUT PRAVAH - Real-time power supply/demand monitoring portal
+MERIT     - National Portal for Monitoring merit order and Ramp Rate
+
+
+=====================================================================
+Note: This list is curated for terminology commonly used within Indian
+State/Central power sector utilities and regulators (UHBVN, DHBVN,
+HVPNL, HPGCL, HPPC, HERC, Ministry of Power, CEA, CERC, REC Ltd.,
+PFC, and POSOCO/Grid India), and excludes international terms not
+typically referenced in Indian DISCOM operations.
+=====================================================================

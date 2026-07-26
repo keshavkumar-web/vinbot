@@ -1,0 +1,16 @@
+{
+  "name": "vinbot-postman-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Newman runner for the Vinbot API Postman collection (see README.md).",
+  "scripts": {
+    "test:local": "newman run Vinbot.postman_collection.json -e Vinbot-Local.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export ../reports/newman-report.html --reporter-junit-export ../reports/newman-junit.xml",
+    "test:dev": "newman run Vinbot.postman_collection.json -e Vinbot-Dev.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export ../reports/newman-report.html --reporter-junit-export ../reports/newman-junit.xml",
+    "test:uat": "newman run Vinbot.postman_collection.json -e Vinbot-UAT.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export ../reports/newman-report.html --reporter-junit-export ../reports/newman-junit.xml",
+    "test:prod": "newman run Vinbot.postman_collection.json -e Vinbot-Prod.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export ../reports/newman-report.html --reporter-junit-export ../reports/newman-junit.xml"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}

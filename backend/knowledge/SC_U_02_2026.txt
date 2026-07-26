@@ -1,0 +1,720 @@
+Source document: SC_U_02_2026.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Circular No. U - 02/2026
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs(OP)/XENs(OP)/SDOs(OP),
+JE-I Incharge Sub office in UHBVNL.
+
+Memo No: - Ch-14/SS-429/PMGS:MBY Scheme/CE/RE
+Dated: - 05.02.2026
+
+Subject: Standard Operating Procedure (SoP) for processing applications under
+Saur Urja Protashan Yojana (SUPY).
+
+The Government of India has launched the PM Surya Ghar Muft Bijli
+Yojana on dated 13th Feb 2024 to promote the Rooftop solar installation across the
+country. Accordingly, Government of Haryana has set a target of 2.22 Lakhs RTS
+installation by 31st March, 2027. To expedite the progress of RTS installation in the
+Haryana state a new structure for Financial Assistance i.e. Saur Urja Protashan Yojana
+(SUPY) is approved by the State Government.
+
+The Standard Operating Procedure (SoP) for processing applications under
+Saur Urja Protashan Yojana (SUPY) describe the systematic workflow for applicants
+seeking installation of Grid Connected Rooftop Solar (RTS) systems under the Saur Urja
+Protashaan Yojana (SUPY), integrated with PM Surya Ghar: Muft Bijli Yojana (PMSG)
+and ensures procedural uniformity, transparency, accountability, and clear ownership
+among all stakeholders including applicants, DISCOM officials, empanelled vendors,
+and supporting wings such as IT, Operations, FA/HQ and R-APDRP/Project Wing is as
+detailed below: -
+
+A. IMPLEMENTATION STEPS
+
+1. Initiation of Application
+The process commences when a consumer logs into the DISCOM portal.
+At the time of login, a SUPY pop-up is displayed informing the consumer about the
+availability of the scheme. The consumer may choose to proceed further by selecting the
+option to check eligibility for availing financial assistance under SUPY.
+
+2. Eligibility criteria
+• Category-I (Non-Defaulter Consumers): Consumers who have remained non-
+defaulters and have paid their energy bills before/on due date for the period
+01.04.2022 to 31.03.2025, are eligible for availing financial assistance for
+installation of RTS capacity upto 5 kW.
+• Category-II (State Government Employees/Nigam/Board/Corporation etc):
+Consumers who are State Government employees (HKRN employees only with job
+security) with no default in the immediately preceding billing cycle, are eligible
+
+for installing RTS capacity up to 5 kW. Entry of HRMS/HKRN ID along with
+Consumer Account Number is mandatory for this category.
+
+• Category-III (Antyodaya- SFA-Eligible Consumers):
+  a. For family income in PPP upto 1.80 Lakhs
+  b. For family income in PPP above 1.80 Lakhs and upto 3 Lakhs
+
+Antyodaya consumers who are non-defaulters in the immediately
+preceding billing cycle, eligible for State Financial Assistance (SFA), with RTS capacity
+limited to 2 kW.
+
+The eligibility validation will be carried out through DDO, billing database,
+family ID and HRMS/HKRN data. The identified category and eligibility status are
+displayed to the consumer and stored digitally for record and references.
+
+3. Capacity Validation
+Once eligibility is established, the system validates the maximum
+permissible RTS capacity based on the identified category. Any attempt to select capacity
+beyond the prescribed limits is automatically restricted by the portal.
+
+4. Application on National Portal
+After SUPY eligibility confirmation, the consumer proceeds to apply
+independently on the National Portal. Upon successful submission, the consumer
+receives a National Portal Reference Number.
+
+The consumer is required to return to the DISCOM portal and enter the
+National Portal Reference Number to link the two applications. This linkage is
+mandatory for further processing under SUPY. Vendor Selection at this stage is locked
+same as National Portal.
+
+5. Execution and Upload of agreement for Financial Assistance under SUPY /
+Undertaking
+For consumers opting for financial assistance under SUPY, execution of
+documentation as below is mandatory:
+
+• For Category-I, Category-II and Category-III (b): Execution of agreement for
+Financial Assistance under SUPY in DISCOM-prescribed format is mandatory
+and is attached as (Annexure- ‘A’).
+
+• For Category-II (State Government Employees/Nigam/Board/Corporation
+etc): A written note/certification from the respective DDO of their
+department ensuring State Government employees/(HKRN employees only with
+job security) is also required to be submitted.
+
+• For Category-III (a) & (b): - Indemnity bond will be submitted by consumer
+(Annexure- ‘B’).
+
+The executed document is uploaded on the DISCOM portal and verified by
+the concerned field office (SDO).
+
+6. Installation and Commissioning
+
+Installation, inspection, testing and commissioning of the RTS system
+shall be carried out strictly in accordance with the existing PM Surya Ghar SOP.
+Empanelled vendors execute the installation, while verification and commissioning is
+carried out by the SDO (Operations).
+
+Upon completion, the Project Completion Report (PCR) along with
+photographs and commissioning documents is uploaded on UHBVN portal.
+
+7. Processing of Financial Assistance
+
+Post-commissioning, the system computes the admissible financial
+assistance under SUPY by considering:
+• Benchmark installation cost
+• Eligible Central Financial Assistance (CFA)
+• Eligible State Financial Assistance (SFA), wherever applicable
+• Consumer contribution
+The balance amount represents the interest-free financial assistance to
+be extended by the DISCOM.
+
+8. CFA Disbursement by MNRE
+
+Following approval of PCR, MNRE disburses CFA directly to the
+consumer’s bank account as per its guidelines. This is independent of DISCOM-led
+SUPY financial assistance. Subsequent to the disbursement of CFA, the concerned SDO
+will update the CFA disbursement details on the DISCOM portal.
+
+9. DDO approval for disbursement of Financial Assistance
+
+After completion of CFA updation and bank detail verification, the
+application is systematically forwarded to the DDO for processing of financial support
+under the Saur Urja Protsahaan Yojana (SUPY).
+
+The DDO examines the case for approval of financial assistance strictly as
+per category-wise SUPY norms, as per following illustration:
+
+Category-I and Category-II consumers:
+Approval of interest-free financial assistance as below: -
+
+Load
+details    Total
+Installation
+Cost
+(Benchmark
+Cost-fixed)    Upfront cost
+to be paid by
+consumer to
+vendor
+(10% of the
+benchmark
+cost)    CFA    Interest free
+Financial
+Assistance
+support by
+UHBVN to be
+recovered
+through
+electricity bills    Additional
+cost to be
+borne by the
+consumer
+a.    b.    c.    d    e    f= b+(c+d+e)
+In kW    In Rs.    In Rs.    In Rs.    In Rs.    In Rs.
+1    55,000    5,500    30,000    19,500    0
+2    1,10,000    11,000    60,000    39,000    0
+3    1,65,000    16,500    78,000    58,500    12,000
+4    2,20,000    22,000    78,000    78,000    42,000
+5    2,75,000    27,500    78,000    97,500    72,000
+
+Note: *Benchmark cost-source:HAREDA
+
+I. The above financial illustration is based on the benchmark installation cost of Rs. 55,000 per kW as adopted for the purpose of calculation under the Saur Urja Protsaahan Yojana.
+
+II. It is clarified that the interest-free financial assistance provided by the Department under the Scheme is limited to a maximum of Rs.19,500 per kW for upto 5 kWp only.
+
+III. In the event that the actual installation cost exceeds the benchmark cost, or where there is any variation between the benchmark cost and the final cost quoted by the empanelled vendor, the additional amount over and above the benchmark-based computation shall be borne directly by the consumer. The DISCOM shall not have any role, liability or financial obligation with respect to such additional cost, and no additional financial assistance shall be admissible on account of such variation.
+
+IV. The interest-free financial assistance approved under the Scheme shall be recoverable through 24/12 electricity bills (as per prevailing billing either monthly/bi-monthly).
+
+Category-III (Antyodaya - SFA eligible) consumers:
+
+Financial assistance is also admissible under SUPY for Antyodaya families as per eligibility of their applicable income slab. Where applicable, any residual financial assistance component is also processed as below:
+
+a. For family income upto 1.80 Lakhs
+
+Load details          Total Installation Cost (Benchmark cost fixed)   CFA   Admissible Advance SFA
+In kW                a                     In Rs.                     In Rs.   In Rs.
+1                     55,000                30,000                     40% of the actual cost or
+2                    1,10,000                60,000                     25000/KW whichever is lower
+
+b. For family income above 1.80 Lakhs and upto 3 Lakhs
+
+Load details          Total Installation Cost (Benchmark cost fixed)   Upfront cost to be paid by consumer to vendor (10% of the benchmark cost)   CFA   Admissible Advance SFA   Financial Assistance by Department to be recovered through electricity bills
+In kW                a                     In Rs.                     b                     In Rs.   In Rs.   In Rs.
+Family income above 1.80 Lakhs and upto 3 Lakhs
+1                     55,000                5,500                     30,000                     10,000   9,500
+2                    1,10,000                11,000                     60,000                     20,000   19,000
+
+Note:
+I. The above financial illustration pertains to Antyodaya consumers (SFA eligible) under the SUPY and has been prepared based on the benchmark installation cost.
+
+II. It is clarified that for Antyodaya families with annual household income up to Rs.1.80 lakh only eligible SFA component shall be released post receipt of CFA to consumer account from SUPY funds. The SFA will be paid by the State Govt. within the same Financial Year to the DISCOMs and will be recouped in SUPY funds in lieu of Advance SFA paid already by DISCOM's from SUPY funds.
+
+III. For Antyodaya families with annual household income above Rs. 1.80 lakh and up
+to Rs.3.00 lakh per annum, the financial support shall comprise both the SFA and
+interest-free financial assistance @ Rs. 9,500 per kW, up to a maximum RTS
+capacity of 2 kW.
+IV. It is further clarified that the SFA and financial assistance amounts have been
+computed on the basis of the benchmark installation cost. In the event that the
+actual installation cost varies from or exceeds the benchmark cost, the additional
+cost arising due to such variation shall be borne directly by the consumer.
+V. The interest-free financial assistance approved under the Scheme shall be
+recoverable through 24/12 electricity bills (as per prevailing billing either
+monthly/bi-monthly).
+
+10. Issuance of Financial assistance
+Upon approval, the DDO shall arrange for disbursement of payment to the
+consumer’s Bank Account after release of drawing limits from the Banking Section O/o
+FA/Hqrs towards the interest-free financial assistance for Cat-I, Cat-II & Cat-III (b) and
+advance SFA for Cat-III (a) & (b) consumers. The advance SFA will be paid by the State
+Govt. in the same Financial Year and will be recouped in the revolving fund.
+11. EMI Generation
+Simultaneously with approval and disbursement of the financial
+assistance, the EMI tenure (i.e. 24/12 electricity bills, as per prevailing billing either
+monthly/bi-monthly) and EMI amount shall be shared by the SDO/OP with the R-
+APDRP/Project Wing through the prescribed system or communication channel. Based
+on these details, the RAPDRP/Project Wing shall map the EMI as an integral component
+of the consumer’s electricity bill, ensuring that EMI recovery commences from the
+subsequent billing cycle, in accordance with the scheme provisions and prevailing
+regulations.
+Completion of EMI mapping in the billing system and updation of transfer
+details shall together mark the final closure of the application under SUPY, subject to
+continued EMI recovery through the electricity billing mechanism.
+In case of every first default i.e. payment of electricity bill of any such consumer who
+has availed benefit of SUPY scheme, SDO ‘OP’ will ensure recovery/disconnection of
+connection of the beneficiary as per MIS generated by R-APDRP/Project wing.
+
+B. TIMELINE & RESPONSIBILITY MATRIX
+Sr.  Activity / Description  Responsibility  System  Document  Remarks  Timeline
+No.
+i.  Consumer logs into DISCOM  Consumer  DISCOM Portal  Pop-up  shown at  login
+portal; . SUPY pop-up is
+displayed. Consumer may
+choose to check availability
+under SUPY
+ii.  Consumer selects “Check SUPY  Consumer  DISCOM Portal  Optional  step
+Eligibility”
+iii.  Eligibility check based on  DISCOM Portal  For category I,  Category  displayed
+category:  (Auto-check)  billing database  for all 3  categories  regarding their
+Category-I: Non-defaulter (01-
+04-2022 to 31-03-2025)
+Category-II:  State
+Govt./Corporation/Board/
+
+Sr.  Activity / Description                          Responsibility   System Document                       Remarks                                   Timeline
+No.
+iv.  Eligibility status and SUPY category displayed to consumer  DISCOM Portal  -                                   Snapshot stored for record & reference   Real-time (Instant)
+v.   Consumer proceeds to MNRE/National Portal and submits application under PM Surya Ghar  Consumer  National Portal  -                                   Generates National Portal Ref. No.
+vi.  Consumer logs back into DISCOM portal and enters National Portal Reference No.  Consumer  DISCOM Portal  -                                   Mandatory linkage
+vii. Execution & upload of agreement for Financial Assistance under SUPY by Category-I, II & III (b). Indemnity Bond for advance SFA by category-III (a) & (b). In addition to above written note from DDO of the employee for Category-II is mandatory.  Consumer / SDO  DISCOM Portal  -                                   -
+viii. Installation, inspection and commissioning as per existing PMSG SOP  Vendor / SDO  PMSG workflow  -                                   Within 15 - 20 days
+ix.  Entry of CFA details by SDO and bank details verification (same as MNRE-portal)  SDO  DISCOM MNRE Portal  +                                   Mandatory check                           Within 1 working day
+x.   Application moves to DDO for financial support approval as per category rules: Cat-1 & 2: Loan @ Rs.19,500/kW up to 5 kW Cat-3(a): Advance SFA as admissible. Cat-3(b): Admissible advance SFA along with financial assistance if needed @9,500/KW upto 2 kW.  DDO  DISCOM Portal  -                                   Category-wise limits applied              Within 3 working days
+xi.  Financial Assistance and SFA, if applicable, to be transferred by DDO  DDO  -                                   Transfer details (Reference no./date)   Within 10th of the succeeding month
+xii. Payment details updated on DISCOM portal + SMS triggered to consumer  DDO  DISCOM Portal / SMS  -                                   Consumer intimation                      Same day
+xiii. Parallel activity: sanctioned amount + EMI terms shared  DDO  R-APDRP/ Project Wing /Billing, IT  -                                   EMI added to consumer                    Before next billing cycle
+
+Sr.  Activity / Description                          Responsibility       System Document / Remarks                       Timeline
+No.                                                                                                               (max 30
+                                                                                                                  days)
+with R-APDRP/Project Wing for mapping EMI into billing system
+
+C. ROLES AND RESPONSIBILITIES OF SUPPORTING WINGS FOR SUCCESSFUL IMPLEMENTATION
+
+1. Role of Commercial Wing
+i.  The Commercial Wing shall be responsible for the development, deployment and maintenance of all SUPY-specific functionalities on the DISCOM portal.
+ii. This shall include, inter alia, display of SUPY pop-up at consumer login, system-driven eligibility determination, category identification, capacity validation, and locking of vendor selection strictly as per the MNRE/National Portal.
+iii. Secure linkage with the MNRE/National Portal shall be ensured for verification of National Portal reference numbers and vendor details.
+iv. The Commercial Wing shall also ensure proper workflow routing of applications across Operations, Finance & Accounts (F&A) Wing, and R-APDRP/Project Wing in accordance with the approved SOP.
+v.  Automated SMS alerts to consumers at key stages, amount credited to consumer bank account shall also be ensured.
+vi. Any portal-related or workflow issues impacting processing of applications under SUPY shall be promptly addressed by the Commercial Wing to avoid delays in implementation.
+
+2. Role of R-APDRP/Project Wing
+i.  The RAPDRP/Project wing shall provide the data base to verify default history of the applicants for the period 01.04.2022 to 31.03.2025 under Category-I for eligibility determination under SUPY.
+ii. The R-APDRP / Project Wing shall also provide the database of the previous billing cycle on a monthly basis for the purpose of verifying the non-defaulting status of consumers under Category-II (State Government Employees) and Category-III (Antyodaya Consumers) for eligibility determination under SUPY.
+iii. Upon receipt of the sanctioned financial assistance, EMI tenure (i.e., 24/12 electricity bills, as per prevailing billing either monthly/bi-monthly) and EMI details from the Finance & Accounts Wing, the R-APDRP/Project Wing shall ensure timely mapping of the EMI as an integral component of the consumer’s electricity bill, to be reflected from the subsequent applicable billing cycle, in accordance with approved terms and prevailing regulations.
+iv. The R-APDRP/Project Wing shall ensure that recovery of EMI, delayed payment surcharge and non-payment consequences are governed strictly by the provisions applicable to recovery of electricity bills, without creation of any separate or parallel recovery mechanism.
+
+v.  Periodic monitoring of EMI recovery status and generation of MIS/reports, as
+required by the Commercial Wing, Operations or Finance & Accounts Wing, shall
+also fall within the purview of the R-APDRP/Project Wing.
+vi.  On completion of EMI tenure, a system generated of NOC/successful payment of
+Financial Assistance will be provisioned.
+
+3. Role of Finance & Accounts (F&A) Wing
+i.   The FA/HQ shall be responsible for arrangement of funds and release of drawing
+limits to all the accounting units under the Saur Urja Protsahan Yojana (SUPY).
+ii.  The DDO in the field shall ensure that disbursement of Financial Assistance is
+carried out in the approved manner and within the stipulated timelines under
+the scheme.
+iii. The financial assistance shall be drawn out of the total approved fund strictly as
+per the requirements of the scheme, based on the applications processed and
+approved under SUPY on monthly basis.
+iv.  Upon due approval by the competent Drawing and Disbursing Officer (DDO), the
+DDO wing in the field shall credit the approved financial assistance directly into
+the applicant’s bank account through the prescribed electronic mode.
+v.   All applications approved for financial assistance and received upto the end of a
+month shall be cleared, and the corresponding amounts shall be credited to the
+applicant’s bank accounts by the 10th day of the succeeding month.
+vi.  Proper maintenance of financial records, reconciliation and documentation for
+audit and compliance purposes shall be ensured by the Accounts Branch at field.
+vii. Clear segregation between State Financial Assistance (SFA) and financial
+assistance components shall be maintained by AO/Commercial at all stages of
+financial processing under SUPY.
+viii. The Finance & Accounts (F&A) Wing shall act as the nodal wing for
+arrangement/allocation of financial assistance and SFA funds and DDO-wise
+disbursement of financial assistance to consumers, and for accounting of
+recovery of the financial assistance under the Saur Urja Protsahan Yojana
+(SUPY).
+
+4. Role of Operation Wing
+i.   The Operations Wing shall act as the nodal field-level implementation wing for
+the Saur Urja Protsahan Yojana (SUPY)
+ii.  The Operations Wing shall verify the documents uploaded by consumers,
+including agreement for Financial Assistance under SUPY, undertakings and, in
+case of Category-II (State Government Employees), verification of the organisation
+issued certificate/undertaking, wherever applicable.
+iii. The Operations Wing, through the concerned Sub Divisional Officer (SDO), shall
+be responsible for inspection, testing and commissioning of Rooftop Solar (RTS)
+systems strictly in accordance with the PM Surya Ghar: Mufti Bijli Yojana SOP,
+technical standards, and safety regulations.
+
+iv. Post commissioning, the Operations Wing shall ensure timely verification and
+approval of the Project Completion Report (PCR) and facilitate smooth progression
+of the application to subsequent stages.
+
+v. The Operations Wing shall coordinate with the Commercial Wing for portal-
+related processing, with the Finance & Accounts (F&A) Wing for financial
+approvals and disbursement, and with the RAPDRP/Project Wing for timely EMI
+mapping (24/12 electricity bills as per prevailing billing either monthly/bi-
+monthly) in the billing system.
+
+vi. The Operations Wing shall be responsible for field-level consumer facilitation,
+grievance resolution related to installation, inspection or commissioning, and
+escalation of issues impacting timelines under SUPY.
+
+vii. The Operations Wing shall monitor implementation progress at the field level and
+provide periodic status updates and MIS to the Commercial Office, as required.
+
+The above instructions should be brought to the notice of all concerned for
+careful and meticulous compliance with immediate effect.
+DA/Annexure-A & B
+
+                              (Deepak Pospil)
+                       Chief Engineer/Commercial,
+                             UHBVN, Panchkula
+
+UBHVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. - [ ]- /U/S-429/PMSG:MBY Scheme/CE/RE
+Dated: 03.02.2026
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, UHBVN, Hisar.
+5. SPS to MD, HPVNL, Panchkula.
+6. SPS to MD, HPGCL, Panchkula.
+7. Dir./Vigilance, HPVN, Panchkula.
+8. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comm., DHBVN, Hisar.
+11. CE/PD&C UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPCL, Panchkula.
+14. CE/I, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, DHBVN, Hisar.
+19. CE/Admn., DHBVN, Panchkula.
+20. CE/SO, UHBVN, Panchkula.
+21. S.E./workshop and store UHBVN Dhulkote (Ambala)
+22. SE/RA, UHBVN, Panchkula.
+23. SE/Const. Circle, UHBVN Panchkula.
+24. SE (M&P), UHBVN Dhulkote (Ambala)
+25. SE/ARPPD, UHBVN, Panchkula.
+26. Legal Remembrancer, HPVNL, Panchkula.
+27. F.A./HQ, UHBVN, Panchkula.
+28. Chief Auditor, UHBVN, Panchkula & Rohtak.
+29. Chief Accounts Officer, UHBVN, Panchkula.
+30. Chairman, CGRF, Kurukshetra.
+31. XEN/IT, UHBVN, Panchkula.
+32. Deputy Secy. (Technical), UHBVN, Panchkula.
+33. Deputy Secy. (Project), UHBVN, Panchkula
+34. Deputy Secy. (OP), HPVN, Panchkula.
+35. All XENs (M&P) in UHBVN.
+36. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoa@gmail.com ).
+37. CPRO, UHBVN, Panchkula.
+38. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+39. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind. (P) Ltd., Dhawanthi Bhawan Railway Road, Kurukshetra.
+40. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+41. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+42. Y.Nagar, Jagadhari Chamber of Commerce and Indl. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+43. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+44. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+45. Haryana Chamber of Commerce Ind. C/o M/s Liberty Enterprises Railway Road, Karnal.
+46. Confederation of Indian Industries, Sector-31, Chandigarh.
+47. President Manufacturing Association, Sonepat.
+48. Director, Industries Association, Yamunanagar.
+49. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+50. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+51. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+52. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+53. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+54. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sharn Nagar, GT Road, Karnal-132 001.
+55. All Billing Agencies NIELIT centre, Harnot and HCL (T)
+
+ANNEXURE - A
+
+Agreement for Financial Assistance under Saur Urja Protsahan Yojana
+(SUPY) notified by Nigam vide sales circular no. U-02/2026
+
+(To be executed on Non-Judicial Stamp Paper of Rs.100/-)
+
+This agreement for Financial Assistance under SUPY is executed on this ___
+day of ______, 20 at _______
+
+BY
+Sh./Smt. _____________________________
+Son/Daughter/Wife of _____________________________
+Resident of _____________________________
+Mobile no.: _____________________________
+Email ID: _____________________________
+Consumer account no.: __________________
+
+SUPY Category:
+
+□ Category-I (Non-defaulter + PMSG up to 5 kW)
+
+□ Category-II (State Govt. Employees up to 5 kW)
+
+□ Category-III (b) (Antyodaya Consumer eligible for SFA)
+
+(hereinafter referred to as the “Applicant/Consumer”, which expression shall include
+his/her heirs, legal representatives, executors and assigns)
+
+AND
+
+Uttar Haryana Bijli Vitran Nigam Limited (UHBVN), Power Distribution Company
+incorporated under the Companies Act 1956, having its registered office at Vidyut
+Sadan, IP No.: 3 & 4, Sector-14, Panchkula, (Haryana)-134113 (hereinafter referred to
+as the “DISCOM / Nigam”)
+
+WHEREAS
+
+1. The Ministry of New and Renewable Energy (MNRE), Government of India, has
+launched the PM Surya Ghar: Muft Bijli Yojana (hereinafter referred to as
+“PMSG:MBY”) scheme on 13th February 2024 to promote installation of Grid-
+
+Connected Rooftop Solar (RTS) Systems in residential premises and provide
+free/reduced-cost electricity to households across India.
+2. The Consumer has applied for installation of a Grid-Connected Rooftop Solar
+(RTS) system under PMSG:MBY through the MNRE/National Portal.
+3. The Consumer has opted to avail benefits under Saur Urja Protsahan Yojana
+(hereinafter referred to as “SUPY”) of the Government of Haryana application no.
+-------, which provides interest-free financial assistance and State Financial
+Assistance (hereinafter referred to as “SFA”), as applicable.
+4. The DISCOM has agreed to extend such financial assistance subject to fulfilment
+of eligibility conditions and execution of this agreement for Financial
+Assistance under SUPY.
+
+NOW THIS AGREEMENT FOR FINANCIAL ASSISTANCE UNDER SUPY
+WITNESSETH AS FOLLOWS
+
+1. Declaration of Eligibility & Compliance
+The applicant declare that all information, documents and declarations submitted by
+his/her under SUPY and PMSG:MBY are true, correct and complete, and that he/she
+fulfil the eligibility conditions prescribed under the applicable category of the scheme.
+
+2. Bank Account Details (Mandatory)
+The applicant furnished bank account details for disbursement of financial assistance
+under SUPY and Central Financial Assistance (hereinafter referred to as “CFA”) under
+PMSG: MBY as under:
+• Name of Account Holder:
+• Bank Name:
+• Branch Name:
+• Account Number:
+• IFSC Code:
+and further declare and confirm that:
+a) The above-mentioned bank account details are the same bank account details as
+uploaded by him/her on the MNRE/National Portal for disbursement of CFA under
+PMSG:MBY;
+b) The applicant shall not change or modify the said bank account details on either the
+DISCOM portal or the MNRE/National Portal without prior written approval of the
+DISCOM;
+c) Any delay, rejection, mis-credit or non-release of SUPY financial assistance/SFA
+arising due to incorrect, mismatched or changed bank account details shall be solely
+his/her responsibility, and the DISCOM shall not be liable in any manner whatsoever.
+
+3. Indemnity
+The applicant irrevocably and unconditionally indemnifies and keep indemnified the
+DISCOM, its officers and employees against any loss, damage, liability, recovery, audit
+objection, penalty or legal proceedings arising out of:
+a) Incorrect or false information furnished by him/her;
+b) Ineligibility detected at any stage, including post-commissioning or audit;
+c) Any direction for recovery or reversal of SFA issued State Government or any
+competent authority;
+d) Mismatch of bank account details between DISCOM portal and MNRE/National
+Portal;
+e) Default in repayment of financial assistance/EMI recoverable through electricity
+bills or otherwise.
+f) For any other reason.
+
+4. Disbursement of Financial Assistance
+
+a. The applicant acknowledges and agrees that the financial assistance under SUPY shall be disbursed in a single tranche only, strictly in accordance with the disbursement schedule and conditions prescribed under the SUPY Scheme.
+
+5. Recovery & Adjustment
+
+a. The applicant agrees and undertake to repay the Financial Assistance Amount provided to him/her by UHBVN through 24/12 electricity bills (as per prevailing billing either monthly/bi-monthly) in equal instalments, strictly in accordance with the repayment schedule as above. (only for category I, II & III b) as mentioned in the relevant Sales Circular.
+
+b. The applicant agrees and undertake to repay only the Financial Assistance component released to him/her under the SUPY, excluding the SFA amount through 24/12 electricity bills (as per prevailing billing either monthly/bi-monthly) in equal instalments, strictly in accordance with the repayment schedule as above. (only for category III b) as mentioned in the relevant Sales Circular.
+
+c. The applicant further authorise the DISCOM to recover the said EMIs through his/her monthly electricity bills in accordance with the provisions of the SUPY.
+
+d. The applicant acknowledges that the EMI amount forms an integral part of his/her monthly/bi monthly electricity bill. Accordingly, any delay in payment of the electricity bill shall be deemed to be a delay in repayment of the EMI, and in such cases, the late payment surcharge (LPS) levied as per the applicable tariff and Supply Code shall be applicable on the entire bill amount, including the EMI component.
+
+e. The applicant further acknowledges and agree that in the event of non-payment of the electricity bill, the EMI component, being an integral part of the electricity bill, shall be recoverable in accordance with the prevailing provisions and procedures applicable for recovery of electricity bills.
+
+f. The applicant further undertake that in case DISCOM's decide at any stage to recover this amount in lump sum, he/she will abide by the same.
+
+g. The applicant further authorizes the Nigam that in case of non-payment of Financial Assistance provided to him/her under SUPY, DISCOM may affect the recovery through his/her DDO (only for Govt. Employees).
+
+h. The applicant agrees and undertake that in the event of any modification in the financial assistance terms, repayment conditions or any other provisions of the SUPY, as may be notified by the DISCOM, he/she shall abide by and comply with such revised terms and conditions without any objection or claim. He/She further acknowledge that such modifications shall be binding upon him/her and shall form an integral part of this agreement.
+
+i. The applicant undertakes and agree that till the final repayment of the financial assistance availed by him/her under the SUPY, the Rooftop Solar (RTS) plant installed at his/her premises shall remain the property of the Nigam. He/She further acknowledge that ownership of the RTS plant shall stand transferred to him/her only after full and final repayment of the said financial assistance, in accordance with the terms and conditions of the Scheme.
+
+6. Validity
+
+This shall remain valid till all obligations under SUPY and PMSG:MBY are fully discharged and shall be subject to the exclusive jurisdiction of the district court of ........
+
+7. Governing Law & Jurisdiction
+
+a. This agreement for Financial Assistance under SUPY bond shall be governed by and construed in accordance with the laws of India, including but not limited to the Indian Contract Act, 1872 and guidelines applicable to lending.
+
+b. The applicant irrevocably agrees and submit to the exclusive jurisdiction of the competent district court in which applicant has sought the connection for the purpose of adjudication of any dispute, claim or matter arising out of or in connection with this financial assistance agreement executed under the SUPY.
+
+IN WITNESS WHEREOF
+
+The applicant has executed this agreement for Financial Assistance under SUPY on the date and place first mentioned above.
+
+Signature of Consumer
+
+Signature: ______________________
+Name: ______________________
+Mobile No.: ______________________
+
+Witnesses
+1. Name: ______________________
+   Address: ______________________
+   Signature: ______________________
+2. Name: ______________________
+   Address: ______________________
+   Signature: ______________________
+
+Accepted on behalf of DISCOM
+
+Signature: ______________________
+Name & Designation: ______________________
+Office
+
+ANNEXURE - B
+
+                                   INDEMNITY BOND
+                (Saur Urja Protsahan Yojana (SUPY) notified by Nigam vide sales circular no. U-02/2026)
+                       (To be executed on Non-Judicial Stamp Paper of Rs 100/-)
+
+This Indemnity Bond is executed on this ___ day of ______, 20 at ________
+
+BY
+Sh./Smt. ______________________________________
+Son/Daughter/Wife of ___________________________
+Resident of ____________________________________
+Mobile no.: ___________________________________
+Email ID: ______________________________________
+Consumer account no.: __________________________
+
+SUPY Category:
+□ Category-III (a) & (b) (Antyodaya Consumer eligible for SFA)
+
+(hereinafter referred to as the “Applicant/Consumer”, which expression shall include
+his/her heirs, legal representatives, executors and assigns)
+
+IN FAVOUR OF
+Uttar Haryana Bijli Vitran Nigam Limited (UHBVN), Power Distribution Company
+incorporated under the Companies Act 1956, having its registered office at Vidyut
+Sadan, IP No.: 3 & 4, Sector-14, Panchkula, (Haryana)-134113 (hereinafter referred to
+as the “DISCOM / Nigam”)
+
+WHEREAS
+1. The Ministry of New and Renewable Energy (MNRE), Government of India, has
+launched the PM Surya Ghar: Muft Bijli Yojana (hereinafter referred to as
+“PMSG:MBY” scheme on 13th February 2024 to promote installation of Grid-
+Connected Rooftop Solar (RTS) Systems in residential premises and provide
+free/reduced-cost electricity to households across India.
+2. The Consumer has applied for installation of a Grid-Connected Rooftop Solar
+(RTS) system under PMSG:MBY through the MNRE/National Portal.
+3. The Consumer has opted to avail benefits under Saur Urja Protsahan Yojana
+(hereinafter referred to as “SUPY”) of the Government of Haryana application no.-
+________, which provides interest-free financial assistance and/or State Financial
+Assistance (hereinafter referred to as “SFA”), as applicable.
+4. The DISCOM has agreed to extend such financial assistance subject to fulfilment
+of eligibility conditions and execution of this bond for Financial Assistance
+under SUPY.
+
+NOW THIS BOND FOR FINANCIAL ASSISTANCE UNDER SUPY WITNESSET AS FOLLOWS
+1. Declaration of Eligibility & Compliance
+The applicant declare that all information, documents and declarations submitted by
+his/her under SUPY and PMSG:MBY are true, correct and complete, and that he/she
+fulfil the eligibility conditions prescribed under the applicable category of the scheme.
+
+2. Bank Account Details (Mandatory)
+
+I hereby furnish bank account details for disbursement of financial assistance under
+SUPY and Central Financial Assistance (hereinafter referred to as “CFA”) under PMSG:
+MBY as under:
+• Name of Account Holder: __________________________
+• Bank Name: _____________________________________
+• Branch Name: ___________________________________
+• Account Number: _________________________________
+• IFSC Code: ______________________________________
+
+and further declare and confirm that:
+
+a) The above-mentioned bank account details are the same bank account details as
+uploaded by me on the MNRE/National Portal for disbursement of CFA under
+PMSG:MBY;
+
+b) I shall not change or modify the said bank account details on either the DISCOM
+portal or the MNRE/National Portal without prior written approval of the DISCOM;
+
+c) Any delay, rejection, mis-credit or non-release of SFA arising due to incorrect,
+mismatched or changed bank account details shall be solely my responsibility, and the
+DISCOM shall not be liable in any manner whatsoever.
+
+3. Indemnity
+I hereby irrevocably and unconditionally indemnify and keep indemnified the DISCOM,
+its officers and employees against any loss, damage, liability, recovery, audit objection,
+penalty or legal proceedings arising out of:
+a) Incorrect or false information furnished by me;
+b) Ineligibility detected at any stage, including post-commissioning or audit;
+c) Any direction for recovery or reversal of SFA issued by State Government;
+d) Mismatch of bank account details between DISCOM portal and MNRE/National
+Portal;
+e) For any other reason.
+
+4. Misrepresentation of Antyodaya Status / Recovery of SFA
+Notwithstanding anything contained elsewhere in this Indemnity Bond, I hereby
+expressly declare and agree that in case my claim of being an Antyodaya consumer,
+including declaration of family income or eligibility criteria, is found to be incorrect,
+false, misleading or ineligible at any stage, whether prior to or after commissioning,
+including during verification, inspection, audit or post-disbursement scrutiny by the
+DISCOM, State Government, MNRE or any competent authority, then:
+
+a. The entire SFA amount already credited/released to me under the SUPY shall
+become immediately recoverable from me, without prejudice to any other action
+permissible under law;
+
+b. The DISCOM shall be fully entitled and authorized to recover the said SFA
+amount from me in the manner as determined by the DISCOM;
+
+c. I shall not raise any objection, dispute or claim against such recovery of SFA.
+
+5. Validity
+This shall remain valid till all obligations under SUPY and PMSG:MBY are fully
+discharged and shall be subject to the exclusive jurisdiction of the district court of ______.
+
+6. Governing Law & Jurisdiction
+a. This bond shall be governed by and construed in accordance with the laws of
+India, including but not limited to the Indian Contract Act, 1872 and guidelines
+applicable to lending.
+
+b. I hereby irrevocably agree and submit to the exclusive jurisdiction of the
+competent district court in which applicant has sought the connection for the
+
+purpose of adjudication of any dispute, claim or matter arising out of or in
+connection with this Bond executed under the Saur Urja Protsaahan Yojana
+(SUPY).
+
+IN WITNESS WHEREOF
+
+I have executed this bond for Financial Assistance under SUPY on the date and
+place first mentioned above.
+
+Signature of Consumer
+
+Signature: ________________________
+Name: ____________________________
+Mobile No.: _______________________
+
+Witnesses.
+
+1. Name: __________________________
+   Address: ________________________
+   Signature: ______________________
+
+2. Name: __________________________
+   Address: ________________________
+   Signature: ______________________
+
+Accepted on behalf of DISCOM
+
+Signature: ________________________
+Name & Designation: _______________
+Office

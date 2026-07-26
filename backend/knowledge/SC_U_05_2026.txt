@@ -1,0 +1,95 @@
+Source document: SC_U_05_2026.pdf
+
+25
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Circular No. U-05/2026
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs (OP)/XENs (OP)/SDOs (OP),
+JE-I Incharge Sub office in UHBVNL.
+
+Memo No:- Ch- 99/IT/Loose-60/CE/C-1
+Dated: - 28 .04.2026
+
+Subject:- Regarding implementation of online payment facility for LL-1 (Theft cases) through existing payment module of UHBVN on cash collection portal & existing mobile applications.
+
+The facility for online payment of theft charges by Consumers/Non consumers has been made live on the E-payment portal and Mobile application of E-payment and trust based reading apps of UHBVN. The URL for the portal is https://epayment.uhbvn.org.in. The consumers/non-consumers can pay their theft charges through various online modes viz. UPI, credit card/debit card, Internet banking, etc. using following steps:-
+1. Consumers have to enter their account No. and Non-consumers have to enter their LL-1 Book No., Sr No. and LL-1 memo no. for fetching the Theft charges details on clicking "Pay Electricity theft charges" button on E-payment portal & Mobile App of E-payment and Trust Bill app.
+2. Basic details of consumer/non-consumer like LL-1 No., Date of checking, Name, Address, Theft amount to be payable (assessment and compounding amount) are displayed on the portal and then the facility for payment of these charges through online modes like UPI Payment, Card Payment, Internet banking options, etc. are given.
+3. Consumers/non-consumers have to pay the total amount shown on the portal through online mode.
+4. The payment will be posted to the concerned Sub division where LL-1 is registered. The payment for Assessment & Compounding amount are saved in the concerned Account heads for RO-4 and BA-16 on E-payment portal.
+5. Consumer/Non-consumer can download the payment receipt for the theft charges from the portal.
+6. The publicity of the online payment facility for LL-1 (Theft cases) shall be given through press and electronic media. A banner of the scheme shall also be posted on Nigam's portal. Additionally, publicity shall be made by installing hoardings at Nigam's offices.
+
+The above instructions should be brought to the notice of all concerned for careful and meticulous compliance with immediate effect.
+
+Superintending Engineer/Commercial
+For Chief Engineer/Commercial
+UHBVN, Panchkula
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. Ch-22/IT/Loose-60/CE/C-I
+Dated: 28.04.2026
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, DHBVN, Hisar.
+5. SPS to MD, HVPNL, Panchkula.
+6. SPS to MD, HPGC, Panchkula.
+7. Dir./Vigilance, HVPN, Panchkula.
+8. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comml., DHBVN, Hisar.
+11. CE/P&D, UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPDC, Panchkula.
+14. CE/IT, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, DHBVN, Hisar.
+19. CE/Admn., UHBVN, Panchkula.
+20. CE/SO, UHBVN, Panchkula.
+21. S.E / workshop and store UHBVN Dhulkote (Ambala)
+22. SE/RA, UHBVN, Panchkula.
+23. SE/Const. Circle, UHBVN Panchkula.
+24. SE (M&P), UHBVN Dhulkote ( Ambala )
+25. SE/R&APRD, UHBVN, Panchkula.
+26. Legal Remembrancer, HVPNL, Panchkula.
+27. F.A./HQ, UHBVN, Panchkula.
+28. Chief Auditor, UHBVN, Panchkula & Rohtak.
+29. Chief Accounts Officer, UHBVN, Panchkula.
+30. Chairman, CPRI, Kurukshetra.
+31. XEN/IT, UHBVN, Panchkula.
+32. Deputy Secy. (Technical), UHBVN, Panchkula.
+33. Deputy Secy. (Project), UHBVN, Panchkula.
+34. Deputy Secy. (OP), HVPN, Panchkula.
+35. All XEN's (M&P) in UHBVN.
+36. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoa4@gmail.com ).
+37. CPRO, UHBVN, Panchkula.
+38. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+39. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhawanthi Bhawan Railway Road, Kurukshetra.
+40. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+41. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+42. Y.Nagar-Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana-136001.
+43. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+44. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.).
+45. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+46. Confederation of Indian Industries, Sector-31, Chandigarh.
+47. President Manufacturing Association, Sonipat.
+48. Director, Industries Association, Yamunanagar
+49. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+50. Haryana Solvent Extractor's Association O/o Pee-Pee Agro Industry, Pvt. Ltd., Dhurkehera Hisar Road, Ambala.
+51. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+52. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+53. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+54. All Billing Agencies NIELIT center, Harton and HCL (T)
+Executive Engineer/Comml.
+UHBVN, Panchkula.

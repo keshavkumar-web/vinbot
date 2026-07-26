@@ -1,0 +1,188 @@
+Source document: SC_U_07_2019.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Circular No. U- 07 / 2019
+
+From
+
+Superintending Engineer/Commercial,
+UHBVN, Panchkula
+
+To
+
+All CEs (OP), SEs (OP), XENs (OP), SDOs (OP),
+JEs-I In-charge Sub-office in UHBVN
+
+Memo No.Ch- 44/TR-90/Elect. Plan/CE/C-I
+Dated: 05.03.2019
+
+Subject: Approval of Electrification Plan in the colonies / Multi-storied Buildings /Group housing societies developed by HUDA / HSIIDC /Private Colonizers /SEZ - Load norms for Community sites and Nursing Homes in residential plotted colonies.
+
+This is with reference to Sales Circular No.U-20/2017 vide which the revised electrical norms were circulated. In the above mentioned circular, the load norms for the community facilities which are to be mandatorily provided in the townships/residential plotted colonies were not specified along with some other left out issues. Accordingly, the load norms for community sites in residential plotted colonies and clarification on some left out issues are hereby made as under:-
+(a) Load norm for Plot Size between 2 categories: - For plot size between two categories say 6.8 Marla which is between 6 Marla & 8 Marla, the ultimate load requirement will be calculated based on norm of next higher. For example for 6.8 Marla size plot, the proportionate load norm based on 8 Marla will be applicable. The load norm in class-A City for 8 Marla plots norm is 16 KW. Therefore for 6.8 Marla plots the load norm would be 13.6 KW and likewise.
+
+(b) Commercial Load :-The existing norms of Commercial load i.e. 16 KW per 100 SQ meter of FAR area would be applied on maximum permissible FAR for commercial area in plotted colony, which at present is 1.75 as per the provision of Haryana Building code. Wherever in a particular case the permissible FAR allowed in lay out plan is more than 1.75 than in that case the actual FAR approved in lay out plan be considered.
+
+(c) School Sites:- The load norms for various school sites in lay out plan will be as under: -
+
+Sr. No.  Community  Plot size  Load  [KW]  Demand  Factor  Ultimate  Load  [KW]  Ultimate  KVA
+1          High School  5 Acre   150      0.5          75               85
+2          Primary School  1.0 Acre  30       0.5          15               17
+
+3  Nursery
+   School              0.2 Acre   6      0.5     3      3.5
+4  Creche
+   School              0.2 Acre   6      0.5     3      3.5
+
+The above load requirement will be applicable for Plots having variation
+in plot size by +/- 10%. For other sizes of plot, the Load needs to be
+calculated @ 0.5 KW per 100 SQMM by taking permissible FAR of 1.5
+or higher as approved in lay out plan for plot area.
+
+(d)  Community Facilities:- The norms of similar like Community Facilities
+will be as under :-
+Sr. No.  Community
+          Facility         Size of Plot   Load per   Demand   Ultimate Load
+                           |              Plot       Factor   [KVA] with PF
+                           |              |          |        of 0.9
+1         ATM            12 SQM         8 KW      0.5      4.45
+2         Beauty Parlour 12 SQM         8 KW      0.5      4.45
+3         Multi-Purpose  5.00 x         8 KW      0.5      4.45
+          Booth          5.50 SQM
+4         Milk & Vegetable
+          Booth with     5.00 x         8 KW      0.5      4.45
+          toilet facility 5.50 SQM
+5         Sub-Post Office 40 SQM        8 KW      0.5      4.45
+6         Religious      0.2 Acre      6 KW      0.5      3.35
+          Building
+7         Police Post    1.0 Acre      10 KW     0.5      5.55
+8         Electric Sub-station 10 KW   0.5      5.55
+
+(e)  The Load Norms for community Sites relating to Health Facilities
+will be as under :-
+Sr. No.  Community
+          Facility         Size of Plot   Load per   D.F.     Ultimate Load
+                           |              Plot [KW]  |        [KVA] with PF
+                           |              |          |        of 0.9
+1         Health Centre / 2.5 Acre      760        0.5      422.22
+          Health Facility
+2         Dispensary /    1.25 Acre     380        0.5      211.11
+          Health Facility
+3         Nursing Home    1000 SQM     75         0.5      41.67
+4         Clinics          250 SQM      10         0.5      5.55
+
+The above load requirement will be applicable for Plots having
+variation in plot size by +/- 10%. For any plot in intervening area, the
+load will be calculated @ 5 KW per 100 SQ meter of FAR with FAR
+Ratio of 1.5 or higher as approved in lay out plan.
+
+(f)  The norms for club and community centres will be as under:-
+Sr. No.  Type of
+          Community       Plot size     Load [KW]  D.F.     Ultimate Load
+                                                      |        [KVA] with PF
+                                                      |        of 0.9
+1         Club            2 Acre       200         0.5      100
+2         Community      2 Acre       15 KW       0.5      7.5
+          centre
+
+Notes:-
+i) For club, the above load requirement will be applicable for Plots
+having variation in plot size by +/- 10%. For any plot in
+intervening area, the load will be calculated @ 2.5 KW per 100
+SQ meter of FAR with FAR Ratio of 1 or higher as approved in
+lay out plan.
+
+ii) For community centre irrespective of size of plot, the load will
+taken as 15 KW.
+
+(g) Load norm for communities area of Deen Dayal Affordable Housing
+scheme: - For affordable residential plotted colonies under Deen Dayal
+Jan Awas Yojna,2016, the specific communities are not defined and only
+area for communities is specified, which are normally around half acre to
+around 1 acre. For such community areas, the load norm would be 15
+KW per acre or part thereof.
+
+(h) Load norm of Water works, street Light and STP: - For this the
+developer will have to submit the approved details of services estimates
+by HUDA/TCP. In case of non-submission of service estimate, the load
+calculation will be finalized by concerned SE (OP) as per due diligence,
+which will be considered for approval.
+
+(i) Area of undetermined use: - For the Area of undetermined use, no load
+is to be taken as no usage is defined.
+
+The above instructions should be brought to the notice of all
+concerned for strict and meticulous compliance.
+
+Superintending Engineer / Commercial,
+UHBVN, Panchkula.
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: gmcommercialuhbvn@gmail.com, secommercial@uhbvn.org.in
+Endst. No. Ch-44/T&R-90/Elect. Plan/CE/C-I
+Dated: 05.03.2019
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Power), HPUs, Panchkula.
+2. PS to CMD in UHBVN & DHBVN.
+3. SPS to MD, HVPNL, Panchkula.
+4. SPS to MD, HPGCL, Panchkula.
+5. Dir.Vigilance, HVPN, Panchkula.
+6. SPS to Director (T-I)/Director (T-II) in UHBVN & DHBVN.
+7. CE/Comm., DHBVN, Hisar.
+8. CE/P&D&C UHBVN, Panchkula.
+9. CE/MM, UHBVN, Panchkula.
+10. CE/HPPC, Panchkula.
+11. CFO, UHBVN, Panchkula.
+12. CTO, UHBVN, Panchkula.
+13. Chief Electricity Inspector, Govt. of Haryana Sector-17, Chandigarh.
+14. SE/Monitoring, UHBVN, Panchkula.
+15. SE/Commercial, DHBVN, Hisar.
+16. SE/Admn., UHBVN, Panchkula.
+17. SE/O, UHBVN, Panchkula.
+18. S.E /workshop and store UHBVN Dhulkote (Ambala)
+19. SE/RAR, UHBVN, Panchkula.
+20. SE/Const. Circle, Room no. 105, Vidyut Sadan C-16 Sector-6 Panchkula.
+21. SE (M&P), UHBVN, Panchkula.
+22. SE/R-APDRP, UHBVN, Panchkula.
+23. Legal Remembrance, HVPN, Panchkula.
+24. F.A (HQR), UHBVN, Panchkula.
+25. Chief Auditor, UHBVN, Panchkula & Rohtak.
+26. Chief Account Officer, UHBVN, Panchkula.
+27. Chairman, CGRF, Kurukshetra.
+28. Company Secretary, UHBVN, Panchkula.
+29. XEN/IT, UHBVN, Panchkula.
+30. Deputy Secy. (Technical), UHBVN, Panchkula.
+31. Deputy Secy. (Project), UHBVN, Panchkula.
+32. Deputy Secy. (OP), HVPN, Panchkula.
+33. All XEN's (M&P) in UHBVN.
+34. RAO, Office of A.G., Haryana, SCO.No.33, Illrd floor, Chandigarh
+35. CPRO, UHBVN, Panchkula.
+36. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+37. Haryana Chamber of Commerce and Industries O/0 VPS Agro Oil Ind.(P) Ltd., Dhanwanti
+    Bhawan Railway Road, Kurukshetra.
+38. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial
+    Area, Phase-I, Panchkula-134113
+39. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17,
+    Chandigarh.
+40. Y.Nagar- Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd.,
+    Indl. Area, Y.Nagar, Haryana- 136001.
+41. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16,
+    Panchkula.
+42. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+43. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+44. Confederation of Indian Industries, Sector-31, Chandigarh.
+45. President Manufacturing Association, Sonepat.
+46. Director, Industries Association, Yamunanagar.
+47. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+48. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+49. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE,
+    Sector -7, Ambala City.
+50. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+51. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture
+    Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+52. All Billing Agencies NIELIT centre, Hartron, HCL (T) and TCS.
+
+Executive Engineer/Comm.
+for SE/Comm., UHBVN, Panchkula.

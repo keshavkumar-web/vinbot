@@ -1,0 +1,242 @@
+Source document: SC_I_04_2026.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+From                                      Sales Instruction No. U-04/2026
+Chief Engineer/Commercial,
+UHBVN, Panchkula
+
+To
+All CEs (OP), SEs (OP), XEN (OP), SDOs (OP)
+JEs-I In-charge Sub-office in UHBVN.
+
+Memo No. Ch-23/TR-90/CCHP/Loose/CE/C-I
+Dated: 14.05.2026
+
+Subject: Comprehensive Instructions and Standard Operating Procedure (SOP)
+for Consumer Grievance Redressal, Implementation of CGRF /
+Ombudsman / HERC Orders.
+
+Hon’ble Haryana Electricity Regulatory Commission (HERC), vide Order
+dated 24.04.2026 in Case No. HERC/P. No.25 of 2026 has directed to issue a Standard
+Operating Procedure (SOP) for complying with the orders of CGRF / Electricity
+Ombudsman / Commission / Court effectively.
+
+This Sales Instruction contains a consolidated and comprehensive SOP, in
+compliance with HERC (Forum and Ombudsman) Regulations, 2020 as amended, Sales
+Circulars U-09/2022, U-20/2024.
+
+1. Objective
+To establish a uniform, transparent, consumer-friendly and regulation-
+compliant framework for:
+• Redressal of consumer grievances.
+• Timely implementation of CGRF / Ombudsman / HERC orders.
+• Proper defence of cases before judicial and quasi-judicial forums.
+• Fixation of responsibility, disciplinary action and recovery of costs.
+• Effective monitoring and review at all levels.
+
+2. Consumer Grievance Redressal Forum Structure & Jurisdiction
+
+Forum Level          Composition                                      Monetary Jurisdiction
+Divisional Forum     XEN/OP (Chairperson), AO/DA,AEE/AE         Up to ₹50,000
+                      (Member), Consumer Rep (Invitee)
+
+Circle Forum        SE/OP (Chairperson), AO/DA, XEN (OP)      ₹50,000 - ₹1,00,000
+                     (Member), Consumer Rep (Invitee)
+
+Zonal Forum         CE/OP (Chairperson), AO/DA, XEN (OP)      ₹1,00,000 - ₹3,00,000
+                     (Member), Consumer Rep (Invitee)
+
+Corporate Forum     Chairperson & Members as per HERC approval  Above ₹3,00,000
+
+12
+
+3. Consumer Grievance Redressal Workflow
+   Grievances shall be registered directly on the UHBVN CGRF IT Platform
+   and auto routed to the appropriate forum. No intermediate or non-statutory mechanism
+   shall be followed. The portal can be accessed at the following URL:
+   https://cgrf.uhbvn.org.in.
+
+3.1 Registration of Grievance
+   Activity                                         Responsibility            Timeline
+   Register grievance on UHBVN Grievance           Consumer / Suvidha       Immediate
+   Redressal Forum (CGRF) portal                   Kendra /
+   Acknowledgement of grievance                     System / Suvidha Kendra  Within 24 hours
+   Auto-routing to correct Forum based on          IT System                 Instantaneous
+   monetary value and nature
+
+3.2 Proceedings before the CGRF (All Four Levels)
+   Activity                                         Timeline (as per HERC Regulations)
+   Receipt of grievance by Forum                     Same day (automated)
+   Calling para wise comments from                   Within 10 days
+   concerned office
+   Scheduling of hearing                              Within 30 days
+   Disposal of grievance through a reasoned          Within 45 days of receipt
+   order
+   Communication of order to consumer                Within 7 days of order
+
+4. Implementation of CGRF / Ombudsman Orders (21-Day Regulatory Window)
+   All orders shall be implemented strictly within 21 days as mandated under
+   Regulation 2.32 of HERC Regulations. The detailed implementation workflow, including
+   cases requiring legal opinion, shall ensure compliance within this statutory limit.
+
+   Activity                                         Responsibility            Timeline
+   Receipt and acknowledgement of CGRF Order       Sub-Division              Within 48
+                                                   Division                  hours
+   Preliminary examination of CGRF order and       SDO/XEN                  By Day 3
+   assessment of compliance requirements,
+   including determination whether legal advice is
+   required
+   A. Where Legal Advice is NOT Required
+   Preparation of implementation plan                CA/SDO/XEN              By Day 5
+   Execution of compliance actions                   CA/SDO/XEN/SE-         By Day 14
+                                                   CBO
+   Submission of compliance report                   CA/SDO/XEN              By Day 15
+   Upload compliance & notify Forum                  CA/SDO/XEN              By Day 18-21
+   B. Where Legal Advice IS Required
+   Forwarding of reference to LR/HPUs with          CA/SDO/XEN/SE           By Day 3
+   clearly identified legal issues
+   LR/HPUs to issue legal opinion                    LR/HPUs                 By Day 8
+   Review of legal opinion and finalization of      XEN/SE                   By Day 10
+   implementation plan
+   Execution of compliance post-legal advice        CA/SDO/XEN/SE-         By Day 17
+                                                   CBO
+   Upload compliance & notify Forum                  CA, SDO/XEN             By Day 18-21
+
+   As per Regulation 2.32 of the HERC (Forum and Ombudsman)
+   Regulations, 2020, implementation of CGRF orders shall be completed within 21 days
+   of receipt of the order. Seeking legal opinion from LR/HPUs shall not be used as a
+   delay.
+
+13
+D/New folder 2026/Draft Sales Instructions 2026
+
+ground for delay beyond the prescribed timeline, except in exceptional cases as
+permitted under the Regulations, with reasons recorded in writing.
+
+5. Digitized Workflow through UHBVN CGRF Platform
+The entire grievance redressal workflow—including registration, routing,
+hearings, order issuance, implementation, monitoring, and reporting—shall be executed
+exclusively through the UHBVN CGRF IT Platform. The IT Wing shall ensure
+uninterrupted availability, auto-routing, alerts, dashboards, MIS reporting and user
+support. Manual processes or offline handling are strictly prohibited.
+
+5.1 Responsibilities of IT Wing
+The IT Wing shall ensure:
+• Full operational readiness of the CGRF IT Platform;
+• Auto-routing based on jurisdiction and monetary value;
+• Secure digital hearing and order processes;
+• Automatic alerts for timeline breaches;
+• MIS dashboards for Divisional, Circle, Zonal and Corporate monitoring;
+• Regular maintenance, upgrades, and uptime assurance;
+• User training and helpdesk support.
+
+6. Defending of Cases before CGRF, Ombudsman, HERC & Courts
+All cases shall be defended diligently. The concerned CA/SDO/XEN/CBO
+shall be responsible for facts, records, timely filing of replies, engagement of counsel
+and presence on each date of hearing.
+
+7. Compliance with CGRF/Regulatory/Court/ Tribunal Orders
+All orders of Courts, Tribunals, CGRF, Ombudsman and HERC shall be
+complied with promptly. No order shall be ignored, delayed or selectively implemented.
+
+8. Erroneous / Disputed Billing Grievances
+Grievances relating to Billing/Audit HM’s shall be handled as per Sales
+Circular No. U-16/2022 and U-09/2024. However, once adjudicated by CGRF or
+Ombudsman, implementation shall be strictly as per this SOP.
+
+9. Penal Provisions & Disciplinary Action
+Any dereliction of duty, delay, negligence or non-compliance shall attract
+action under UHBVN Employees (Punishment & Appeal) Regulations, 2018. Penalties
+may include censure, withholding of increments, recovery of loss, or major penalty
+proceedings.
+
+10. Recovery of Costs & Financial Loss
+Any cost, compensation or penalty imposed by CGRF, Ombudsman, HERC
+or Courts due to negligence or delay shall be recovered from the responsible
+officer(s)/official(s) in addition to disciplinary action.
+
+11. Review & Monitoring Mechanism of implementation of CGRF / Ombudsman
+Orders
+Weekly reviews at XEN level, fortnightly at SE level, monthly at CE level,
+bi-monthly at Director/Operations level and quarterly reviews at WTDs level shall be
+conducted.
+
+12. Accountability & Reporting
+Delays, non-compliance with Forum orders, or failure to use the IT
+platform shall be recorded in the officer's performance appraisal and may attract
+administrative action under UHBVN rules and HERC Regulations, including
+proceedings under Section 142 of the Electricity Act, 2003.
+This Sales Circular shall be read in conjunction with Sales Circular U-
+09/2022, U-20/2024. All concerned shall ensure meticulous compliance with these
+SOP guidelines.
+The above instructions should be brought to notice of all concerned for
+meticulous compliance.
+
+(Deepak Koli)
+Chief Engineer/Commercial
+UHBVN, Panchkula
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. Ch-23/70-CCHP/Loose/CE/C-1
+Dated: 11.05.2026
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, DHBVN, Hisar.
+5. SPS to MD, HVPNL, Panchkula.
+6. SPS to MD, HPGC, Panchkula.
+7. Dir./ Vigilance, HVPN, Panchkula.
+8. SPS to Director (Proj)/ Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comm., DHBVN, Hisar.
+11. CE/P&D&C UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPPC, Panchkula.
+14. CE/I, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, UHBVN, Hisar.
+19. CE/Admn., UHBVN, Panchkula.
+20. CE/So, UHBVN, Panchkula.
+21. SE/R & S, workshop and store UHBVN Dhulkote (Ambala)
+22. SE/RA, UHBVN, Panchkula.
+23. SE/Const. Circle, UHBVN Panchkula.
+24. SE(M&P), UHBVN Dhulkote (Ambala )
+25. SE/RAPDRP, UHBVN, Panchkula.
+26. Legal Remembrancer, HVPNL, Panchkula.
+27. F.A/HQ, UHBVN, Panchkula.
+28. Chief Auditor, UHBVN, Panchkula & Rohtak.
+29. Chief Accounts Officer, UHBVN, Panchkula.
+30. Chairman, CERC, Kurukshetra.
+31. XEN/I, UHBVN, Panchkula.
+32. Deputy Secy. (Technical), UHBVN, Panchkula.
+33. Deputy Secy. (Project), UHBVN, Panchkula.
+34. Deputy Secy. (OP), HVPN, Panchkula.
+35. All XEN's (M&P) in UHBVN.
+36. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sraoca@gmail.com ).
+37. CRPO, UHBVN, Panchkula.
+38. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+39. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhanwanti Bhawan Railway Road, Kurukshetra.
+40. The Haryana Chamber of Commerce and Industry (Dist.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+41. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+42. Y.Nagar-Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+43. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+44. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra).
+45. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+46. Federation of Indian Industries, Sector-31, Chandigarh.
+47. President Manufacturing Association, Sonepat.
+48. Director, Industries Association, Yamunanagar.
+49. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+50. Haryana Solvent Extractor's Association O/o Pee-Age Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+51. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+52. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+53. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+54. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Shyam Nagar, GT Road, Karnal-132 001.
+55. All Billing Agencies NIELIT Centre, Hartron and HCL (T)
+
+Executive Engineer/Comml.
+UHBVN, Panchkula.

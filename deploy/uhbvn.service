@@ -1,0 +1,18 @@
+[Unit]
+Description=UHBVN Assistant API (uhbvn.vinbox.in)
+After=network.target
+
+[Service]
+User=uhbvn
+Group=uhbvn
+WorkingDirectory=/opt/uhbvn/backend
+EnvironmentFile=/opt/uhbvn/backend/.env
+# Single worker: sessions are stored in process memory (see app/sessions.py).
+# Running multiple workers would split a user's chat history across processes.
+ExecStart=/opt/uhbvn/backend/.venv/bin/uvicorn app.main:app \
+          --host 127.0.0.1 --port 8000 --workers 1 --timeout-keep-alive 75
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

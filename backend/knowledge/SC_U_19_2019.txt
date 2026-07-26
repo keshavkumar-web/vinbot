@@ -1,0 +1,124 @@
+Source document: SC_U_19_2019.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Circular No. U- 19 /2019
+
+From
+Chief Engineer (Comml.)
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs(OP)/XENs(OP)/SDOs(OP),
+JEs-I Incharge, Sub-office in UHBVN.
+
+Memo No.:  4103/DS/7-295/Index folder/CE/C-1
+Dated:  10-06-2019
+
+Subject: Connection of new consumer on existing
+independent feeder.
+
+The existing instructions with regard to independent
+feeder have been provisioned in Sales Circular No.U-32/2016 and
+U-35/2016 as per HERC regulation No. HERC/34/2016 dated
+11.7.2016 on power to recover expenditure. As per the provisions
+of clause 4.8.2(vii) of the regulations, the consent of original
+consumer is not required when the load is less than 70% of the
+rated capacity of the feeder. Since the maximum capacity allowed
+is 5 MVA on 11 KV feeder and 25 MVA on 33 KV level and keeping
+in view the fact that the size of the conductor/cable provided is not
+exactly equivalent to the existing load, therefore for proper
+implementation of the regulations, following clarifications are
+hereby given:-
+
+(a) For independent feeder, at 11 KV level, the maximum
+capacity to be considered for feeder is 5000 KVA and 70%
+would be 3500 KVA. Therefore when the contract demand of
+the consumers already connected on independent feeder is
+equal to or greater than 3500 KVA irrespective of size of
+conductor / cable, for new addition the consent of original
+consumer must be taken before sanctioning the connectivity
+of new consumer on existing independent feeder. Also, when
+on adding the load of new consumer the combined load
+exceeds 3500 KVA, in that case also the consent of original
+consumers be taken.
+
+(b) For independent feeder, at 33 KV level, the maximum
+capacity to be considered for feeder is 25 MVA and 70%
+would be 17.5 MVA. Therefore, when the contract demand of
+the consumers already connected on independent feeder is
+equal to or greater than 17.5 MVA irrespective of size of
+cable/conductor, for new addition the consent of original
+consumer must be taken before sanctioning the connectivity
+of new consumer on existing independent feeder. Also, when
+on adding the load of new consumer the combined load
+exceeds 17.5 MVA in that case also the consent of original
+consumer be taken.
+
+The sales circulars No.U-32/2016 and U-35/2016 are
+amended to the above extent.
+
+The above instructions may be brought to the notice of
+all concerned for meticulous compliance.
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: cgmcommercialuhbvn@gmail.com, secommercial@uhbvn.org.in
+Endst. No. Ch-3/DST-295/Ind. Feeder/CE/C-I
+Dated: 10.06.2019
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Power), HPUs, Panchkula.
+2. PS to CMD in UHBVN & DHBVN.
+3. SPS to MD, HVPNL, Panchkula.
+4. SPS to MD, HPGCL, Panchkula.
+5. Dir./Vigilance, HVPN, Panchkula.
+6. SPS to Director (T-I)/Director (T-II) in UHBVN & DHBVN.
+7. CE/Comm., UHBVN, Hisar.
+8. CE/MM, UHBVN, Panchkula.
+9. CE/HPPC, Panchkula.
+10. CFO, UHBVN, Panchkula.
+11. CTO, UHBVN, Panchkula.
+12. Chief Electricity Inspector, Govt. of Haryana Sector-17, Chandigarh.
+13. SE/Monitoring, UHBVN, Panchkula.
+14. SE/Commercial, UHBVN, Hisar.
+15. SE/Adm., UHBVN, Panchkula.
+16. SE/SO, UHBVN, Panchkula.
+17. SE/workshop and store UHBVN Dhulkote (Ambala)
+18. SE/RA, UHBVN, Panchkula.
+19. SE/Const. Circle, Room no. 105, Vidyut Sadan C-16 Sector-6 Panchkula.
+20. SE (M&P), UHBVN, Panchkula.
+21. SE/R-ARDRP, UHBVN, Panchkula.
+22. Legal Remembrance, HVPN, Panchkula.
+23. F.A. (HQR), UHBVN, Panchkula.
+24. Chief Auditor, UHBVN, Panchkula & Rohtak.
+25. Chief Account Officer, UHBVN, Panchkula.
+26. Chairman, CGRF, Kurukshetra.
+27. Company Secretary, UHBVN, Panchkula.
+28. XEN/IT, UHBVN, Panchkula.
+29. Deputy Secy. (Technical), UHBVN, Panchkula.
+30. Deputy Secy. (Project), UHBVN, Panchkula.
+31. Deputy Secy. (OP), HVPN, Panchkula.
+32. All XENs (M&P) in UHBVN.
+33. RAO, Office of A.G., Haryana, SCO.No.33, IIIrd floor, Chandigarh
+34. CPRO, UHBVN, Panchkula.
+35. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+36. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhanwati Bhawan Railway Road, Kurukshetra.
+37. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+38. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+39. Y.Nagar- Jagadhri Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+40. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+41. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+42. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+43. Confederation of Indian Industries, Sector-31, Chandigarh.
+44. President Manufacturing Association, Sonepat.
+45. Director, Industries Association, Yamunanagar
+46. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+47. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkehra Hisar
+48. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+49. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+50. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+51. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+52. All Billing Agencies NIELIT centre, Hartron, HCL (T) and TCS.
+
+Executive Engineer/Comm.
+for CE/Comm., UHBVN, Panchkula.

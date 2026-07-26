@@ -1,0 +1,1694 @@
+====================================================================
+HARYANA DISCOM - CHATBOT REFERENCE GUIDE
+COMMON ABBREVIATIONS USED IN DISCOM (UHBVN / DHBVN)
+====================================================================
+
+TABLE OF CONTENTS
+--------------------------------------------------------------------
+1.  Haryana Power Sector Organizations
+2.  Electricity Act 2003
+3.  HERC Regulations
+4.  Tariff Terminology
+5.  Consumer Categories
+6.  Billing & Revenue
+7.  Metering
+8.  Distribution System
+9.  Protection (ANSI Relay Numbers)
+10. SCADA
+11. GIS & Asset Management
+12. Energy Accounting
+13. Commercial Loss Reduction
+14. Vigilance & Enforcement
+15. Safety
+16. Renewable Energy
+17. Grid Operations
+18. Finance
+19. Stores & Procurement
+20. IT Systems
+21. Government Schemes
+22. Standards
+23. Office Abbreviations
+24. Right to Service (RTS) & Grievance Redressal
+====================================================================
+
+
+====================================================================
+1. HARYANA POWER SECTOR ORGANIZATIONS
+====================================================================
+
+BBMB
+Full Form: Bhakra Beas Management Board
+Category: Haryana Power Sector Organizations
+Description: Inter-state body managing power and irrigation from Bhakra and Beas projects; supplies share of power to Haryana.
+Example: Haryana draws hydel power allocation from BBMB.
+
+CMD
+Full Form: Chairman-cum-Managing Director
+Category: Haryana Power Sector Organizations
+Description: Apex executive head of a Haryana power utility such as UHBVN/DHBVN/HVPNL/HPGCL.
+Example: The CMD, UHBVN reviewed AT&C loss performance.
+
+DHBVN / DHBVNL
+Full Form: Dakshin Haryana Bijli Vitran Nigam Limited
+Category: Haryana Power Sector Organizations
+Description: Distribution company responsible for power supply in southern Haryana districts (Gurugram, Faridabad, Rewari, Hisar circle areas etc.).
+Example: DHBVN issued a revised billing schedule for Gurugram circle.
+
+HERC
+Full Form: Haryana Electricity Regulatory Commission
+Category: Haryana Power Sector Organizations
+Description: State regulator that determines tariff and issues regulations for Haryana's power sector under EA 2003.
+Example: HERC approved the annual revenue requirement of DISCOMs.
+
+HPGCL
+Full Form: Haryana Power Generation Corporation Limited
+Category: Haryana Power Sector Organizations
+Description: State generation company operating thermal power plants that supply electricity to Haryana DISCOMs.
+Example: HPGCL's Panipat plant contributes to the state's generation mix.
+
+HPPC
+Full Form: Haryana Power Purchase Centre
+Category: Haryana Power Sector Organizations
+Description: Nodal agency for scheduling and coordinating power purchase for both Haryana DISCOMs.
+Example: HPPC finalized the power purchase agreement for the coming quarter.
+
+HVPNL
+Full Form: Haryana Vidyut Prasaran Nigam Limited
+Category: Haryana Power Sector Organizations
+Description: State Transmission Utility (STU) responsible for intra-state transmission network (66 kV and above) in Haryana.
+Example: HVPNL commissioned a new 220 kV substation.
+
+MD
+Full Form: Managing Director
+Category: Haryana Power Sector Organizations
+Description: Executive head responsible for day-to-day operations of a Haryana power company.
+Example: The MD, DHBVN chaired the monthly revenue review meeting.
+
+UHBVN / UHBVNL
+Full Form: Uttar Haryana Bijli Vitran Nigam Limited
+Category: Haryana Power Sector Organizations
+Description: Distribution company responsible for power supply in northern Haryana districts (Panchkula, Ambala, Karnal, Hisar city areas etc.).
+Example: UHBVN launched a special OTS scheme for defaulting consumers.
+
+
+====================================================================
+2. ELECTRICITY ACT 2003
+====================================================================
+
+APTEL
+Full Form: Appellate Tribunal for Electricity
+Category: Electricity Act 2003
+Description: Statutory body under Section 110 of EA 2003 that hears appeals against orders of CERC/SERCs.
+Example: The DISCOM filed an appeal before APTEL against the HERC tariff order.
+
+CEA
+Full Form: Central Electricity Authority
+Category: Electricity Act 2003
+Description: Statutory body under Section 70 of EA 2003 advising on national power planning and technical standards.
+Example: CEA notified grid connectivity standards followed by HVPNL.
+
+CERC
+Full Form: Central Electricity Regulatory Commission
+Category: Electricity Act 2003
+Description: National-level regulator under Section 76 of EA 2003 for inter-state transmission and tariff matters.
+Example: CERC regulates the tariff for inter-state generating stations supplying Haryana.
+
+CTU
+Full Form: Central Transmission Utility
+Category: Electricity Act 2003
+Description: Central agency under Section 38 of EA 2003 responsible for inter-state transmission planning.
+Example: CTU coordinates with HVPNL for inter-state power evacuation.
+
+DISCOM
+Full Form: Distribution Company
+Category: Electricity Act 2003
+Description: Licensee under Section 14 of EA 2003 responsible for distribution and retail supply of electricity in a specified area.
+Example: UHBVN and DHBVN are the two DISCOMs operating in Haryana.
+
+EA 2003
+Full Form: Electricity Act, 2003
+Category: Electricity Act 2003
+Description: The central legislation that unbundled the power sector, introduced open access, and created SERC/CERC/APTEL.
+Example: Tariff determination in Haryana is governed by provisions of EA 2003.
+
+OA
+Full Form: Open Access
+Category: Electricity Act 2003
+Description: Provision under Section 42 of EA 2003 allowing consumers above a specified load to procure power from a source other than the DISCOM.
+Example: A large industrial consumer applied for OA to purchase power from an IPP.
+
+SERC
+Full Form: State Electricity Regulatory Commission
+Category: Electricity Act 2003
+Description: State-level regulator under Section 82 of EA 2003; HERC is Haryana's SERC.
+Example: HERC, as the SERC for Haryana, notified the Supply Code.
+
+STU
+Full Form: State Transmission Utility
+Category: Electricity Act 2003
+Description: State agency under Section 39 of EA 2003 responsible for intra-state transmission; HVPNL is Haryana's STU.
+Example: HVPNL functions as the STU for the State of Haryana.
+
+
+====================================================================
+3. HERC REGULATIONS
+====================================================================
+
+ARR
+Full Form: Annual Revenue Requirement
+Category: HERC Regulations
+Description: Total revenue a DISCOM needs to recover its costs, filed annually with HERC for approval.
+Example: DHBVN filed its ARR petition for FY 2026-27 with HERC.
+
+MYT
+Full Form: Multi Year Tariff
+Category: HERC Regulations
+Description: HERC framework fixing tariff-determining parameters for a control period (usually 3-5 years) instead of annually.
+Example: The current MYT control period for Haryana DISCOMs runs till FY 2027.
+
+RST
+Full Form: Retail Supply Tariff
+Category: HERC Regulations
+Description: HERC order specifying category-wise tariff to be charged to end consumers.
+Example: HERC issued the RST order effective from the new financial year.
+
+SLA
+Full Form: Standards of Performance / Service Level Agreement
+Category: HERC Regulations
+Description: HERC-notified standards specifying timelines for new connections, fault rectification, and compensation for non-compliance.
+Example: HERC's SOP Regulations mandate compensation for delayed new connections.
+
+SOP
+Full Form: Standards of Performance Regulations
+Category: HERC Regulations
+Description: HERC regulation prescribing minimum service standards for DISCOMs, including penalties for default.
+Example: A consumer claimed compensation under HERC's SOP Regulations for a delayed meter replacement.
+
+TVAF
+Full Form: True-up, Verification and Adjustment Framework
+Category: HERC Regulations
+Description: Mechanism used by HERC to true-up actual expenses/revenue against approved ARR of previous years.
+Example: HERC carried out the true-up exercise for UHBVN's FY 2024-25 accounts.
+
+
+====================================================================
+4. TARIFF TERMINOLOGY
+====================================================================
+
+ABR
+Full Form: Average Billing Rate
+Category: Tariff Terminology
+Description: Average revenue realized per unit of electricity billed, used in AT&C loss calculation.
+Example: ABR is compared with ACS to compute the revenue gap.
+
+ACS
+Full Form: Average Cost of Supply
+Category: Tariff Terminology
+Description: Average cost incurred by a DISCOM to supply one unit of electricity, including power purchase and O&M costs.
+Example: The gap between ACS and ABR indicates the DISCOM's revenue shortfall.
+
+APPC
+Full Form: Average Power Purchase Cost
+Category: Tariff Terminology
+Description: Average cost of purchasing one unit of power by the DISCOM across all its sources; used in tariff, power-cost and revenue-gap analysis.
+Example: The APPC year-wise trend is reviewed while filing the ARR with HERC.
+
+FAC
+Full Form: Fuel Adjustment Charge
+Category: Tariff Terminology
+Description: Charge levied to pass through variation in fuel cost of generation to consumers (also called FSA in Haryana tariff orders).
+Example: FAC was revised due to an increase in coal prices.
+
+FC
+Full Form: Fixed Charge
+Category: Tariff Terminology
+Description: Demand-based tariff component charged per kW/kVA of sanctioned/contract load, irrespective of actual consumption.
+Example: An industrial consumer's bill includes both Fixed Charge and Energy Charge.
+
+FSA
+Full Form: Fuel and Power Purchase Cost Adjustment
+Category: Tariff Terminology
+Description: HERC-approved quarterly/monthly surcharge to recover variation in power purchase cost from the approved tariff order estimate.
+Example: FSA of Rs. 0.35/unit was levied for the quarter.
+
+MMC
+Full Form: Minimum Monthly Charges
+Category: Tariff Terminology
+Description: Minimum amount billed to a consumer per month regardless of actual/lower consumption, as per tariff schedule.
+Example: A consumer with zero consumption was still billed MMC.
+
+PPAC
+Full Form: Power Purchase Adjustment Charge
+Category: Tariff Terminology
+Description: Alternate term used for pass-through of power purchase cost variations to consumers.
+Example: PPAC is reviewed quarterly based on actual purchase cost.
+
+TOD
+Full Form: Time of Day Tariff
+Category: Tariff Terminology
+Description: Tariff mechanism charging different rates for energy consumed during peak and off-peak hours.
+Example: Industrial consumers pay a TOD surcharge during evening peak hours.
+
+ToU
+Full Form: Time of Use Tariff
+Category: Tariff Terminology
+Description: Similar to TOD; differentiated tariff structure based on time-blocks of consumption, increasingly used with smart meters.
+Example: Smart meter data enables ToU billing for HT consumers.
+
+
+====================================================================
+5. CONSUMER CATEGORIES
+====================================================================
+
+AP
+Full Form: Agricultural Pumpset
+Category: Consumer Categories
+Description: Consumer category for irrigation tube-well/pumpset connections, typically metered/unmetered flat-rate supply.
+Example: AP category consumers receive subsidized tariff for tube-well connections.
+
+BPL
+Full Form: Below Poverty Line
+Category: Consumer Categories
+Description: Domestic consumer sub-category eligible for concessional tariff/subsidy under government schemes.
+Example: BPL category consumers get a lower slab rate for the first block of units.
+
+Bulk Supply
+Full Form: Bulk Supply
+Category: Consumer Categories
+Description: Supply given at a single point to a bulk consumer (e.g., a group-housing society, township or institution) that redistributes internally. Haryana connection/load reports list "Bulk" and "Bulk Supply (Domestic)" as separate columns.
+Example: A group-housing society is billed as a single Bulk Supply consumer.
+
+DMRC
+Full Form: Delhi Metro Rail Corporation
+Category: Consumer Categories
+Description: Dedicated bulk/traction consumer category for the metro rail network where its lines draw power from the DISCOM's area.
+Example: DMRC appears as a distinct bulk consumer column in the connection/connected-load reports.
+
+DS
+Full Form: Domestic Supply
+Category: Consumer Categories
+Description: Consumer category for residential/household electricity connections.
+Example: DS category tariff is charged in a slab-wise structure.
+
+EHT
+Full Form: Extra High Tension (Consumer)
+Category: Consumer Categories
+Description: Consumer supplied at extra-high voltage (typically 132 kV and above), used for very large industrial/traction loads.
+Example: A large steel plant takes supply at EHT (132 kV).
+
+FPO
+Full Form: Farmer Producer Organisation
+Category: Consumer Categories
+Description: Agro/agri-allied consumer category (grouped as "Agro Ind./FPO" in the reports) covering farmer producer organisations and agro-processing units.
+Example: An "Agro Ind./FPO" connection covers the agro-processing load of a farmer producer organisation.
+
+Gaushala
+Full Form: Gaushala (Cow Shelter)
+Category: Consumer Categories
+Description: Concessional consumer category for cow-shelter establishments, listed as a separate column in Haryana connection/load reports.
+Example: Gaushalas are billed under a subsidised category as notified by the State.
+
+HT
+Full Form: High Tension (Consumer)
+Category: Consumer Categories
+Description: Consumer supplied at 11 kV and above, typically large industrial/commercial loads.
+Example: An HT industrial consumer is billed on a kVAh/TOD basis.
+
+LT
+Full Form: Low Tension (Consumer)
+Category: Consumer Categories
+Description: Consumer supplied at 230V/440V, covering domestic, small commercial and small industrial loads.
+Example: Most domestic connections in Haryana fall under the LT category.
+
+NDS
+Full Form: Non-Domestic Supply
+Category: Consumer Categories
+Description: Tariff category for commercial/shop/office connections.
+Example: A retail shop is billed under the NDS category.
+
+NRS
+Full Form: Non-Residential Supply
+Category: Consumer Categories
+Description: Alternate/legacy term for commercial (non-domestic) consumer category.
+Example: NRS category rates are higher than DS category rates.
+
+PSP
+Full Form: Public Street Lighting / Public Water Works and Sewerage Pumping
+Category: Consumer Categories
+Description: Consumer category covering municipal street lighting and public water-supply/sewerage pumping loads.
+Example: The municipal corporation is billed under the PSP category for streetlights.
+
+PWW / P.W.W.
+Full Form: Public Water Works
+Category: Consumer Categories
+Description: Consumer category for public water-supply and sewerage pumping installations run by municipal/public bodies (a subset of the PSP category); listed as "P.W.W." in the connection reports.
+Example: The town's water-works pumping station is billed under the P.W.W. category.
+
+SP
+Full Form: Small Power / Supply
+Category: Consumer Categories
+Description: Category for small industrial/power loads distinct from bulk large industrial supply.
+Example: A small workshop is connected under the SP category.
+
+TW
+Full Form: Tube-well
+Category: Consumer Categories
+Description: Sub-category of agricultural connection specifically for groundwater irrigation tube-wells.
+Example: TW connections often use a flat-rate tariff based on pump HP.
+
+
+====================================================================
+6. BILLING & REVENUE
+====================================================================
+
+ACD
+Full Form: Advance Consumption Deposit
+Category: Billing & Revenue
+Description: Deposit collected in advance against anticipated consumption, adjustable in future bills.
+Example: A new bulk consumer paid ACD along with the security deposit.
+
+Arrear
+Full Form: Arrear (Outstanding Dues)
+Category: Billing & Revenue
+Description: Unpaid balance of a previous bill carried forward to the current bill, often attracting surcharge.
+Example: The consumer's bill showed an arrear of Rs. 4,500 from last month.
+
+FAC
+Full Form: Fuel Adjustment Charge
+Category: Billing & Revenue
+Description: See Tariff Terminology chapter; also appears as a distinct line item on the consumer bill.
+Example: FAC is shown separately in the billed amount breakup.
+
+Gross Billing
+Full Form: Gross Billing
+Category: Billing & Revenue
+Description: Billing method where the full generated/exported energy (e.g., from rooftop solar) is billed separately from import, without netting.
+Example: A solar consumer opting for gross billing is paid a separate feed-in tariff.
+
+Interest on Security
+Full Form: Interest on Security Deposit
+Category: Billing & Revenue
+Description: Annual interest payable/adjustable by DISCOM to consumer on the security deposit held, as per HERC norms.
+Example: Interest on Security was credited in the consumer's March bill.
+
+Late Payment Surcharge (LPSC)
+Full Form: Late Payment Surcharge
+Category: Billing & Revenue
+Description: Additional charge levied when a bill is not paid within the due date.
+Example: LPSC of 1.5% was added for the delayed payment.
+
+MMC
+Full Form: Minimum Monthly Charges
+Category: Billing & Revenue
+Description: See Tariff Terminology chapter; the floor amount charged each billing cycle.
+Example: MMC applied since actual bill was below the minimum threshold.
+
+Net Billing
+Full Form: Net Billing
+Category: Billing & Revenue
+Description: Billing method for net-metered consumers where import and export units are netted before billing.
+Example: Under net billing, only the net consumed units are charged.
+
+OTS
+Full Form: One Time Settlement
+Category: Billing & Revenue
+Description: Scheme allowing defaulting consumers to clear outstanding dues within a limited window, usually with a waiver/rebate on surcharge or interest.
+Example: UHBVN launched a special OTS scheme for defaulting consumers.
+
+PDCO
+Full Form: Permanent Disconnection Order
+Category: Billing & Revenue
+Description: Order for permanently disconnecting a consumer's supply, typically due to long-term non-payment or consumer request.
+Example: PDCO was issued after six months of continuous non-payment.
+
+Reconnection
+Full Form: Reconnection (Charges)
+Category: Billing & Revenue
+Description: Restoration of supply after disconnection on payment of outstanding dues and reconnection fee.
+Example: Reconnection was carried out within 24 hours of dues clearance.
+
+Security Deposit
+Full Form: Consumption Security Deposit
+Category: Billing & Revenue
+Description: Refundable deposit collected at the time of new connection, equivalent to estimated consumption for a fixed period.
+Example: Security Deposit is revised periodically based on average consumption.
+
+Sundry Assessment
+Full Form: Sundry Assessment
+Category: Billing & Revenue
+Description: Ad-hoc billing raised for irregularities such as meter defect, theft, or unbilled periods, outside regular billing cycle.
+Example: A Sundry Assessment bill was raised after the meter was found burnt.
+
+TDCO
+Full Form: Temporary Disconnection Order
+Category: Billing & Revenue
+Description: Order for temporarily disconnecting supply, usually for short-term non-payment, reversible on dues clearance.
+Example: TDCO was issued for a consumer with two months' pending bill.
+
+
+====================================================================
+7. METERING
+====================================================================
+
+AMI
+Full Form: Advanced Metering Infrastructure
+Category: Metering
+Description: End-to-end system of smart meters, communication network and data management enabling remote read/control.
+Example: RDSS mandates AMI rollout for all consumers in Haryana.
+
+AMR
+Full Form: Automatic Meter Reading
+Category: Metering
+Description: Technology to remotely collect meter readings without manual visits, precursor to full AMI.
+Example: HT consumers' meters were enabled with AMR for monthly billing.
+
+Boundary Meter
+Full Form: Boundary Meter
+Category: Metering
+Description: Meter installed at the interface point between two utilities/areas to account for energy exchange.
+Example: A boundary meter records energy flow between DHBVN and UHBVN areas.
+
+Check Meter
+Full Form: Check Meter
+Category: Metering
+Description: Additional meter installed alongside the main meter for cross-verification of consumption.
+Example: A check meter was installed at a large HT consumer's premises for audit purposes.
+
+CT
+Full Form: Current Transformer
+Category: Metering
+Description: Instrument transformer that steps down high current for accurate metering/protection.
+Example: HT metering uses CT along with PT for accurate energy measurement.
+
+CTPT
+Full Form: Current Transformer - Potential Transformer (Metering Unit)
+Category: Metering
+Description: Combined CT-PT unit used for metering HT/EHT consumers where direct metering is not feasible.
+Example: The CTPT ratio was verified during the meter testing.
+
+DLMS
+Full Form: Device Language Message Specification
+Category: Metering
+Description: International protocol/standard used for communication with smart/AMR meters.
+Example: New smart meters comply with the DLMS/COSEM protocol.
+
+Energy Meter
+Full Form: Energy Meter
+Category: Metering
+Description: General term for a meter measuring electrical energy consumption in kWh/kVAh.
+Example: A single-phase energy meter is installed for domestic connections.
+
+HES
+Full Form: Head End System
+Category: Metering
+Description: Central software system that communicates with smart meters to collect data and send commands.
+Example: The HES receives daily consumption data from all AMI meters.
+
+MDM
+Full Form: Meter Data Management (System)
+Category: Metering
+Description: System that validates, stores and processes meter data received from HES for billing and analytics.
+Example: MDM flags meters with abnormal consumption patterns.
+
+MRI
+Full Form: Meter Reading Instrument
+Category: Metering
+Description: Handheld device used by meter readers to capture and download meter readings.
+Example: The meter reader used an MRI unit for spot billing.
+
+Net Meter
+Full Form: Net Meter
+Category: Metering
+Description: Bidirectional meter recording both import from and export to the grid, used for rooftop solar net-metering.
+Example: A net meter was installed for the residential rooftop solar consumer.
+
+Prepaid Meter
+Full Form: Prepaid Meter
+Category: Metering
+Description: Meter requiring advance recharge; supply is disconnected automatically on balance exhaustion.
+Example: Government offices are being shifted to prepaid meters under RDSS.
+
+PT
+Full Form: Potential Transformer (Voltage Transformer)
+Category: Metering
+Description: Instrument transformer that steps down high voltage to a standard low value for metering/protection; used together with a CT for HT/EHT metering.
+Example: HT metering uses a CT along with a PT for accurate energy measurement.
+
+Reference Meter
+Full Form: Reference Meter
+Category: Metering
+Description: Highly accurate standard meter used to test and calibrate field meters.
+Example: The testing lab uses a reference meter to check accuracy of field meters.
+
+Smart Meter
+Full Form: Smart Meter
+Category: Metering
+Description: Digital meter with two-way communication capability enabling remote reading, TOD billing and prepaid functionality.
+Example: RDSS targets 100% smart metering across Haryana DISCOMs.
+
+Tri-vector Meter
+Full Form: Tri-vector Meter
+Category: Metering
+Description: Meter that simultaneously records kWh, kVAh and kVARh for comprehensive energy accounting of HT/EHT consumers.
+Example: A tri-vector meter is mandatory for industrial HT connections.
+
+
+====================================================================
+8. DISTRIBUTION SYSTEM
+====================================================================
+
+AB Switch
+Full Form: Air Break Switch
+Category: Distribution System
+Description: Manually operated switch used to isolate a line/feeder section in open air, without load-breaking capacity in some designs.
+Example: The lineman opened the AB Switch before starting maintenance work.
+
+Busbar
+Full Form: Busbar
+Category: Distribution System
+Description: Conducting bar in a substation used to collect and distribute electrical power among incoming/outgoing feeders.
+Example: The 33 kV busbar was extended to accommodate a new feeder bay.
+
+Cable
+Full Form: Underground Cable
+Category: Distribution System
+Description: Insulated conductor laid underground for power transmission/distribution, common in urban Haryana feeders.
+Example: An 11 kV XLPE cable was laid for the new industrial feeder.
+
+Capacitor Bank
+Full Form: Capacitor Bank
+Category: Distribution System
+Description: Group of capacitors installed to improve power factor and reduce reactive power losses on the feeder/substation.
+Example: A capacitor bank was installed at the 33/11 kV substation to improve voltage profile.
+
+Conductor
+Full Form: Conductor
+Category: Distribution System
+Description: Bare or insulated wire (ACSR, AAAC, etc.) used to carry electric current along overhead lines.
+Example: Weasel/Dog/Panther conductors are commonly used on 11 kV/33 kV lines.
+
+DO Fuse
+Full Form: Drop-Out Fuse
+Category: Distribution System
+Description: Expulsion-type fuse used to protect distribution transformers, which "drops out" visibly on operation.
+Example: The DO Fuse blew during the fault and was replaced during restoration.
+
+DTR
+Full Form: Distribution Transformer
+Category: Distribution System
+Description: Transformer stepping down 11 kV to 415V/230V for final consumer supply.
+Example: A 100 kVA DTR was installed to serve the new colony.
+
+Earth Wire
+Full Form: Earth Wire / Ground Wire
+Category: Distribution System
+Description: Wire connected to earth to protect line/equipment from lightning and fault currents.
+Example: The earth wire on the 33 kV line was checked during the audit.
+
+Feeder
+Full Form: Feeder
+Category: Distribution System
+Description: A distribution line (11 kV/33 kV) emanating from a substation supplying a defined area.
+Example: The 11 kV rural feeder tripped due to a tree fault.
+
+GO Switch
+Full Form: Gang Operated Switch
+Category: Distribution System
+Description: Switch operated simultaneously on all three phases using a single operating handle/lever.
+Example: A GO Switch was installed for load-break isolation on the feeder.
+
+Insulator
+Full Form: Insulator
+Category: Distribution System
+Description: Device (pin, disc, post type) used to electrically isolate the conductor from the supporting pole/tower.
+Example: A cracked insulator caused a flashover on the 11 kV line.
+
+kV
+Full Form: Kilovolt
+Category: Distribution System
+Description: Unit of voltage (1000 volts); Haryana's network operates at 11 kV, 33 kV, 66 kV, 132 kV and 220 kV levels.
+Example: The 132 kV grid substation feeds several 33 kV lines.
+
+LA
+Full Form: Lightning Arrester
+Category: Distribution System
+Description: Protective device that diverts lightning/surge overvoltages to earth, protecting transformers and equipment.
+Example: LAs are mounted on both sides of the DTR for surge protection.
+
+OCB
+Full Form: Oil Circuit Breaker
+Category: Distribution System
+Description: Circuit breaker using oil as the arc-quenching medium, largely being replaced by VCBs in Haryana substations.
+Example: The old OCB at the 33 kV bay was replaced with a VCB.
+
+RMU
+Full Form: Ring Main Unit
+Category: Distribution System
+Description: Compact SF6/air-insulated switchgear used in urban ring-main 11 kV distribution networks.
+Example: An RMU was installed to improve reliability in the ring-fed urban feeder.
+
+Stay Set
+Full Form: Stay Set (Guy Wire Assembly)
+Category: Distribution System
+Description: Anchoring assembly (stay wire, rod, insulator) used to provide mechanical support to a pole against pull/tension.
+Example: A stay set was fixed at the angle pole to prevent tilting.
+
+VCB
+Full Form: Vacuum Circuit Breaker
+Category: Distribution System
+Description: Circuit breaker using vacuum as the interrupting medium, widely used in 11 kV/33 kV switchgear.
+Example: The feeder is protected by a VCB at the substation.
+
+
+====================================================================
+9. PROTECTION (ANSI RELAY NUMBERS)
+====================================================================
+
+21
+Full Form: Distance (Impedance) Relay
+Category: Protection
+Description: Relay that measures impedance to determine fault location and distance on a transmission line.
+Example: A 21 relay is used for distance protection on 132 kV lines.
+
+25
+Full Form: Synchronizing / Synchronism-Check Relay
+Category: Protection
+Description: Relay that checks voltage, frequency and phase match before permitting breaker closure to synchronize two sources.
+Example: The 25 relay blocked closure due to phase angle mismatch.
+
+27
+Full Form: Undervoltage Relay
+Category: Protection
+Description: Relay that operates when voltage falls below a set threshold, protecting equipment from low-voltage conditions.
+Example: The 27 relay tripped the feeder during a severe voltage sag.
+
+32
+Full Form: Directional Power Relay
+Category: Protection
+Description: Relay that detects reverse power flow direction, used to protect against reverse power conditions.
+Example: A 32 relay prevents reverse power flow into a generator.
+
+40
+Full Form: Field (Loss of Excitation) Relay
+Category: Protection
+Description: Relay that detects loss of excitation/field current in a generator.
+Example: The 40 relay protects the generator against loss of field.
+
+46
+Full Form: Negative Sequence / Phase Balance Current Relay
+Category: Protection
+Description: Relay that detects unbalance in phase currents, indicating faults like single-phasing.
+Example: The 46 relay identified an unbalanced load condition on the feeder.
+
+49
+Full Form: Thermal (Machine/Transformer) Relay
+Category: Protection
+Description: Relay that protects equipment from overheating based on thermal image of load current.
+Example: The 49 relay tripped the transformer on sustained overload.
+
+50
+Full Form: Instantaneous Overcurrent Relay
+Category: Protection
+Description: Relay that operates instantly when current exceeds a set threshold, without intentional time delay.
+Example: The 50 relay cleared the close-in fault instantaneously.
+
+50N
+Full Form: Instantaneous Earth Fault Relay
+Category: Protection
+Description: Instantaneous relay operating on earth/ground fault current.
+Example: The 50N relay tripped the breaker on a phase-to-earth fault.
+
+51
+Full Form: Time Overcurrent Relay
+Category: Protection
+Description: Relay operating on overcurrent with an inverse or definite time delay characteristic.
+Example: The 51 relay provides backup overcurrent protection to the feeder.
+
+51N
+Full Form: Time-Delayed Earth Fault Relay
+Category: Protection
+Description: Time-delayed relay operating on earth fault current, coordinated with downstream protection.
+Example: The 51N relay is set with a time delay to allow selective tripping.
+
+59
+Full Form: Overvoltage Relay
+Category: Protection
+Description: Relay that operates when voltage exceeds a preset threshold.
+Example: The 59 relay tripped the capacitor bank on overvoltage.
+
+64
+Full Form: Ground (Earth) Fault Relay
+Category: Protection
+Description: Relay detecting earth faults, typically used for generator/transformer stator ground protection.
+Example: The 64 relay detected a stator ground fault in the generator.
+
+67
+Full Form: Directional Overcurrent Relay
+Category: Protection
+Description: Relay that operates on overcurrent only in a specified direction of power/fault flow.
+Example: The 67 relay ensures selective tripping in a ring-main network.
+
+79
+Full Form: Auto-Reclose Relay
+Category: Protection
+Description: Relay/function that automatically recloses a breaker after a trip to restore supply following transient faults.
+Example: The 79 relay successfully auto-reclosed the feeder after a transient fault.
+
+81
+Full Form: Frequency Relay
+Category: Protection
+Description: Relay operating on abnormal system frequency (over/under-frequency), used for load shedding schemes.
+Example: The 81 relay initiated under-frequency load shedding.
+
+86
+Full Form: Lockout Relay
+Category: Protection
+Description: Auxiliary relay that locks out the breaker after a trip until manually reset, preventing auto-reclosure.
+Example: The 86 relay locked out the breaker following a major transformer fault.
+
+87
+Full Form: Differential Relay
+Category: Protection
+Description: Relay comparing currents entering and leaving a protected zone (transformer/busbar/line) to detect internal faults.
+Example: The 87 relay tripped instantly on an internal transformer fault.
+
+
+====================================================================
+10. SCADA
+====================================================================
+
+ADMS
+Full Form: Advanced Distribution Management System
+Category: SCADA
+Description: Integrated platform combining SCADA, DMS and OMS functions for real-time distribution network management.
+Example: ADMS is being deployed under RDSS for Haryana's urban towns.
+
+DMS
+Full Form: Distribution Management System
+Category: SCADA
+Description: Software system for monitoring, control and optimization of the distribution network (load flow, switching, etc.).
+Example: DMS helps operators plan feeder switching during maintenance.
+
+FRTU
+Full Form: Feeder Remote Terminal Unit
+Category: SCADA
+Description: RTU installed at feeder/ring main points to gather field data and execute remote control commands.
+Example: FRTUs were installed on urban 11 kV feeders under the SCADA project.
+
+HMI
+Full Form: Human Machine Interface
+Category: SCADA
+Description: Graphical operator interface used to monitor and control the SCADA/DMS system.
+Example: The control room operator viewed feeder loading on the HMI screen.
+
+Historian
+Full Form: Data Historian
+Category: SCADA
+Description: Software that archives time-series SCADA data for trend analysis and reporting.
+Example: Historian data was used to analyze the feeder's peak loading trend.
+
+ICCP
+Full Form: Inter-Control Center Communications Protocol
+Category: SCADA
+Description: Standard protocol for real-time data exchange between control centers (e.g., SLDC and DISCOM SCADA).
+Example: ICCP links the DISCOM control center with SLDC for data exchange.
+
+IEC 60870-5-101
+Full Form: IEC 60870-5-101 Protocol
+Category: SCADA
+Description: International standard protocol for SCADA telecontrol over serial communication links.
+Example: Older RTUs communicate with SCADA using IEC 60870-5-101.
+
+IEC 60870-5-104
+Full Form: IEC 60870-5-104 Protocol
+Category: SCADA
+Description: Network (TCP/IP) version of the IEC 101 protocol used for SCADA telecontrol communication.
+Example: New FRTUs use IEC 60870-5-104 over the utility WAN.
+
+IEC 61850
+Full Form: IEC 61850 Standard
+Category: SCADA
+Description: International standard for communication and automation in substations, enabling interoperability between IEDs.
+Example: The new digital substation is designed as per IEC 61850.
+
+IED
+Full Form: Intelligent Electronic Device
+Category: SCADA
+Description: Microprocessor-based substation device (protection relay, meter, controller) that communicates over standard protocols such as IEC 61850.
+Example: IEC 61850 enables interoperability between IEDs from different vendors.
+
+OMS
+Full Form: Outage Management System
+Category: SCADA
+Description: System that tracks, manages and helps restore power outages, often integrated with consumer call data.
+Example: OMS automatically identifies the likely fault location from consumer complaint clustering.
+
+PLC
+Full Form: Programmable Logic Controller
+Category: SCADA
+Description: Industrial controller used for automation logic in substations and control panels.
+Example: A PLC controls the automatic changeover scheme at the substation.
+
+RTU
+Full Form: Remote Terminal Unit
+Category: SCADA
+Description: Field device that collects data from substation equipment and communicates with the SCADA master station.
+Example: The RTU at the 33/11 kV substation reports breaker status to SCADA.
+
+SCADA
+Full Form: Supervisory Control and Data Acquisition
+Category: SCADA
+Description: System enabling real-time remote monitoring and control of substations and feeders from a central control room.
+Example: SCADA allows the control room to remotely operate the feeder breaker.
+
+SOE
+Full Form: Sequence of Events
+Category: SCADA
+Description: Time-stamped log of events (trips, alarms, switching) recorded by SCADA/RTU for post-fault analysis.
+Example: The SOE report helped identify the exact sequence of relay operations during the fault.
+
+Telemetry
+Full Form: Telemetry
+Category: SCADA
+Description: Automatic remote measurement and transmission of data (voltage, current, load) from field devices to the control center.
+Example: Real-time telemetry from the substation feeds the SCADA display.
+
+
+====================================================================
+11. GIS & ASSET MANAGEMENT
+====================================================================
+
+APFC
+Full Form: Automatic Power Factor Correction (Panel)
+Category: GIS & Asset Management
+Description: Panel/asset that automatically switches capacitors to maintain the target power factor; tracked as a network asset.
+Example: The APFC panel asset record was updated in the GIS database.
+
+Asset Register
+Full Form: Asset Register
+Category: GIS & Asset Management
+Description: Master database recording details, location and condition of all distribution assets (poles, DTRs, feeders, etc.).
+Example: The asset register was updated after the new DTR was commissioned.
+
+GIS
+Full Form: Geographic Information System
+Category: GIS & Asset Management
+Description: Digital mapping system that geo-tags and visualizes the distribution network assets on a spatial map.
+Example: GIS mapping of all 11 kV feeders was completed under RDSS.
+
+GPS
+Full Form: Global Positioning System
+Category: GIS & Asset Management
+Description: Satellite-based positioning system used to capture accurate geo-coordinates of network assets for GIS mapping.
+Example: Field surveyors used GPS to geo-tag every distribution pole.
+
+NW-GIS
+Full Form: Network Geographic Information System
+Category: GIS & Asset Management
+Description: GIS platform specifically modeling the electrical network topology (feeder-DTR-consumer linkage).
+Example: NW-GIS enables tracing the consumer connected to a faulty DTR.
+
+RCM
+Full Form: Reliability Centered Maintenance
+Category: GIS & Asset Management
+Description: Asset maintenance strategy prioritizing maintenance based on criticality and failure risk of equipment.
+Example: RCM principles are applied for prioritizing transformer maintenance.
+
+RUL
+Full Form: Remaining Useful Life
+Category: GIS & Asset Management
+Description: Estimated remaining service life of an asset (e.g., transformer, cable) based on condition monitoring.
+Example: The RUL analysis flagged several DTRs nearing end of life for replacement.
+
+
+====================================================================
+12. ENERGY ACCOUNTING
+====================================================================
+
+DT Metering
+Full Form: Distribution Transformer Metering
+Category: Energy Accounting
+Description: Metering at the DTR level to measure energy input to a distribution transformer for loss accounting.
+Example: DT metering data is compared with consumer billed units to compute DTR-wise losses.
+
+EA
+Full Form: Energy Accounting / Energy Audit
+Category: Energy Accounting
+Description: Process of accounting energy input versus energy billed at feeder/DTR/consumer level to identify losses.
+Example: Monthly EA reports are prepared for every 11 kV feeder.
+
+Energy Audit
+Full Form: Energy Audit
+Category: Energy Accounting
+Description: Systematic comparison of energy input and billed energy at each level of the network to pinpoint loss areas.
+Example: The energy audit revealed high losses on a specific rural feeder.
+
+FIR
+Full Form: Feeder Input Reading
+Category: Energy Accounting
+Description: Meter reading taken at the feeder's originating substation, used as the base for feeder-level energy accounting.
+Example: FIR data is downloaded daily for all 11 kV feeders.
+
+IESS
+Full Form: Integrated Energy/Energy Sales Statement
+Category: Energy Accounting
+Description: Consolidated statement reconciling energy purchased, input and billed across the DISCOM's network.
+Example: The IESS is reviewed monthly at the circle level.
+
+
+====================================================================
+13. COMMERCIAL LOSS REDUCTION
+====================================================================
+
+AT&C Loss
+Full Form: Aggregate Technical and Commercial Loss
+Category: Commercial Loss Reduction
+Description: Combined measure of technical losses and commercial losses (theft, billing/collection inefficiency) in the distribution network.
+Example: RDSS targets reducing AT&C losses to below 12-15% nationally.
+
+Billing Efficiency
+Full Form: Billing Efficiency
+Category: Commercial Loss Reduction
+Description: Ratio of energy billed to energy input into the network, indicating commercial loss level.
+Example: Billing efficiency improved after replacing defective meters.
+
+Collection Efficiency
+Full Form: Collection Efficiency
+Category: Commercial Loss Reduction
+Description: Ratio of revenue collected to revenue billed in a given period.
+Example: Special camps were held to improve collection efficiency in high-arrear areas.
+
+DTMS
+Full Form: Distribution Transformer Metering & Monitoring System
+Category: Commercial Loss Reduction
+Description: System for monitoring DTR-level input energy to identify loss-prone transformers and feeders.
+Example: DTMS data helped identify a DTR with abnormally high losses.
+
+FIU
+Full Form: Field Inspection Unit
+Category: Commercial Loss Reduction
+Description: DISCOM team conducting field checks to detect meter tampering, theft and billing irregularities.
+Example: The FIU inspected the industrial premises for unauthorized load.
+
+TAT
+Full Form: Turn-Around Time
+Category: Commercial Loss Reduction
+Description: Time taken to resolve a consumer issue (new connection, complaint, meter change), tracked to improve service and reduce losses.
+Example: The TAT for new connection release was reduced to 7 days.
+
+
+====================================================================
+14. VIGILANCE & ENFORCEMENT
+====================================================================
+
+ACB (Vigilance)
+Full Form: Anti-Corruption Branch
+Category: Vigilance & Enforcement
+Description: Enforcement wing that investigates corruption and malpractice complaints involving DISCOM officials.
+Example: The complaint of bribery was referred to the ACB.
+
+Assessment (Theft)
+Full Form: Provisional/Final Assessment for Theft of Electricity
+Category: Vigilance & Enforcement
+Description: Financial demand raised against a consumer found indulging in theft/unauthorized use, as per Section 126/135 of EA 2003.
+Example: A final assessment of Rs. 2.1 lakh was raised for meter tampering.
+
+CGRF
+Full Form: Consumer Grievance Redressal Forum
+Category: Vigilance & Enforcement
+Description: Forum constituted under EA 2003/HERC regulations to resolve consumer grievances against DISCOMs.
+Example: The consumer approached the CGRF against an incorrect assessment.
+
+Enforcement Squad
+Full Form: Enforcement/Vigilance Squad
+Category: Vigilance & Enforcement
+Description: Field team authorized to conduct raids and checks under Section 135-139 of EA 2003 to detect theft/pilferage.
+Example: The Enforcement Squad raided a colony following theft complaints.
+
+FIR (Legal)
+Full Form: First Information Report
+Category: Vigilance & Enforcement
+Description: Police complaint lodged in cases of electricity theft/pilferage detected under Sections 135-139 of EA 2003.
+Example: An FIR was registered against the consumer for direct theft from the LT line.
+
+MSTC
+Full Form: Metal Scrap Trade Corporation (e-auction platform)
+Category: Vigilance & Enforcement
+Description: Government e-auction portal sometimes used for disposal/auction related to vigilance seizures and scrap.
+Example: Seized material was disposed of through the MSTC e-auction portal.
+
+Ombudsman
+Full Form: Electricity Ombudsman
+Category: Vigilance & Enforcement
+Description: Appellate authority under HERC regulations for consumer appeals against CGRF decisions.
+Example: The consumer's appeal was taken to the Electricity Ombudsman after CGRF rejection.
+
+RTI
+Full Form: Right to Information
+Category: Vigilance & Enforcement
+Description: Legal mechanism under the RTI Act, 2005 used by consumers to seek information from DISCOMs.
+Example: An RTI application sought details of the theft assessment procedure.
+
+
+====================================================================
+15. SAFETY
+====================================================================
+
+CPR
+Full Form: Cardiopulmonary Resuscitation
+Category: Safety
+Description: Emergency first-aid procedure for reviving a person who has suffered electric shock and cardiac/respiratory arrest.
+Example: The lineman was trained in CPR as part of the safety induction program.
+
+Earthing
+Full Form: Earthing / Grounding
+Category: Safety
+Description: Practice of connecting equipment/system to earth to ensure safety against fault and leakage currents.
+Example: Proper earthing of the DTR body is mandatory before energization.
+
+ELCB
+Full Form: Earth Leakage Circuit Breaker
+Category: Safety
+Description: Protective device that disconnects supply on detecting earth leakage current, preventing electric shock.
+Example: An ELCB is recommended for domestic wiring safety.
+
+LOTO
+Full Form: Lockout-Tagout
+Category: Safety
+Description: Safety procedure to isolate and tag equipment during maintenance, preventing accidental re-energization.
+Example: LOTO was applied on the feeder breaker before line maintenance began.
+
+MCB
+Full Form: Miniature Circuit Breaker
+Category: Safety
+Description: Low-current protective device used in domestic/LT wiring to protect against overload and short circuit.
+Example: An MCB tripped due to overload in the consumer's house wiring.
+
+MCCB
+Full Form: Moulded Case Circuit Breaker
+Category: Safety
+Description: Higher-rated circuit breaker used for larger LT loads/panels compared to an MCB.
+Example: An MCCB protects the incoming feeder of the LT panel.
+
+PPE
+Full Form: Personal Protective Equipment
+Category: Safety
+Description: Safety gear (helmet, gloves, safety belt, shoes) mandatory for field staff working on live/de-energized lines.
+Example: All linemen are required to wear PPE before undertaking line work.
+
+Permit to Work (PTW)
+Full Form: Permit to Work
+Category: Safety
+Description: Formal written authorization issued before starting work on isolated equipment, confirming safe conditions.
+Example: The PTW was issued only after confirming the line was earthed and isolated.
+
+RCCB
+Full Form: Residual Current Circuit Breaker
+Category: Safety
+Description: Device that disconnects supply upon detecting a residual (leakage) current imbalance, protecting against shock.
+Example: An RCCB was installed in the office wiring for personnel safety.
+
+SF6
+Full Form: Sulphur Hexafluoride
+Category: Safety
+Description: Insulating and arc-quenching gas used in modern switchgear (RMU/GIS); requires careful handling due to environmental impact.
+Example: SF6 gas pressure in the RMU is checked periodically during maintenance.
+
+VCB
+Full Form: Vacuum Circuit Breaker
+Category: Safety
+Description: See Distribution System chapter; also relevant as a key safety isolation device during switching operations.
+Example: The VCB was opened and locked out before starting maintenance work.
+
+
+====================================================================
+16. RENEWABLE ENERGY
+====================================================================
+
+BESS
+Full Form: Battery Energy Storage System
+Category: Renewable Energy
+Description: System storing electrical energy in batteries to balance renewable generation intermittency and support the grid.
+Example: A pilot BESS project was commissioned to support solar integration in Haryana.
+
+Gross Metering
+Full Form: Gross Metering
+Category: Renewable Energy
+Description: Renewable metering arrangement where total solar generation is metered and paid for separately from consumption (opposite of net metering).
+Example: A commercial rooftop solar consumer opted for gross metering to sell all generated units.
+
+Hybrid System
+Full Form: Hybrid Renewable Energy System
+Category: Renewable Energy
+Description: Combination of two or more renewable sources (e.g., solar-wind, solar-BESS) integrated for reliable power supply.
+Example: A solar-BESS hybrid system was installed at a feeder-level pilot site.
+
+Net Metering
+Full Form: Net Metering
+Category: Renewable Energy
+Description: Arrangement where a consumer's grid import and rooftop solar export are netted, with billing on net consumption.
+Example: A residential consumer with rooftop solar is billed under net metering.
+
+PM-KUSUM
+Full Form: Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan
+Category: Renewable Energy
+Description: Central scheme promoting solarization of agricultural feeders and standalone solar pumps for farmers.
+Example: Under PM-KUSUM, solar pumps were installed for farmers in Hisar circle.
+
+REC
+Full Form: Renewable Energy Certificate
+Category: Renewable Energy
+Description: Tradable certificate representing generation of one unit of renewable energy, used to fulfill RPO.
+Example: The DISCOM purchased RECs to help meet its RPO shortfall.
+
+RPO
+Full Form: Renewable Purchase Obligation
+Category: Renewable Energy
+Description: HERC-mandated minimum percentage of total power purchase that a DISCOM must source from renewable sources.
+Example: DISCOMs must report annual RPO compliance to HERC.
+
+Solar Net Metering
+Full Form: Solar Net Metering
+Category: Renewable Energy
+Description: Specific application of net metering for rooftop solar PV installations under HERC's net metering regulations.
+Example: Solar net metering applications are processed online by the DISCOM.
+
+
+====================================================================
+17. GRID OPERATIONS
+====================================================================
+
+ABT
+Full Form: Availability Based Tariff
+Category: Grid Operations
+Description: Frequency-linked scheduling and pricing mechanism for inter-state power transactions, incentivizing grid discipline.
+Example: Deviations from ABT schedule attract charges under the DSM mechanism.
+
+Ancillary Services
+Full Form: Ancillary Services
+Category: Grid Operations
+Description: Support services (reserves, reactive power support) procured by the grid operator to maintain frequency and voltage stability.
+Example: Ancillary services help balance sudden demand-supply mismatches.
+
+Despatch
+Full Form: Despatch (Load Despatch)
+Category: Grid Operations
+Description: Real-time direction to generating stations/DISCOMs regarding power scheduling to maintain grid balance.
+Example: SLDC issues despatch instructions to maintain frequency within limits.
+
+DSM
+Full Form: Deviation Settlement Mechanism
+Category: Grid Operations
+Description: Mechanism to financially settle deviations between scheduled and actual power drawal/injection.
+Example: The DISCOM incurred DSM charges for over-drawal during peak hours.
+
+Frequency
+Full Form: Grid Frequency
+Category: Grid Operations
+Description: Operating frequency (nominally 50 Hz) of the power system; deviations indicate demand-supply imbalance.
+Example: Frequency dropped below 49.9 Hz during peak evening demand.
+
+IPP
+Full Form: Independent Power Producer
+Category: Grid Operations
+Description: Private generating company that sells power to DISCOMs or to consumers (through PPAs or open access) rather than a state generator.
+Example: A large industrial consumer applied for open access to purchase power from an IPP.
+
+NLDC
+Full Form: National Load Despatch Centre
+Category: Grid Operations
+Description: Apex body responsible for national-level grid operation, monitoring and coordination.
+Example: NLDC monitors all-India grid frequency and inter-regional exchanges.
+
+RLDC
+Full Form: Regional Load Despatch Centre
+Category: Grid Operations
+Description: Regional body (e.g., Northern Region) coordinating grid operations across states including Haryana.
+Example: NRLDC coordinates scheduling for Haryana along with other northern states.
+
+Scheduling
+Full Form: Power Scheduling
+Category: Grid Operations
+Description: Advance day-ahead planning of power drawal/injection between DISCOMs, generators and SLDC.
+Example: HPPC submits Haryana's daily drawal schedule to SLDC.
+
+SLDC
+Full Form: State Load Despatch Centre
+Category: Grid Operations
+Description: Apex body for real-time grid operation and scheduling within Haryana, under HVPNL.
+Example: SLDC Haryana monitors real-time load on the state grid.
+
+UI
+Full Form: Unscheduled Interchange (legacy term for DSM)
+Category: Grid Operations
+Description: Earlier mechanism (now replaced by DSM) for settling deviations from scheduled power exchange based on frequency.
+Example: UI charges were the predecessor to the current DSM framework.
+
+
+====================================================================
+18. FINANCE
+====================================================================
+
+ACS
+Full Form: Average Cost of Supply
+Category: Finance
+Description: See Tariff Terminology chapter; a core financial metric for revenue gap computation.
+Example: ACS-ABR gap is a key indicator monitored under RDSS.
+
+AT&C Loss
+Full Form: Aggregate Technical and Commercial Loss
+Category: Finance
+Description: See Commercial Loss Reduction chapter; also a key financial performance indicator for DISCOMs.
+Example: AT&C loss reduction is linked to RDSS fund disbursement.
+
+CAPEX
+Full Form: Capital Expenditure
+Category: Finance
+Description: Expenditure incurred on creating/upgrading fixed assets such as substations, feeders and lines.
+Example: RDSS CAPEX funds are being used for feeder segregation works.
+
+Cross Subsidy
+Full Form: Cross Subsidy
+Category: Finance
+Description: Practice of charging some consumer categories (industrial/commercial) above cost to subsidize others (domestic/agricultural).
+Example: HERC's tariff order aims to gradually reduce cross subsidy as per EA 2003.
+
+Depreciation
+Full Form: Depreciation
+Category: Finance
+Description: Accounting charge representing the reduction in value of fixed assets over their useful life, allowed in ARR.
+Example: Depreciation on the new substation is included in the ARR calculation.
+
+EBITDA
+Full Form: Earnings Before Interest, Tax, Depreciation and Amortization
+Category: Finance
+Description: Financial metric indicating a DISCOM's operating profitability before non-operating charges.
+Example: EBITDA improved after the reduction in AT&C losses.
+
+O&M
+Full Form: Operation and Maintenance
+Category: Finance
+Description: Recurring cost of operating and maintaining the network (staff, repairs, consumables); a core component of OPEX allowed in the ARR.
+Example: Power purchase and O&M costs are the main components of the average cost of supply.
+
+OPEX
+Full Form: Operating Expenditure
+Category: Finance
+Description: Recurring expenditure for operation and maintenance of the distribution network, including employee and O&M costs.
+Example: OPEX is a major component of the ARR filed with HERC.
+
+Regulatory Asset
+Full Form: Regulatory Asset
+Category: Finance
+Description: Unrecovered revenue gap carried forward as an asset in DISCOM accounts, to be recovered from future tariffs.
+Example: HERC allowed carrying forward part of the deficit as a regulatory asset.
+
+Revenue Gap
+Full Form: Revenue Gap
+Category: Finance
+Description: Shortfall between a DISCOM's approved revenue requirement and actual realized revenue.
+Example: The revenue gap for the year was partly bridged through tariff revision.
+
+
+====================================================================
+19. STORES & PROCUREMENT
+====================================================================
+
+AMC
+Full Form: Annual Maintenance Contract
+Category: Stores & Procurement
+Description: Contract for periodic maintenance service of equipment/systems over a defined annual period.
+Example: An AMC was awarded for maintenance of the SCADA system.
+
+BOQ
+Full Form: Bill of Quantities
+Category: Stores & Procurement
+Description: Document listing materials, quantities and specifications required for a tender/work.
+Example: The BOQ for feeder augmentation listed conductor and pole quantities.
+
+CAMC
+Full Form: Comprehensive Annual Maintenance Contract
+Category: Stores & Procurement
+Description: AMC that includes both preventive maintenance and spare parts/consumables within the contract scope.
+Example: A CAMC was signed for the DMS software including patches and upgrades.
+
+EMD
+Full Form: Earnest Money Deposit
+Category: Stores & Procurement
+Description: Deposit submitted by a bidder along with a tender as a guarantee of serious intent to participate.
+Example: The bidder submitted EMD along with the technical bid.
+
+GeM
+Full Form: Government e-Marketplace
+Category: Stores & Procurement
+Description: Online government procurement portal used by DISCOMs for buying goods and services.
+Example: Office stationery was procured through the GeM portal.
+
+GRN
+Full Form: Goods Receipt Note
+Category: Stores & Procurement
+Description: Document generated on receipt of materials in stores, confirming quantity and quality received.
+Example: A GRN was created after the transformer consignment was received at the store.
+
+Inspection
+Full Form: Pre-Dispatch Inspection
+Category: Stores & Procurement
+Description: Quality check of materials at the supplier's works before dispatch to the DISCOM store.
+Example: Third-party inspection was carried out before dispatch of the meters.
+
+LOA
+Full Form: Letter of Award
+Category: Stores & Procurement
+Description: Formal communication awarding a contract/tender to the successful bidder.
+Example: LOA was issued to the L1 bidder for the cable supply contract.
+
+LOI
+Full Form: Letter of Intent
+Category: Stores & Procurement
+Description: Preliminary communication indicating intent to award a contract, prior to the formal LOA.
+Example: An LOI was issued pending completion of documentation formalities.
+
+NIT
+Full Form: Notice Inviting Tender
+Category: Stores & Procurement
+Description: Public notice inviting bids for the supply of goods/services or execution of works.
+Example: NIT for smart meter procurement was published on the e-tender portal.
+
+PBG
+Full Form: Performance Bank Guarantee
+Category: Stores & Procurement
+Description: Bank guarantee submitted by the contractor to ensure satisfactory performance of the contract.
+Example: The contractor submitted a PBG of 5% of contract value.
+
+RFP
+Full Form: Request for Proposal
+Category: Stores & Procurement
+Description: Document inviting detailed technical and commercial proposals for complex projects/services.
+Example: An RFP was floated for implementation of the ADMS project.
+
+RFQ
+Full Form: Request for Quotation
+Category: Stores & Procurement
+Description: Document inviting price quotations for straightforward, well-defined goods/services procurement.
+Example: An RFQ was issued for the supply of office furniture.
+
+
+====================================================================
+20. IT SYSTEMS
+====================================================================
+
+API
+Full Form: Application Programming Interface
+Category: IT Systems
+Description: Set of protocols enabling different software systems (e.g., billing and payment gateway) to communicate.
+Example: The consumer app uses an API to fetch the latest bill from the CIS.
+
+CIS
+Full Form: Consumer Indexing System / Customer Information System
+Category: IT Systems
+Description: Core IT system storing consumer master data, billing history and connection details.
+Example: The consumer's load details were updated in the CIS.
+
+Cloud
+Full Form: Cloud Computing
+Category: IT Systems
+Description: Hosting of IT applications/data on remote servers accessed over the internet, used for scalable DISCOM applications.
+Example: The billing application was migrated to a cloud-based platform.
+
+CRM
+Full Form: Customer Relationship Management
+Category: IT Systems
+Description: System managing consumer interactions, complaints and service requests.
+Example: Consumer complaints logged via the call center are tracked in the CRM.
+
+Disaster Recovery (DR)
+Full Form: Disaster Recovery
+Category: IT Systems
+Description: Backup site/system ensuring business continuity of critical IT systems in case of a primary site failure.
+Example: The DR site ensures the billing system remains available during an outage.
+
+ERP
+Full Form: Enterprise Resource Planning
+Category: IT Systems
+Description: Integrated software system managing finance, HR, materials and other back-office functions of the DISCOM.
+Example: Purchase orders are processed through the ERP system.
+
+Firewall
+Full Form: Firewall
+Category: IT Systems
+Description: Network security device/software that filters incoming and outgoing traffic to protect IT infrastructure.
+Example: The SCADA network is isolated behind a dedicated firewall.
+
+MDAS
+Full Form: Meter Data Acquisition System
+Category: IT Systems
+Description: System that acquires and processes meter data from AMI/AMR meters before feeding into billing/MDM.
+Example: MDAS collects daily load survey data from smart meters.
+
+MFA
+Full Form: Multi-Factor Authentication
+Category: IT Systems
+Description: Security mechanism requiring more than one method to verify user identity before granting system access.
+Example: MFA is mandatory for accessing the DISCOM's ERP application remotely.
+
+SAP
+Full Form: Systems, Applications and Products (ERP software)
+Category: IT Systems
+Description: Widely used ERP software suite for financial, HR and materials management functions.
+Example: Employee payroll is processed through the SAP module.
+
+SIEM
+Full Form: Security Information and Event Management
+Category: IT Systems
+Description: System that aggregates and analyzes security logs across IT infrastructure to detect threats.
+Example: SIEM alerted the IT team to an unusual login attempt on the CIS server.
+
+SOC
+Full Form: Security Operations Center
+Category: IT Systems
+Description: Centralized team/facility monitoring and responding to cybersecurity incidents across DISCOM IT/OT systems.
+Example: The SOC flagged suspicious traffic targeting the SCADA network.
+
+SSO
+Full Form: Single Sign-On
+Category: IT Systems
+Description: Authentication mechanism allowing a user to access multiple applications with a single login credential.
+Example: Employees use SSO to access both ERP and email with one login.
+
+VPN
+Full Form: Virtual Private Network
+Category: IT Systems
+Description: Secure encrypted connection used for remote access to internal DISCOM systems.
+Example: Field officers use VPN to access the CIS from outside the office network.
+
+
+====================================================================
+21. GOVERNMENT SCHEMES
+====================================================================
+
+DDUGJY
+Full Form: Deen Dayal Upadhyaya Gram Jyoti Yojana
+Category: Government Schemes
+Description: Central scheme for rural electrification, feeder separation and strengthening of sub-transmission/distribution infrastructure.
+Example: Feeder separation works in rural Haryana were funded under DDUGJY.
+
+IPDS
+Full Form: Integrated Power Development Scheme
+Category: Government Schemes
+Description: Central scheme for strengthening sub-transmission/distribution in urban areas, including IT enablement and smart metering.
+Example: Urban network strengthening in Haryana towns was carried out under IPDS.
+
+MGJGY
+Full Form: Mhara Gaon Jagmag Gaon Yojana
+Category: Government Schemes
+Description: Haryana State flagship scheme providing 24-hour power supply to rural villages through feeder segregation (separating domestic feeders from agricultural feeders).
+Example: The number of villages covered under MGJGY is tracked year-wise by the DISCOMs.
+
+PM-KUSUM
+Full Form: Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan
+Category: Government Schemes
+Description: See Renewable Energy chapter; scheme for solarizing agricultural feeders and farmer pump sets.
+Example: PM-KUSUM Component-C targets solarization of existing grid-connected agriculture feeders.
+
+RDSS
+Full Form: Revamped Distribution Sector Scheme
+Category: Government Schemes
+Description: Central government scheme (successor to IPDS/DDUGJY) focused on reducing AT&C losses, ACS-ABR gap and smart metering rollout.
+Example: Smart meter installation across Haryana DISCOMs is being funded under RDSS.
+
+RGGVY
+Full Form: Rajiv Gandhi Grameen Vidyutikaran Yojana
+Category: Government Schemes
+Description: Earlier central scheme for rural electrification and free connections to BPL households (subsumed into DDUGJY).
+Example: Village electrification infrastructure created under RGGVY was later strengthened via DDUGJY.
+
+Saubhagya
+Full Form: Pradhan Mantri Sahaj Bijli Har Ghar Yojana
+Category: Government Schemes
+Description: Central scheme aimed at achieving universal household electrification.
+Example: Remaining un-electrified households in Haryana were covered under the Saubhagya scheme.
+
+Smart Meter National Programme
+Full Form: Smart Meter National Programme
+Category: Government Schemes
+Description: National initiative under RDSS to install AMI-based smart meters across all consumer categories.
+Example: Haryana DISCOMs are rolling out smart meters under the Smart Meter National Programme.
+
+
+====================================================================
+22. STANDARDS
+====================================================================
+
+BIS
+Full Form: Bureau of Indian Standards
+Category: Standards
+Description: National standards body that certifies quality of materials such as meters, cables and transformers used by DISCOMs.
+Example: All procured energy meters must carry BIS certification.
+
+CBIP
+Full Form: Central Board of Irrigation and Power
+Category: Standards
+Description: Technical body that publishes widely referenced manuals and guidelines for the power sector.
+Example: Substation design follows CBIP manual recommendations.
+
+CEA Standards
+Full Form: Central Electricity Authority (Technical Standards)
+Category: Standards
+Description: Technical standards notified by CEA covering construction, safety and grid connectivity of electrical installations.
+Example: New substations are designed as per CEA (Technical Standards for Construction) Regulations.
+
+IEC
+Full Form: International Electrotechnical Commission
+Category: Standards
+Description: International body issuing standards for electrical, electronic and related equipment (e.g., IEC 60870, IEC 61850).
+Example: Smart meters comply with relevant IEC standards for communication.
+
+IEEE
+Full Form: Institute of Electrical and Electronics Engineers
+Category: Standards
+Description: International professional body publishing widely used standards for power system engineering.
+Example: Protection coordination studies reference relevant IEEE standards.
+
+IS
+Full Form: Indian Standard
+Category: Standards
+Description: National standard specification issued by BIS for materials and equipment used in the power sector.
+Example: The DTR was tested as per IS 1180 specifications.
+
+ISO
+Full Form: International Organization for Standardization
+Category: Standards
+Description: International body issuing quality/management system standards, e.g., ISO 9001, adopted by DISCOM offices/labs.
+Example: The testing laboratory is ISO 17025 accredited.
+
+
+====================================================================
+23. OFFICE ABBREVIATIONS
+====================================================================
+
+AE
+Full Form: Assistant Engineer
+Category: Office Abbreviations
+Description: Field/sub-divisional level engineering officer responsible for day-to-day operations in a Sub-Division.
+Example: The AE inspected the reported fault in the sub-division area.
+
+AEE
+Full Form: Assistant Executive Engineer / Additional Executive Engineer
+Category: Office Abbreviations
+Description: Officer assisting the Executive Engineer, often in charge of a Sub-Division.
+Example: The AEE approved the new connection file.
+
+C&M
+Full Form: Commercial and Metering
+Category: Office Abbreviations
+Description: Wing/section of the DISCOM handling billing, metering, and consumer commercial matters.
+Example: The C&M wing reviewed the monthly billing efficiency report.
+
+Circle
+Full Form: Circle Office
+Category: Office Abbreviations
+Description: Administrative unit headed by a Superintending Engineer (SE), comprising several Divisions.
+Example: The Gurugram Circle covers multiple divisions of DHBVN.
+
+Division
+Full Form: Division Office
+Category: Office Abbreviations
+Description: Administrative unit headed by an Executive Engineer (XEN), comprising several Sub-Divisions.
+Example: The consumer's complaint was escalated to the Division office.
+
+HQ
+Full Form: Head Quarters
+Category: Office Abbreviations
+Description: Corporate/central office of UHBVN or DHBVN responsible for policy and overall administration.
+Example: The tariff petition was filed by DISCOM HQ before HERC.
+
+JE
+Full Form: Junior Engineer
+Category: Office Abbreviations
+Description: Field-level technical officer responsible for line maintenance and fault attendance in a Sub-Division.
+Example: The JE attended the reported low-voltage complaint.
+
+SDO
+Full Form: Sub-Divisional Officer
+Category: Office Abbreviations
+Description: Officer (usually AE/AEE) in charge of a Sub-Division, the basic field operational unit.
+Example: The new connection application was submitted at the SDO office.
+
+SE
+Full Form: Superintending Engineer
+Category: Office Abbreviations
+Description: Officer heading a Circle, overseeing multiple Divisions.
+Example: The SE reviewed the Circle's AT&C loss performance.
+
+Sub-Division
+Full Form: Sub-Division Office
+Category: Office Abbreviations
+Description: Smallest administrative/operational unit headed by an SDO, handling field complaints and new connections.
+Example: The Sub-Division office processes local consumer service requests.
+
+XEN
+Full Form: Executive Engineer
+Category: Office Abbreviations
+Description: Officer heading a Division, overseeing multiple Sub-Divisions.
+Example: The XEN sanctioned the estimate for feeder augmentation work.
+
+====================================================================
+24. RIGHT TO SERVICE (RTS) & GRIEVANCE REDRESSAL
+====================================================================
+
+RTS
+Full Form: Right to Service (Haryana Right to Service Act, 2014)
+Category: Right to Service (RTS)
+Description: State law guaranteeing time-bound delivery of notified public services. DISCOM services (release of a new connection, shifting of meter, change of name, reduction of load, etc.) are notified under it, each with a Designated Officer, a time limit, and two levels of appeal.
+Example: The release of a new connection is a notified service under the Right to Service Act.
+
+Designated Officer
+Full Form: Designated Officer (under the RTS Act)
+Category: Right to Service (RTS)
+Description: The officer responsible for delivering a particular notified service within its stipulated time limit. It varies by service — e.g., shifting of meter/service connection/line (LT) -> JE (In-charge); release of a new connection / change of name / reduction of load -> SDO (OP).
+Example: The Designated Officer for shifting of an LT meter is the JE (In-charge).
+
+FGRA
+Full Form: First Grievance Redressal Authority
+Category: Right to Service (RTS)
+Description: The first appellate authority under the RTS notification, approached when the Designated Officer fails to deliver the service in time; for most DISCOM services this is the XEN (Executive Engineer).
+Example: The First Grievance Redressal Authority for a delayed new connection is the XEN.
+
+SGRA
+Full Form: Second Grievance Redressal Authority
+Category: Right to Service (RTS)
+Description: The second/higher appellate authority under the RTS notification, approached against the decision of the First Grievance Redressal Authority (e.g., the SE / Superintending Engineer).
+Example: If unsatisfied with the FGRA's decision, the applicant may appeal to the Second Grievance Redressal Authority.
+
+Note: The RTS grievance channel (for delayed SERVICE delivery) is distinct from
+the CGRF / Electricity Ombudsman channel (for BILLING and assessment disputes)
+listed under "14. Vigilance & Enforcement".
+
+====================================================================
+END OF DOCUMENT
+====================================================================
+Note: This glossary reflects terminology commonly used in Haryana's power
+distribution utilities (UHBVN/DHBVN) and is intended for chatbot/knowledge-
+base reference. Verify against the latest HERC regulations/DISCOM circulars
+for regulatory or legal use.
+====================================================================

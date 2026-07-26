@@ -1,0 +1,221 @@
+{
+  "info": {
+    "name": "Vinbot API",
+    "description": "Integration test collection for the Vinbot chatbot API (backend/app/main.py: /api/health, /api/session, /api/chat, /api/reset). Run against {{baseUrl}} — pair with Vinbot-Local/-Dev/-UAT/-Prod.postman_environment.json. See postman/README.md for Newman usage.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000" },
+    { "key": "sessionId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/health"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.test('status field is ok', function () { pm.expect(body.status).to.eql('ok'); });",
+              "pm.test('knowledge_chunks is a number', function () { pm.expect(body.knowledge_chunks).to.be.a('number'); });",
+              "pm.test('chat_model and embed_model present', function () {",
+              "  pm.expect(body.chat_model).to.be.a('string');",
+              "  pm.expect(body.embed_model).to.be.a('string');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Create Session",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{baseUrl}}/api/session"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.test('session_id present', function () {",
+              "  pm.expect(body.session_id).to.be.a('string').and.to.have.length.above(0);",
+              "});",
+              "pm.collectionVariables.set('sessionId', body.session_id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chat - grounded question",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"session_id\": \"{{sessionId}}\", \"message\": \"What is UHBVN?\"}"
+        },
+        "url": "{{baseUrl}}/api/chat"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () { pm.response.to.have.status(200); });",
+              "pm.test('content-type is text/event-stream', function () {",
+              "  pm.expect(pm.response.headers.get('Content-Type')).to.include('text/event-stream');",
+              "});",
+              "pm.test('body contains at least one SSE data frame', function () {",
+              "  pm.expect(pm.response.text()).to.include('data:');",
+              "});",
+              "pm.test('stream ends with a done or error frame', function () {",
+              "  const t = pm.response.text();",
+              "  pm.expect(t.includes('\"type\": \"done\"') || t.includes('\"type\":\"done\"') ||",
+              "            t.includes('\"type\": \"error\"') || t.includes('\"type\":\"error\"')).to.be.true;",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reset Session",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"session_id\": \"{{sessionId}}\"}"
+        },
+        "url": "{{baseUrl}}/api/reset"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () { pm.response.to.have.status(200); });",
+              "pm.test('ok is true', function () { pm.expect(pm.response.json().ok).to.eql(true); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Error Handling",
+      "item": [
+        {
+          "name": "Chat with unknown session returns 404",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"does-not-exist\", \"message\": \"hi\"}"
+            },
+            "url": "{{baseUrl}}/api/chat"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 404', function () { pm.response.to.have.status(404); });",
+                  "pm.test('detail mentions unknown session', function () {",
+                  "  pm.expect(pm.response.json().detail).to.include('Unknown session_id');",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Reset with unknown session returns 404",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"does-not-exist\"}"
+            },
+            "url": "{{baseUrl}}/api/reset"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 404', function () { pm.response.to.have.status(404); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat with empty message returns 422",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"{{sessionId}}\", \"message\": \"\"}"
+            },
+            "url": "{{baseUrl}}/api/chat"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 422', function () { pm.response.to.have.status(422); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Chat with missing fields returns 422",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": "{{baseUrl}}/api/chat"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 422', function () { pm.response.to.have.status(422); });"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

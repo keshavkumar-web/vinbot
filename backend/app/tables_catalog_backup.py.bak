@@ -1,0 +1,764 @@
+"""Structured retrieval for UHBVN tabular reports.
+
+The numeric reports under ``UHBVN_new/`` are positional tables (e.g. the
+connection report has 23 columns where the value 3,003,464 only means
+"Domestic" because of its *column position*). Linearising them to text and
+char-chunking destroys that mapping, which is why the old RAG path returned the
+Domestic figure for "how many connections" instead of the Total.
+
+This module avoids that entirely:
+
+  PDF  --PyMuPDF find_tables-->  (header, rows)  --normalise-->  long-format
+  facts  --> SQLite (dataset, entity, metric, value, unit, period, source)
+
+Every fact is a single self-describing cell, so a lookup returns the *exact*
+column for the *exact* row, with provenance. No similarity, no guessing.
+"""
+
+from __future__ import annotations
+
+import os
+import re
+import sqlite3
+from difflib import SequenceMatcher
+from pathlib import Path
+
+# NOTE: PyMuPDF (``fitz``) is imported lazily inside extract_facts() so the
+# serving app (chat.py -> tables.py) does not require it at runtime — only the
+# build/ingest step does. This keeps PyMuPDF an ingest-only dependency
+# (requirements-ingest.txt), matching the project's existing split.
+
+# Resolve paths locally (no dependency on app.config, so ingestion runs without
+# an OpenAI key configured).
+BACKEND_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_DIR = os.path.dirname(BACKEND_DIR)
+
+DB_PATH = os.getenv("TABLES_DB_PATH", os.path.join(BACKEND_DIR, "uhbvn_tables.db"))
+SOURCE_DIR = os.getenv("TABLES_SOURCE_DIR", os.path.join(PROJECT_DIR, "UHBVN_new"))
+# Fallback to a sibling checkout layout if needed.
+if not os.path.isdir(SOURCE_DIR):
+    SOURCE_DIR = os.path.join(PROJECT_DIR, "Generic_bot", "UHBVN_new")
+
+_MONTHS = ("January|February|March|April|May|June|July|August|September|"
+           "October|November|December")
+_PERIOD_RE = re.compile(rf"(?:{_MONTHS})\s+\d{{4}}", re.I)
+_YEAR_RANGE_RE = re.compile(r"\b(20\d{2})\s*[-_to]+\s*(20\d{2})\b", re.I)
+
+
+# --------------------------------------------------------------------------- #
+# Normalisation helpers
+# --------------------------------------------------------------------------- #
+def _clean_header(cell: str | None) -> str:
+    """Collapse the wrapped, multi-line header cells into one tidy label."""
+    if not cell:
+        return ""
+    return re.sub(r"\s+", " ", str(cell).replace("\n", " ")).strip()
+
+
+def parse_number(cell: str | None) -> tuple[float | None, str | None]:
+    """Return (value, leading_text). Handles '3,003,464', '5.23', 'r 330656'.
+
+    The connection table occasionally leaks a letter from the circle name into
+    the first numeric cell ('Yamuna Naga' | 'r 330656'); we strip and return
+    that stray text so the caller can repair the entity label.
+    """
+    if cell is None:
+        return None, None
+    s = str(cell).strip()
+    if not s:
+        return None, None
+    m = re.match(r"^([^\d\-]*?)\s*(-?[\d,]+(?:\.\d+)?)\s*%?$", s)
+    if not m:
+        return None, None
+    lead = m.group(1).strip() or None
+    num = m.group(2).replace(",", "")
+    try:
+        return float(num), lead
+    except ValueError:
+        return None, lead
+
+
+def _is_data_row(row: list, entity_cols: int) -> bool:
+    """A data row has mostly numeric cells after the entity column(s)."""
+    tail = row[entity_cols:]
+    nums = sum(1 for c in tail if parse_number(c)[0] is not None)
+    return tail and nums >= max(1, len(tail) // 2)
+
+
+def _dataset_of(stem: str) -> str:
+    """Derive a stable dataset key from the filename (e.g. '1_Connection')."""
+    return re.sub(r"^\d+[_\-]?", "", stem).strip().lower().replace(" ", "_")
+
+
+def _page_unit(page_text: str, dataset: str) -> str:
+    """Default unit for plain numeric columns on this page."""
+    t = page_text.lower()
+    if "figure in kw" in t or dataset == "connected_load":
+        return "KW"
+    if "figure in mw" in t:
+        return "MW"
+    return "count"
+
+
+def column_unit(metric: str, page_unit: str) -> str:
+    """Per-column unit: a '% Damage rate' column is %, not the page default."""
+    m = metric.lower()
+    if "%" in metric or "rate" in m or "percent" in m or "efficiency" in m:
+        return "%"
+    return page_unit
+
+
+def _period_of(page_text: str) -> str:
+    m = _PERIOD_RE.search(page_text)
+    if m:
+        return m.group(0).title()
+    m = _YEAR_RANGE_RE.search(page_text)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}"
+    return ""
+
+
+def _title_of(page_text: str) -> str:
+    """Pick the most title-like line (UHBVN reports use an all-caps caption)."""
+    for line in page_text.splitlines():
+        s = line.strip()
+        if len(s) > 15 and sum(c.isupper() for c in s) >= len(s.replace(" ", "")) * 0.6:
+            if "NIGAM" not in s:  # skip the company name banner
+                return s
+    return ""
+
+
+# --------------------------------------------------------------------------- #
+# Header reconstruction (handles merged / multi-row headers)
+# --------------------------------------------------------------------------- #
+def build_columns(rows: list[list], entity_cols: int) -> tuple[list[str], int]:
+    """Return (column_names, first_data_row_index).
+
+    Header band = the leading rows before the first real data row. Merged parent
+    cells arrive as ``None``; we forward-fill them left-to-right, then join each
+    column's header parts top-to-bottom so a split header like
+    ['Transformers damaged', 'Total'] becomes 'Transformers damaged Total'.
+    """
+    first_data = next(
+        (i for i, r in enumerate(rows) if _is_data_row(r, entity_cols)), 1
+    )
+    header_rows = rows[:first_data] or [rows[0]]
+    width = max(len(r) for r in rows)
+
+    filled: list[list[str]] = []
+    for hr in header_rows:
+        out, last = [], ""
+        for j in range(width):
+            val = _clean_header(hr[j] if j < len(hr) else "")
+            if val:
+                last = val
+            out.append(val or last)  # forward-fill merged parent across blanks
+        filled.append(out)
+
+    columns = []
+    for j in range(width):
+        parts, seen = [], set()
+        for hr in filled:
+            p = hr[j]
+            if p and p not in seen:
+                parts.append(p)
+                seen.add(p)
+        columns.append(" ".join(parts) or f"col{j}")
+    return columns, first_data
+
+
+# --------------------------------------------------------------------------- #
+# Ingestion
+# --------------------------------------------------------------------------- #
+def _entity_col_count(header_first: list) -> int:
+    """How many leading columns are textual labels (Sr.No / Circle / Category)."""
+    n = 0
+    for cell in header_first:
+        h = _clean_header(cell).lower()
+        if any(k in h for k in ("sr.", "sr ", "s.no", "no.", "circle", "name",
+                                "category", "zone", "district", "particular")):
+            n += 1
+        else:
+            break
+    return max(1, n)
+
+
+def _extract_consumers(doc, pdf_path: Path) -> list[dict]:
+    """Targeted parser for consumers.pdf (two side-by-side key/value series that
+    PyMuPDF mis-aligns). Reads the ordered text: a date row is followed by its
+    Consumer Base; an FY-range row is followed by New Consumers Added."""
+    text = "\n".join(p.get_text() for p in doc)
+    period = _period_of(text)
+    facts, pending = [], None
+    for tok in (t.strip() for t in text.splitlines() if t.strip()):
+        if re.match(r"^\d{1,2}-[A-Za-z]{3}-\d{2}$", tok):
+            pending = ("Consumer Base", tok)
+        elif re.match(r"^\d{4}-\d{2}$", tok):
+            pending = ("New Consumers Added", tok)
+        elif pending and re.match(r"^[\d,]+$", tok):
+            metric, ent = pending
+            facts.append({
+                "dataset": "consumers", "source": pdf_path.name,
+                "title": "Year Wise Consumer Base and New Consumer Added (UHBVN)",
+                "period": period, "unit": "count",
+                "entity": ent, "metric": metric, "value": float(tok.replace(",", "")),
+            })
+            pending = None
+    return facts
+
+
+def extract_facts(pdf_path: Path) -> list[dict]:
+    """Extract every (entity, metric) -> value fact from one report PDF."""
+    import fitz  # PyMuPDF — ingest-only dependency, imported lazily
+
+    doc = fitz.open(str(pdf_path))
+    dataset = _dataset_of(pdf_path.stem)
+    if dataset == "consumers":  # irregular side-by-side layout -> targeted parser
+        facts = _extract_consumers(doc, pdf_path)
+        doc.close()
+        return facts
+    facts: list[dict] = []
+
+    for page in doc:
+        page_text = page.get_text()
+        period = _period_of(page_text)
+        page_unit = _page_unit(page_text, dataset)
+        title = _title_of(page_text)
+
+        try:
+            found = page.find_tables()
+        except Exception:
+            continue
+        for table in found.tables:
+            rows = table.extract()
+            if not rows or len(rows) < 2:
+                continue
+
+            entity_cols = _entity_col_count(rows[0])
+            columns, first_data = build_columns(rows, entity_cols)
+
+            # Keep every label column except a pure serial-number column
+            # ('Sr. No.'); a 'Category' (Rural/Urban) column is folded into the
+            # entity so each row stays unambiguous, e.g. 'Kurukshetra Rural'.
+            label_idxs = [
+                i for i in range(entity_cols)
+                if not re.search(r"\b(sr|s\.?no|no)\b", columns[i].lower())
+            ] or [entity_cols - 1]
+
+            # Per-label-column vertical fill (merged cells are blank below).
+            last_label = {i: "" for i in label_idxs}
+            for r in rows[first_data:]:
+                # Repair a stray letter leaked from the entity into the 1st value.
+                _, lead0 = parse_number(r[entity_cols]) if len(r) > entity_cols else (None, None)
+                parts = []
+                for i in label_idxs:
+                    v = _clean_header(r[i]) if i < len(r) else ""
+                    if i == label_idxs[0] and lead0 and v:
+                        v = f"{v}{lead0}"
+                    if v:
+                        last_label[i] = v
+                    if last_label[i]:
+                        parts.append(last_label[i])
+                entity = " ".join(parts)
+                if not entity:
+                    continue
+
+                for j in range(entity_cols, min(len(r), len(columns))):
+                    val, _ = parse_number(r[j])
+                    if val is None:
+                        continue
+                    facts.append({
+                        "dataset": dataset, "source": pdf_path.name, "title": title,
+                        "period": period, "unit": column_unit(columns[j], page_unit),
+                        "entity": entity, "metric": columns[j], "value": val,
+                    })
+    doc.close()
+    return facts
+
+
+def build(db_path: str | None = None, source_dir: str | None = None) -> int:
+    """(Re)build the SQLite fact store from every PDF in the source folder."""
+    db_path = db_path or DB_PATH
+    source_dir = source_dir or SOURCE_DIR
+    pdfs = sorted(Path(source_dir).glob("*.pdf"))
+    if not pdfs:
+        raise SystemExit(f"No PDFs found in {source_dir}")
+
+    con = sqlite3.connect(db_path)
+    con.execute("DROP TABLE IF EXISTS facts")
+    con.execute("""
+        CREATE TABLE facts(
+            dataset TEXT, source TEXT, title TEXT, period TEXT, unit TEXT,
+            entity TEXT, metric TEXT, value REAL,
+            entity_l TEXT, metric_l TEXT
+        )""")
+    con.execute("CREATE INDEX idx_lookup ON facts(dataset, entity_l, metric_l)")
+
+    total = 0
+    for pdf in pdfs:
+        try:
+            facts = extract_facts(pdf)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! {pdf.name}: {exc}")
+            continue
+        con.executemany(
+            "INSERT INTO facts VALUES (?,?,?,?,?,?,?,?,?,?)",
+            [(f["dataset"], f["source"], f["title"], f["period"], f["unit"],
+              f["entity"], f["metric"], f["value"],
+              f["entity"].lower(), f["metric"].lower()) for f in facts],
+        )
+        total += len(facts)
+        print(f"  {pdf.name:38s} dataset={_dataset_of(pdf.stem):20s} facts={len(facts)}")
+
+    _build_meta(con)
+    con.commit()
+    con.close()
+    print(f"\n[tables] {total} facts written to {db_path}")
+    return total
+
+
+def _build_meta(con: sqlite3.Connection) -> None:
+    """Quality-gate each dataset so only cleanly-extracted ones are answerable.
+
+    A trustworthy report has *labelled* rows (district names), so most of its
+    distinct entities are NON-numeric. Reports we mis-parse end up with numeric
+    'entities' (e.g. '0.00', '10186.17'); those are quarantined (trusted=0) so
+    the bot will never serve a wrong value from them — it says "Data not found"
+    instead. Re-enable a dataset only after its extraction is validated.
+    """
+    con.execute("DROP TABLE IF EXISTS datasets")
+    con.execute("""
+        CREATE TABLE datasets(
+            dataset TEXT PRIMARY KEY, n_facts INT, n_entities INT,
+            pct_numeric_entity REAL, has_total INT, trusted INT, title TEXT
+        )""")
+    rows = con.execute("SELECT DISTINCT dataset FROM facts").fetchall()
+    for (ds,) in rows:
+        ents = [r[0] for r in con.execute(
+            "SELECT DISTINCT entity FROM facts WHERE dataset=?", (ds,))]
+        n_facts = con.execute(
+            "SELECT COUNT(*) FROM facts WHERE dataset=?", (ds,)).fetchone()[0]
+        numeric = sum(1 for e in ents if parse_number(e)[0] is not None)
+        pct = numeric / len(ents) if ents else 1.0
+        has_total = con.execute(
+            "SELECT COUNT(*) FROM facts WHERE dataset=? AND metric_l='total'",
+            (ds,)).fetchone()[0] > 0
+        title = con.execute(
+            "SELECT title FROM facts WHERE dataset=? AND title<>'' LIMIT 1",
+            (ds,)).fetchone()
+        # Column-quality: a column name longer than 80 chars means the whole
+        # table got dumped into the header (e.g. ss_mva) -> the dataset is
+        # mis-parsed and must not answer.
+        cols = [r[0] for r in con.execute(
+            "SELECT DISTINCT metric FROM facts WHERE dataset=?", (ds,))]
+        bad_columns = any(len(c) > 80 for c in cols)
+        # Trust = mostly-labelled rows AND a sane number of distinct entities
+        # AND clean column labels.
+        trusted = int(pct <= 0.34 and 2 <= len(ents) <= 60 and n_facts > 0
+                      and not bad_columns)
+        con.execute(
+            "INSERT INTO datasets VALUES (?,?,?,?,?,?,?)",
+            (ds, n_facts, len(ents), round(pct, 3), int(has_total), trusted,
+             title[0] if title else ""))
+
+    print("\n[tables] dataset trust report (trusted = safe to answer):")
+    for ds, n, ne, pct, ht, tr in con.execute(
+            "SELECT dataset,n_facts,n_entities,pct_numeric_entity,has_total,"
+            "trusted FROM datasets ORDER BY trusted DESC, dataset"):
+        flag = "TRUSTED " if tr else "quarant."
+        print(f"    [{flag}] {ds:30s} facts={n:5d} entities={ne:4d} "
+              f"num_ent={pct:.0%} total={'Y' if ht else '-'}")
+
+
+# --------------------------------------------------------------------------- #
+# Query layer: intent -> (dataset, column), entity filter, exact lookup
+# --------------------------------------------------------------------------- #
+# Ordered most-specific-first. Each entry maps a user phrase to the EXACT
+# (dataset, metric) it must read. This is what stops "connections" resolving to
+# the Domestic column: "connection(s)" is pinned to the Total column.
+# Curated catalog: maps natural phrasing -> dataset, and gives the default
+# column for a bare quantity question. Only datasets listed here AND marked
+# trusted by the quality gate are ever answered. ``default=None`` means the
+# table has several metrics, so the user must name one (we clarify, never guess).
+DATASET_CATALOG: dict[str, dict] = {
+    "connection": {
+        "keywords": ["connection", "connections", "number of connections"],
+        "default": "Total"},
+    "connected_load": {
+        "keywords": ["connected load", "total load", "sanctioned load", "load"],
+        "default": "Total"},
+    "damaged_transformers": {
+        "keywords": ["transformer damaged", "damaged transformer", "transformer damage",
+                     "transformers damaged", "burnt transformer", "damaged transformers",
+                     "damage rate"],
+        "default": "Transformers damaged Total"},
+    "distribution_transformer": {
+        "keywords": ["distribution transformer", "transformers installed",
+                     "number of transformers", "dtr"],
+        "default": "Total"},
+    "circle_collection_efficiency": {
+        "keywords": ["collection efficiency", "billing efficiency", "at&c loss",
+                     "atc loss", "realisation", "assessment"],
+        "default": None},
+    # --- Year-wise / series datasets ---------------------------------------
+    "consumers": {
+        "keywords": ["consumer base", "new consumer", "consumers added",
+                     "consumer added", "number of consumers", "total consumers"],
+        "default": "Consumer Base"},
+    "year_wise_received_billed": {
+        "keywords": ["energy billed", "energy input", "units billed",
+                     "units input", "energy received", "distribution loss"],
+        "default": None},
+    "cl_year_wise": {
+        "keywords": ["increase in connected load", "connected load year",
+                     "year wise connected load", "connected load growth",
+                     "load addition"],
+        "default": "Connected Load (in KW)"},
+    "digital_transactions": {
+        "keywords": ["digital transaction", "online revenue", "online payment",
+                     "digital payment"],
+        "default": None},
+    "feeder_rds": {
+        "keywords": ["rds feeder", "rural feeder", "feeder rds"],
+        "default": "Total number of RDS feeders"},
+    "feeder_urban": {
+        "keywords": ["urban feeder", "feeder urban"],
+        "default": "Total number of Urban feeders"},
+    "ht_lt__ratio": {
+        "keywords": ["ht lt ratio", "ht/lt ratio", "ht to lt ratio",
+                     "ht-lt ratio"],
+        "default": "HT-LT Ratio"},
+    "mgjgy_year_wise": {
+        "keywords": ["mgjgy", "villages electrified", "village"],
+        "default": "Villages"},
+    "progress_power_theft": {
+        "keywords": ["power theft", "theft case", "theft detected",
+                     "penalty imposed", "premises checked"],
+        "default": "Theft cases detected"},
+    "recovery_bills": {
+        "keywords": ["arrears recovered", "recovery of bills", "disconnection",
+                     "arrear"],
+        "default": None},
+    "service_delivery": {
+        "keywords": ["service delivery", "connections released",
+                     "released within"],
+        "default": "% Connections released within 30"},
+    "abstract_substations_2021": {
+        "keywords": ["substation", "sub station", "sub-station", "33 kv line",
+                     "mva capacity"],
+        "default": None},
+}
+
+DATA_NOT_FOUND = "Data not found in the provided tables."
+_MAX_FACTS = 24  # cap a single answer so a series query can't dump a huge list
+
+# If the question is procedural/explanatory, it belongs to the prose RAG path,
+# not the numeric fact store — even if it mentions 'domestic connection'.
+_PROCEDURAL_RE = re.compile(
+    r"\b(procedure|process|how to|how do|how can|how should|apply|applic|"
+    r"eligib|documents?|required|needed|paperwork|proof|affidavit|form|"
+    r"rule|regulation|clause|circular|explain|define|meaning|why|"
+    r"deposit|tariff|rate of|charges?)\b", re.I)
+
+# Cues that the user wants a number/quantity (used only for diagnostics).
+_NUMERIC_RE = re.compile(
+    r"\b(how many|how much|number of|no\.? of|total|count|amount|figure|value|"
+    r"load|losses?|efficiency|rate|percent|connections?|transformers?|consumers?|"
+    r"substations?|feeders?|length|ratio|mva|recovery|collection|billed)\b", re.I)
+
+# Default utility-wide entity to use when the user names no district.
+_DEFAULT_ENTITIES = ("grand total", "total (r+u) uhbvn", "uhbvn", "total")
+
+# Words that carry no disambiguating signal in a column name.
+_COL_STOP = {"in", "the", "of", "to", "at", "end", "month", "as", "on", "name",
+             "circle", "sr", "no", "figure", "lus", "lakh", "nos", "fy", "year",
+             "and", "for", "total"}
+
+
+def _connect(db_path: str | None = None) -> sqlite3.Connection:
+    return sqlite3.connect(db_path or DB_PATH)
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", "", s.lower())
+
+
+# Canonicalise district spelling variants so a question and the table row match
+# regardless of which spelling each uses (the connection report says 'Sonipat',
+# the transformer report says 'Sonepat'; 'Yamuna Nagar' vs 'Yamunanagar').
+_SPELLING = [("sonepat", "sonipat")]
+
+
+def _canon(s: str) -> str:
+    s = _norm(s)
+    for variant, canonical in _SPELLING:
+        s = s.replace(variant, canonical)
+    return s
+
+
+def numeric_intent(query: str) -> bool:
+    return bool(_NUMERIC_RE.search(query)) and not _PROCEDURAL_RE.search(query)
+
+
+def trusted_datasets(con: sqlite3.Connection) -> set[str]:
+    try:
+        return {r[0] for r in con.execute(
+            "SELECT dataset FROM datasets WHERE trusted=1")}
+    except sqlite3.OperationalError:
+        return set()  # meta table absent (old DB) -> nothing trusted
+
+
+def columns_of(con: sqlite3.Connection, dataset: str) -> list[str]:
+    return [r[0] for r in con.execute(
+        "SELECT DISTINCT metric FROM facts WHERE dataset=?", (dataset,))]
+
+
+def _col_tokens(name: str) -> list[str]:
+    return [t for t in re.findall(r"[a-z0-9&]+", name.lower())
+            if len(t) >= 3 and t not in _COL_STOP]
+
+
+def _similar(a: str, b: str) -> float:
+    return SequenceMatcher(None, a, b).ratio()
+
+
+def _fuzzy_member(word: str, vocab: set[str], cutoff: float = 0.85) -> bool:
+    """True if ``word`` is in vocab or a near-spelling of a vocab word.
+
+    Tolerates typos like 'domastic' -> 'domestic'. Only words of length >= 5 are
+    fuzzy-matched, to avoid short-word collisions.
+    """
+    if word in vocab:
+        return True
+    if len(word) < 5:
+        return False
+    return any(abs(len(v) - len(word)) <= 2 and _similar(word, v) >= cutoff
+               for v in vocab)
+
+
+def _token_match(token: str, qtok: set[str]) -> bool:
+    """A column token matches a query token, allowing a 1-char typo."""
+    return _fuzzy_member(token, qtok)
+
+
+def explicit_columns(cols: list[str], query: str) -> list[str]:
+    """Columns the user named explicitly (any informative token appears),
+    tolerant of misspellings (e.g. 'domastic' matches the 'Domestic' column)."""
+    qtok = set(re.findall(r"[a-z0-9&]+", query.lower()))
+    return [c for c in cols
+            if (ct := _col_tokens(c)) and any(_token_match(t, qtok) for t in ct)]
+
+
+def _top_scoring(cols: list[str], query: str) -> list[str]:
+    """Keep only the columns matching the MOST query tokens.
+
+    'out of warranty' should land on 'Transformers damaged Out of warranty
+    period' (3 tokens) and not also on '% Damage rate ... warranty period'
+    (1 shared token) — the shared word 'warranty' must not drag in weaker
+    matches when a more specific column exists.
+    """
+    qtok = set(re.findall(r"[a-z0-9&]+", query.lower()))
+
+    def score(c: str) -> int:
+        ct = _col_tokens(c)
+        exact = sum(1 for t in ct if t in qtok)
+        fuzzy = sum(1 for t in ct if t not in qtok and _token_match(t, qtok))
+        return 2 * exact + fuzzy  # an exact hit always outranks a typo match
+
+    scored = [(score(c), c) for c in cols]
+    best = max((s for s, _ in scored), default=0)
+    return [c for s, c in scored if s == best and s > 0]
+
+
+def _prune_to_default(chosen: list[str], default: str | None, query: str) -> list[str]:
+    """Collapse sibling sub-columns to the aggregate unless the user asked for them.
+
+    'transformer damaged' matches the parent token 'damaged', which also appears
+    in 'Out of warranty period' / 'With in warranty period'. If the aggregate
+    ('Transformers damaged Total') is among the matches, keep it and drop a
+    sibling only when the query contains one of that sibling's *distinguishing*
+    tokens (e.g. 'warranty'). So a bare question returns the Total; an explicit
+    'out of warranty' question still returns that breakdown.
+    """
+    if not default:
+        return chosen
+    deflt = [c for c in chosen if c.lower() == default.lower()]
+    if not deflt:
+        return chosen  # aggregate wasn't matched -> leave the explicit picks alone
+    base = set(_col_tokens(default))
+    qtok = set(re.findall(r"[a-z0-9&]+", query.lower()))
+    kept = list(deflt)
+    for c in chosen:
+        if c.lower() == default.lower():
+            continue
+        if (set(_col_tokens(c)) - base) & qtok:  # a distinguishing token was asked for
+            kept.append(c)
+    return kept
+
+
+_UTILITY_SYNS = {"uhbvn", "haryana", "uttarharyana", "overall", "total",
+                 "grandtotal", "nigam", "discom", "state", "whole", "entire"}
+_MONTHS = {"january", "february", "march", "april", "may", "june", "july",
+           "august", "september", "october", "november", "december"}
+# Place is introduced by one of these; lets us spot an unknown named location.
+_LOC_RE = re.compile(r"\b(?:in|at|for|across|of|on)\s+(?:the\s+)?([A-Za-z][\w .&-]*)", re.I)
+
+
+def _entity_tokens(entity: str) -> set[str]:
+    """Distinctive tokens to match an entity: the whole canon form, year/date
+    codes (2015-16, 31-Mar-15, 2017), and words of length >= 4 (district names,
+    'connection', 'feedback'). Short filler words are ignored."""
+    toks = {_canon(entity)}
+    toks.update(re.findall(
+        r"\d{4}-\d{2}|\d{1,2}-[a-z]{3}-\d{2}|[a-z]{4,}|\d{4}", entity.lower()))
+    return {t for t in toks if t and t not in {"total", "grand", "grandtotal"}}
+
+
+def find_entity(con: sqlite3.Connection, dataset: str, query: str) -> list[str]:
+    """Row(s) the query targets: a named district / year / particular, else the
+    utility-wide total row, else (for a small series with no total) every row.
+
+    If the user names a place we DON'T have (e.g. 'on the Moon'), return nothing
+    so the caller reports 'Data not found' — never silently substitute another row.
+    """
+    rows = [r[0] for r in con.execute(
+        "SELECT DISTINCT entity FROM facts WHERE dataset=?", (dataset,))]
+    qn = _canon(query)
+    ql = query.lower()
+
+    named = [e for e in rows
+             if any(t in qn or t in ql for t in _entity_tokens(e))]
+    if named:
+        return sorted(set(named), key=len)
+
+    # No row named explicitly. Did the user name an UNKNOWN place? If a location
+    # phrase holds a word that isn't a district, utility synonym, month, or part
+    # of this table's vocabulary, refuse rather than guess.
+    vocab = ({t for e in rows for t in _entity_tokens(e)} | _UTILITY_SYNS | _MONTHS
+             | {t for c in columns_of(con, dataset) for t in _col_tokens(c)}
+             | {w for info in DATASET_CATALOG.values()
+                for k in info["keywords"] for w in re.findall(r"[a-z]+", k)})
+    for m in _LOC_RE.finditer(query):
+        words = re.findall(r"[a-z]+", m.group(1).lower())
+        if words and all(not _fuzzy_member(w, vocab) for w in words):
+            return []  # unknown place named -> no fallback
+
+    for default in _DEFAULT_ENTITIES:
+        match = [e for e in rows if e.lower() == default]
+        if match:
+            return match
+
+    # Small series with no utility-total row (e.g. year-wise tables): the user
+    # asked for the metric across all periods -> return the whole series.
+    if 2 <= len(rows) <= 20:
+        return sorted(rows)
+    return []
+
+
+def _lookup_cells(con, dataset, metric, entity) -> list[dict]:
+    return [
+        {"dataset": dataset, "entity": r[0], "metric": r[1], "value": r[2],
+         "unit": r[3], "period": r[4], "source": r[5]}
+        for r in con.execute(
+            "SELECT entity, metric, value, unit, period, source FROM facts "
+            "WHERE dataset=? AND entity_l=? AND metric_l=?",
+            (dataset, entity.lower(), metric.lower()))
+    ]
+
+
+def _fmt_value(v: float, unit: str) -> str:
+    num = f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}"
+    if unit in ("count", "") or unit is None:
+        return num
+    if unit == "%":
+        return f"{num}%"
+    return f"{num} {unit}"
+
+
+def _format_facts(facts: list[dict]) -> str:
+    return "\n\n".join(
+        f"{f['entity']} — {f['metric']}: {_fmt_value(f['value'], f['unit'])}"
+        + (f" (as of {f['period']})" if f["period"] else "")
+        + f"\n(Source: {f['source']}, Row: {f['entity']}, Column: {f['metric']})"
+        for f in facts
+    )
+
+
+def respond(query: str, db_path: str | None = None) -> dict:
+    """Route a query against the trusted fact store.
+
+    Returns a dict with ``status`` in:
+      answer    -> exact, column-grounded value(s); ``text`` is the reply.
+      clarify   -> matched a table but need the metric/circle; ``text`` asks.
+      not_found -> matched a table but that exact cell is absent (never guess).
+      prose     -> not a trusted-table question; caller uses vector RAG instead.
+    """
+    path = db_path or DB_PATH
+    if not os.path.exists(path) or _PROCEDURAL_RE.search(query):
+        return {"status": "prose"}
+
+    con = _connect(path)
+    try:
+        trusted = trusted_datasets(con)
+        q = query.lower()
+        matched = [ds for ds, info in DATASET_CATALOG.items()
+                   if ds in trusted and any(k in q for k in info["keywords"])]
+        if not matched:
+            return {"status": "prose"}
+
+        collected: list[dict] = []
+        clarify: str | None = None
+        for ds in matched:
+            cols = columns_of(con, ds)
+            default = DATASET_CATALOG[ds]["default"]
+            explicit = explicit_columns(cols, query)
+            if explicit:
+                chosen = _prune_to_default(_top_scoring(explicit, query), default, query)
+            elif default:
+                chosen = [c for c in cols if c.lower() == default.lower()]
+            else:
+                chosen = []
+            if not chosen:
+                opts = sorted({c for c in cols if c.lower() != "total"})[:12]
+                clarify = clarify or (
+                    f"I have {ds.replace('_', ' ')} data, but please name the "
+                    f"metric. Available: {', '.join(opts)}.")
+                continue
+            entities = find_entity(con, ds, query)
+            if not entities:
+                clarify = clarify or (
+                    f"I have {ds.replace('_', ' ')} data, but please name the "
+                    f"circle or year/period you want.")
+                continue
+            ds_facts = [f for c in chosen for e in entities
+                        for f in _lookup_cells(con, ds, c, e)]
+            # If the narrowed column choice has no data for the named row (e.g. a
+            # date that only exists under a different metric), broaden to every
+            # explicitly-matched column before giving up.
+            if not ds_facts and len(explicit) > len(chosen):
+                ds_facts = [f for c in explicit for e in entities
+                            for f in _lookup_cells(con, ds, c, e)]
+            collected += ds_facts
+
+        if collected:
+            truncated = len(collected) > _MAX_FACTS
+            text = _format_facts(collected[:_MAX_FACTS])
+            if truncated:
+                text += (f"\n\n…({len(collected) - _MAX_FACTS} more rows — narrow "
+                         f"by circle, year, or metric to see the rest.)")
+            return {"status": "answer", "facts": collected, "text": text}
+        if clarify:
+            return {"status": "clarify", "text": clarify}
+        return {"status": "not_found", "text": DATA_NOT_FOUND}
+    finally:
+        con.close()
+
+
+def format_answer(query: str, db_path: str | None = None) -> str:
+    """Convenience wrapper for CLI/eval: the reply text for any structured query."""
+    r = respond(query, db_path)
+    return r.get("text", DATA_NOT_FOUND)
+
+
+if __name__ == "__main__":
+    build()

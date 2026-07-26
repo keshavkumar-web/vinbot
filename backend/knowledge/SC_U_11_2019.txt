@@ -1,0 +1,353 @@
+Source document: SC_U_11_2019.pdf
+
+36
+UTTAR HARYANA BIJLI VITRAN NIGAM
+Sales Circular No. U- 11 / 2019
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula
+
+To
+All CEs (OP), SEs(OP), XENs (OP), SDOs (OP),
+JEs-I In-charge Sub-office in UHBVN
+
+Memo No.Ch-23 /TR-72(90)/HERC/ARR/2018/CE/C-I
+Dated: 03.04.2019
+
+Subject: Schedule of tariff for supply of energy.
+
+Please refer to Sales circular No. U-23/2018 dated 07.12.2018
+vide which schedule of tariff for supply of energy as per HERC tariff order
+dated 15.11.2018 applicable w.e.f 01.11.2018 followed by corrigendum vide
+Sales Circular No. U- 09/2019 dated 14.03.2019 were circulated.
+
+HERC now has directed vide their letter dated 18.01.2019 that
+the aforementioned Sales Circular should precisely be in line with tariff order
+dated 15.11.2018.
+
+Accordingly, the Distribution and Retail Supply Tariff to be
+charged by UHBVN and DHBVN from their consumers during the FY 2018-19
+is as under which shall remain applicable with effect from 01.11.2018.
+
+Sr.
+No.    Tariff for 2017-18 (w.e.f. 01.07.2017)    Tariff for 2018-19 (w.e.f. 01.11.2018)
+        Category of consumers                        Energy Charges
+        (Paisa / kWh or/ kVAh)                     Fixed Charge (Rs. per kW per month of the connected load / per kVA of sanctioned contract demand (in case supply is on HT) or as indicated
+1       Domestic Supply                             Domestic Supply
+        Category I: (Total consumption up to 100 units per month)  Category I: (Total consumption up to 100 units per month)
+        0 - 50 units per month                     0 - 50 units
+        270/kWh                                   270/kWh
+        Nil                                       Nil
+        Rs. 115 up to 2 kW and                   Rs. 115 up to
+        Rs. 70 above 2 kW                        2 kW and Rs. 70 above 2 kW
+        51-100                                     51-100
+        450/kWh                                   450/kWh
+        Nil                                       Nil
+        Category II: (Total consumption more than 100 units/month and up to 800 units/month)  Category II: (Total consumption more than 100 units/month and up to 800 units/month)
+        0-150                                     0-150
+        450/kWh                                   450/kWh
+        Nil                                       Nil
+        Rs. 125 up to 2 kW and                   Rs 125 upto 2 kW and Rs.75 above 2 kW
+        Rs.75 above 2 kW                          151-250
+        151-250                                   525/kWh
+        525/kWh                                   Nil
+        Nil                                       Nil
+        251-500                                   251-500
+        630/kWh                                   630/kWh
+        Nil                                       Nil
+        501-800                                   501-800
+        710/kWh                                   710/kWh
+        Nil                                       Nil
+        Category III:                              Category III:
+        801 Unit and above                          801 Unit and above
+        (flat rate                                  (flat rate
+        no telescopic)                             no telescopic)
+        Nil                                       Nil
+        Rs. 125 up to 2 kW and                   Rs. 125 up to 2 kW and Rs.75 above 2 kW
+        Rs.75 above 2 kW
+
+2  Non Domestic
+   benefits)                     Non Domestic (including Independent Hoarding / Decorative Lightning)
+
+   Upto 5 kW (LT)               Rs. 235/kW      Upto 5 kW (LT)               635/kWh        Nil               Rs. 235/kW
+   Above 5 kW and               Above 5 kW      705/kWh        Nil
+   Up to 20 kW                  and Up to 20 kW
+   Above 20 kW and              660/kVAh       160 / kW      Nil               Above 20 kW and upto 50 kW (LT)
+   upto 50 kW (LT)
+   Existing consumers            695/kVAh       160 / kW      Nil               Existing consumers above 50 kW upto 70 kW (LT)
+   s above 50 kW
+   upto 70 kW (LT)
+   Consumers above 50 kW        675/kVAh       160 / kW      Nil               Consumers above 50 kW (HT) New
+   (HT) New
+
+3  HT Industry (above 50 kW)
+   Supply at 11 kV              665/kVAh       170/kVA      Nil               Supply at 11 kV              665/kVAh       170/kVA      Nil
+   Supply at 33 kV              655/kVAh       Nil               Supply at 33 kV              655/kVAh       Nil
+   Supply at 66 kV or          645/kVAh       Nil               Supply at 66 kV or higher   645/kVAh       Nil
+   higher
+   Supply at 220 kV            635/kVAh       NIL               Supply at 220 kV            635/kVAh       NIL
+   Supply at 400 kV            625/kVAh       NIL               Supply at 400 kV            625/kVAh       NIL
+   Arc furnaces/               695              Paisa per kVAh if supply is at 11 kV (See note 3 below),
+   Steel Rolling               Mills also applicable to Open Access
+   Mills also applicable to
+   Open Access
+
+4  LT Industry - upto 50 kW
+   Upto 10 kW                  635/kVAh       Nil               Rs. 185/kW      Upto 10 kW                  635/kVAh       Nil               Rs. 185/kW
+   Above 10 kW &               665/kVAh       Nil               Rs. 185/kW      Above 10 kW & upto 20 kW   665/kVAh       Nil               Rs. 185/kW
+   upto 20 kW
+   Above 20 kW and             640/kVAh       Rs 160 on 80% of CL  Nil      Above 20 KW and upto 50 KW  640/kVAh       Rs 160 on 80% of CL  Nil
+   upto 50 kW
+   Existing consumers           665/kVAh       Rs 160 on 80% of CL  Nil      Existing consumers above 50 kW upto 70 kW (LT)  665/kVAh       Rs 160 on 80% of CL  Nil
+
+5  Agriculture Tube-well Supply
+   Metered:                    10/kWh        Nil               Rs. 200 / BHP per year
+   (i) with motor upto 15 BHP
+   (ii) with motor above 15 BHP  8/kWh        Nil
+   Un-metered (Rs. / Per BHP / Month):  Nil  Rs. 15 / Per BHP / Month  Nil  Un-metered (Rs. / Per BHP / Month):
+
+Month):
+(i) with motor upto 15 BHP
+(ii) with motor above 15 BHP
+
+6  Public Water Works / Lift Irrigation / MITC
+   735/kWh  180/kW or BHP  Nil  Public Water Works / Lift Irrigation / MITC  735/kWh  180/kW or Nil
+
+7  Street Lighting
+   735/kWh  Nil  Rs. 180/kW  Street Light  735/kWh  Nil  Rs. 180/kW
+
+8  Railway Traction & DMRC
+   Supply at 11 kV  655/kVAh  160/kVA  Nil  Supply at 11 kV  655/kVAh  160/kVA  Nil
+   Supply at 33 kV  645/kVAh  160/kVA  Nil  Supply at 33 kV  645/kVAh  Nil
+   Supply at 66 or 132 kV  635/kVAh  160/kVA  Nil  Supply at 66 or 132 kV  635/kVAh
+   Supply at 220 kV  625/kVAh  160/kVA  Nil  Supply at 220 kV  625/kVAh
+
+9  DMRC
+   Supply at 66 or 132 kV  635/kVAh  160/kVA  Nil  Supply at 66 or 132 kV  625/kVAh  160/kVA  Nil
+
+10  Bulk Supply
+   Supply at LT  650/kW or Rs. 160/kW  Nil  Supply at LT  650/kW  160/kW or Rs. 160/kW  Nil
+   Supply at 11 kV  640/kVAh  Nil  Supply at 11 kV  640/kVAh
+   Supply at 33 kV  630/kVAh  Nil  Supply at 33 kV  630/kVAh
+   Supply at 66 or 132 kV  620/kVAh  Nil  Supply at 66 or 132 kV  620/kVAh
+   Supply at 220 kV  615/kVAh  Nil  Supply at 220 kV  615/kVAh
+
+11  Bulk Supply Domestic
+   For total consumption in a month not exceeding 500 units/flat/dwelling unit (DU).
+   525/kWh  Rs. 100 /kW of the recorded demand  Nil  For total consumption in a month not exceeding 800 units/flat/dwelling unit (DU).  525/kWh  Rs. 100 /kW of the recorded demand  Nil
+   For total consumption in a month exceeding 500 units/flat/DU.
+   620/kWh  Rs. 100 /kW of the recorded demand  Nil  For total consumption in a month exceeding 800 units/flat/DU.  620/kWh  Rs. 100 /kW of the recorded demand  Nil
+
+12  Independent Hoarding / Decorative Lightning
+   854/kWh  180/kW  Nil  Independent Hoarding / Decorative Lightning  Included in non-domestic consumer category
+
+13  Temporar y
+Metered supply
+
+Energy charges 1.5 times the energy charges of relevant category for which temporary supply has been sought plus fixed charges/ MMC at normal rates of relevant consumer category.
+
+Temporary Metered supply
+
+Energy charges 1.5 times the energy charges of relevant category for which temporary supply has been sought plus fixed charges/ MMC at normal rates of relevant consumer category.
+
+Notes: -
+1. The incentive on installation of rooftop solar system as per HAREDA guidelines, shall be Rs. 1/- per unit only for all DS consumers/Bulk supply (domestic) consumers, installing solar system after the date of this Order i.e. incentive is admissible only to those RTSS which have been installed / commissioned after 15.11.2018. In case the solar system is accompanied by battery storage system of the equivalent capacity, additional incentive of Rs. 1/- per unit shall also be provided, for Bulk Supply (Domestic) consumers only.
+2. Energy charges in case of Domestic consumers are telescopic in nature up to the consumption of 800 Units / month. In case of consumption more than 800 units/month, no slab benefit shall be admissible and tariff applicable will be 710 paisa/kWh for total consumption.
+3. In case of Arc furnaces/ Steel Rolling Mills for supply at 33 kV and above, the HT Industrial tariff at the corresponding voltage level shall be applicable.
+4. Fixed charges for HT Industrial supply and Bulk supply category are in Rs./kVA of Contract Demand. For Railways and DMRC, the fixed charges are in Rs./kVA of the billable demand.
+5. In case of Bulk Supply Consumers (other than Bulk Supply – DS), the fixed charges are in Rs./kW of the connected load where contract demand is not sanctioned and in Rs./kVA of contract demand where contract demand is sanctioned.
+6. 80% of the connected load shall be taken into account for levying fixed charges where leviable in case of LT industrial Supply. In case of LT industry above 20 kW where MDI meter is installed the fixed charges shall be Rs. 160/kW/month of recorded demand if it is in kW or Rs. 144/kVA/month of recorded demand if the same is in kVA.
+7. Fixed charges for Bulk Supply Domestic are in Rs. / kW of the recorded demand.
+8. The above tariff does not include Electricity Duty, Municipal Tax and FSA.
+9. The consumers who will deposit advance payment online through RTGS/NEFT in the banks authorized by the Discoms equivalent to 120% of energy charges paid in the previous year, within one month of this Order, shall be given a discount of equivalent to Savings Bank rate till the time entire advance is adjusted.
+10. Fixed charges for unmetered AP consumers, MITC and Lift Irrigation category are in Rs. / BHP / month. For MITC and Lift Irrigation, DISCOMs are directed to install smart meter as per CEA norms, within 3
+
+months from the date of Order of the Commission i.e. 15.11.2018. In
+case the DISCOMs are unable to do so, it may authorize the consumers
+accordingly, under intimation to the Commission. This exercise be
+completed within a period of four months from the date of this Order,
+otherwise tariff equivalent to 3 times of the normal tariff shall be
+applicable. AP consumption shall also be metered by utilizing the meter
+replaced by smart meter. It should be ensured that no supply is un-
+metered.
+11. The Commission shall consider granting approval to the Consumers
+intending to avail supply on Higher Voltage level in case rooftop solar
+plant is installed by them as per HAREDA norms accompanied by smart
+meter/smart grid as per CEA norms. Such consumers shall give their
+proposal within five months from the date of the Order of the
+Commission i.e. 15.11.2018.
+12. Under Bulk Supply (Domestic) category no benefit of lower slab shall be
+admissible in the higher consumption slabs. Total consumption shall be
+charged at a single tariff depending upon the average
+consumption/flat/residential unit for that month.
+13. Bulk Supply Tariff shall be applicable to cremation ground, orphanage,
+old-age home, kushtrog ashram, working women hostel and E-Vehicle
+charging station.
+14. Certain consumers, during public hearing and other-wise, have
+expressed the views that sometimes it is difficult to deposit additional
+consumer security deposit and additional demand charges on
+enhancement of load. The Commission Orders that in case of
+enhancement of load where the additional ACD is higher than Rs.
+10,000/-, the existing consumer (Panchayat/Nagar Palika/any other
+social society installing electric crematorium with Smart Meter/Smart
+Grid as per CEA norms, cremation ground, orphanage, old-age home,
+kushtrog ashram, working women hostel and E-Vehicle charging station)
+may be allowed to deposit ACD in 12 equal installments, without
+payment of any interest. However, facility of depositing additional
+demand charges/ connection charges in 12 installments along with
+interest at an appropriate rate not less than 12% p.a., may also be
+extended to the existing consumers with good payment record. Both the
+amount as above may form part of energy bills in the next 12 months.
+15. In case of single point supply as per HERC (Single Point Supply to
+Employers’ Colonies, Group Housing Societies and Residential or
+Commercial cum Residential Complexes of Developers) Regulations,
+2013, Bulk Supply (Domestic Supply) tariff shall be applicable. A rebate
+of 4% in case of supply at 11 kV and 5% in case of supply at higher
+voltage in the energy consumption as recorded at Single Point Supply
+meter shall be admissible. NDS load, if any, beyond the prescribed limit
+
+as per schedule of tariff, the NDS tariff shall be applicable on monthly consumption corresponding to the NDS load as detailed in the said Regulation. The Bulk Supply (Domestic) Tariff shall apply only to the consumer categories covered by the Single Point Supply Regulations notified by the Commission.
+16. In addition to the tariff as above, the Discoms shall levy FSA as per HERC (Terms and Conditions for Determination of Tariff for Generation, Transmission, Wheeling and Distribution & Retail Supply under Multi Year Tariff Framework) Regulations, 2012.
+17. In case of Health and Educational Institutions having a total load exceeding 20 kW, these shall be treated as non–domestic category where the entire load is NDS. However if there is mixed load or there is some other category’s load (other than Industrial) in the total load and if such other load exceeds 10 % of the total load then Bulk Supply tariff shall be applicable. The Commission may consider to cover NDS consumers / Universities / Educational Institution / Medical Colleges/ PGIMS/Govt. Hospitals / Govt. building / Public Health / Water works / Street light etc. under single point supply provided they install Rooftop Solar System as per HAREDA norms accompanied by smart meter / smart grid as per CEA norms.
+18. The surcharge of 45 paise/ per unit arc furnace/ steel rolling mills shall also be applicable on Open Access power. However, surcharge of 30 paise per unit shall be levied on Arc furnace/ steel rolling mills installing Rooftop Solar System as per HAREDA norms accompanied by smart meter as per CEA norms.
+19. Rebate of 5 paise/kvah shall be allowed to HT/LT consumers having load above 1 MW. Such consumers shall also have to give undertaking to install Rooftop Solar System as per HAREDA norms, Smart Meter/Smart Grid as per CEA norms and shall complete the entire system within seven months of the undertaking.
+20. HT/LT consumer opting for suo-moto load enhancement and where load augmentation is not required in the transmission/distribution system, may deposit security deposit in 15 monthly installments, without charging any interest. Service connection charges shall be allowed to be recovered in ten installments with interest rate not less than 12% p.a. Such consumers shall give their proposal within two months from the date of the Order of the Commission i.e. 15.11.2018 and shall implement the same within seven months of the date of undertaking.
+21. Rebate of 5 paise/kvah shall be allowed for Mobile/Telephone towers, installing smart meter as per CEA norms. Further, the rebate shall be increased to 10 paise/kvah in case the smart meter is accompanied by Rooftop Solar System as per HAREDA norms. The concession shall be allowed provided circle-wise single bill is issued to such consumers.
+
+Such consumers shall give their proposal within two months from the
+date of the Order of the Commission i.e. 15.11.2018 and shall implement
+the same within seven months of the date of undertaking.
+22. The consumers of all categories may download their bills from Discoms
+website. The consumers shall be provided bills through SMS alerts and/
+or e-mail without any charge, wherever AMR meter reading has been
+started. Urban domestic consumers above 10 KW, where AMR reading
+has started, opting for hard copy of the bill shall have to pay Rs. 10/- per
+bill. All other consumers of the urban area, opting for hard copy of the
+bill, shall have to pay Rs. 25/- per bill. However, no charges on account
+of distribution of hard copy of the bill shall be levied on the consumers
+below 10 KW, AP consumers, BPL consumers and consumers in Rural
+area.
+23. Transaction charges (MDR) for payment through payment gateway on
+the website of the discoms by way of credit card, debit card, net banking
+and also the transaction charges for payment through POS machines at
+the discoms counters and e-wallets etc. shall be borne by the discoms,
+as per earlier Order.
+The consumers of urban areas under Municipal Corporations/Municipal
+Committee shall pay their bills for amount of Rs. 7000/- and above
+through above mode of payment including RTGS/NEFT and the banks
+authorized by the Discoms. Consumers of Urban area with bill amount
+less than Rs. 7,000/-, shall pay the same only with the bank designated
+by the DISCOMs for the purpose.
+24. In case of new residential housing societies developed, accompanied by
+Smart Meter & Smart Grid (both at consumer end and at single point
+supply) as per CEA norms accompanied by Solar System as per
+HAREDA norms, concession of 5% in the tariff shall be allowed to be
+distributed equally between the developer and consumers. Further, in
+case Solar System is accompanied by Battery Storage, the additional
+concession of 6% shall be allowed. The concession shall be allowed on
+the variable tariff only mentioned in the tariff schedule.
+25. Gaushala organisation/social society accompanied by Smart Meter &
+Smart Grid as per CEA norms accompanied by Solar System as per
+HAREDA norms & Biomass/Biogas as per CEA norms, bulk supply tariff
+shall be applicable. Further, if such organisation has not taken electricity
+connection, the same shall be allowed to deposit the security in 12
+installments. The connection charges may also be deposited in 12
+installments after getting the connection, with interest at rate not less
+than 12% p.a.
+Discoms have sought clarification regarding the rates to be applicable for
+supply of energy in case of such Gram Panchayats/retail supply
+franchisees.
+
+In this regard, it is clarified that the rate applicable for Bulk Supply (Domestic) shall be applicable, as provided under Single Point Supply Regulations.
+
+Note: No benefit/concession provided in this Order shall be applicable to those consumers whose bill is outstanding for more than two billing cycles.
+
+Wheeling Charges
+
+The wheeling charges payable by the open access consumers, except for the Solar and Wind energy procured from the State of Haryana (which shall be exempted), shall be Rs. 0.83/kWh.
+
+Cross-Subsidy Surcharge (CSS)
+
+Sr. No.  Categories                          Cross Subsidy Surcharge (Rs./kWh)
+1              HT industry                          0.81
+2              Bulk Supply (other than DS)  1.32
+3              LT Industry                           0.10
+4              NDS (HT)                            1.80
+
+Additional surcharge:
+
+The Additional Surcharge of Rs. 1.13/kWh shall be applicable to the consumers of Uttar Haryana Bijli Vitran Nigam (UHBVN) and Dakshin Haryana Bijli Vitran Nigam (DHBVN) who avail power under the Open Access mechanism in terms of Haryana Electricity Regulatory Commission (Terms and Conditions for Grant of Connectivity and Open Access for Intra-State Transmission and Distribution System) Regulations, 2012, from any source other than the distribution licensees.
+
+Transmission Charges: 36 Paise / kWh shall remain to be applicable as approved by the HERC in its Order dated 31.10.2018 for approval of ARR for Transmission Business & SLDC and determination of Transmission Tariff and SLDC charges for the FY 2018-19.
+
+The schedule of tariff for supply of electricity is modified accordingly.
+
+Sales Circular No. U-23/2018 and U-09/2019 stands superseded. The above instructions may be brought to the notice of all concerned for strict and meticulous compliance.
+
+Superintending Engineer/Commercial
+for Chief Engineer/Commercial
+UHBVN, Panchkula
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: gmcommercialuhbvn@gmail.com, secommercial@uhbvn.org.in
+Endst. No. Ch-23 /TR-72(90)/HERC/ARR/2018/CE/C-I
+Dated: 03.04.2019
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Power), HPUs, Panchkula.
+2. PS to CMD in UHBVN & DHBVN.
+3. SPS to MD, HVPNL, Panchkula.
+4. SPS to MD, HPGCL, Panchkula.
+5. Dir./Vigilance, HVPN, Panchkula
+6. SPS to Director (T-I)/Director (T-II) in UHBVN & DHBVN.
+7. CE/Comm., UHBVN, Hisar.
+8. CE/P&D, UHBVN, Panchkula.
+9. CE/MM, UHBVN, Panchkula.
+10. CE/HPPC, Panchkula.
+11. CFO, UHBVN, Panchkula
+12. CTO, UHBVN, Panchkula.
+13. Chief Electricity Inspector, Govt. of Haryana Sector-17, Chandigarh.
+14. SE/Monitoring, UHBVN, Panchkula.
+15. SE/Commercial, UHBVN, Hisar.
+16. SE/Admn., UHBVN, Panchkula.
+17. SE/SO, UHBVN, Panchkula
+18. S.E workshop and store UHBVN Dhulkote (Ambala)
+19. SE/RAR, UHBVN, Panchkula.
+20. SE/Const. Circle, Room no. 105, Vidyut Sadan C-16 Sector-6 Panchkula.
+21. SE (M&P), UHBVN, Panchkula.
+22. SE/R-APDRP, UHBVN, Panchkula.
+23. Legal Remembrance, HVPN, Panchkula.
+24. F.A (HQR), UHBVN, Panchkula.
+25. Chief Auditor, UHBVN, Panchkula & Rohtak.
+26. Chief Account Officer, UHBVN, Panchkula.
+27. Chairman, CGRF, Kurukshetra.
+28. Company Secretary, UHBVN, Panchkula.
+29. XEN/I, UHBVN, Panchkula.
+30. Deputy Secy. (Technical), UHBVN, Panchkula.
+31. Deputy Secy. (Project), UHBVN, Panchkula
+32. Deputy Secy. (OP), HVPN, Panchkula.
+33. All XEN's (M&P) in UHBVN.
+34. RAO, Office of A.G., Haryana, SCO.No.33, IIIrd floor, Chandigarh
+35. CPRO, UHBVN, Panchkula.
+36. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+37. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhanwanti Bhawan Railway Road, Kurukshetra.
+38. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+39. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+40. Y.Nagar- Jagadhri Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+41. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+42. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+43. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+44. Confederation of Indian Industries, Sector-31, Chandigarh.
+45. President Manufacturing Association, Sonepat.
+46. Director, Industries Association, Yamunanagar.
+47. Citizen Welfare Association (UE) Regd. Koti No.508, Sector-15, Panchkula.
+48. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+49. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+50. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+51. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+52. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+53. All Billing Agencies NIELT centre, Hartron, HCL (T) and TCS.
+
+Executive Engineer/Comm.
+for SE/Comm., UHBVN, Panchkula.

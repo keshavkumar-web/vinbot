@@ -1,0 +1,268 @@
+Source document: SC_I_02_2026.pdf
+
+UTTAR HARYANA BIJLI VITRAN NIGAM
+
+Sales Instruction No. U- 02/2026
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula.
+
+To
+All CEs (OP)/SEs (OP)/XENs (OP)/SDOs (OP),
+JE-I Incharge Sub office in UHBVNL.
+
+Memo No: -Ch-05/SE/SO-25/L
+Dated: - 09.02.2026
+
+Subject: Issuance of Guidelines regarding streamlining of processes for
+captive-status ascertainment, delegation of powers for OA
+agreements, and issuance of login credentials to OA consumers.
+
+The Nigam Management has approved the matter pertaining to the removal
+of process impediments and implementation of a streamlined framework for:
+
+1. Ascertainment of captive status of Open Access (OA) consumers and;
+2. Delegation of authority to the Chief Engineer/System Operation, UHBVN,
+Panchkula for execution of Open Access-related agreements.
+3. Issuance of Login Credentials to Open Access Consumers.
+
+In compliance with the said approval and adhering to the HERC Green
+Energy Open Access Regulation 2023 & similar other Regulations, the following
+guidelines are hereby issued for immediate implementation by all concerned:
+
+1. Delegation of Powers for Execution of OA Agreements
+The Chief Engineer/System Operation, UHBVN, Panchkula shall be the
+authorised signatory for execution of:
+
+o Medium-Term Open Access (MTOA) Agreements
+o Long-Term Open Access (LTOA) Agreements
+o Banking Agreements under HERC Green Energy Open Access Regulations
+with prior approval of WTDs of the Nigam as per existing policy.
+
+2. Streamlined Procedure for Ascertainment of Captive Status
+The applicant shall submit requisite documents to SE/SO, UHBVN,
+Panchkula for ascertaining captive status as per Electricity Rule 2005 or any
+subsequent amendments/rules.
+
+The following shall be treated as the minimum requisite documents for
+issuance of captive status:
+
+a) Application for captive status
+b) HAREDA Registration / NOC
+c) Undertaking to meet the 51% consumption requirement
+d) Ownership Certificate (Format-1) as per CEA procedure
+e) Auditor Certificate (Format-II) as per CEA procedure
+f) Copy of recent energy bill
+
+Based on the above documentation, the concerned SE/SO, UHBVN shall
+check & ascertain Captive Status.
+
+Further, the status of captive user shall be ascertained by CE/ SO, Chief
+Financial Officer (CFO), FA & HPPC, Chief Engineer/ Commercial, Company Secretary
+on yearly basis. This evaluation shall be based strictly on shareholding and energy
+consumption in accordance with CEA and applicable HERC regulatory provisions.
+
+If the captive user/drawl points fall under both DISCOMs, the applicant
+shall obtain captive status certificates from both UHBVN and DHBVN.
+
+3. Issuance of Login Credentials to OA Consumers
+
+The OA consumer shall submit a request to SE/SO, UHBVN, Panchkula
+for issuance of login credentials, along with supporting documents-grant of connectivity,
+LTOA approval, registration of QCA, issuance of charging code, metering compliance
+and COD declaration.
+
+Upon basic confirmation of all the technical pre-requisites by CE/ SO &
+Commercial, HVPN, Panchkula, the SE/SO UHBVN shall issue login credentials to the
+consumer without seeking Management approval, even if the LTOA agreement is still
+under execution.
+
+Energy adjustment for captive consumption shall commence only after
+execution of the LTOA agreement.
+
+4. The above guidelines shall be read in conjunction with all the applicable
+instructions of UHBVN and regulations of Hon'ble HERC issued from time to time and
+shall be binding upon the stakeholders.
+
+5. All concerned shall ensure strict compliance with these guidelines to
+promote transparency, faster disposal, and improved service to Open Access consumers.
+
+These instructions for streamlining the process of captive-status
+ascertainment, delegation of powers for OA agreements, and issuance of login
+credentials to OA consumers supersedes all earlier Office Orders/Instructions issued in
+this regard.
+
+DA/As above
+(Deepak Popli)
+Chief Engineer/Commercial,
+UHBVN, Panchkula
+
+CERTIFICATE OF "OWNERSHIP"
+TO BE SUBMITTED BY A COMPANY OWNING THE CGP
+
+We hereby certify that the Equity Share Capital with voting rights of.......................
+..................................................[Name of the CGP], having its registered office
+at ..................................................[Address of CGP] satisfy the requirements under Rule 3 of the Electricity
+Rules, 2005 for qualifying as a Captive Generation Plant with reference to "Ownership" criteria. The detailed breakup
+of Equity Share Capital with voting rights of the Company have been tabulated below in Table A. Further, specific
+breakup of Equity Share Capital with voting rights held by Captive User(s) vis-a-vis others (non-Captive Users), has
+been tabulated below in Table B. The details of total installed capacity, aggregate capacity of units identified for
+captive use and its equity share capital with voting rights to be held by Captive User(s) to satisfy the requirements
+under Rule 3 of the Electricity Rules, 2005 for qualifying as a Captive Generation Plant is shown in Table C.
+
+Table A
+Equity Share Capital with Voting rights from (Date)............. to (Date) ..........
+Sr.  Name of  Class of  No. of  Value per  Amount of  Percentage  No. of  Percentage  Percentage
+No.  share-  Equity    Equity  Equity     Share       holding in   Voting  holding in  holding in
+     holder  shares    Shares  Share     Capital    Equity Share rights    voting     Equity Share
+             (Captive/  (in Rs.)  (Column  Capital     (4)x(5))   (8)      rights     Capital with
+             others)              (7)                               (9)      voting     voting rights
+                                                                                   rights
+(1)  (2)     (3)      (4)     (5)       (6)        (7)          (8)      (9)      (10)
+Total
+
+Table B
+Break up of Captive User(s) holding in Equity Share Capital with Voting rights from (Date)........... to (Date) ..........
+Sl.  Class of  No. of  Value per  Amount  Percentage  No. of  Percentage  Percentage
+No.  holder    Equity  Equity   Share   holding in   Voting  holding in  holding in
+     of share  Share   Share    Capital  Equity Share rights    voting     Equity Share
+             (1)      (2)     (3)      (4)       (5)        (6)      (7)      (8)      (9)
+1    Captive   User(s)
+2    Others
+Total
+Note: - In case of any change in ownership structure during the year under consideration, TABLE A and TABLE B, shall be separately
+filled for every change in ownership structure, and shall be furnished while applying for captive status before the Verifying Authority.
+
+Page 19 of 30
+
+Table C
+Verification of Equity share capital with voting rights proportionate to the units identified for Captive Use as per Electricity Rules, 2005.
+
+Total Installed Capacity of the generating station (in MW)                A
+Of the total installed Capacity, units and capacity identified for
+Captive Use (in MW)                                                    B* (name of the
+                                                                        unit(s) along with
+                                                                        its/their capacity)
+
+Proportion of Capacity identified for Captive use on the overall
+Installed Capacity                                                      C = B/A
+
+Equity share capital with voting rights to be maintained by
+Captive Users in the Generating station (%)                             D = 26% of C
+
+Actual Equity shareholding with voting rights held by Captive
+Users (%)                                                             E**
+
+* In case a CGP is not owned by SPV, B shall be equal to A.
+
+** In case, ownership of Captive User(s) changes during the year under consideration then the percentage weighted equity share capital with voting rights, shall be calculated as per the formula provided under para 6.3 of this procedure.
+
+Note: As the actual equity shareholding with voting rights held by the Captive User(s) mentioned in E is not less than D, the plant satisfies the Ownership criteria for CGP as required under Rule 3 read with Explanation of Electricity Rules, 2005.
+
+Signature of Chartered Accountant/Practicing Company Secretary:
+Name in Block letters:
+Name of firm: Membership No.:
+UDIN No. (Where applicable)
+
+Place:
+Date:
+
+Page 20 of 30
+
+FORMAT–II
+(Refer para 8.2.2(a))
+
+[To Be Signed / Furnished by submitted by the Captive User(s) and to be submitted by
+the CGP to the Verifying Authority, at the time of submission of Application for
+verification of the Captive Status]
+
+AUDITOR’S CERTIFICATE
+
+I hereby certify that ...... .......... ....... [Captive User Name], a company incorporated
+under Companies Act, 2013 (or under the erstwhile Act) / Cooperative Society (strike off, which
+is not applicable) and having registered office at..... .......... [Address of Captive
+User] and which owns the .......... .......... ....... [Name of the CGP], having its
+registered office at .................. .......... ....... [Address of CGP] with a Capacity of
+... ... MW, has held:
+
+(a) ... percentage holding in Equity Share Capital with voting rights from ...(date) to ...(date)
+and
+(b) ... percentage holding in Equity Share Capital with voting rights from ...(date) to ...(date)
+and
+...... ......
+
+Signature of Chartered Accountant:
+Name in Block letters:
+Membership No.:
+Name of the
+Firm:
+UDIN No. (Where applicable)
+
+Place:
+Date:
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Emdlt. No. Ch-05/SE/SO-25/L
+Dated: 09.02.2026
+
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, DHBVN, Hisar.
+5. SPS to MD, HPVNL, Panchkula.
+6. SPS to MD, HPGCL, Panchkula.
+7. Dir. /Vigilance, HVPN, Panchkula
+8. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comm., DHBVN, Hisar.
+11. CE/PD&C UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPPC, Panchkula.
+14. CE/IT, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, DHBVN, Hisar.
+19. CE/Adm., UHBVN, Panchkula.
+20. CE/SO, UHBVN, Panchkula.
+21. S.E / workshop and store UHBVN Dhulkote (Ambala)
+22. SE/RA, UHBVN, Panchkula.
+23. SE/Const. Circle, UHBVN Panchkula.
+24. SE (M&P), UHBVN Dhulkote (Ambala )
+25. SE/R-ADPR, HVPNL, Panchkula.
+26. Legal Remembrancer, HVPNL, Panchkula.
+27. F.A./MD, UHBVN, Panchkula.
+28. Chief Auditor, UHBVN, Panchkula & Rohtak.
+29. Chief Accounts Officer, UHBVN, Panchkula.
+30. Chairman, CGRF, Kurukshetra.
+31. XEN/IT, UHBVN, Panchkula.
+32. Deputy Secy. (Technical), UHBVN, Panchkula.
+33. Deputy Secy. (Project), UHBVN, Panchkula.
+34. Deputy Secy. (Op), HVPN, Panchkula.
+35. All XEN's (M&P) in UHBVN.
+36. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoa4@gmail.com).
+37. CRPO, UHBVN, Panchkula.
+38. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+39. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhawanit Bhawan Railway Road, Kurukshetra.
+40. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+41. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+42. Y.Nagar- Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana-136601.
+43. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+44. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra).
+45. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+46. Confederation of Indian Industries, Sector-31, Chandigarh.
+47. President, Manufacturing Association, Sonipat.
+48. Director, Industries Association, Yamunanagar.
+49. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+50. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road, Ambala.
+51. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad.121001.
+52. Secretary, Amara Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+53. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+54. President Karmal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+55. All Billing Agencies NIELT centre, Hartron and HCL (T)
+
+Executive Engineer/Comml.
+UHBVN, Panchkula.

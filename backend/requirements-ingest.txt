@@ -1,0 +1,6 @@
+# Extra dependencies for the one-time knowledge ingestion / OCR step
+# (extract_uhbvn.py). NOT needed to serve the app — install only when
+# rebuilding the knowledge base from the source PDFs.
+#   pip install -r requirements-ingest.txt
+pypdf
+pymupdf

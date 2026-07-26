@@ -1,0 +1,357 @@
+Source document: SC_U_04_2026.pdf
+
+26
+
+                  UTTAR HARYANA BIJLI VITRAN NIGAM
+
+                             Sales Circular No. U- 04/2026
+
+From
+                  Chief Engineer/Commercial,
+                  UHBVN, Panchkula
+
+To
+                  All CEs (OP), SEs (OP), XEN (OP), SDOs (OP)
+                  JEs-I In-charge Sub-office in UHBVN.
+
+                  Memo No. Ch-113/TR-72/90/Draft/Single Point/CE/C-I
+                  Dated: 29.04.2026
+
+Subject: Unified Billing Software facility for managing billing activities by the
+Builder/Developer/Colonizer/Users Association inside the premise of
+their Single Point Supply.
+
+The provisions of Sales Circular No. U-14/2020 (HERC Single Point
+Regulation 2020) has specifically delineated the detailed guidelines for the management
+of the service connection request & billing activities by the
+builder/developer/colonizer/user association for the residents in their respective areas
+being fed at Single Point.
+
+However, it has been observed that the enabling provisions of the subject
+cited regulations are not being adhered to in letter & spirit by the
+Employer/GHS/Builder/Developer/Colonizer/Users Association having their Single
+Point connection from UHBVN and availing 4%/5% rebate on the units consumed to
+meet with their obligation such as individual metering, Billing, Collection of charges
+from Individual Residents/User etc.
+
+                  UHBVN is in receipt of myriad of complaints from the residents of
+builder/developer/colonizer/user association areas having Single Point wherein
+residents have raised grievances, notably reciprocated as under:
+1. Energy Bills are not being raised by the builder/developer/colonizer/user
+   association to the residents in the societies as per the standard schedule of tariff
+   notified by HERC/UHBVN every year and they are being deprived of the slab-based
+   tariff.
+2. Energy accounting & Billing of Common Facilities, created for the residents of
+   Housing Society/Colony/Complexes i.e. recreational facilities/services such as
+   common room, society office, street lighting, sewerage treatment plant, ventilation
+   system, common/parking areas, excluding club, school, convenience stores/shops
+   etc, is not being done as per the provisions of the extant regulations framed by
+   HERC wherein applicability of Bulk Supply (Domestic) Tariff has been obligated on
+   the consumption of domestic loads and the common services loads, provided the
+   common services load is in the ratio of 15:85, with domestic load. In case the
+   excess load is to be charged at the commercial tariff along with another
+   commercial load if any.
+
+27
+D/New folder 2026/Draft Sales Circulars 2026
+
+There are no separate metering arrangements for the Common Utilities/Facilities and the liability of the excess consumption is disproportionality being foisted upon the residents by the builder/developer/colonizer/user association in the form of per sq. ft. common area charges.
+
+3. For any ongoing construction activities of the builder/developer/colonizer/user association in the Housing Society/Colony/Complexes, existing permanent electrical connection facility is leveraged by the builder/developer instead of applying for a temporary electricity connection for construction purpose, chargeable at higher tariff than the existing one, thus circumventing the existing provisions of UHBVN and additional units utilized/consumed for such activities are apportioned inordinately into the energy bills of the residents in that Housing Society/Colony/Complexes.
+
+Taking cognizance of the above matter and considering the indiscrimination being faced by the residents of the areas of Single Point connection, the following guidelines are being reiterated/issued, in line with HERC Single Point Regulation 2020 for its meticulous compliance by Employer /GHS/ Builder/Developer /Colonizer/Appropriate Government/Users Association, having Single point connection at their areas.
+
+Metering & Billing of individual consumers within the area of Single Point Supply:
+
+I. The connections to the individual residential consumers and the common facilities/services (i.e. common room, society office, street lighting, sewerage treatment plant, ventilation system, common/parking areas excluding club, school, convenience store etc. to be billed under DS category) and other NDS/Commercial/Temp connection/loads for any construction activity in such area shall be released by the Employer/GHS/ Developer/User Association after executing necessary Agreement, with the individual consumers, specifying the terms and conditions of supply in line with the A&A forms of the UHBVN and recovery of Security (Standard rates as under) and meter Security and such other charges as approved by the Haryana Electricity Regulatory Commission:
+
+Sr.  Category of consumer                Consumption                Security Amount
+No.                                      (Rs/KW or part thereof of the connected load)
+1   Domestic supply / Bulk Supply       750
+    (Domestic)
+2   HT Industrial supply                 1000
+3   Non-Domestic supply                 1000
+4   Bulk Supply                          1000
+5   Street Light                         2000
+6   Independent Hoarding/Decorative    2000
+    Lighting
+7   Temporary Metered Supply            Four times of the rate of category in
+                                         which the temporary supply is
+                                         required
+
+II. All relevant provisions of Supply Code-2014 and amendments thereof, Duty to
+Supply Regulations 2016 and amendments thereof, Standards of Performance &
+other regulations framed by the HERC including the tariff orders issued by the
+Commission from time to time shall be applicable to the
+Employer/GHS/Developer/User Association except Section 126, 135 & 138 of the
+Act wherein UHBVN shall be authorized to take necessary action. The
+Employer/GHS/Developer/User Association shall be responsible for the operation
+and maintenance of the distribution system within its area of supply to meet with
+the standards prescribed by the Commission. The Employer/GHS/
+Developer/User Association shall render all necessary assistance to UHBVN for
+any inspection, verification, or action to be taken under Section 126, 135 and other
+provisions of the Electricity Act, 2003.
+III. The Employer/ GHS/ Builder/Developer/Appropriate Government/Users
+Association shall install, operate & maintain all infrastructure, including
+substations/transformers, required for distribution of electricity within the
+premises of the Employer/GHS/Developer/Users Association at his own cost. All
+the equipment installed shall meet with the safety requirements as per Central
+Electricity Authority (Measures relating to Safety and Electric Supply) Regulations,
+2010.
+IV. The Employer/GHS/Developer/User Association shall provide/install
+meter/metering equipment at an easily accessible place in the
+Colony/GHS/Complex for measuring electricity at a Single Point.
+V. The Employer/GHS/ Developer/User Association shall provide energy meters for
+all the residents, common facilities/services, and other NDS/other loads etc. in
+the Colony/GHS/Complex for measuring electricity.
+VI. The Energy Meters should be as per the Standard Specifications and duly
+tested/sealed from UHBVN's Test Lab/Accredited Test Laboratory.
+VII. The Employer/GHS/ Developer/User Association may make its own arrangement
+for standby back-up power in its area of supply to provide 24X7 days continuous
+supply and shall ensure that system for standby power shall in no way interfere
+with the distribution system of the Licensee and shall also ensure there will be no
+back feeding of supply to UHBVN's system.
+VIII. In case the DG backup supply has also been made available for the Residents, the
+Employer/GHS/Developer/Users Associations will charge the residents separately
+for the same either in the form of annual charges for backup supply or based on
+individual consumption of such supply by each Resident/user by providing
+separate/dual register meters for backup supply. It will, however, be mandatory
+for the Employer/GHS/Developer/Users Associations to install a meter at their
+cost, to record total energy generation by such backup supply generator, which
+will be got duly tested and sealed from the UHBVN by payment of requisite charges.
+IX. The Employer / GHS / Developer / Users Association shall be responsible for all
+liabilities & obligations including individual metering, billing, and collection of
+charges from individual users and payment of energy bill for Single Point Supply
+to the UHBVN.
+
+X. The Employer/GHS/ Developer/Users Association shall ensure, that none of the
+meters of the residents/users or for the common facilities/services is defective or
+dead stop. In case of meter getting defective the same shall be replaced immediately
+and no resident/user or common service connection be billed on
+provisional/average basis for more than one billing cycle. It must be ensured that
+all the meters getting defective or dead stop are replaced immediately.
+
+XI. The Employer/GHS/ Developer/User Association shall issue regular monthly
+electricity bills to the individual consumers residing in the colony/complex on the
+format approved by the Commission. The resident/users shall be charged for their
+consumption as per tariff approved by the Commission for respective category of
+consumers.
+
+XII. The Employer/GHS/ Developer/User Association shall be responsible for billing,
+collection of revenue and proper categorization of consumers for correct revenue
+recovery as per Schedules of Tariff approved by HERC & circulated by UHBVN and
+shall keep updated billing records of all the consumers in the billing data base as
+per UHBVN's requirements and the same shall be supplied/accessed monthly
+to/by the concerned SDO office of the area.
+
+XIII. IT wing of UHBVN shall facilitate the Employer/GHS/ Developer/User Association,
+having single point connection, with a centralized web based billing software
+application to ensure that the billing to the individual consumers residing in the
+colony/complex is done by the Employer/GHS/ Developer/User Association as per
+the appropriate & applicable tariff.
+
+XIV. XEN/SDO In-charge, in coordination with the IT/R-APDRP wing at HQ, shall
+ensure that within one month of issue of these instructions all the
+GHS/RWA/Developer/Users Association are on board on this IT based billing
+platform and billing for Residential, Common Services and Commercial Entities is
+performed by the GHS/RWA/Developer/Users Association using this application.
+
+XV. On boarding the IT based billing platform of UHBVN shall require one time
+registration by the GHS/RWA/Developer/Users Association having single point
+connection subsequent upon which they shall be getting their unique credentials
+further enabling them to perform the billing activities using the application.
+
+XVI. Before commencing any billing activities using the IT based billing platform, the
+GHS/RWA/Developer/Users Association shall have to create their consumer's
+directory in the billing application database entailing the details of the consumer's
+information i.e. Name, Load, Flat no. etc, the historical information of consumption
+shall be subsequently be built based on the frequency of billing.
+
+XVII. UHBVN shall be the Central Administrator for this billing application and all rights
+shall be reserved with the Utility for any amendments in the application/tariff
+thereof.
+
+XVIII. Chief Auditor, UHBVN shall be the nodal for the audit of the billing activities be
+performed by the GHS/RWA/Developer/Users Association using the IT based
+billing platform.
+
+XIX. Accordingly, audit of the billing activities, performed by the
+GHS/RWA/Developer/Users Association, shall be conducted by the office of Chief
+
+Auditor, UHBVN, involving representative(s) from the GHS/RWA/Developer/Users
+Association, on quarterly basis or any other such period specified by Nigam's
+Management/HERC to avoid any disproportionate levying of tariff on the Entities
+i.e. Residential, Commercial & Common Utilities or to avoid any circumvention of
+the applicable regulations/instructions.
+
+XX. Since UHBVN intends to encourage transparency in the entire audit process, as
+such, representative(s) shall be appointed by GHS/RWA/Developer/Users
+Association. The representative(s) shall be any eminent personality having
+rendered his/her services as Army Personnel, Accounting Professional, Senior
+officers from Govt./Pvt. Sector or equivalent who may become part of the audit
+team/process on voluntary basis.
+
+XXI. It will be incumbent upon the representative(s)/volunteers, interested in becoming
+part of the audit team/process, to get themselves registered on UHBVN portal by
+submitting their detailed information along with proof of their w.r.t the services
+offered in the past.
+
+XXII. Upon successful audit of the billing activities, honorarium (as decided by UHBVN)
+shall also be paid by UHBVN to the associated representative(s).
+
+The above instructions have been issued in adherence to the provisions of
+the extent regulations framed by HERC.
+
+The above instructions should be brought to notice of all concerned for
+meticulous compliance.
+
+(Deepak Popli)
+Chief Engineer/Commercial
+UHBVN, Panchkula
+
+Name:                                      Account No:                       Net Payable Amount on or before Due Dated:
+Bill Month:                                Issue Date:                        Due Date:
+Address of Society:                       Bill No:                           Surcharge:
+                                            Net Payable Amount in words:      Gross Amount payable After Due Date:
+
+Meter No:                                 Meter Reading Date:                Period Days   MDI   Unit   Meter Reading   M.F.
+Old:                                      New:                                Old:         New:
+
+Arrears Outstanding for the Financial Year (Q)                     Unit   Slab Calculation   Amount
+Description                     Previous   Current   Total                     Tariff Category
+S.T.P Charges                   Total:      Applicable Tariff on Read Date:   Supply Voltage (KV)
+F.S.A                             Sanctioned Load (KVA/KVA)                  M.M.C
+Surcharge                        Cons. Security                              D.O./C.E
+D. Duty                          Meter Ownership/MDI Meter                  Meter Make/Meter Type
+T. Max
+Fixed Charges
+Excess Credit
+Total Arrear
+
+Details of Charges for Current Cycle                     Details of Amount Payable
+Description                     Amount                     Descriptions                     Amount
+Fixed Charges                   Current Cycle Charges     Arrears/Outstanding Dues
+Energy Charges                 Sunday Charges/Adjustments
+Amount to cover MMC           Provisional Adjustment BR Ag.
+Fuel Surcharge Adjustment      LPS Adjustment
+Misc.                            Other New Energy Charges
+                                 Net Payable Amount
+                                 On or Before Due Date(s)
+                                 Surcharge:
+                                 Gross Amount Payable After
+                                 Due Date(s):
+
+Electricity Duty
+Municipal Tax / P. Tax
+
+Total Current Cycle Charges
+
+Address and Telephone Number(s) of the authorities relating to consumers grievances
+Grievance pertaining to this bill can be logged with
+Address & Telephone number(s) of the
+Consumer Grievance Redressal Forum                     Ombudsman
+                                                                                     For all type of complaints
+                                                                                     18001806134 (Toll Free)
+
+ABC Projects Pvt. Ltd.
+                       M/s. Statement
+                       Consulting Details
+
+Account No.:                       Issue Date:                     Bill No.:
+____________________________________________________________________________________
+Name:                             Address:
+____________________________________________________________________________________
+Net Payable Amount:                Due Date:                       Surcharge:
+____________________________________________________________________________________
+Amount:                           Amount:                          Amount:
+____________________________________________________________________________________
+Rate:                             Rate:                            Rate:
+____________________________________________________________________________________
+Unit (Commercial)                 Unit (SoS)                      Unit (SoS)
+____________________________________________________________________________________
+Units Billed:                     Units Billed:                   Units Billed:
+____________________________________________________________________________________
+Load:                             Load:                            Load:
+____________________________________________________________________________________
+DPS:                              Bill Amount:                    Total Consumed Area
+____________________________________________________________________________________
+Net Amount                        Amount to be                    Total Billed Units of
+                                  Recovered                       Society
+____________________________________________________________________________________
+Closing Units                     Opening Units                   Total Consumption Difference of
+                                                                  Society Units
+____________________________________________________________________________________
+Net Payable Consumption & Other Charges
+a) Electric Consumption Charges
+b) Common Area Charges
+c) Excess Consumption Charges
+____________________________________________________________________________________
+Net Payable Consumption & Other Charges
+                                 Net Bill Payable
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. Ch-113/TR-72/90/Draft/Single Point/CE/C-I
+Dated: 22.04.2026
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, DHBVN, Hisar.
+5. SPS to MD, HVPNL, Panchkula.
+6. SPS to MD, HPGCL, Panchkula.
+7. Dir./Vigilance, HVPN, Panchkula.
+8. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comm., DHBVN, Hisar.
+11. CE/P&D, UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPPC, Panchkula.
+14. CE/IT, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, DHBVN, Hisar.
+19. CE/Adm., UHBVN, Panchkula.
+20. CE/SO, UHBVN, Panchkula.
+21. S.E / workshop and store UHBVN Dhulkote (Ambala)
+22. SE/RA, UHBVN, Panchkula.
+23. SE/Const. Circle, UHBVN Panchkula.
+24. SE (M&P), UHBVN Dhulkote (Ambala )
+25. SE/RAPDRP, UHBVN, Panchkula.
+26. Legal Remembrancer, HVPNL, Panchkula.
+27. F.A / HO, UHBVN, Panchkula.
+28. Chief Auditor, UHBVN, Panchkula & Rohtak.
+29. Chief Accounts Officer, UHBVN, Panchkula.
+30. Chairman, CGRF, Kurukshetra.
+31. XEN/IT, UHBVN, Panchkula.
+32. Deputy Secy. (Technical), UHBVN, Panchkula.
+33. Deputy Secy. (Project), UHBVN, Panchkula.
+34. Deputy Secy. (OP), HVPN, Panchkula.
+35. All XENs (M&P) in UHBVN.
+36. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoa@gmail.com ).
+37. CRPO, UHBVN, Panchkula.
+38. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+39. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhanwanti
+Haryana Railway Road, Kurukshetra.
+40. The Haryana Chamber of Commerce and Industry (Dist.Unit Panchkula), 239, Industrial Area,
+Phase-I, Panchkula-134113
+41. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+42. Y.Nagar Jagadhari Chamber of Commerce and Indl. C/O the Oriental Engg. Works (P) Ltd., Indl. Area,
+Y.Nagar, Haryana - 136001.
+43. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+44. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra.)
+45. Haryana Chamber of Commerce Incl. C/O M/s Liberty Enterprises Railway Road, Karnal.
+46. Confederation of Indian Industries, Sector-31, Chandigarh.
+47. President Manufacturing Association, Sonipat.
+48. Director, Industries Association, Yamunanagar
+49. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+50. Haryana Solvent Extractor's Association O/O Pee-Pee Agro Industry, Pvt. Ltd., Dhurkhera Hisar Road,
+Ambala.
+51. President, Faridabad Industrial Association Bata Chowk Industrial Area, Faridabad-121001.
+52. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7,
+Ambala City.
+53. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+54. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture
+Industries Ltd. Sharn Nagar, GT Road, Karnal-132 001.
+55. All Billing Agencies NIELIT centre, Harton and HCL (T)

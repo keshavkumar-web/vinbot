@@ -1,0 +1,322 @@
+Source document: SC_U_03_2026.pdf
+
+18
+UTTAR HARYANA BIJLI VITRAN NIGAM
+Sales Circular No. U-03/2026
+
+From
+Chief Engineer/Commercial,
+UHBVN, Panchkula
+
+To
+All CEs (OP), SEs (OP), XENs (OP), SDOs (OP),
+JEs-I In-charge Sub-office in UHBVN.
+
+Memo No. Ch-10/TR-72/90/Tariff/ARR/FY-2026-27/CE/C-I
+Dated: 21.04.2026
+
+Subject: Schedule of tariff for supply of energy for FY 2026-27.
+HERC in its Order dated 25.03.2026 has approved the Distribution and
+Retail Supply Tariff to be charged by UHBVN to consumers during FY 2026-27. The
+same shall be applicable with effect from 01.04.2026:
+
+Tariff for 2025-26 (W.E.F. 01.04.2025)                     Tariff for 2026-27 (W.E.F. 01.04.2026)
+Sr.  Category of      Energy      Fixed Charge  MMC (Rs.  Category of      Energy      Fixed Charge  MMC
+No.  consumers        Charges     (Rs. per kW  per month  consumers        Charges     (Rs. per kW  per month
+                        (Paisa /    / kWh or/   of the     (Paisa /        / kWh or/   of the
+                        kWh)       the          connected   kWh)           the          connected
+                                    connected    load / per  load / per     load / per
+                                    load or      kVA        kVA            kVA
+                                    thereof)     of sanctioned  of sanctioned
+                                                  contract      contract
+                                                  demand (in    demand (in
+                                                  case supply    case supply
+                                                  is on HT)     is on HT)
+                                                  or as        or as
+                                                  indicated     indicated
+
+Domestic Supply
+Category I: (for consumers up to 2 kW)                     Category I: (for consumers up to 2 kW)
+0 - 50 units        220/kWh     Nil              Nil        0 - 50 units        220/kWh     Nil              Nil
+per month          295 / kWh    Nil              Nil        per month          51-100         270/kWh     Nil              Nil
+51-100
+
+Category II: (for consumers having load up to 5 kW)       Category II: (for consumers having load up to 5 kW)
+0 - 150            295 / kWh    Nil              Nil        0 - 150            295 / kWh    Nil              Nil
+151-300           525 / kWh    Rs. 50/kW       151-300      525 / kWh    Rs. 50/kW       Nil
+301-500           645 / kWh    Rs. 50/kW       301-500      645 / kWh    Rs. 50/kW       Nil
+Above 500         710 / kWh    Rs. 50/kW       Above 500    710 / kWh    Rs. 50/kW       Nil
+
+Category III (for consumers having load more than 5 kW)   Category III (for consumers having load more than 5 kW)
+0-500              650 / kWh    Rs. 75/kW       0-500        650 / kWh    Rs. 75/kW       Nil
+501-1000          715 / kWh    Rs. 75/kWh      501-1000     715 / kWh    Rs. 75/kWh      Nil
+Above 1000        750 / kWh    Rs. 75/kWh      Above 1000   750 / kWh    Rs. 75/kWh      Nil
+
+Non-Domestic
+Merged with LT Supply Tariff                              Merged with LT Supply Tariff
+Merged with HT Supply Tariff                              Merged with HT Supply Tariff
+
+3 HT Supply (above 50 kW) including Traction and DMRC     HT Supply (above 50 kW) including Traction and DMRC
+Supply at 11 kV    695/kVA    Rs. 290/kVA     Nil        Supply at 11 kV    695/kVA    Rs. 290/kVA     Nil
+Supply at 33 kV    685/kVA    Rs. 290/kVA     Nil        Supply at 33 kV    685/kVA    Rs. 290/kVA     Nil
+Supply            Rs. 290/kVA    Rs. 290/kVA     Nil        Supply at 66/132 kV  675/kVA    Rs. 290/kVA     Nil
+66/132 kV        675/kVA    Rs. 290/kVA     Nil        Supply at 220      670/kVA    Rs. 290/kVA     Nil
+Supply at 220    670/kVA    Rs. 290/kVA     Nil        Supply at 400      655/kVA    Rs. 290/kVA     Nil
+Supply at 400    655/kVA    Rs. 290/kVA     Nil        Arc furnaces/     725/kVA    Rs. 290/kVA     Nil
+Arc furnaces/    Steel Rolling  725/kVA    Rs. 290/kVA     Nil
+Steel Rolling    (supply at 11 kV) (Month)
+
+19
+Tariff for 2025-26 (W.E.F. 01.04.2025)                     Tariff for 2026-27 (W.E.F. 01.04.2026)
+Sr.    Category of      Energy      Fixed Charge    MMC (Rs.    Category of      Energy      Fixed Charge    MMC (Rs.
+No.    consumers         Charges     (Rs. per kW    per month   consumers         Charges     (Rs. per kW    per month
+                           (Paisa/    or kVAh)       of the      (Paisa/    or kVAh)       of the
+                           kWh or                    connected    kWh or                    connected
+                           kVAh)                     load / per   kVAh)                     load / per
+                                                       kVA of      or as                     kVA of
+                                                       sanctioned   indicated                  sanctioned
+                                                       contract     demand (in                contract
+                                                       (in case     case supply is            (in case
+                                                       supply is    on HT) or as             supply is
+                                                       on HT) or    indicated                on HT) or
+                                                       as indicated                           as indicated
+4      LT Supply - up to 50 kW
+       Upto 10 kW       645/kVAh    Rs. 100/kW      Nil          Upto 10 kW       645/kVAh    Rs. 100/kW      Nil
+       Above 10 kW     680/kVAh    Rs. 100/kW      Nil          Above 10 kW     680/kVAh    Rs. 100/kW      Nil
+       Above 20 kW     660/kVAh    Rs. 250/kW      Month        Above 20 kW     660/kVAh    Rs. 250/kW      Nil
+       Above 50 kW     Merged with HT Supply                Existing consumers above 50 kW upto 10 kW (LT) Merged with HT Supply
+5      Agro Industries / FPO
+       Mushroom compost & spawn, high- tech hydroponics & aeroponics and cold storage units set up by FPOs
+       Upto 20 kW       475 / kWh   Nil              Upto 20 kW       475 / kWh   Nil          Nil
+       Above 20 kW     650 / kWh   Nil              Above 20 kW     650 / kWh   Nil          Nil
+       Agro Industries/FPO not covered in the above category:
+       Upto 20 kW       475 / kWh   Nil              Upto 20 kW       475 / kWh   Nil          Nil
+       20 kW-50 kW     As applicable to LT supply consumers 20 kW-50 kW As applicable to LT supply consumers
+       Above 50 kW     As applicable to HT supply consumers  Above 50 kW As applicable to HT supply consumers
+6      Agriculture Tube-well Supply
+       Metered:         735/unit    Rs. 180/BHP     Year          Metered:         748/unit    Rs. 180/BHP     Year
+       (i) with motor   735/unit    Rs. 144 BHP/     Year          (i) with motor   748/unit    Rs. 144 BHP     Year
+       above 15 BHP
+       Un-metered (Rs.  Rs. 15/BHP/Month  Nil          Un-metered (Rs. Rs. 15/BHP/Month  Nil
+       Per BHP / Month): (i) with motor  15 BHP
+       (ii) with motor   Nil          Rs. Nil        (ii) with motor   Nil          Rs. Nil
+       above 15 BHP
+7      Public Water Works / Lift Irrigation / MITC / Street Light/EV charging
+       Lift Irrigation   735/kWh     Rs. 180.00 (Rs.  Nil          Public Water Works / Lift Irrigation / MITC / Street Light/EV charging
+                        kW or BHP/month)               Lift Irrigation   735/kWh     Rs. 180.00 (Rs.  Nil
+       Street light      735/kWh     Nil              Street light      735/kWh     Nil          Rs. 165.00/kW
+       Public Water Works 735/kWh    Rs. 180.00 (Rs.  Nil          Public Water Works 735/kWh    Rs. 180.00 (Rs.  Nil
+       EV Charging Stations CoS-HT   EV charging      CoS-HT
+                        (Rs. 2.47/   Stations for supply at HT level
+                        Unit)        EV charging      CoS-LT
+                        Stations for supply at LT level
+
+20
+Tariff for 2025-26 (W.E.F. 01.04.2025)                     Tariff for 2026-27 (W.E.F. 01.04.2026)
+Sr.   Category of      Energy      Fixed Charge    MMC (Rs.   Category of      Energy      Fixed Charge    MMC
+No.   consumers         Charges     (Rs. per kW    per month   consumers         Charges     (Rs. per kW    per month
+      (Paisa /        / kWh or /  of the         of the        (Paisa /        / kWh or /  of the         of the
+      kVA)            kVA)        connected       connected     kVA)            kVA)        connected       connected
+                                   load / per kVA  load / per kVA
+                                   of sanctioned    of sanctioned
+                                   contract demand  contract demand
+                                   (in case supply  (in case supply
+                                   is on HT) as     is on HT) as
+                                   indicated         indicated
+8     Railway Traction  Supply at 11 kV  Merged with HT Supply Tariff at the  Supply at 11 kV  Merged with HT Supply Tariff at the
+      Supply at 33 kV  respective voltage of supply               respective voltage of supply
+      Supply at 66 kV  Supply at 66 kV                             Supply at 66 kV
+      Supply at 132 kV  Supply at 132 kV                           Supply at 132 kV
+      Supply at 220 kV  Supply at 220 kV                           Supply at 220 kV
+DMPC  DMPC            Supply at 66 kV  Merged with HT Supply Tariff  Supply at 66 kV  Merged with HT Supply Tariff
+      or 132 kV       Bulk Supply      Supply at LT  590 / kVA 250/kVA/month  Nil  Supply at LT  690 / kVA 250/kVA/month  Nil
+      Supply at LT     590 / kVA 250/kVA/month  Nil  Supply at 11 kV  680 / kVA 0 / kW  Nil
+      Supply at 11 kV  680 / kVA 0 / kW  Nil  Supply at 33 kV  670 / kVA 250/kW / month  Nil
+      Supply at 33 kV  670 / kVA 250/kW / month  Nil  Supply at 66 kV  660 / kVA  as applicable  Nil
+      Supply at 66 kV  660 / kVA as applicable  Nil  Supply at 220 kV  660 / kVA  as applicable  Nil
+      Supply at 220 kV  650 / kVA  Nil  Supply at 220 kV  650 / kVA  Nil
+Bulk Supply (Domestic)  For total consumption 580 / kWh  Rs. 150 / kW  / month of the recorded demand  Nil  For total consumption 580 / kWh  Rs. 150 / kW  / month of the recorded demand  Nil
+      in a month exceeding 800 units / flat/ dwelling unit (DU).  in a month exceeding 800 units / flat/ dwelling unit (DU).
+      For total consumption 660 / kWh  Rs. 150 / kW  / month of the recorded demand  Nil  For total consumption 660 / kWh  Rs. 150 / kW  / month of the recorded demand  Nil
+      in a month exceeding 800 units / flat/ DU.  in a month exceeding 800 units / flat/ DU.
+      * Tariff in kVA and kWh shall be applicable by considering power factor of 0.9
+
+Notes:
+1. In case of Arc furnaces / Steel Rolling Mills for supply at 33 kV and above, the HT Industrial tariff at the corresponding voltage level shall be applicable. The tariff determined in the table above for Arc Furnace taking supply at 11 kV voltage, is inclusive of surcharge. However, the open access consumers bringing in power under Open Access Mechanism shall also pay a surcharge of 30 Paisa/unit.
+2. Fixed charges for HT supply and Bulk Supply category are in Rs. / kVA of Contract Demand.
+3. In case of Bulk Supply Consumers (other than Bulk Supply - DS), the fixed charges are in Rs/kW of the connected load where contract demand is not sanctioned and in Rs. / kVA of contract demand where contract demand is sanctioned.
+4. Advocate’s Chamber, shall be levied a single rate (tariff) equivalent to CoS of LT Supply (Rs.7.48/unit) as determined in the present order. There shall be no demand / fixed charges.
+5. The electricity crematorium shall be levied a concessional tariff of Rs. 2.75 / Unit (kVA or kWh). No demand charges shall be levied.
+6. The schedule of tariff and charges does not include Electricity Duty, Municipal Tax, Panchayat Tax (being levied as per the notifications issued
+
+21
+by the State Government) and FSA as per MYT Regulations in vogue.
+7. Tariff for the eligible Gaushalas shall be Rs. 2.0 / kWh subject to payment
+of subsidy by the State Government.
+8. In case the State Government desires to extend concession including
+subsidy to any consumer category, the same shall be implementable subject
+to section 65 of the Electricity Act, 2003.
+9. In the case of the existing consumers above 50 kW up to 70 kW (LT) that has
+been merged with HT Supply, the tariff shall be as per HT Supply. In the
+absence of a compatible meter standard power factor of 0.90 may be used.
+However, the Discoms shall ensure that a compatible meter of requisite
+accuracy is installed either by the Discoms or by the consumers themselves.
+It is clarified that consumer will not have the option to pick and choose.
+However, such consumers shall be given option either to get the load
+reduced below 50 KW or convert to HT metering.
+10. The tariff for places of worship shall be a single part tariff equivalent to the
+Domestic Supply tariff(s).
+11. The charges, other than energy and demand charges determined in the
+present order, for NDS category (including Independent
+Hoarding/Decorative Lighting/ Decorative Lightning and others) merged
+with HT / LT Supply shall be as per the charges applicable for erstwhile HT
+/ LT Industry.
+12. The Temporary Supply Tariff shall remain unchanged i.e. as per the
+Commission’s tariff order for the FY 2021-22 i.e.
+“The tariff and charges for temporary supply shall be 1.2 times fixed
+charges and 1.5 times the energy charges of the relevant category for
+which temporary supply has been sought. While releasing electric
+supply on temporary basis, the DISCOMs must mention the period for
+which temporary supply has been sought and given. In case the said
+period gets extended for whatever reasons, the multiplication factor
+for both fixed charges and energy charges shall be 2 times.
+The Commission has also clarified in its order dated 31.03.2022 in
+case No. HERC/RA-08 of 2021 that 2 times charges are to be levied
+from the extension of period of the said connection.”
+13. The AP Supply tariff shall be Rs. 7.48 / kWh for metered supply and BHP
+(The case of flat rate shall be converted to kW and units worked out by
+applying the average running hours of the tube-wells). However, the State
+Government may continue with the subsidized tariff provided advance
+subsidy, in the beginning of each quarter is paid by the State Government
+to the Discoms, as per Section 65 of the Electricity Act, 2003. The AP Tube-
+well tariff determined by the Commission u/s 62 of the Electricity Act, 2003
+shall be levied by the Discoms in case the Government does not pay subsidy
+in accordance with the provisions of Section 65 of the Electricity Act, 2003.
+The Billing of metered and un-metered AP connections will continue as per
+tariff for FY 2021-22 (Sales Circular No. U-17/2021).
+
+22
+14. It is clarified that the acceptance limit of cash will be Rs. 5000 (five thousand). However, the cash collection limit for theft penalty shall be Rs. 2,00,000 (two lakhs); submission of PAN Card shall be mandatory for any transaction exceeding Rs. 50,000 (Fifty Thousand). It is further made clear that the AEE / SDO concerned shall be fully responsible for cash collected and remittance into the designated bank(s) on the same day.
+
+15. The consumers opting for procuring green energy, shall pay green energy premium of Rs. 0.88 / Unit over and above the normal tariff.
+
+16. NDS consumers having sanctioned load above 50 KW and existing consumers having sanctioned load above 50 KW and up to 70 KW (on LT Supply) have been merged with the HT industrial consumers as “HT Supply”. In the absence of declared contract demand, as well cumbersome process of asking all such consumer to declare their contract demand, it would be appropriate, given the nature of NDS usage, that the sanctioned load of such consumers available with the Discoms, is considered for levy of Fixed Charges.
+
+17. LT supply consumers (having sanctioned load up to 20 KW) shall be billed only on kVah tariff with the exception of billing in kWh only when the installed meter at consumer premises is not kVah compliant. However, Discoms shall ensure installation of kVah meters for such consumers.
+
+18. In line with Regulation 5 of the HERC (Prepaid Smart Metering), Regulations, 2022, there shall be 5% rebate on fixed charge as well as energy charge levied in the electricity bills for consumers availing supply through prepaid smart meters.
+
+19. Agro Industries / FPO includes Pack House, Grading, Packing, Pre-Cooling and Ripening Chamber, Honey Bee, Honey Processing, Tissue culture, Zinga and Fish Farming, Poultry Farm, Pig Farm, Milk Chilling Plant and Cold Storage, Mushroom Farming. Additionally, Mushroom compost & spawn, high-tech hydroponics & aeroponics and cold storage units set up by FPOs, shall also form part of Agro Industries / FPO.
+
+20. Fish farming units connected on AP feeder shall continue to be billed on AP subsidized tariff. However, fish farming on other than AP feeder shall be included in the new Tariff Category i.e. Agro Industries/FPO.
+Additional tariff issues
+Hon’ble Commission in the said Tariff Order (Chapter 9.3, Page No. 346) has also clarified i.e.
+The Commission has examined the submissions of the petitioner (s) that as per the Net Metering Regulations read with Sales Circular No. D-33/2021/U-29/2021, Minimum Monthly Charges (MMC) are leviable on total consumption. In the tariff order dated 28.02.2025, MMC were replaced with fixed charges. Accordingly, it is clarified that fixed charges to be levied after considering the total consumption of the consumer in line with the earlier MMC calculations.
+
+23
+D/New folder 2026/Sales Circuits 2026
+
+Wheeling Charges
+
+• The wheeling charges payable by the open access consumers shall be as under:-
+  HT (Rs./kWh)        - Rs. 0.73
+  LT (Rs./kWh)        - Rs. 0.94
+
+• The Commission observes that some cost is also borne by the DISCOMs on the
+  embedded open access consumers of the Discoms drawing power at 66kV or
+  above. Hence besides the intra state transmission loss as determined by the
+  Commission for FY 2026-27 in the ARR/Tariff order of HVPNL, such open access
+  consumers shall also be liable to pay the distribution system network cost i.e.
+  Rs. 0.45 per Unit, till such time they are consumers of the Distribution
+  Licensees.
+
+Cross-Subsidy Surcharge (CSS)
+
+Sr. No.   Categories                     Cross Subsidy Surcharge
+                                       (Rs./kWh)
+1         HT supply                     1.45
+2         LT supply (including Bulk     1.18
+          Supply)
+
+Additional surcharge:
+
+The additional surcharge payable by the open access consumers shall continue to be
+levied @ 1.15/kWh (as notified vide Sales Circular No. U-31/2024 effective from
+27.11.2024).
+
+Transmission charges
+
+Transmission charges @ Rs. 0.34/kWh for short term open access consumers as
+approved by the HERC in its Order dated 17.03.2026 for approval of ARR & SLDC
+charges for HVPNL for the multi-year tariff for the FY 2026-27.
+
+Sales Circular No. U-03/2025 hereby superseded.
+The above instructions may be brought to the notice of all concerned for
+strict and meticulous compliance.
+
+(Deepak Pojhi)
+Chief Engineer/Commercial
+UHBVN, Panchkula
+
+UHBVN web site address: www.uhbvn.org.in
+E-mail address: ecommercial@uhbvn.org.in, secommercial@uhbvn.org.in
+Endst. No. - 10/ TR-7290/ 'Tariff' ARR/FY-2026-27/ CE/C-I
+Dated: 21.04.2026
+Copy of the above is forwarded to the following:-
+1. SPS to Additional Chief Secretary (Energy), Govt. of Haryana.
+2. SPS to Chairman, HPU.
+3. SPS to MD, UHBVN, Panchkula.
+4. SPS to MD, DHBVN, Hisar.
+5. SPS to MD, HPYNL, Panchkula.
+6. SPS to MD, HPGCL, Panchkula.
+7. Dir./ Vigilance, HPVN, Panchkula.
+8. SPS to Director (Op)/Director (Proj)/Director (Fin.) in UHBVN & DHBVN.
+9. Secretary, HERC, Bays No.33-36, Sector-4, Panchkula - 134112 (Haryana)
+10. CE/Comml., DHBVN, Hisar.
+11. CE/P&DC UHBVN, Panchkula.
+12. CE/MM, UHBVN, Panchkula.
+13. CE/HPPC, Panchkula.
+14. CE/I, UHBVN, Panchkula.
+15. Company Secretary, UHBVN, Panchkula.
+16. Chief Electrical Inspector, Govt. of Haryana Sector-17, Chandigarh.
+17. SE/Monitoring, UHBVN, Panchkula.
+18. SE/Commercial, DHBVN, Hisar.
+19. CE/Adm., UHBVN, Hisar.
+20. CE/SO, UHBVN, Panchkula.
+21. SE/RA, UHBVN, Panchkula.
+22. SE/Const. Circle, UHBVN Panchkula.
+23. SE(M&P), UHBVN Dhulkote (Ambala)
+24. SE/ARPPD, UHBVN, Panchkula.
+25. Legal Remembrancer, HPYNL, Panchkula.
+26. F.A/HQ, UHBVN, Panchkula.
+27. Chief Auditor, UHBVN, Panchkula & Rohtak.
+28. Chief Accounts Officer, UHBVN, Panchkula.
+29. Chairman, CGRF, Kurukshetra.
+30. XEN/I, UHBVN, Panchkula.
+31. Deputy Secy. (Technical), UHBVN, Panchkula.
+32. Deputy Secy. (Project), UHBVN, Panchkula.
+33. Deputy Secy. (Op), HPVN, Panchkula.
+34. All XEN's (M&P) in UHBVN.
+35. Principal Accountant General (Audit) Haryana (Report Section), Chandigarh (e-mail: sracoa@gmail.com).
+36. CRPO, UHBVN, Panchkula.
+37. PHD Chamber of Commerce & Ind. PHD Khel Gaon Road, New Delhi-16.
+38. Haryana Chamber of Commerce and Industries O/O VPS Agro Oil Ind.(P) Ltd., Dhawanthi Bhawan Railway Road, Kurukshetra.
+39. The Haryana Chamber of Commerce and Industry (Distt.Unit Panchkula), 239, Industrial Area, Phase-I, Panchkula-134113
+40. Chief Coordinator IAG & Director of Industries of Haryana, 30 Bays Building, Sector-17, Chandigarh.
+41. Y.Nagar- Jagadhari Chamber of Commerce and Ind. C/O the Oriental Engg. Works (P) Ltd., Indl. Area, Y.Nagar, Haryana- 136001.
+42. General Secretary, Panchkula Residents Welfare Federation, H.No. 984, Sector-16, Panchkula.
+43. President Haryana Rice Millers & Dealers Association, Ladwa (Kurukshetra).
+44. Haryana Chamber of Commerce Ind. C/O M/s Liberty Enterprises Railway Road, Karnal.
+45. Federation of Indian Industries, Sector-31, Chandigarh.
+46. President Manufacturing Association, Sonipat.
+47. Director, Industries Association, Yamunanagar.
+48. Citizen Welfare Association (UE) Regd. Kothi No.508, Sector-15, Panchkula.
+49. Haryana Solvent Extractors Association O/o Pee-Agrco Industry, Pvt. Ltd., Dhurkehra Hisar Road, Ambala.
+50. President, Faridabad Industrial Association Data Chowk Industrial Area, Faridabad.121001.
+51. Secretary, Ambala Electrical Dealers & Manufacturers Associate, 872, URBAN ESTATE, Sector -7, Ambala City.
+52. The Engineers Club (Regd.), Haryana Zone, 260, Subhash Nagar, Rohtak-124001.
+53. President Karnal Agricultural Implements Manufacturers Association, C/o Karnal Agriculture Industries Ltd. Sham Nagar, GT Road, Karnal-132 001.
+54. All Billing Agencies NIELT center, Hartorn and HCL (I)
+
+Executive Engineer/Comml.
+UHBVN, Panchkula.

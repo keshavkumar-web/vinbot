@@ -1,0 +1,123 @@
+Source document: GIS_Module_RAPDRP.pdf
+
+To
+All CEs/SEs/XENs/SDOs/Ops,
+JEs In-charge in UHBVN
+
+Memo No.    Chr. 15/SE IPROjects/1/F.25
+Dated:      28.01.2022
+
+Subject:    Details of the GIS Application Module developed under R-APDRP
+            /IPDS/IT project & SOP for regular updation of the GIS database thereof.
+
+As you are aware that, under R-APDRP Part-A (IT) project implementation,
+system of GIS had been developed along with the mapping of the electrical assets (Substations,
+Feeders with HT lines, DT/Fs with LT lines and allied electrical accessories etc.) and indexing
+of consumer w.r.t 18 designated R-APDRP towns covering 47 subdivisions of UHBVN.
+
+2. Under Phase-II of IT project implementation, i.e. scaling up of the existing RAPDRP/IT system
+in 17 IPDS towns covering 18 Sub-Divisions and in remaining Non-R-APDRP areas of UHBVN,
+scope of GIS work was limited to GPS based asset survey and mapping of electrical assets
+(Substations, Feeders with EHT/HT lines, DT/Fs and allied electrical accessories etc.) on the
+GIS platform, without any consumer indexing.
+
+3. Under the said Phase-II of IT project implementation, field survey work and digitization of
+the asset data on the GIS platform has also been completed by the GIS agency (M/s RAMTeCH
+Software Solution Pvt Ltd) engaged by UHBVN.
+
+However, tagging of consumers on Feeders/DTs further is to be maintained in the GIS database
+as per the details to be provided by the field offices/subdivisions.
+
+4. With the advent of the GIS platform and considering the changes (addition/
+deletion/augmentation), w.r.t assets and consumer, happening in the electrical system on
+regular basis due to our field level operation activities, it was felt that capturing of these
+changes (herein called as delta changes) and regular updation of the GIS database thereon shall
+be very important as far as maintaining the sanctity of GIS system is concerned.
+
+5. M/s RAMTeCH Software Solution Pvt Ltd, apart from the work of development of GIS
+platform for the electrical assets in IPDS & Non R-APDRP areas of UHBVN, had also been
+entrusted with the following activities under the contract award:
+
+- GIS application upgrade along with advance facilities, functionalities & features i.e.
+  Web Application facility, Mobile Application feature to facilitate Capturing of GIS
+  delta change and viewing of information.
+
+- GIS delta updation w.r.t complete area under UHBVN - This involves creation of a Back
+  Office Team at Disaster Recovery Center, Panchkula and field teams with one no. GIS survey
+  resource per Division for verification & validation of the delta change information to be
+  provided by each subdivisions on regular basis.
+
+7. Deliveries under the project awarded to M/s RAMTeCH Software Solution Pvt Ltd., have been
+made by the firm and the task of GIS delta updation w.r.t complete area under UHBVN (R-
+APDRP/IPDS/Non R-APDRP) has now been taken over by the agency.
+
+8. Activities, which will attribute to GIS delta changes are as listed below:
+   I. Release of New Connection (NC) & Modifications (EOL/ROL) in the existing
+      connection
+      a. Using Existing Asset
+         i. Without Augmentation
+         ii. With Augmentation
+      b. Using New Asset
+   II. Replacement of any Dead/Defective/Burnt Meter/Meter equipment.
+   III. Any modification of existing electrical assets with replacement/augmentation/
+        addition etc.
+   IV. Revamping or Refurbishment of electrical system/network under any specific
+        scheme or mission mode project.
+   V. Feeder supply source change/reconfiguration (Permanent /Temporary nature).
+
+9. Keeping in view the requirement of maintaining a duly updated GIS system along with the
+establishment of GIS delta change agency (M/s RAMTeCH Software Solution Pvt Ltd) for
+capturing of the system changes and regular updation of the GIS database w.r.t R-
+APDRP/IPDS/Non R-APDRP areas under UHBVN, the following SOPs needs to be adhered to in
+letter & spirit to ensure that the GIS database is kept updated & maintained for all times to
+come with quality AM/CI data:
+   I. Field officer/official/area in-charge (SDO/JE/AFM/AOR) shall download/install
+      ESRI Survey123 App and Collector App on their Mobile and walk
+      through/navigate it for their understanding of the SVR format and other features.
+      This App has been got customized by R-APDRP wing for capturing the GIS delta
+      change information.
+   II. Field officer/official/area in-charge (SDO/JE/AFM/AOR) shall make use of this ESRI
+       Survey123 for intimating the delta change information to Back Office RAMTeCH
+       Team at DRC Panchkula.
+   III. For the usage of this application, the user credentials shall be created by R APDRP
+        wing. Necessary training for the usage of this App shall also be arranged by R-APDRP
+        wing in collaboration with RAMTeCH Team.
+   IV. Any delta change intimation, immediately after its occurrence, shall be
+       captured/reported by the field officer/official/area in-charge (SDO/JE/AFM/AOR)
+       only through ESRI Survey123 App and uploaded on the GIS system. It shall be the
+       sole responsibility of officer/official/area in- charge that no delta changes in the
+       system is left unreported.
+
+V.  It shall be the sole responsibility of the field officer/official/area in-charge
+(SDO/JE/AFM/AOR) to intimate correct information of delta changes in time (i.e.
+immediately after the completion of the field task/work) for its updation in the GIS
+database & application.
+
+VI. Upon receipt of the delta change intimation from the field office, Back Office
+RAMTeCH Team at DRC Panchkula shall assign the task to its field resource/team
+posted at the Division office for the verification & validation of the change
+intimation.
+
+VII. After the field verification & validation of delta change intimation, a report will be
+submitted by the field team member of RAMTeCH to its Back Office Team at DRC
+Panchkula who after completing the data digitization process and ensuring quality
+checks shall update the GIS database accordingly and publish the information
+through the system of GIS for its onward visibility on the digital platform.
+
+VIII. It shall be obligatory on part of the Field SDO/JE to reconcile the consumer data (For
+IPDS towns) and assets on monthly basis in coordination with RAMTeCH resource
+deployed at division level.
+
+The above instructions brought to the notice of all concerned for careful and
+meticulous compliance.
+
+CC: -
+1.  PS to Director/Operations, UHBVN, Panchkula for kind information of Director, please.
+2.  PS to Director/Projects, UHBVN, Panchkula for kind information of Director, please
+3.  CTO, UHBVN, Panchkula for information, please
+4.  CE, PD&C UHBVN, Panchkula for information, please
+5.  CE, MM UHBVN, Panchkula for information, please
+6.  CE, Commercial, UHBVN Panchkula for information, please
+7.  SE, M&P UHBVN, Panchkula for information, please
+8.  M/s RAMTeCH Software Solution Pvt Ltd, for information and further necessary action
+please.

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — never commit any .env except the example template
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.key
+
+# Knowledge DB (regenerate with knowledge_maker.py) — ~100 MB
+backend/knowledge_db.pkl
+
+# Source UHBVN PDFs (~150 MB). The extracted text in backend/knowledge/*.txt
+# is the tracked knowledge source; the raw PDFs do not need to be in git.
+UHBVN/
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+
+# Testing framework (Phase 3) — generated reports and tool artifacts,
+# regenerated on every run; never hand-edited or committed.
+reports/
+backend/.coverage
+backend/htmlcov/
+backend/tests/_fixtures/
+postman/node_modules/
+postman/newman/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+backend/knowledge_db.pkl.bak
+
+backend/knowledge_db.pkl
+release/
