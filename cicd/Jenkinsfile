@@ -1,0 +1,231 @@
+// Jenkinsfile — VinBot CI/CD, Development environment
+//
+// Flow: checkout from GitHub -> SSH to the Dev server -> git fetch/reset the
+// working tree in place -> install any changed Python deps into the EXISTING
+// venv -> restart vinbot.service -> poll the health endpoint -> fail the
+// build if it never comes up healthy.
+//
+// Deliberately NOT release-directory / blue-green: this is a single-instance
+// Development box where a few seconds of restart downtime is a non-issue and
+// there is no requirement for instant rollback. See "Future improvements"
+// in the accompanying explanation for what changes for UAT/Production.
+//
+// Auth model (per the verified environment): the Jenkins OS user has a
+// passwordless SSH key under /var/lib/jenkins/.ssh/ that already works
+// against the Dev server — NOT a Jenkins Credential, NOT the SSH Agent
+// plugin. Every remote action below is a plain `ssh ...` inside a `sh` step.
+
+def sshExec(String remoteCmd) {
+    // Centralizes every SSH invocation so connection options (port, timeouts,
+    // batch mode) are defined once instead of repeated — and repeated — in
+    // every stage.
+    //
+    //   -o BatchMode=yes        never wait on a password/passphrase prompt;
+    //                           fail immediately if key auth doesn't work.
+    //   -o ConnectTimeout=10    bound how long a dead/unreachable host can
+    //                           stall the build.
+    //   -o ServerAliveInterval  keep the session alive across the longer
+    //                           pip-install step; avoids a silently dropped
+    //                           connection on a flaky link.
+    return "ssh -p ${env.DEV_SSH_PORT} -o BatchMode=yes -o ConnectTimeout=10 " +
+           "-o ServerAliveInterval=15 ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} '${remoteCmd}'"
+}
+
+pipeline {
+    agent any
+
+    options {
+        timestamps()                                   // prefixes every console line with a wall-clock time
+        timeout(time: 15, unit: 'MINUTES')               // absolute ceiling for the whole build
+        disableConcurrentBuilds()                        // two overlapping deploys would race on the same
+                                                          // git working tree / systemd unit on the Dev box
+        buildDiscarder(logRotator(numToKeepStr: '20'))    // housekeeping only — keep the last 20 builds' logs
+        // ansiColor('xterm')   // Uncomment once the AnsiColor plugin (optional) is installed for colored logs
+    }
+
+    environment {
+        DEV_SSH_HOST  = '192.168.36.51'
+        DEV_SSH_PORT  = '69'
+        DEV_SSH_USER  = 'ecadmin'
+        APP_PATH      = '/opt/vinbot'
+        VENV_PATH     = '/opt/vinbot/.venv'
+        REQUIREMENTS  = 'requirements.txt'
+        SERVICE_NAME  = 'vinbot.service'
+        HEALTH_URL    = 'http://localhost:38005/api/health'
+        DEPLOY_BRANCH = 'main'
+
+        // Health check tuning: curl itself retries HEALTH_CHECK_RETRIES times,
+        // HEALTH_CHECK_DELAY seconds apart, so "wait for startup" and "verify
+        // health" are the same step — see the Health Check stage below.
+        HEALTH_CHECK_RETRIES = '10'
+        HEALTH_CHECK_DELAY   = '3'
+    }
+
+    stages {
+
+        // ---------------------------------------------------------------
+        // 1. Checkout — pulls the exact commit Jenkins was triggered for
+        //    into the LOCAL Jenkins workspace. This is what lets the build
+        //    log a definitive "this is the commit we intended to ship"
+        //    before anything touches the Dev server.
+        // ---------------------------------------------------------------
+        stage('Checkout') {
+            steps {
+                checkout scm
+                echo "Checked out commit ${env.GIT_COMMIT} (branch: ${env.GIT_BRANCH ?: env.DEPLOY_BRANCH})"
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 2. Deploy Application Code — on the DEV SERVER (via SSH):
+        //      cd /opt/vinbot
+        //      git fetch origin
+        //      git reset --hard origin/main
+        //
+        //    git reset --hard (not git pull) is used deliberately:
+        //    `git pull` = fetch + MERGE, which fails outright if anyone has
+        //    ever hand-edited a file directly on the box (a real risk on a
+        //    dev server). `git fetch` + `git reset --hard` has no merge
+        //    step at all — it unconditionally forces the working tree to
+        //    match origin/main, every time, with no conflict states
+        //    possible. It is the standard substitution for `git pull` in
+        //    any automated/unattended deploy.
+        //
+        //    The commit SHA before and after is captured and logged so a
+        //    human always has a one-line manual rollback available, even
+        //    though automatic rollback is out of scope for this Dev
+        //    pipeline (see "Future improvements").
+        // ---------------------------------------------------------------
+        stage('Deploy Application Code') {
+            steps {
+                script {
+                    env.PRE_DEPLOY_SHA = sh(
+                        script: "set -euo pipefail\n" + sshExec("cd ${env.APP_PATH} && git rev-parse HEAD"),
+                        returnStdout: true
+                    ).trim()
+                    echo "Commit on Dev server BEFORE this deploy: ${env.PRE_DEPLOY_SHA}"
+
+                    def remoteCmd = "set -euo pipefail; cd ${env.APP_PATH} && " +
+                                     "git fetch origin && " +
+                                     "git reset --hard origin/${env.DEPLOY_BRANCH} >/dev/null && " +
+                                     "git rev-parse HEAD"
+
+                    env.DEPLOYED_SHA = sh(
+                        script: "set -euo pipefail\n" + sshExec(remoteCmd),
+                        returnStdout: true
+                    ).trim()
+
+                    echo "Deployed commit SHA (now on Dev server): ${env.DEPLOYED_SHA}"
+                    if (env.PRE_DEPLOY_SHA == env.DEPLOYED_SHA) {
+                        echo "No new commits — Dev server was already at ${env.DEPLOYED_SHA}."
+                    }
+                }
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 3. Install Dependencies — activates the EXISTING venv (never
+        //    recreated — that would be slow and is unnecessary; the venv
+        //    itself doesn't need rebuilding, only its installed packages
+        //    might have changed) and installs whatever requirements.txt
+        //    now specifies. Skipping this step is the most common cause of
+        //    a "deploy looked green but the app is broken" bug: the code
+        //    changed but the dependency that code needs was never
+        //    installed.
+        // ---------------------------------------------------------------
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    def remoteCmd = "set -euo pipefail; cd ${env.APP_PATH} && " +
+                                     ". ${env.VENV_PATH}/bin/activate && " +
+                                     "python -m pip install --quiet -r ${env.REQUIREMENTS}"
+                    sh "set -euo pipefail\n" + sshExec(remoteCmd)
+                }
+                echo "Dependencies installed/updated inside ${env.VENV_PATH}"
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 4. Restart Application Service — `sudo -n` (never prompts) is
+        //    only possible because ecadmin's sudoers entry is scoped to
+        //    EXACTLY this one command; if that scoping were ever changed
+        //    or removed, this line fails loudly (non-zero exit) instead of
+        //    hanging on a password prompt.
+        // ---------------------------------------------------------------
+        stage('Restart Application Service') {
+            steps {
+                sh "set -euo pipefail\n" + sshExec("sudo -n systemctl restart ${env.SERVICE_NAME}")
+                echo "${env.SERVICE_NAME} restart command issued."
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 5. Health Check — verifies AND waits-for-startup in one step:
+        //    curl runs ON the Dev server (over the same SSH connection)
+        //    against `localhost:38005`, because Uvicorn is bound to
+        //    127.0.0.1 only (not exposed on the box's external interface —
+        //    curling the external IP from Jenkins would require exposing
+        //    the app beyond what's needed just to health-check it).
+        //
+        //    curl's own --retry/--retry-delay/--retry-all-errors handles
+        //    "wait for the app to finish starting" — early attempts get
+        //    connection-refused before Uvicorn has bound the port, and
+        //    --retry-all-errors keeps retrying through that AND through any
+        //    non-2xx response, up to HEALTH_CHECK_RETRIES attempts,
+        //    HEALTH_CHECK_DELAY seconds apart (~30s total by default). `-f`
+        //    makes curl itself exit non-zero on any HTTP error status, so a
+        //    persistent failure fails the `sh` step, which fails this
+        //    stage, which fails the build — satisfying "fail build if
+        //    health check fails" with no extra logic needed.
+        //
+        //    The declarative retry(2) wrapper is a SEPARATE, outer safety
+        //    net: it re-runs the whole curl-retry-cycle if the SSH
+        //    connection itself drops mid-check (a different failure mode
+        //    than "the app isn't healthy yet").
+        // ---------------------------------------------------------------
+        stage('Health Check') {
+            options {
+                timeout(time: 2, unit: 'MINUTES')
+            }
+            steps {
+                retry(2) {
+                    sh "set -euo pipefail\n" + sshExec(
+                        "curl -f -sS --max-time 5 " +
+                        "--retry ${env.HEALTH_CHECK_RETRIES} --retry-delay ${env.HEALTH_CHECK_DELAY} " +
+                        "--retry-all-errors ${env.HEALTH_URL}"
+                    )
+                }
+                echo "Health check PASSED — ${env.SERVICE_NAME} responded 200 OK at ${env.HEALTH_URL}."
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "================================================================"
+            echo " DEPLOYMENT SUCCESSFUL"
+            echo "   Environment     : Development (${env.DEV_SSH_HOST})"
+            echo "   Previous SHA    : ${env.PRE_DEPLOY_SHA}"
+            echo "   Deployed SHA    : ${env.DEPLOYED_SHA}"
+            echo "   Health endpoint : ${env.HEALTH_URL} -> 200 OK"
+            echo "   Manual rollback, if ever needed:"
+            echo "     ssh -p ${env.DEV_SSH_PORT} ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} \\"
+            echo "       'cd ${env.APP_PATH} && git reset --hard ${env.PRE_DEPLOY_SHA} && sudo -n systemctl restart ${env.SERVICE_NAME}'"
+            echo "================================================================"
+        }
+        failure {
+            echo "================================================================"
+            echo " DEPLOYMENT FAILED — see the failing stage above for the exact cause."
+            echo "   If 'Deploy Application Code' completed, the Dev server IS at the"
+            echo "   new commit even though a later stage failed. Previous known-good"
+            echo "   commit was: ${env.PRE_DEPLOY_SHA ?: '<unknown - checkout stage did not complete>'}"
+            echo "   Manual rollback:"
+            echo "     ssh -p ${env.DEV_SSH_PORT} ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} \\"
+            echo "       'cd ${env.APP_PATH} && git reset --hard ${env.PRE_DEPLOY_SHA} && sudo -n systemctl restart ${env.SERVICE_NAME}'"
+            echo "================================================================"
+        }
+        always {
+            echo "Build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}"
+        }
+    }
+}
