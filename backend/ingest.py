@@ -63,6 +63,39 @@ def extract_pdfs(pdf_dir: Path, out_dir: Path) -> int:
 
 
 # --------------------------------------------------------------------------- #
+# 1b. Fail fast, with a clear message, if the source documents aren't there
+# --------------------------------------------------------------------------- #
+def validate_source_files(knowledge_dir: Path) -> list[Path]:
+    """Confirm ``knowledge_dir`` exists and contains at least one ingestible
+    (.txt/.md) file, BEFORE any OpenAI credits are spent.
+
+    Raises FileNotFoundError with a specific, actionable message instead of
+    letting a missing/empty directory surface later as a confusing
+    "knowledge_chunks is 0" failure several steps downstream (e.g. in CI).
+    """
+    if not knowledge_dir.is_dir():
+        raise FileNotFoundError(
+            f"[ingest] Knowledge source directory not found: {knowledge_dir}\n"
+            f"         Expected extracted *.txt/*.md documents there (see "
+            f"backend/knowledge/ in the repo). The checkout may be incomplete, "
+            f"or KNOWLEDGE_FOLDER is misconfigured."
+        )
+    found = sorted(
+        p for p in knowledge_dir.rglob("*")
+        if p.is_file() and p.suffix.lower() in {".txt", ".md"}
+    )
+    if not found:
+        raise FileNotFoundError(
+            f"[ingest] No .txt/.md source files found under: {knowledge_dir}\n"
+            f"         The directory exists but is empty of ingestible "
+            f"documents — nothing to embed. Check that the knowledge/ files "
+            f"were committed and were actually checked out."
+        )
+    print(f"[ingest] Found {len(found)} source file(s) under {knowledge_dir}")
+    return found
+
+
+# --------------------------------------------------------------------------- #
 # 2. Chunk text
 # --------------------------------------------------------------------------- #
 def chunk_text(text: str, size: int, overlap: int) -> list[str]:
@@ -100,6 +133,9 @@ def main() -> None:
     # Optionally extract PDFs into the knowledge folder first.
     if args.pdf_dir:
         extract_pdfs(Path(args.pdf_dir), knowledge_dir)
+
+    # Fail fast (before any embedding calls) if the source documents are missing.
+    validate_source_files(knowledge_dir)
 
     # Load existing DB if appending, so we can skip already-ingested sources.
     database: list[dict] = []
