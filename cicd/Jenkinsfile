@@ -100,7 +100,7 @@ pipeline {
             steps {
                 script {
                     env.PRE_DEPLOY_SHA = sh(
-                        script: "set -euo pipefail\n" + sshExec("cd ${env.APP_PATH} && git rev-parse HEAD"),
+                        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec("cd ${env.APP_PATH} && git rev-parse HEAD"),
                         returnStdout: true
                     ).trim()
                     echo "Commit on Dev server BEFORE this deploy: ${env.PRE_DEPLOY_SHA}"
@@ -111,7 +111,7 @@ pipeline {
                                      "git rev-parse HEAD"
 
                     env.DEPLOYED_SHA = sh(
-                        script: "set -euo pipefail\n" + sshExec(remoteCmd),
+                        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd),
                         returnStdout: true
                     ).trim()
 
@@ -139,7 +139,7 @@ pipeline {
                     def remoteCmd = "set -euo pipefail; cd ${env.APP_PATH} && " +
                                      ". ${env.VENV_PATH}/bin/activate && " +
                                      "python -m pip install --quiet -r ${env.REQUIREMENTS}"
-                    sh "set -euo pipefail\n" + sshExec(remoteCmd)
+                    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd)
                 }
                 echo "Dependencies installed/updated inside ${env.VENV_PATH}"
             }
@@ -154,7 +154,7 @@ pipeline {
         // ---------------------------------------------------------------
         stage('Restart Application Service') {
             steps {
-                sh "set -euo pipefail\n" + sshExec("sudo -n systemctl restart ${env.SERVICE_NAME}")
+                sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec("sudo -n systemctl restart ${env.SERVICE_NAME}")
                 echo "${env.SERVICE_NAME} restart command issued."
             }
         }
@@ -189,7 +189,7 @@ pipeline {
             }
             steps {
                 retry(2) {
-                    sh "set -euo pipefail\n" + sshExec(
+                    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(
                         "curl -f -sS --max-time 5 " +
                         "--retry ${env.HEALTH_CHECK_RETRIES} --retry-delay ${env.HEALTH_CHECK_DELAY} " +
                         "--retry-all-errors ${env.HEALTH_URL}"
