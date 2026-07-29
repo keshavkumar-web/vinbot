@@ -219,7 +219,7 @@ pipeline {
         // `sudo ufw allow 38005/tcp`. Not run by this pipeline (per your
         // instruction, configured separately); mentioned here only so the
         // right tool is used if/when it's needed.
-        HOST_PORT = '38005'
+        HOST_PORT = '38006'
 
         DEPLOY_BRANCH = 'main'
     }
