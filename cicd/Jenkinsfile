@@ -180,7 +180,7 @@ pipeline {
         // always resolve correctly regardless of Jenkins-level config.
         DEV_SSH_HOST = '192.168.36.51'
         DEV_SSH_USER = 'ecadmin'
-        DEV_SSH_PORT = '22'
+        DEV_SSH_PORT = '69'
         // Directory on the Ubuntu server containing docker-compose.yml and
         // backend/.env — assumed (per your instruction) to already exist.
         COMPOSE_DIR  = '/opt/vinbot'
