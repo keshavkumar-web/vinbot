@@ -258,18 +258,69 @@ pipeline {
         }
 
         // ---------------------------------------------------------------
+        // TEMPORARY — Docker Environment Diagnostics. Added to debug
+        // "BuildKit is enabled but the buildx component is missing or
+        // broken" failing only inside the Jenkins pipeline (not under an
+        // interactive `sudo -u jenkins` shell). Safe to remove once the
+        // root cause (Jenkins process env vs. interactive shell env) is
+        // confirmed and the fix below is verified in production.
+        // ---------------------------------------------------------------
+        stage('Docker Environment Diagnostics') {
+            steps {
+                echo "START: Docker Environment Diagnostics"
+                sh '''
+                    whoami
+                    pwd
+                    echo "HOME=$HOME"
+                    echo "PATH=$PATH"
+                    which docker
+                    docker --version
+                    docker buildx version
+                    docker info
+                    env | sort
+                '''
+                echo "SUCCESS: Docker Environment Diagnostics"
+            }
+        }
+
+        // ---------------------------------------------------------------
         // 3. Build Docker Image — built ONCE, here, and nowhere else.
         //    GIT_COMMIT/BUILD_DATE build-args feed the Dockerfile's own
         //    ARG/LABEL instructions from Step 1, so the resulting image
         //    carries traceable provenance metadata.
+        //
+        //    HOME is pinned explicitly (rather than left to whatever the
+        //    Jenkins service's own process environment provides) because
+        //    Docker's buildx plugin/config resolution differs between an
+        //    interactive `sudo -u jenkins` shell (which sets HOME to the
+        //    jenkins user's home) and the Jenkins agent's own systemd-
+        //    launched environment (which may not). Confirm /var/lib/jenkins
+        //    is this box's actual jenkins home via the diagnostics stage
+        //    above (`env | sort` -> HOME, or `getent passwd jenkins`)
+        //    before relying on this value.
+        //
+        //    `docker buildx build` is invoked explicitly instead of
+        //    `DOCKER_BUILDKIT=1 docker build` — the implicit env-var
+        //    delegation is exactly what's failing; calling buildx directly
+        //    removes that indirection. `--load` is required because the
+        //    default buildx "docker" driver auto-loads into the local
+        //    image store, but that's not guaranteed for every builder/
+        //    driver combination — the next two stages (Tag, Push) both
+        //    require the image to already exist in `docker images`.
         // ---------------------------------------------------------------
         stage('Build Docker Image') {
             steps {
                 echo "START: Build Docker Image"
                 sh """
                     set -euo pipefail
-                    export DOCKER_BUILDKIT=1
-                    docker build --build-arg GIT_COMMIT=${env.GIT_COMMIT} --build-arg BUILD_DATE=\$(date -u +%Y-%m-%dT%H:%M:%SZ) -t ${env.IMAGE_SHA_TAG} .
+                    export HOME=/var/lib/jenkins
+                    BUILD_DATE=\$(date -u +%Y-%m-%dT%H:%M:%SZ)
+                    docker buildx build \\
+                        --load \\
+                        --build-arg GIT_COMMIT=${env.GIT_COMMIT} \\
+                        --build-arg BUILD_DATE=\$BUILD_DATE \\
+                        -t ${env.IMAGE_SHA_TAG} \\
+                        .
                 """
                 echo "SUCCESS: Build Docker Image (${env.IMAGE_SHA_TAG})"
             }
