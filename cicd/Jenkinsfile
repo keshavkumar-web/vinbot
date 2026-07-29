@@ -139,7 +139,7 @@ def waitForHealthy(int maxAttempts, int delaySeconds) {
     for (int i = 1; i <= maxAttempts; i++) {
         def status = ''
         try {
-            status = runRemoteCapture("docker inspect --format='{{.State.Health.Status}}' vinbot")
+            status = runRemoteCapture('docker inspect --format="{{.State.Health.Status}}" vinbot')
         } catch (ignored) {
             status = 'container-not-found'
         }
@@ -448,7 +448,7 @@ pipeline {
                 script {
                     def previousImage = ''
                     try {
-                        previousImage = runRemoteCapture("docker inspect --format='{{.Config.Image}}' vinbot")
+                        previousImage = runRemoteCapture('docker inspect --format="{{.Config.Image}}" vinbot')
                     } catch (ignored) {
                         echo "No currently-running 'vinbot' container found (first-ever deploy?) — no rollback target will be available if this deploy fails."
                     }
@@ -505,7 +505,7 @@ pipeline {
                 script {
                     runRemote("docker ps --filter name=vinbot")
                     runRemote("cd ${env.COMPOSE_DIR} && docker compose ps")
-                    runRemote("docker inspect --format='Status={{.State.Status}} Health={{.State.Health.Status}} Image={{.Config.Image}}' vinbot")
+                    runRemote('docker inspect vinbot --format="Status={{.State.Status}} Health={{.State.Health.Status}} Image={{.Config.Image}}"')
                     runRemote("docker logs vinbot --tail 50")
                     verifyHealthEndpoint()
                 }
