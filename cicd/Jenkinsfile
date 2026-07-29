@@ -34,7 +34,7 @@
 //   - Two new plugins: HTTP Request Plugin (`httpRequest` step) and
 //     Pipeline Utility Steps (`readJSON` step) — used only for the GitHub
 //     Actions gate, nothing else in this file needs them.
-//   - A Jenkins Credential `ghcr-credentials` (Username with password:
+//   - A Jenkins Credential `github-pat` (Username with password:
 //     username = GitHub user, password = PAT as described above).
 //   - A Jenkins Credential (Secret text) holding OPENAI_API_KEY — see the
 //     note above the credential's use below; this pipeline does NOT write
@@ -123,7 +123,7 @@ pipeline {
         // API call below — one credential, two uses, per the architecture
         // agreed in chat. Split into two credentials if you'd rather keep
         // registry and API-read privileges separate.
-        GHCR_CREDENTIALS_ID = 'ghcr-credentials'
+        GHCR_CREDENTIALS_ID = 'github-pat'
 
         // --- GitHub (for gating deploys on Actions results) ---
         GITHUB_OWNER = 'keshavkumar-web'
