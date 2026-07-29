@@ -43,3 +43,6 @@ backend/knowledge_db.pkl.bak
 
 backend/knowledge_db.pkl
 release/
+
+# Runtime logs
+*.log

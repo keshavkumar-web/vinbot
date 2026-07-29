@@ -1,0 +1,79 @@
+# .dockerignore — controls what gets sent to the Docker daemon as build
+# context, BEFORE any COPY instruction runs. The Dockerfile uses explicit,
+# narrow COPY paths (backend/app, backend/requirements.txt,
+# backend/uhbvn_tables.db, frontend/), so most of these exclusions aren't
+# strictly required for correctness — but backend/knowledge_db.pkl (~109MB)
+# and frontend/node_modules being excluded IS load-bearing: without it,
+# `COPY frontend/ .` in the frontend-builder stage would sweep a local
+# node_modules straight into the image build, mixing host-built native
+# bindings with what `npm ci` just installed for Linux.
+
+# --- Git metadata -------------------------------------------------------
+.git/
+.gitignore
+.gitattributes
+
+# --- Python virtual environments / caches -------------------------------
+**/.venv/
+**/venv/
+**/env/
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+.mypy_cache/
+.ruff_cache/
+backend/.pytest_cache/
+**/.pytest_cache/
+
+# --- The knowledge DB is a generated runtime artifact, never build input -
+# (~109MB; also gitignored — see the Knowledge Database Strategy note.
+# Never baked into the image; mounted as a volume at runtime instead.)
+backend/knowledge_db.pkl
+backend/knowledge_db.pkl.bak
+
+# --- Test outputs / coverage / generated reports ------------------------
+reports/
+backend/.coverage
+backend/htmlcov/
+backend/tests/_fixtures/
+postman/newman/
+
+# --- Node / frontend build tooling ---------------------------------------
+frontend/node_modules/
+frontend/dist/
+postman/node_modules/
+
+# --- Secrets — never enter the build context, never end up in a layer ---
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.key
+*.pem
+
+# --- Raw PDF sources (large, not needed to build or run the image) ------
+UHBVN/
+UHBVN_new/
+
+# --- Logs -----------------------------------------------------------------
+*.log
+**/*.log
+backend/uvicorn.log
+
+# --- Editor / OS ----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- CI/CD and deployment tooling — not part of the application image ---
+.github/
+cicd/
+deploy/
+Jenkinsfile
+
+# --- Misc build/release artifacts -----------------------------------------
+release/
+*.bak
