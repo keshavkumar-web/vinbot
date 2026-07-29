@@ -48,7 +48,7 @@ services:
     # fixed at 8000 (matches the Dockerfile's ENV PORT=8000 default),
     # exactly like a Kubernetes Pod's containerPort. Only the HOST side varies.
     ports:
-      - "${HOST_PORT:-38005}:8000"
+      - "${HOST_PORT:-38006}:8000"
 
     networks:
       - vinbot-net
