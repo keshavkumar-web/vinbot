@@ -1,201 +1,419 @@
-// Jenkinsfile — VinBot CI/CD, Development environment
+// Jenkinsfile — VinBot CI/CD, Docker-based deployment (replaces systemd/v1)
 //
-// Flow: checkout from GitHub -> SSH to the Dev server -> git fetch/reset the
-// working tree in place -> install any changed Python deps into the EXISTING
-// venv -> restart vinbot.service -> poll the health endpoint -> fail the
-// build if it never comes up healthy.
+// Flow: checkout -> gate on GitHub Actions having already passed for this
+// commit -> build the Docker image once -> tag it (immutable SHA + moving
+// "dev" tag) -> push both to GHCR -> SSH to the Ubuntu deployment server ->
+// `docker compose pull` + `up -d` the SHA tag -> wait for health -> verify
+// /api/health -> validate -> cleanup. Any failure from "pull" onward
+// triggers an automatic rollback to the image that was running before this
+// build started, and the Jenkins build is marked FAILED regardless of
+// whether the rollback itself succeeds.
 //
-// Deliberately NOT release-directory / blue-green: this is a single-instance
-// Development box where a few seconds of restart downtime is a non-issue and
-// there is no requirement for instant rollback. See "Future improvements"
-// in the accompanying explanation for what changes for UAT/Production.
+// Architecture (agreed in chat, not re-litigated here):
+//   - Option B: build once in Jenkins, push to a registry, deploy servers
+//     only ever PULL. Never build source on the deployment server.
+//   - GitHub Actions remains the ONLY place unit/integration/smoke/Newman
+//     tests run. This pipeline does not install pytest anywhere and does
+//     not re-run those suites — it GATES on their result for this exact
+//     commit via GitHub's Checks API before building anything.
+//   - Auth to the Ubuntu box: the Jenkins OS user's own SSH key (same model
+//     as v1) — NOT a Jenkins Credential, NOT the SSH Agent plugin.
+//   - Registry (GHCR) and the GitHub Checks API both authenticate with ONE
+//     Jenkins Credential (a GitHub PAT with `write:packages`, `read:packages`,
+//     and `repo` scopes) — see GHCR_CREDENTIALS_ID below.
 //
-// Auth model (per the verified environment): the Jenkins OS user has a
-// passwordless SSH key under /var/lib/jenkins/.ssh/ that already works
-// against the Dev server — NOT a Jenkins Credential, NOT the SSH Agent
-// plugin. Every remote action below is a plain `ssh ...` inside a `sh` step.
+// >>> PLACEHOLDERS — replace before running <<<
+//   DEV_SSH_HOST / DEV_SSH_PORT / DEV_SSH_USER / COMPOSE_DIR / HOST_PORT
+//   are NOT yet known real values for the Ubuntu box — see chat for the
+//   exact list of what's needed. Everything else in this file is complete.
+//
+// New Jenkins prerequisites this version introduces (none of these existed
+// for v1 — see chat for the full explanation):
+//   - Docker Engine installed on the JENKINS AGENT ITSELF (it now builds
+//     images locally, not just orchestrates SSH).
+//   - Two new plugins: HTTP Request Plugin (`httpRequest` step) and
+//     Pipeline Utility Steps (`readJSON` step) — used only for the GitHub
+//     Actions gate, nothing else in this file needs them.
+//   - A Jenkins Credential `ghcr-credentials` (Username with password:
+//     username = GitHub user, password = PAT as described above).
+//   - A Jenkins Credential (Secret text) holding OPENAI_API_KEY — see the
+//     note above the credential's use below; this pipeline does NOT write
+//     it anywhere itself (backend/.env on the deploy server is assumed to
+//     already exist and already contain it, per your stated assumption
+//     that "the compose file and .env already exist on the deployment
+//     server" — if that ever needs to change, this is the stage to revisit).
 
 def sshExec(String remoteCmd) {
-    // Centralizes every SSH invocation so connection options (port, timeouts,
-    // batch mode) are defined once instead of repeated — and repeated — in
-    // every stage.
-    //
-    //   -o BatchMode=yes        never wait on a password/passphrase prompt;
-    //                           fail immediately if key auth doesn't work.
-    //   -o ConnectTimeout=10    bound how long a dead/unreachable host can
-    //                           stall the build.
-    //   -o ServerAliveInterval  keep the session alive across the longer
-    //                           pip-install step; avoids a silently dropped
-    //                           connection on a flaky link.
+    // Same centralizing helper as v1 — one place for connection options.
     return "ssh -p ${env.DEV_SSH_PORT} -o BatchMode=yes -o ConnectTimeout=10 " +
            "-o ServerAliveInterval=15 ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} '${remoteCmd}'"
+}
+
+def runRemote(String remoteCmd) {
+    // Fire-and-check a remote command; fails the calling step on non-zero exit.
+    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd)
+}
+
+def runRemoteCapture(String remoteCmd) {
+    // Same, but returns stdout (trimmed) instead of just pass/fail.
+    return sh(
+        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd),
+        returnStdout: true
+    ).trim()
+}
+
+def composeUp(String imageTag) {
+    // IMAGE_TAG is exported for THIS remote shell only — it's what
+    // docker-compose.yml's `image: ghcr.io/keshavkumar-web/vinbot:${IMAGE_TAG:-dev}`
+    // resolves against. Pulls before starting so a partially-cached/stale
+    // local layer can never be silently reused.
+    runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${imageTag} && " +
+               "docker compose pull && docker compose up -d")
+}
+
+def waitForHealthy(int maxAttempts, int delaySeconds) {
+    // Polls Docker's OWN HEALTHCHECK verdict (from the Dockerfile's
+    // HEALTHCHECK instruction) rather than re-implementing health logic
+    // here. Returns false (never throws) so the caller decides what
+    // "still unhealthy after waiting" means — deploy failure vs rollback
+    // failure are handled differently by the two call sites below.
+    for (int i = 1; i <= maxAttempts; i++) {
+        def status = ''
+        try {
+            status = runRemoteCapture("docker inspect --format='{{.State.Health.Status}}' vinbot")
+        } catch (ignored) {
+            status = 'container-not-found'
+        }
+        echo "Health poll ${i}/${maxAttempts}: ${status}"
+        if (status == 'healthy') {
+            return true
+        }
+        if (i < maxAttempts) {
+            sleep(time: delaySeconds, unit: 'SECONDS')
+        }
+    }
+    return false
+}
+
+def verifyHealthEndpoint() {
+    // Independent, belt-and-suspenders confirmation on top of Docker's own
+    // HEALTHCHECK verdict — a direct curl from the deployment server
+    // itself against localhost, exactly like v1's Health Check stage.
+    runRemote("curl -fsS --max-time 5 http://localhost:${env.HOST_PORT}/api/health")
 }
 
 pipeline {
     agent any
 
     options {
-        timestamps()                                   // prefixes every console line with a wall-clock time
-        timeout(time: 15, unit: 'MINUTES')               // absolute ceiling for the whole build
-        disableConcurrentBuilds()                        // two overlapping deploys would race on the same
-                                                          // git working tree / systemd unit on the Dev box
-        buildDiscarder(logRotator(numToKeepStr: '20'))    // housekeeping only — keep the last 20 builds' logs
-        // ansiColor('xterm')   // Uncomment once the AnsiColor plugin (optional) is installed for colored logs
+        timestamps()
+        timeout(time: 45, unit: 'MINUTES')   // generous: the GH Actions gate alone can wait up to 15 min
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '20'))
     }
 
     environment {
-        DEV_SSH_HOST  = '192.168.36.51'
-        DEV_SSH_PORT  = '69'
-        DEV_SSH_USER  = 'ecadmin'
-        APP_PATH      = '/opt/vinbot'
-        VENV_PATH     = '/opt/vinbot/.venv'
-        REQUIREMENTS  = 'requirements.txt'
-        SERVICE_NAME  = 'vinbot.service'
-        HEALTH_URL    = 'http://localhost:38005/api/health'
-        DEPLOY_BRANCH = 'main'
+        // --- Container registry (GHCR) ---
+        REGISTRY = 'ghcr.io'
+        IMAGE_NAME = 'keshavkumar-web/vinbot'
+        MOVING_TAG = 'dev'
+        // Jenkins Credential (Username with password): username = GitHub
+        // user, password = a PAT scoped write:packages + read:packages +
+        // repo. Used for BOTH `docker login ghcr.io` and the GitHub Checks
+        // API call below — one credential, two uses, per the architecture
+        // agreed in chat. Split into two credentials if you'd rather keep
+        // registry and API-read privileges separate.
+        GHCR_CREDENTIALS_ID = 'ghcr-credentials'
 
-        // Health check tuning: curl itself retries HEALTH_CHECK_RETRIES times,
-        // HEALTH_CHECK_DELAY seconds apart, so "wait for startup" and "verify
-        // health" are the same step — see the Health Check stage below.
-        HEALTH_CHECK_RETRIES = '10'
-        HEALTH_CHECK_DELAY   = '3'
+        // --- GitHub (for gating deploys on Actions results) ---
+        GITHUB_OWNER = 'keshavkumar-web'
+        GITHUB_REPO = 'vinbot'
+        // Must exactly match the `name:` fields of the jobs in
+        // .github/workflows/test.yml — if that file's job names ever
+        // change, update this list to match.
+        GH_REQUIRED_CHECKS = 'Generate knowledge_db.pkl,Unit + Integration Tests (pytest),Smoke Tests,API Integration Tests (Newman)'
+
+        // --- Ubuntu 22.04 LTS deployment target ---
+        // >>> PLACEHOLDERS: replace with the real box's details <<<
+        DEV_SSH_HOST = 'CHANGE_ME.example.internal'
+        DEV_SSH_PORT = '22'
+        DEV_SSH_USER = 'CHANGE_ME'
+        // Directory on the Ubuntu server containing docker-compose.yml and
+        // backend/.env — assumed (per your instruction) to already exist.
+        COMPOSE_DIR  = '/opt/vinbot'
+        // Assumes the SSH user is in the local `docker` group (passwordless
+        // docker/docker-compose access — the standard post-install step in
+        // Docker's own Ubuntu documentation: `sudo usermod -aG docker
+        // <user>`). If your box instead requires `sudo -n docker ...`,
+        // every `docker`/`docker compose` command built inside
+        // sshExec()'s callers below needs a `sudo -n ` prefix added —
+        // flagged here rather than guessed at silently.
+        //
+        // Firewall: if HOST_PORT needs to be reachable from outside the
+        // box, Ubuntu uses ufw, not firewalld — e.g.
+        // `sudo ufw allow 38005/tcp`. Not run by this pipeline (per your
+        // instruction, configured separately); mentioned here only so the
+        // right tool is used if/when it's needed.
+        HOST_PORT = '38005'
+
+        DEPLOY_BRANCH = 'feature/jenkins-cicd'
     }
 
     stages {
 
         // ---------------------------------------------------------------
-        // 1. Checkout — pulls the exact commit Jenkins was triggered for
-        //    into the LOCAL Jenkins workspace. This is what lets the build
-        //    log a definitive "this is the commit we intended to ship"
-        //    before anything touches the Dev server.
+        // 1. Checkout — also computes the two full image references
+        //    (immutable SHA tag + moving tag) as soon as GIT_COMMIT is
+        //    known, so every later stage just reads env.IMAGE_SHA_TAG /
+        //    env.IMAGE_MOVING_TAG rather than recomputing them.
         // ---------------------------------------------------------------
         stage('Checkout') {
             steps {
+                echo "START: Checkout"
                 checkout scm
-                echo "Checked out commit ${env.GIT_COMMIT} (branch: ${env.GIT_BRANCH ?: env.DEPLOY_BRANCH})"
+                script {
+                    env.IMAGE_SHA_TAG    = "${env.REGISTRY}/${env.IMAGE_NAME}:${env.GIT_COMMIT}"
+                    env.IMAGE_MOVING_TAG = "${env.REGISTRY}/${env.IMAGE_NAME}:${env.MOVING_TAG}"
+                }
+                echo "SUCCESS: Checkout commit ${env.GIT_COMMIT} (branch: ${env.GIT_BRANCH ?: env.DEPLOY_BRANCH})"
             }
         }
 
         // ---------------------------------------------------------------
-        // 2. Deploy Application Code — on the DEV SERVER (via SSH):
-        //      cd /opt/vinbot
-        //      git fetch origin
-        //      git reset --hard origin/main
+        // 2. Verify GitHub Actions Tests Passed — the gate that REPLACES
+        //    running pytest/smoke/Newman inside Jenkins. GitHub Actions is
+        //    the single source of truth for test results; this stage
+        //    polls the Checks API for this exact commit SHA and refuses
+        //    to build/deploy anything until every required job shows
+        //    conclusion=success. Fails CLOSED: missing/incomplete/failed
+        //    checks all block the deploy, same as an actual test failure
+        //    would.
         //
-        //    git reset --hard (not git pull) is used deliberately:
-        //    `git pull` = fetch + MERGE, which fails outright if anyone has
-        //    ever hand-edited a file directly on the box (a real risk on a
-        //    dev server). `git fetch` + `git reset --hard` has no merge
-        //    step at all — it unconditionally forces the working tree to
-        //    match origin/main, every time, with no conflict states
-        //    possible. It is the standard substitution for `git pull` in
-        //    any automated/unattended deploy.
-        //
-        //    The commit SHA before and after is captured and logged so a
-        //    human always has a one-line manual rollback available, even
-        //    though automatic rollback is out of scope for this Dev
-        //    pipeline (see "Future improvements").
+        //    Implemented as ONE consolidated stage (one API call per poll,
+        //    checking all 4 required jobs at once) rather than one Jenkins
+        //    stage per job — fewer GitHub API round-trips, one atomic
+        //    pass/fail. Split it into separate stages if you want each
+        //    job's result visible as its own entry in the Stage View;
+        //    functionally identical either way.
         // ---------------------------------------------------------------
-        stage('Deploy Application Code') {
+        stage('Verify GitHub Actions Tests Passed') {
+            options {
+                timeout(time: 15, unit: 'MINUTES')
+            }
             steps {
+                echo "START: Verify GitHub Actions Tests Passed"
                 script {
-                    env.PRE_DEPLOY_SHA = sh(
-                        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec("cd ${env.APP_PATH} && git rev-parse HEAD"),
-                        returnStdout: true
-                    ).trim()
-                    echo "Commit on Dev server BEFORE this deploy: ${env.PRE_DEPLOY_SHA}"
+                    def expectedJobs = env.GH_REQUIRED_CHECKS.split(',') as List
+                    def delaySeconds = 30
+                    def maxAttempts = 30   // 30 * 30s = 15 minutes, matches the stage timeout above
+                    def allDone = false
+                    def checkRuns = [:]
 
-                    def remoteCmd = "set -euo pipefail; cd ${env.APP_PATH} && " +
-                                     "git fetch origin && " +
-                                     "git reset --hard origin/${env.DEPLOY_BRANCH} >/dev/null && " +
-                                     "git rev-parse HEAD"
+                    withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
+                                                       usernameVariable: 'GH_USER', passwordVariable: 'GH_TOKEN')]) {
+                        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+                            def response = httpRequest(
+                                url: "https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/commits/${env.GIT_COMMIT}/check-runs",
+                                customHeaders: [
+                                    [name: 'Authorization', value: "Bearer ${GH_TOKEN}", maskValue: true],
+                                    [name: 'Accept', value: 'application/vnd.github+json'],
+                                ],
+                                validResponseCodes: '100:599',
+                            )
+                            if (response.status != 200) {
+                                echo "GitHub API returned HTTP ${response.status} (attempt ${attempt}/${maxAttempts}) — retrying in ${delaySeconds}s..."
+                                sleep(time: delaySeconds, unit: 'SECONDS')
+                                continue
+                            }
 
-                    env.DEPLOYED_SHA = sh(
-                        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd),
-                        returnStdout: true
-                    ).trim()
+                            def json = readJSON(text: response.content)
+                            checkRuns = [:]
+                            json.check_runs.each { run -> checkRuns[run.name] = [status: run.status, conclusion: run.conclusion] }
 
-                    echo "Deployed commit SHA (now on Dev server): ${env.DEPLOYED_SHA}"
-                    if (env.PRE_DEPLOY_SHA == env.DEPLOYED_SHA) {
-                        echo "No new commits — Dev server was already at ${env.DEPLOYED_SHA}."
+                            def pending = expectedJobs.findAll { name -> !checkRuns.containsKey(name) || checkRuns[name].status != 'completed' }
+                            if (pending.isEmpty()) {
+                                allDone = true
+                                break
+                            }
+                            echo "Waiting on GitHub Actions job(s): ${pending.join(', ')} (attempt ${attempt}/${maxAttempts})"
+                            sleep(time: delaySeconds, unit: 'SECONDS')
+                        }
+                    }
+
+                    if (!allDone) {
+                        currentBuild.result = 'FAILURE'
+                        error("FAILURE: Verify GitHub Actions Tests Passed — checks for commit ${env.GIT_COMMIT} did not all complete within 15 minutes.")
+                    }
+
+                    def failed = expectedJobs.findAll { name -> checkRuns[name].conclusion != 'success' }
+                    if (!failed.isEmpty()) {
+                        currentBuild.result = 'FAILURE'
+                        error("FAILURE: Verify GitHub Actions Tests Passed — " +
+                              failed.collect { "${it}=${checkRuns[it].conclusion}" }.join(', '))
+                    }
+
+                    echo "SUCCESS: Verify GitHub Actions Tests Passed — all required checks green for ${env.GIT_COMMIT}"
+                }
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 3. Build Docker Image — built ONCE, here, and nowhere else.
+        //    GIT_COMMIT/BUILD_DATE build-args feed the Dockerfile's own
+        //    ARG/LABEL instructions from Step 1, so the resulting image
+        //    carries traceable provenance metadata.
+        // ---------------------------------------------------------------
+        stage('Build Docker Image') {
+            steps {
+                echo "START: Build Docker Image"
+                sh """
+                    set -euo pipefail
+                    export DOCKER_BUILDKIT=1
+                    docker build --build-arg GIT_COMMIT=${env.GIT_COMMIT} --build-arg BUILD_DATE=\$(date -u +%Y-%m-%dT%H:%M:%SZ) -t ${env.IMAGE_SHA_TAG} .
+                """
+                echo "SUCCESS: Build Docker Image (${env.IMAGE_SHA_TAG})"
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 4. Tag Image — adds the moving tag to the SAME image built
+        //    above (no rebuild). The SHA tag is the immutable artifact;
+        //    the moving tag is just a second pointer to those same bytes.
+        // ---------------------------------------------------------------
+        stage('Tag Image') {
+            steps {
+                echo "START: Tag Image"
+                sh "docker tag ${env.IMAGE_SHA_TAG} ${env.IMAGE_MOVING_TAG}"
+                echo "SUCCESS: Tag Image (${env.IMAGE_MOVING_TAG} -> ${env.IMAGE_SHA_TAG})"
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 5. Push Image to GHCR — both tags. The deployment server will
+        //    never see a `docker build`; this is the only place the image
+        //    leaves the Jenkins agent.
+        // ---------------------------------------------------------------
+        stage('Push Image to GHCR') {
+            steps {
+                echo "START: Push Image to GHCR"
+                withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
+                                                   usernameVariable: 'GHCR_USER', passwordVariable: 'GHCR_TOKEN')]) {
+                    sh '''
+                        set -euo pipefail
+                        echo "$GHCR_TOKEN" | docker login "$REGISTRY" -u "$GHCR_USER" --password-stdin
+                    '''
+                    sh "docker push ${env.IMAGE_SHA_TAG}"
+                    sh "docker push ${env.IMAGE_MOVING_TAG}"
+                    sh 'docker logout "$REGISTRY" || true'
+                }
+                echo "SUCCESS: Push Image to GHCR"
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // 6. Deploy to Ubuntu Server — pull + start the new SHA tag over
+        //    SSH, wait for health, verify the endpoint. ANY failure from
+        //    here onward (pull fails, up fails, health never turns
+        //    "healthy", the endpoint doesn't respond) triggers automatic
+        //    rollback: stop the failed container, redeploy whatever image
+        //    tag was running immediately before this build started
+        //    (captured BEFORE touching anything, via `docker inspect` —
+        //    never a rebuild, never a git operation, just re-pointing
+        //    compose at an already-pushed, already-immutable tag), and
+        //    re-verify health on the rolled-back version. The Jenkins
+        //    build is marked FAILED in every failure path, including a
+        //    SUCCESSFUL rollback — restoring the old version means the
+        //    server is healthy again, but deploying the new commit still
+        //    did not succeed, and that must show up as a failed build.
+        // ---------------------------------------------------------------
+        stage('Deploy to Ubuntu Server') {
+            steps {
+                echo "START: Deploy to Ubuntu Server"
+                script {
+                    def previousImage = ''
+                    try {
+                        previousImage = runRemoteCapture("docker inspect --format='{{.Config.Image}}' vinbot")
+                    } catch (ignored) {
+                        echo "No currently-running 'vinbot' container found (first-ever deploy?) — no rollback target will be available if this deploy fails."
+                    }
+
+                    try {
+                        composeUp(env.GIT_COMMIT)
+                        if (!waitForHealthy(20, 3)) {
+                            error("container did not report healthy within 60s")
+                        }
+                        verifyHealthEndpoint()
+                        echo "SUCCESS: Deploy to Ubuntu Server (${env.IMAGE_SHA_TAG})"
+                    } catch (deployErr) {
+                        echo "FAILURE: Deploy to Ubuntu Server — ${deployErr.getMessage()}"
+
+                        if (!previousImage) {
+                            currentBuild.result = 'FAILURE'
+                            error("Deployment of ${env.IMAGE_SHA_TAG} failed and there is no previous image to roll back to (first deploy). Manual intervention required.")
+                        }
+
+                        echo "START: Automatic rollback to ${previousImage}"
+                        def previousTag = previousImage.tokenize(':').last()
+                        try {
+                            runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${env.GIT_COMMIT} && docker compose stop vinbot || true")
+                            composeUp(previousTag)
+                            if (!waitForHealthy(20, 3)) {
+                                throw new Exception("rolled-back container did not report healthy within 60s")
+                            }
+                            verifyHealthEndpoint()
+                            echo "SUCCESS: Automatic rollback to ${previousImage}"
+                        } catch (rollbackErr) {
+                            currentBuild.result = 'FAILURE'
+                            error("CRITICAL — FAILURE: Automatic rollback also failed (${rollbackErr.getMessage()}). " +
+                                  "Manual intervention required immediately. Last known good image: ${previousImage}")
+                        }
+
+                        currentBuild.result = 'FAILURE'
+                        error("Deployment of ${env.IMAGE_SHA_TAG} failed and was automatically rolled back to ${previousImage}. Build marked FAILED.")
                     }
                 }
             }
         }
 
         // ---------------------------------------------------------------
-        // 3. Install Dependencies — activates the EXISTING venv (never
-        //    recreated — that would be slow and is unnecessary; the venv
-        //    itself doesn't need rebuilding, only its installed packages
-        //    might have changed) and installs whatever requirements.txt
-        //    now specifies. Skipping this step is the most common cause of
-        //    a "deploy looked green but the app is broken" bug: the code
-        //    changed but the dependency that code needs was never
-        //    installed.
+        // 7. Validate Deployment — the exact checks you asked for,
+        //    against whatever is actually running now (the new version on
+        //    the success path; the rolled-back version if stage 6 caught
+        //    a failure and already exited — reached only when stage 6 did
+        //    NOT error out, i.e. the new version really is healthy).
         // ---------------------------------------------------------------
-        stage('Install Dependencies') {
+        stage('Validate Deployment') {
             steps {
+                echo "START: Validate Deployment"
                 script {
-                    def remoteCmd = "set -euo pipefail; cd ${env.APP_PATH} && " +
-                                     ". ${env.VENV_PATH}/bin/activate && " +
-                                     "python -m pip install --quiet -r ${env.REQUIREMENTS}"
-                    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd)
+                    runRemote("docker ps --filter name=vinbot")
+                    runRemote("cd ${env.COMPOSE_DIR} && docker compose ps")
+                    runRemote("docker inspect vinbot --format='Status={{.State.Status}} Health={{.State.Health.Status}} Image={{.Config.Image}}'")
+                    runRemote("docker logs vinbot --tail 50")
+                    verifyHealthEndpoint()
                 }
-                echo "Dependencies installed/updated inside ${env.VENV_PATH}"
+                echo "SUCCESS: Validate Deployment"
             }
         }
 
         // ---------------------------------------------------------------
-        // 4. Restart Application Service — `sudo -n` (never prompts) is
-        //    only possible because ecadmin's sudoers entry is scoped to
-        //    EXACTLY this one command; if that scoping were ever changed
-        //    or removed, this line fails loudly (non-zero exit) instead of
-        //    hanging on a password prompt.
+        // 8. Cleanup — `docker image prune` (no -a) and `docker builder
+        //    prune` structurally CANNOT remove a tagged image, only truly
+        //    dangling (untagged) layers and build cache. The currently
+        //    running image and the previous rollback image are both
+        //    tagged (vinbot:<sha>), so neither is ever at risk here —
+        //    this isn't a filter I'm applying, it's what these commands
+        //    are incapable of touching in the first place.
         // ---------------------------------------------------------------
-        stage('Restart Application Service') {
+        stage('Cleanup') {
             steps {
-                sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec("sudo -n systemctl restart ${env.SERVICE_NAME}")
-                echo "${env.SERVICE_NAME} restart command issued."
-            }
-        }
-
-        // ---------------------------------------------------------------
-        // 5. Health Check — verifies AND waits-for-startup in one step:
-        //    curl runs ON the Dev server (over the same SSH connection)
-        //    against `localhost:38005`, because Uvicorn is bound to
-        //    127.0.0.1 only (not exposed on the box's external interface —
-        //    curling the external IP from Jenkins would require exposing
-        //    the app beyond what's needed just to health-check it).
-        //
-        //    curl's own --retry/--retry-delay/--retry-all-errors handles
-        //    "wait for the app to finish starting" — early attempts get
-        //    connection-refused before Uvicorn has bound the port, and
-        //    --retry-all-errors keeps retrying through that AND through any
-        //    non-2xx response, up to HEALTH_CHECK_RETRIES attempts,
-        //    HEALTH_CHECK_DELAY seconds apart (~30s total by default). `-f`
-        //    makes curl itself exit non-zero on any HTTP error status, so a
-        //    persistent failure fails the `sh` step, which fails this
-        //    stage, which fails the build — satisfying "fail build if
-        //    health check fails" with no extra logic needed.
-        //
-        //    The declarative retry(2) wrapper is a SEPARATE, outer safety
-        //    net: it re-runs the whole curl-retry-cycle if the SSH
-        //    connection itself drops mid-check (a different failure mode
-        //    than "the app isn't healthy yet").
-        // ---------------------------------------------------------------
-        stage('Health Check') {
-            options {
-                timeout(time: 2, unit: 'MINUTES')
-            }
-            steps {
-                retry(2) {
-                    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(
-                        "curl -f -sS --max-time 5 " +
-                        "--retry ${env.HEALTH_CHECK_RETRIES} --retry-delay ${env.HEALTH_CHECK_DELAY} " +
-                        "--retry-all-errors ${env.HEALTH_URL}"
-                    )
+                echo "START: Cleanup"
+                sh 'docker image prune -f'
+                sh 'docker builder prune -f'
+                script {
+                    runRemote("docker image prune -f")
                 }
-                echo "Health check PASSED — ${env.SERVICE_NAME} responded 200 OK at ${env.HEALTH_URL}."
+                echo "SUCCESS: Cleanup (dangling images and build cache removed; tagged images untouched)"
             }
         }
     }
@@ -204,27 +422,20 @@ pipeline {
         success {
             echo "================================================================"
             echo " DEPLOYMENT SUCCESSFUL"
-            echo "   Environment     : Development (${env.DEV_SSH_HOST})"
-            echo "   Previous SHA    : ${env.PRE_DEPLOY_SHA}"
-            echo "   Deployed SHA    : ${env.DEPLOYED_SHA}"
-            echo "   Health endpoint : ${env.HEALTH_URL} -> 200 OK"
-            echo "   Manual rollback, if ever needed:"
-            echo "     ssh -p ${env.DEV_SSH_PORT} ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} \\"
-            echo "       'cd ${env.APP_PATH} && git reset --hard ${env.PRE_DEPLOY_SHA} && sudo -n systemctl restart ${env.SERVICE_NAME}'"
+            echo "   Image           : ${env.IMAGE_SHA_TAG}"
+            echo "   Moving tag      : ${env.IMAGE_MOVING_TAG}"
+            echo "   Health endpoint : http://${env.DEV_SSH_HOST}:${env.HOST_PORT}/api/health -> 200 OK"
             echo "================================================================"
         }
         failure {
             echo "================================================================"
-            echo " DEPLOYMENT FAILED — see the failing stage above for the exact cause."
-            echo "   If 'Deploy Application Code' completed, the Dev server IS at the"
-            echo "   new commit even though a later stage failed. Previous known-good"
-            echo "   commit was: ${env.PRE_DEPLOY_SHA ?: '<unknown - checkout stage did not complete>'}"
-            echo "   Manual rollback:"
-            echo "     ssh -p ${env.DEV_SSH_PORT} ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST} \\"
-            echo "       'cd ${env.APP_PATH} && git reset --hard ${env.PRE_DEPLOY_SHA} && sudo -n systemctl restart ${env.SERVICE_NAME}'"
+            echo " PIPELINE FAILED — see the failing stage above for the exact cause."
+            echo "   If 'Deploy to Ubuntu Server' was reached, check its log for"
+            echo "   whether automatic rollback succeeded or needs manual follow-up."
             echo "================================================================"
         }
         always {
+            sh 'docker logout "$REGISTRY" || true'
             echo "Build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}"
         }
     }

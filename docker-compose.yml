@@ -1,0 +1,206 @@
+# docker-compose.yml — production deployment for Vinbot. Every field here
+# has a direct Kubernetes analogue (see the mapping table in chat) — this
+# is deliberate: the same image and the same env-var contract should carry
+# over to a Deployment/Service/ConfigMap/Secret/PVC with minimal changes
+# later.
+#
+# The ONLY things this deployment depends on outside the immutable Docker
+# image are:
+#   1. backend/.env       — secrets/config (OPENAI_API_KEY, etc.), read via
+#                            env_file below, never baked into the image.
+#   2. vinbot-data volume  — the persistent home for knowledge_db.pkl (see
+#                            the Data persistence section below).
+# Everything else — application code, the compiled frontend, uhbvn_tables.db
+# — comes from the image itself, built once by Jenkins and never modified
+# after. This server never builds anything; it only ever pulls a tag.
+
+services:
+  vinbot:
+    container_name: vinbot
+
+    # Registry-qualified reference — this is the ONLY way this compose file
+    # obtains an image. No `build:` section exists here on purpose:
+    # production servers never build images — Jenkins is the sole build
+    # authority (build once, push to GHCR, tag with the git SHA + a moving
+    # `dev` tag), and every server only ever runs `docker compose pull`
+    # against an already-built, already-tested, immutable image. A bare
+    # "vinbot:tag" would resolve to a purely local image and `pull` would
+    # find nothing — the registry prefix is what makes `pull` meaningful.
+    # IMAGE_TAG is the one value Jenkins changes per deploy (an immutable
+    # per-commit SHA, or the moving `dev` tag) — same file, either way.
+    image: ghcr.io/keshavkumar-web/vinbot:${IMAGE_TAG:-dev}
+
+    restart: unless-stopped
+
+    # Runs tini (Docker's built-in minimal init) as the container's real
+    # PID 1. It forwards signals correctly and reaps zombies. The
+    # Dockerfile's CMD is exec-form (`CMD ["python", "-m", "uvicorn", ...]`)
+    # — Docker never spawns a shell for that form at all, so uvicorn is
+    # tini's DIRECT child from the start; the two aren't redundant, they
+    # compose: tini guarantees SIGTERM delivery even in edge cases (e.g. a
+    # future dependency that forks a subprocess), exec-form guarantees
+    # there was never an extra shell layer in between for it to deliver
+    # signals through in the first place.
+    init: true
+
+    # --- Networking ---------------------------------------------------------
+    # Container-side port is intentionally NOT parameterized — it stays
+    # fixed at 8000 (matches the Dockerfile's ENV PORT=8000 default),
+    # exactly like a Kubernetes Pod's containerPort. Only the HOST side varies.
+    ports:
+      - "${HOST_PORT:-38005}:8000"
+
+    networks:
+      - vinbot-net
+
+    # --- Configuration -------------------------------------------------------
+    # backend/.env is the SAME file/convention the project already uses
+    # (backend/.env.example documents its keys: OPENAI_API_KEY required;
+    # CHAT_MODEL, EMBED_MODEL, TOP_K, MIN_SIMILARITY, MAX_HISTORY_MESSAGES,
+    # ALLOWED_ORIGINS optional). env_file injects these into the container's
+    # process environment — this file is never baked into the image and is
+    # already excluded by .dockerignore.
+    env_file:
+      - backend/.env
+
+    # --- Data persistence ----------------------------------------------------
+    # Named volume, mounted ONLY at /app/data — the directory the Dockerfile
+    # already creates and chowns to the non-root `vinbot` user, and the
+    # directory KNOWLEDGE_DB_PATH (baked into the image's ENV) points into.
+    # Nothing else under /app is volume-backed: application code, the
+    # compiled frontend, and uhbvn_tables.db all come from the image and are
+    # never modified after build — every deploy replaces the whole
+    # container with a new image, never patches a running one in place.
+    # Only DATA (the generated, CI-produced knowledge_db.pkl) outlives a
+    # container replacement; CODE never does. That split is what makes
+    # `read_only: true` below possible at all, and it's the same reasoning
+    # that makes rollback-by-tag safe later: swapping the image never
+    # touches this volume.
+    volumes:
+      - vinbot-data:/app/data
+
+    # --- Security ------------------------------------------------------------
+    # Root filesystem is fully read-only. Verified safe: the only runtime
+    # write path in the whole app was app/tables.py's SQLite connection
+    # (now opens explicitly read-only) and app/followup.py's 3 call sites
+    # into it (now guarded) — see the audit in chat. Nothing else in the
+    # codebase writes to disk at request time.
+    read_only: true
+
+    # The one deliberately writable, RAM-backed exception. No code path
+    # currently needs /tmp (audited — no tempfile usage anywhere in app/),
+    # but this is cheap insurance against a future dependency (or a
+    # transitive one, e.g. inside httpx/openai) that expects a writable
+    # /tmp to exist, without weakening read_only above. Size-capped so a
+    # misbehaving dependency can't unbounded-grow container memory (tmpfs
+    # is backed by RAM, not disk).
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+
+    # No Linux capability is needed: the process runs as non-root, binds a
+    # non-privileged port (>1024 needs no capability at all), and performs
+    # no raw sockets, no filesystem ownership changes, no networking admin
+    # actions. Drop everything, add nothing back.
+    cap_drop:
+      - ALL
+
+    # Defense in depth alongside cap_drop: even if a process somehow found
+    # a setuid/setgid binary, this blocks it from gaining new privileges
+    # through it.
+    security_opt:
+      - no-new-privileges:true
+
+    # Stated explicitly (not just relying on the default) so this is
+    # auditable at a glance without needing to know Compose's defaults.
+    privileged: false
+
+    # USER vinbot is already set in the Dockerfile — restated here only as
+    # documentation; Compose does not need this to enforce non-root, the
+    # image already does.
+    # user: vinbot
+
+    # --- Health check ----------------------------------------------------
+    # Mirrors the Dockerfile's own HEALTHCHECK exactly (same fixed port,
+    # same real HTTP GET against /api/health — not a "process is alive"
+    # stub). Declaring it here too isn't redundant: this is the exact shape
+    # a Kubernetes liveness/readiness probe will take later, so this block
+    # IS the probe definition in everything but syntax. Hardcoded to 8000,
+    # not an env var — the container always listens on a fixed internal
+    # port (see the Dockerfile); only HOST_PORT below is configurable.
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import sys, urllib.request as u; sys.exit(0 if u.urlopen('http://127.0.0.1:8000/api/health', timeout=3).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+    # --- Logging -----------------------------------------------------------
+    # PYTHONUNBUFFERED=1 (Dockerfile) already guarantees log lines reach
+    # stdout/stderr immediately; json-file + rotation caps how much of that
+    # any single host can accumulate, so a noisy/long-running container
+    # can't slowly fill the disk.
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+    # --- Resource limits -----------------------------------------------------
+    # NOT Swarm-only, and NOT silently ignored here: unlike the rest of the
+    # `deploy:` key (replicas, placement, update_config — genuinely
+    # Swarm-only, would be ignored by plain `docker compose up`), the
+    # Compose Specification specifically defines `deploy.resources` as
+    # honored by `docker compose up` in standalone mode too, not just
+    # `docker stack deploy`. This applies to Compose V2 broadly, and this
+    # server is confirmed running v2.40.3. Verify directly rather than
+    # trust this comment — after `docker compose up -d`:
+    #   docker inspect vinbot --format='Memory={{.HostConfig.Memory}} NanoCpus={{.HostConfig.NanoCpus}}'
+    # Memory=1073741824 (1G in bytes) and a non-zero NanoCpus confirms the
+    # limits below are actually applied to the container, not just parsed.
+    #
+    # Starting point, not a proven number — tune from real `docker stats`
+    # output. Reasoning:
+    #   cpus limit 1.0: this is a single-worker (--workers 1, required by
+    #     the in-memory session store), mostly I/O-bound process — it's
+    #     waiting on the OpenAI API far more than it's computing. 1 full
+    #     core is generous headroom, not a floor; lower it (e.g. 0.5) if
+    #     running many instances on constrained hardware.
+    #   memory limit 1G / reservation 512M: knowledge_db.pkl is ~109MB on
+    #     disk, but the DESERIALIZED chunks list plus the lazily-built
+    #     numpy embedding matrix (app/rag.py's _emb_matrix — roughly
+    #     chunks × embedding-dimensions × 4 bytes ≈ tens of MB) plus normal
+    #     Python/FastAPI/uvicorn overhead pushes real usage well past the
+    #     on-disk file size. 1G gives headroom for the KB to grow before
+    #     this needs revisiting; the reservation (512M) is what Docker
+    #     guarantees is available, not a cap.
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+        reservations:
+          cpus: "0.25"
+          memory: 512M
+
+networks:
+  # Dedicated, not the Compose default network — this is what lets a future
+  # reverse proxy (NGINX/Traefik) join the SAME network and reach the app by
+  # service name (http://vinbot:8000) over container-to-container DNS,
+  # without needing the host-published port at all. `ports:` above is for
+  # DIRECT access today; once a proxy fronts this service, that mapping can
+  # be narrowed to 127.0.0.1-only or removed entirely — deliberately not
+  # done now since no proxy exists yet.
+  #
+  # No `network_mode: host` anywhere in this file — bridge networking (the
+  # implicit default for any Compose network) is what's in use throughout,
+  # matching "no host networking".
+  vinbot-net:
+    driver: bridge
+
+volumes:
+  # Named, not a bind mount — Docker (and later, Kubernetes' own volume
+  # provisioners) own its lifecycle; it isn't tied to a specific path on a
+  # specific host, which matters the moment this needs to run on more than
+  # one machine.
+  vinbot-data:
