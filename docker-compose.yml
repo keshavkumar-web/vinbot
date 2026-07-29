@@ -59,9 +59,14 @@ services:
     # CHAT_MODEL, EMBED_MODEL, TOP_K, MIN_SIMILARITY, MAX_HISTORY_MESSAGES,
     # ALLOWED_ORIGINS optional). env_file injects these into the container's
     # process environment — this file is never baked into the image and is
-    # already excluded by .dockerignore.
+    # already excluded by .dockerignore. `required: false` (Compose long
+    # syntax): load it if present, but don't hard-fail `docker compose` if
+    # it's missing on a given server — the file's presence was previously
+    # assumed rather than verified, and that assumption already proved
+    # wrong once for docker-compose.yml itself.
     env_file:
-      - backend/.env
+      - path: backend/.env
+        required: false
 
     # --- Data persistence ----------------------------------------------------
     # Named volume, mounted ONLY at /app/data — the directory the Dockerfile

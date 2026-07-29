@@ -16,16 +16,19 @@
 //     tests run. This pipeline does not install pytest anywhere and does
 //     not re-run those suites — it GATES on their result for this exact
 //     commit via GitHub's Checks API before building anything.
-//   - Auth to the Ubuntu box: the Jenkins OS user's own SSH key (same model
-//     as v1) — NOT a Jenkins Credential, NOT the SSH Agent plugin.
+//   - Auth to the Ubuntu box: the Jenkins Credential `vinbot-deploy-key`
+//     (SSH Username with private key), loaded via the SSH Agent plugin's
+//     `sshagent` step inside runRemote()/runRemoteCapture() below — NOT the
+//     Jenkins OS user's own key file anymore (that was the v1/early-v2
+//     model; superseded once a dedicated deploy-key credential existed).
 //   - Registry (GHCR) and the GitHub Checks API both authenticate with ONE
 //     Jenkins Credential (a GitHub PAT with `write:packages`, `read:packages`,
 //     and `repo` scopes) — see GHCR_CREDENTIALS_ID below.
 //
-// >>> PLACEHOLDERS — replace before running <<<
-//   DEV_SSH_HOST / DEV_SSH_PORT / DEV_SSH_USER / COMPOSE_DIR / HOST_PORT
-//   are NOT yet known real values for the Ubuntu box — see chat for the
-//   exact list of what's needed. Everything else in this file is complete.
+// Deployment target values (DEV_SSH_HOST / DEV_SSH_USER) are intentionally
+// NOT assigned in this file's `environment {}` block — see the comment
+// above COMPOSE_DIR below for why, and set them as Jenkins-level
+// environment variables instead.
 //
 // New Jenkins prerequisites this version introduces (none of these existed
 // for v1 — see chat for the full explanation):
@@ -34,6 +37,11 @@
 //   - Two new plugins: HTTP Request Plugin (`httpRequest` step) and
 //     Pipeline Utility Steps (`readJSON` step) — used only for the GitHub
 //     Actions gate, nothing else in this file needs them.
+//   - SSH Agent Plugin (`sshagent` step) — used only inside
+//     runRemote()/runRemoteCapture() below, nowhere else in this file.
+//   - A Jenkins Credential `vinbot-deploy-key` (SSH Username with private
+//     key: username = ecadmin, private key = the deploy key already
+//     trusted for passwordless SSH on the Ubuntu deployment box).
 //   - A Jenkins Credential `github-pat` (Username with password:
 //     username = GitHub user, password = PAT as described above).
 //   - A Jenkins Credential (Secret text) holding OPENAI_API_KEY — see the
@@ -51,15 +59,44 @@ def sshExec(String remoteCmd) {
 
 def runRemote(String remoteCmd) {
     // Fire-and-check a remote command; fails the calling step on non-zero exit.
-    sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd)
+    // sshagent loads the 'vinbot-deploy-key' credential's private key into a
+    // per-step ssh-agent for the duration of this block only — sshExec()'s
+    // plain `ssh ...` call then authenticates against it automatically,
+    // with no -i flag or key path needed.
+    sshagent(credentials: ['vinbot-deploy-key']) {
+        sh "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd)
+    }
 }
 
 def runRemoteCapture(String remoteCmd) {
-    // Same, but returns stdout (trimmed) instead of just pass/fail.
-    return sh(
-        script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd),
-        returnStdout: true
-    ).trim()
+    // Same, but returns stdout (trimmed) instead of just pass/fail. The
+    // sshagent step itself returns whatever its block evaluates to, so
+    // `return` here propagates the captured/trimmed stdout out of
+    // runRemoteCapture() exactly as before this credential was added.
+    return sshagent(credentials: ['vinbot-deploy-key']) {
+        sh(
+            script: "#!/usr/bin/env bash\nset -euo pipefail\n" + sshExec(remoteCmd),
+            returnStdout: true
+        ).trim()
+    }
+}
+
+def copyComposeFile() {
+    // docker-compose.yml lives in this repo (checked out onto the Jenkins
+    // agent by the Checkout stage) but COMPOSE_DIR on the deployment server
+    // was never actually populated with it — that was previously an
+    // assumed out-of-band step that never happened, which is why
+    // `docker compose pull` failed with "no configuration file provided".
+    // Copied fresh on every deploy so the server always runs whatever
+    // version of the file is in the commit being deployed. Uses the same
+    // 'vinbot-deploy-key' credential as every other SSH/SCP operation here.
+    sshagent(credentials: ['vinbot-deploy-key']) {
+        sh """
+            set -euo pipefail
+            scp -P ${env.DEV_SSH_PORT} -o BatchMode=yes -o ConnectTimeout=10 \\
+                docker-compose.yml ${env.DEV_SSH_USER}@${env.DEV_SSH_HOST}:${env.COMPOSE_DIR}/docker-compose.yml
+        """
+    }
 }
 
 def composeUp(String imageTag) {
@@ -134,10 +171,17 @@ pipeline {
         GH_REQUIRED_CHECKS = 'Generate knowledge_db.pkl,Unit + Integration Tests (pytest),Smoke Tests,API Integration Tests (Newman)'
 
         // --- Ubuntu 22.04 LTS deployment target ---
-        // >>> PLACEHOLDERS: replace with the real box's details <<<
-        DEV_SSH_HOST = 'CHANGE_ME.example.internal'
+        // DEV_SSH_HOST / DEV_SSH_USER are deliberately NOT assigned here.
+        // A literal hostname/username in this file means every future
+        // change to either value requires a code change + commit + review,
+        // and risks a real internal hostname sitting in version control.
+        // Instead, set both as Jenkins-level environment variables (Manage
+        // Jenkins -> System -> Global Properties -> Environment variables,
+        // or the job/folder's own "Environment variables" if scoped
+        // per-job) — env.DEV_SSH_HOST / env.DEV_SSH_USER below then resolve
+        // from that Jenkins config automatically, with zero further edits
+        // to this file when the deployment target changes.
         DEV_SSH_PORT = '22'
-        DEV_SSH_USER = 'CHANGE_ME'
         // Directory on the Ubuntu server containing docker-compose.yml and
         // backend/.env — assumed (per your instruction) to already exist.
         COMPOSE_DIR  = '/opt/vinbot'
@@ -389,6 +433,7 @@ pipeline {
                     }
 
                     try {
+                        copyComposeFile()
                         composeUp(env.GIT_COMMIT)
                         if (!waitForHealthy(20, 3)) {
                             error("container did not report healthy within 60s")
