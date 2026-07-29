@@ -156,7 +156,7 @@ pipeline {
         // right tool is used if/when it's needed.
         HOST_PORT = '38005'
 
-        DEPLOY_BRANCH = 'feature/jenkins-cicd'
+        DEPLOY_BRANCH = 'main'
     }
 
     stages {
