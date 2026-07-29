@@ -100,12 +100,34 @@ def copyComposeFile() {
 }
 
 def composeUp(String imageTag) {
+    // GHCR login now happens HERE, remotely on the deployment server,
+    // immediately before every pull — the "Push Image to GHCR" stage's own
+    // login is a completely separate Docker daemon/credential store (the
+    // Jenkins agent's), and has no effect on this remote host, which is
+    // why `docker compose pull` was failing with "unauthorized". Reuses
+    // the SAME Jenkins credential (GHCR_CREDENTIALS_ID) rather than a new
+    // one. GHCR_TOKEN is piped over the ssh connection's stdin — expanded
+    // by the LOCAL shell from its own process environment (never Groovy-
+    // interpolated into the command text, never a command-line argument
+    // on either side) — the same --password-stdin safety property the
+    // existing local GHCR login already relies on, just carried across
+    // the SSH channel instead of a local pipe.
+    withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
+                                       usernameVariable: 'GHCR_USER', passwordVariable: 'GHCR_TOKEN')]) {
+        sshagent(credentials: ['vinbot-deploy-key']) {
+            sh "#!/usr/bin/env bash\nset -euo pipefail\necho \"\$GHCR_TOKEN\" | " +
+               sshExec("docker login ghcr.io -u ${GHCR_USER} --password-stdin")
+        }
+    }
+
     // IMAGE_TAG is exported for THIS remote shell only — it's what
     // docker-compose.yml's `image: ghcr.io/keshavkumar-web/vinbot:${IMAGE_TAG:-dev}`
     // resolves against. Pulls before starting so a partially-cached/stale
     // local layer can never be silently reused.
     runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${imageTag} && " +
                "docker compose pull && docker compose up -d")
+
+    runRemote("docker logout ghcr.io")
 }
 
 def waitForHealthy(int maxAttempts, int delaySeconds) {
@@ -450,7 +472,7 @@ pipeline {
                         echo "START: Automatic rollback to ${previousImage}"
                         def previousTag = previousImage.tokenize(':').last()
                         try {
-                            runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${env.GIT_COMMIT} && docker compose stop vinbot || true")
+                            runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${previousTag} && docker compose stop vinbot || true")
                             composeUp(previousTag)
                             if (!waitForHealthy(20, 3)) {
                                 throw new Exception("rolled-back container did not report healthy within 60s")
