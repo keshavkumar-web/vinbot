@@ -505,7 +505,7 @@ pipeline {
                 script {
                     runRemote("docker ps --filter name=vinbot")
                     runRemote("cd ${env.COMPOSE_DIR} && docker compose ps")
-                    runRemote("docker inspect vinbot --format='Status={{.State.Status}} Health={{.State.Health.Status}} Image={{.Config.Image}}'")
+                    runRemote("docker inspect --format='Status={{.State.Status}} Health={{.State.Health.Status}} Image={{.Config.Image}}' vinbot")
                     runRemote("docker logs vinbot --tail 50")
                     verifyHealthEndpoint()
                 }
