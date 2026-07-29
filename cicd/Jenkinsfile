@@ -25,10 +25,10 @@
 //     Jenkins Credential (a GitHub PAT with `write:packages`, `read:packages`,
 //     and `repo` scopes) — see GHCR_CREDENTIALS_ID below.
 //
-// Deployment target values (DEV_SSH_HOST / DEV_SSH_USER) are intentionally
-// NOT assigned in this file's `environment {}` block — see the comment
-// above COMPOSE_DIR below for why, and set them as Jenkins-level
-// environment variables instead.
+// Deployment target values (DEV_SSH_HOST / DEV_SSH_USER) are hardcoded
+// directly in this file's `environment {}` block — see the comment above
+// DEV_SSH_PORT below for why (Jenkins-level global environment variables
+// were tried first and never actually populated on this instance).
 //
 // New Jenkins prerequisites this version introduces (none of these existed
 // for v1 — see chat for the full explanation):
@@ -171,16 +171,15 @@ pipeline {
         GH_REQUIRED_CHECKS = 'Generate knowledge_db.pkl,Unit + Integration Tests (pytest),Smoke Tests,API Integration Tests (Newman)'
 
         // --- Ubuntu 22.04 LTS deployment target ---
-        // DEV_SSH_HOST / DEV_SSH_USER are deliberately NOT assigned here.
-        // A literal hostname/username in this file means every future
-        // change to either value requires a code change + commit + review,
-        // and risks a real internal hostname sitting in version control.
-        // Instead, set both as Jenkins-level environment variables (Manage
-        // Jenkins -> System -> Global Properties -> Environment variables,
-        // or the job/folder's own "Environment variables" if scoped
-        // per-job) — env.DEV_SSH_HOST / env.DEV_SSH_USER below then resolve
-        // from that Jenkins config automatically, with zero further edits
-        // to this file when the deployment target changes.
+        // DEV_SSH_HOST / DEV_SSH_USER were previously left unassigned here,
+        // sourced instead from Jenkins-level (global/job) environment
+        // variables — that config was never actually populated on this
+        // Jenkins instance, so env.DEV_SSH_HOST/env.DEV_SSH_USER resolved
+        // to null at runtime (`scp ... null@null:...`, `ssh: Could not
+        // resolve hostname null`). Hardcoded directly here instead so they
+        // always resolve correctly regardless of Jenkins-level config.
+        DEV_SSH_HOST = '192.168.36.51'
+        DEV_SSH_USER = 'ecadmin'
         DEV_SSH_PORT = '22'
         // Directory on the Ubuntu server containing docker-compose.yml and
         // backend/.env — assumed (per your instruction) to already exist.
