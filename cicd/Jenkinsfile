@@ -200,7 +200,7 @@ pipeline {
         // to null at runtime (`scp ... null@null:...`, `ssh: Could not
         // resolve hostname null`). Hardcoded directly here instead so they
         // always resolve correctly regardless of Jenkins-level config.
-        DEV_SSH_HOST = '192.168.36.51'
+        DEV_SSH_HOST = '192.168.36.104'
         DEV_SSH_USER = 'ecadmin'
         DEV_SSH_PORT = '69'
         // Directory on the Ubuntu server containing docker-compose.yml and
