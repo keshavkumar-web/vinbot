@@ -155,7 +155,7 @@ def composeUp(String imageTag) {
     }
 
     // IMAGE_TAG is exported for THIS remote shell only — it's what
-    // docker-compose.yml's `image: vinbox/vinbot:${IMAGE_TAG:-latest}`
+    // docker-compose.yml's `image: keshavkumarvinbox/vinbot:${IMAGE_TAG:-latest}`
     // resolves against. Pulls before starting so a partially-cached/stale
     // local layer can never be silently reused.
     runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${imageTag} && " +
@@ -213,7 +213,7 @@ pipeline {
         // (`vinbox/vinbot`) is a complete, valid image reference on its own
         // for `docker build/tag/push/pull` and for `docker login` (no
         // hostname argument = Docker Hub).
-        IMAGE_NAME = 'vinbox/vinbot'
+        IMAGE_NAME = 'keshavkumarvinbox/vinbot'
         MOVING_TAG = 'latest'
         // Jenkins Credential (Username with password): username = the
         // Docker Hub account, password = a Docker Hub Personal Access Token
