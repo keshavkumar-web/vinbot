@@ -23,6 +23,14 @@ import sqlite3
 from difflib import SequenceMatcher
 from pathlib import Path
 
+# NOTE: imported at module load, same as the stdlib imports above — logger.py
+# has no dependency on config.py / OPENAI_API_KEY, so importing it here does
+# NOT reintroduce the "requires an API key at import time" problem this
+# module deliberately avoids (see the module docstring above this file).
+from .logger import get_logger
+
+logger = get_logger(__name__)
+
 # NOTE: PyMuPDF (``fitz``) is imported lazily inside extract_facts() so the
 # serving app (chat.py -> tables.py) does not require it at runtime — only the
 # build/ingest step does. This keeps PyMuPDF an ingest-only dependency
@@ -298,8 +306,8 @@ def build(db_path: str | None = None, source_dir: str | None = None) -> int:
     for pdf in pdfs:
         try:
             facts = extract_facts(pdf)
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! {pdf.name}: {exc}")
+        except Exception:  # noqa: BLE001
+            logger.exception("Failed to extract facts from %s", pdf.name)
             continue
         con.executemany(
             "INSERT INTO facts VALUES (?,?,?,?,?,?,?,?,?,?)",
@@ -308,12 +316,15 @@ def build(db_path: str | None = None, source_dir: str | None = None) -> int:
               f["entity"].lower(), f["metric"].lower()) for f in facts],
         )
         total += len(facts)
-        print(f"  {pdf.name:38s} dataset={_dataset_of(pdf.stem):20s} facts={len(facts)}")
+        logger.info(
+            "Extracted %s: dataset=%s facts=%d",
+            pdf.name, _dataset_of(pdf.stem), len(facts),
+        )
 
     _build_meta(con)
     con.commit()
     con.close()
-    print(f"\n[tables] {total} facts written to {db_path}")
+    logger.info("Table build complete. total_facts=%d db_path=%s", total, db_path)
     return total
 
 
@@ -361,13 +372,15 @@ def _build_meta(con: sqlite3.Connection) -> None:
             (ds, n_facts, len(ents), round(pct, 3), int(has_total), trusted,
              title[0] if title else ""))
 
-    print("\n[tables] dataset trust report (trusted = safe to answer):")
+    logger.info("Dataset trust report (trusted = safe to answer):")
     for ds, n, ne, pct, ht, tr in con.execute(
             "SELECT dataset,n_facts,n_entities,pct_numeric_entity,has_total,"
             "trusted FROM datasets ORDER BY trusted DESC, dataset"):
         flag = "TRUSTED " if tr else "quarant."
-        print(f"    [{flag}] {ds:30s} facts={n:5d} entities={ne:4d} "
-              f"num_ent={pct:.0%} total={'Y' if ht else '-'}")
+        logger.info(
+            "[%s] %s facts=%d entities=%d num_ent=%.0f%% total=%s",
+            flag, ds, n, ne, pct * 100, "Y" if ht else "-",
+        )
 
 
 # --------------------------------------------------------------------------- #
@@ -1039,8 +1052,8 @@ def respond(query: str, db_path: str | None = None, *,
                 extractor = intent.default_extractor
             try:
                 parsed = extractor(query, schema)
-            except Exception as exc:  # noqa: BLE001 — never crash the chat turn
-                print(f"[tables] intent extraction failed: {exc}")
+            except Exception:  # noqa: BLE001 — never crash the chat turn
+                logger.exception("Intent extraction failed.")
                 return {"status": "prose"}  # safe: vector RAG can't invent figures
 
         status = parsed.get("status", "clarify")

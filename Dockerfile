@@ -137,6 +137,15 @@ RUN mkdir -p /app/data \
     && chown -R vinbot:vinbot /app \
     && chmod 750 /app/data
 
+# /var/log/vinbot: same reasoning as /app/data above — created and chowned to
+# the non-root `vinbot` user HERE, during the build, so that when the host
+# path is bind-mounted at runtime (`-v /var/log/vinbot:/var/log/vinbot`), the
+# app can actually write app.log into it. logger.py degrades to console-only
+# logging if this path is ever missing/unwritable, so a misconfigured mount
+# will not crash the container — it will just log without a file on disk.
+RUN mkdir -p /var/log/vinbot \
+    && chown -R vinbot:vinbot /var/log/vinbot
+
 USER vinbot
 
 EXPOSE 8000

@@ -22,6 +22,13 @@ from __future__ import annotations
 import json
 from typing import Callable
 
+# Same reasoning as tables.py: logger.py needs no config.py/OpenAI key, so
+# importing it here does not affect this module's own "importable without an
+# API key" contract described in the module docstring above.
+from .logger import get_logger
+
+logger = get_logger(__name__)
+
 # An extractor is any callable mapping (query, schema) -> intent-dict. Injecting
 # it keeps ``tables.respond`` testable offline (eval passes a deterministic stub)
 # and lets the OpenAI dependency stay lazy.
@@ -217,6 +224,7 @@ def extract(client, model: str, query: str, schema: dict, *,
     try:
         parsed = json.loads(content)
     except json.JSONDecodeError:
+        logger.exception("Model returned non-JSON intent response: %s", content)
         parsed = None
     return normalise(parsed)
 

@@ -83,6 +83,10 @@ services:
     # touches this volume.
     volumes:
       - vinbot-data:/app/data
+      # Bind mount, not a named volume — logs must land at a known, fixed HOST
+      # path so tools running directly on the host (Filebeat, logrotate) can
+      # read them without going through Docker's own volume storage location.
+      - /var/log/vinbot:/var/log/vinbot
 
     # --- Security ------------------------------------------------------------
     # Root filesystem is fully read-only. Verified safe: the only runtime

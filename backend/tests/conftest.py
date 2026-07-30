@@ -24,6 +24,11 @@ sys.path.insert(0, str(BACKEND_DIR))
 # --- Isolated environment — set before any `app` import ---------------------
 os.environ.setdefault("OPENAI_API_KEY", "sk-test-dummy-key-not-real")
 os.environ.setdefault("ALLOWED_ORIGINS", "http://localhost:5173")
+# Keep test-run logs out of the real /var/log/vinbot (app/logger.py's default)
+# — same isolation principle as the KB/DB paths below. app/logger.py falls
+# back to console-only logging if even this path can't be created, so this
+# is a nicety for tidy local test runs, not a requirement for tests to pass.
+os.environ.setdefault("LOG_DIR", str(BACKEND_DIR / "tests" / "_fixtures" / "logs"))
 
 _FIXTURES_DIR = BACKEND_DIR / "tests" / "_fixtures"
 _FIXTURES_DIR.mkdir(exist_ok=True)

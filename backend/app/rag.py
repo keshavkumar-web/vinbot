@@ -13,6 +13,9 @@ import numpy as np
 from openai import OpenAI
 
 from . import config
+from .logger import get_logger
+
+logger = get_logger(__name__)
 
 # A single shared client for the whole process.
 client = OpenAI(api_key=config.OPENAI_API_KEY)
@@ -37,14 +40,16 @@ def load_knowledge(path: str | None = None) -> list:
     _emb_matrix = _emb_norms = None  # invalidate the cached matrix
 
     if not os.path.exists(path):
-        print(f"[rag] WARNING: knowledge DB not found at {path}. "
-              f"Running with an empty knowledge base.")
+        logger.warning(
+            "Knowledge DB not found at %s. Running with an empty knowledge base.",
+            path,
+        )
         _knowledge_db = []
         return _knowledge_db
 
     with open(path, "rb") as f:
         _knowledge_db = pickle.load(f)
-    print(f"[rag] Loaded {len(_knowledge_db)} knowledge chunks from {path}.")
+    logger.info("Knowledge DB loaded. path=%s chunks=%d", path, len(_knowledge_db))
     return _knowledge_db
 
 

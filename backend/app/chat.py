@@ -8,7 +8,10 @@ import re
 from collections.abc import Iterator
 
 from . import config, followup, glossary, rag, tables
+from .logger import get_logger
 from .rag import client
+
+logger = get_logger(__name__)
 
 # A transformer DAMAGE/FAILURE RATE question (either word order). Routed
 # deterministically to the "% Damage rate" column so a contextualise hiccup or a
@@ -50,8 +53,8 @@ def contextualize(history: list[dict], user_input: str, *,
     rewriter = rewriter or followup.default_rewriter
     try:
         return rewriter(history, user_input) or user_input
-    except Exception as exc:  # noqa: BLE001 — never fail the turn on a rewrite hiccup
-        print(f"[chat] follow-up contextualisation failed: {exc}")
+    except Exception:  # noqa: BLE001 — never fail the turn on a rewrite hiccup
+        logger.exception("Follow-up contextualisation failed.")
         return user_input
 
 
@@ -167,8 +170,8 @@ def stream_answer(history: list[dict], user_input: str) -> Iterator[str]:
         if history and config.ENABLE_FOLLOWUP_CONTEXT:
             try:
                 resolved = followup.default_rewriter(history, user_input) or user_input
-            except Exception as exc:  # noqa: BLE001
-                print(f"[chat] comparison rewrite failed: {exc}")
+            except Exception:  # noqa: BLE001
+                logger.exception("Comparison rewrite failed.")
                 resolved = user_input
             yield from _stream_rag_answer(history, resolved)
             return
@@ -228,8 +231,8 @@ def stream_answer(history: list[dict], user_input: str) -> Iterator[str]:
     if history and config.ENABLE_FOLLOWUP_CONTEXT and not followup.is_self_contained(user_input):
         try:
             plan = followup.resolve_followup(history, user_input)
-        except Exception as exc:  # noqa: BLE001 — never fail the turn on the slot path
-            print(f"[chat] slot follow-up failed: {exc}")
+        except Exception:  # noqa: BLE001 — never fail the turn on the slot path
+            logger.exception("Slot follow-up resolution failed.")
             plan = None
         if plan:
             slotted = tables.respond(

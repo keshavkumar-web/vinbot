@@ -1,0 +1,53 @@
+# Filebeat configuration for shipping Vinbot's application logs to
+# Elasticsearch. Install at /etc/filebeat/filebeat.yml on the deployment host
+# (NOT inside the container — Filebeat runs on the host and reads the log
+# file through the same bind-mounted path the container writes to:
+# /var/log/vinbot/app.log, per docker-compose.yml's
+# `- /var/log/vinbot:/var/log/vinbot` volume mapping).
+
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/vinbot/app.log
+    # app/logger.py's format is: %(asctime)s | %(levelname)s | %(name)s | %(message)s
+    # A stack trace from logger.exception() spans multiple physical lines;
+    # multiline.pattern below re-joins those continuation lines into the one
+    # log event they belong to, keyed on the timestamp starting a NEW line.
+    multiline.pattern: '^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} \|'
+    multiline.negate: true
+    multiline.match: after
+    fields:
+      service: vinbot
+      environment: ${VINBOT_ENV:production}
+    fields_under_root: true
+
+# Parse the pipe-delimited format into structured fields before shipping, so
+# Elasticsearch gets level/logger/message as their own searchable fields
+# instead of one opaque message blob.
+processors:
+  - dissect:
+      tokenizer: "%{ts} | %{log.level} | %{log.logger} | %{message}"
+      field: "message"
+      target_prefix: ""
+      ignore_failure: true   # a multiline stack-trace continuation won't match — keep it as-is
+
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_HOST:localhost:9200}"]
+  # Never hardcode credentials in this file — supply via environment variables
+  # or the Filebeat keystore (`filebeat keystore add ES_USER`), consistent
+  # with this project's own rule of never committing secrets to a config file.
+  username: "${ES_USER}"
+  password: "${ES_PASSWORD}"
+  index: "vinbot-logs-%{+yyyy.MM.dd}"
+
+setup.ilm.enabled: true
+setup.template.name: "vinbot-logs"
+setup.template.pattern: "vinbot-logs-*"
+
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat.log
+  keepfiles: 7

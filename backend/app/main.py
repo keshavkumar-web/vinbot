@@ -19,8 +19,11 @@ from fastapi.staticfiles import StaticFiles
 
 from . import chat as chat_service
 from . import config, rag
+from .logger import get_logger
 from .schemas import ChatRequest, ResetRequest, SessionResponse, SimpleResponse
 from .sessions import store
+
+logger = get_logger(__name__)
 
 app = FastAPI(title="Vinbot API", version="1.0.0")
 
@@ -36,7 +39,14 @@ app.add_middleware(
 @app.on_event("startup")
 def _load_knowledge_on_startup() -> None:
     # Warm the knowledge base so the first request isn't slow (and we log its size).
+    logger.info("Vinbot API starting up.")
     rag.load_knowledge()
+    logger.info("Startup complete. knowledge_chunks=%d", len(rag.get_knowledge_db()))
+
+
+@app.on_event("shutdown")
+def _log_shutdown() -> None:
+    logger.info("Vinbot API shutting down.")
 
 
 def _sse(payload: dict) -> str:
@@ -46,31 +56,45 @@ def _sse(payload: dict) -> str:
 
 @app.get("/api/health")
 def health() -> dict:
-    return {
+    result = {
         "status": "ok",
         "chat_model": config.CHAT_MODEL,
         "embed_model": config.EMBED_MODEL,
         "knowledge_chunks": len(rag.get_knowledge_db()),
     }
+    logger.info("Health check requested. knowledge_chunks=%d", result["knowledge_chunks"])
+    return result
 
 
 @app.post("/api/session", response_model=SessionResponse)
 def create_session() -> SessionResponse:
-    return SessionResponse(session_id=store.create())
+    session_id = store.create()
+    logger.info("Session created. session_id=%s", session_id)
+    return SessionResponse(session_id=session_id)
 
 
 @app.post("/api/reset", response_model=SimpleResponse)
 def reset_session(req: ResetRequest) -> SimpleResponse:
     if not store.exists(req.session_id):
+        logger.warning("Reset requested for unknown session_id=%s", req.session_id)
         raise HTTPException(status_code=404, detail="Unknown session_id")
     store.reset(req.session_id)
+    logger.info("Session reset. session_id=%s", req.session_id)
     return SimpleResponse(ok=True)
 
 
 @app.post("/api/chat")
 def chat(req: ChatRequest) -> StreamingResponse:
     if not store.exists(req.session_id):
+        logger.warning("Chat requested for unknown session_id=%s", req.session_id)
         raise HTTPException(status_code=404, detail="Unknown session_id")
+
+    # Never log req.message itself (may contain sensitive consumer details) —
+    # only its length, alongside the session_id, per the logging policy.
+    logger.info(
+        "Chat request received. session_id=%s message_length=%d",
+        req.session_id, len(req.message),
+    )
 
     # Snapshot history BEFORE adding the new turn, then persist the user message.
     history = store.get(req.session_id)
@@ -85,8 +109,16 @@ def chat(req: ChatRequest) -> StreamingResponse:
 
             answer = "".join(collected)
             store.append(req.session_id, "assistant", answer)
+            logger.info(
+                "Response generation completed. session_id=%s response_length=%d",
+                req.session_id, len(answer),
+            )
             yield _sse({"type": "done"})
         except Exception as exc:  # surface failures to the client instead of hanging
+            logger.exception(
+                "Unexpected error while streaming chat response. session_id=%s",
+                req.session_id,
+            )
             yield _sse({"type": "error", "message": str(exc)})
 
     return StreamingResponse(
@@ -111,6 +143,6 @@ _FRONTEND_DIST = os.getenv(
 )
 if os.path.isdir(_FRONTEND_DIST):
     app.mount("/", StaticFiles(directory=_FRONTEND_DIST, html=True), name="frontend")
-    print(f"[main] Serving frontend from {_FRONTEND_DIST}")
+    logger.info("Serving frontend from %s", _FRONTEND_DIST)
 else:
-    print(f"[main] Frontend build not found at {_FRONTEND_DIST}; serving API only.")
+    logger.info("Frontend build not found at %s; serving API only.", _FRONTEND_DIST)
