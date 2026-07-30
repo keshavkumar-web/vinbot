@@ -2,9 +2,9 @@
 //
 // Flow: checkout -> gate on GitHub Actions having already passed for this
 // commit -> build the Docker image once -> tag it (immutable SHA + moving
-// "dev" tag) -> push both to GHCR -> SSH to the Ubuntu deployment server ->
-// `docker compose pull` + `up -d` the SHA tag -> wait for health -> verify
-// /api/health -> validate -> cleanup. Any failure from "pull" onward
+// "latest" tag) -> push both to Docker Hub -> SSH to the Ubuntu deployment
+// server -> `docker compose pull` + `up -d` the SHA tag -> wait for health ->
+// verify /api/health -> validate -> cleanup. Any failure from "pull" onward
 // triggers an automatic rollback to the image that was running before this
 // build started, and the Jenkins build is marked FAILED regardless of
 // whether the rollback itself succeeds.
@@ -21,9 +21,13 @@
 //     `sshagent` step inside runRemote()/runRemoteCapture() below — NOT the
 //     Jenkins OS user's own key file anymore (that was the v1/early-v2
 //     model; superseded once a dedicated deploy-key credential existed).
-//   - Registry (GHCR) and the GitHub Checks API both authenticate with ONE
-//     Jenkins Credential (a GitHub PAT with `write:packages`, `read:packages`,
-//     and `repo` scopes) — see GHCR_CREDENTIALS_ID below.
+//   - Registry (Docker Hub) and the GitHub Checks API are two SEPARATE
+//     Jenkins Credentials — DOCKERHUB_CREDENTIALS_ID and
+//     GITHUB_API_CREDENTIALS_ID below. They used to be the same credential
+//     back when the registry was GHCR (a GitHub PAT could authenticate
+//     both); that's no longer possible now that the registry is Docker Hub,
+//     which is why this pipeline now needs two distinct credentials instead
+//     of one.
 //
 // Deployment target values (DEV_SSH_HOST / DEV_SSH_USER) are hardcoded
 // directly in this file's `environment {}` block — see the comment above
@@ -42,8 +46,12 @@
 //   - A Jenkins Credential `vinbot-deploy-key` (SSH Username with private
 //     key: username = ecadmin, private key = the deploy key already
 //     trusted for passwordless SSH on the Ubuntu deployment box).
+//   - A Jenkins Credential `dockerhub-credentials` (Username with password:
+//     username = the Docker Hub account, password = a Docker Hub Personal
+//     Access Token scoped to Read & Write for the vinbox/vinbot repository).
 //   - A Jenkins Credential `github-pat` (Username with password:
-//     username = GitHub user, password = PAT as described above).
+//     username = GitHub user, password = a GitHub PAT — used ONLY for the
+//     GitHub Checks API poll now, no registry scopes required any more).
 //   - A Jenkins Credential (Secret text) holding OPENAI_API_KEY — see the
 //     note above the credential's use below; this pipeline does NOT write
 //     it anywhere itself (backend/.env on the deploy server is assumed to
@@ -125,34 +133,35 @@ def copyComposeFile() {
 }
 
 def composeUp(String imageTag) {
-    // GHCR login now happens HERE, remotely on the deployment server,
-    // immediately before every pull — the "Push Image to GHCR" stage's own
-    // login is a completely separate Docker daemon/credential store (the
-    // Jenkins agent's), and has no effect on this remote host, which is
-    // why `docker compose pull` was failing with "unauthorized". Reuses
-    // the SAME Jenkins credential (GHCR_CREDENTIALS_ID) rather than a new
-    // one. GHCR_TOKEN is piped over the ssh connection's stdin — expanded
-    // by the LOCAL shell from its own process environment (never Groovy-
-    // interpolated into the command text, never a command-line argument
-    // on either side) — the same --password-stdin safety property the
-    // existing local GHCR login already relies on, just carried across
-    // the SSH channel instead of a local pipe.
-    withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
-                                       usernameVariable: 'GHCR_USER', passwordVariable: 'GHCR_TOKEN')]) {
+    // Docker Hub login now happens HERE, remotely on the deployment server,
+    // immediately before every pull — the "Push Image to Docker Hub" stage's
+    // own login is a completely separate Docker daemon/credential store (the
+    // Jenkins agent's), and has no effect on this remote host. Reuses the
+    // SAME Jenkins credential (DOCKERHUB_CREDENTIALS_ID) rather than a new
+    // one. DOCKERHUB_TOKEN is piped over the ssh connection's stdin —
+    // expanded by the LOCAL shell from its own process environment (never
+    // Groovy-interpolated into the command text, never a command-line
+    // argument on either side) — the same --password-stdin safety property
+    // the existing local Docker Hub login already relies on, just carried
+    // across the SSH channel instead of a local pipe. No registry hostname
+    // is passed to `docker login`/`docker logout` — omitting it defaults to
+    // Docker Hub, which is the only registry this pipeline uses now.
+    withCredentials([usernamePassword(credentialsId: env.DOCKERHUB_CREDENTIALS_ID,
+                                       usernameVariable: 'DOCKERHUB_USER', passwordVariable: 'DOCKERHUB_TOKEN')]) {
         sshagent(credentials: ['vinbot-deploy-key']) {
-            sh "#!/usr/bin/env bash\nset -euo pipefail\necho \"\$GHCR_TOKEN\" | " +
-               sshExec("docker login ghcr.io -u ${GHCR_USER} --password-stdin")
+            sh "#!/usr/bin/env bash\nset -euo pipefail\necho \"\$DOCKERHUB_TOKEN\" | " +
+               sshExec("docker login -u ${DOCKERHUB_USER} --password-stdin")
         }
     }
 
     // IMAGE_TAG is exported for THIS remote shell only — it's what
-    // docker-compose.yml's `image: ghcr.io/keshavkumar-web/vinbot:${IMAGE_TAG:-dev}`
+    // docker-compose.yml's `image: vinbox/vinbot:${IMAGE_TAG:-latest}`
     // resolves against. Pulls before starting so a partially-cached/stale
     // local layer can never be silently reused.
     runRemote("cd ${env.COMPOSE_DIR} && export IMAGE_TAG=${imageTag} && " +
                "docker compose pull && docker compose up -d")
 
-    runRemote("docker logout ghcr.io")
+    runRemote("docker logout")
 }
 
 def waitForHealthy(int maxAttempts, int delaySeconds) {
@@ -197,19 +206,32 @@ pipeline {
     }
 
     environment {
-        // --- Container registry (GHCR) ---
-        REGISTRY = 'ghcr.io'
-        IMAGE_NAME = 'keshavkumar-web/vinbot'
-        MOVING_TAG = 'dev'
-        // Jenkins Credential (Username with password): username = GitHub
-        // user, password = a PAT scoped write:packages + read:packages +
-        // repo. Used for BOTH `docker login ghcr.io` and the GitHub Checks
-        // API call below — one credential, two uses, per the architecture
-        // agreed in chat. Split into two credentials if you'd rather keep
-        // registry and API-read privileges separate.
-        GHCR_CREDENTIALS_ID = 'github-pat'
+        // --- Container registry (Docker Hub) ---
+        // No REGISTRY hostname variable is needed any more: GHCR required
+        // one (`ghcr.io/...`) because it isn't the default registry Docker
+        // assumes; Docker Hub IS the default, so `IMAGE_NAME` alone
+        // (`vinbox/vinbot`) is a complete, valid image reference on its own
+        // for `docker build/tag/push/pull` and for `docker login` (no
+        // hostname argument = Docker Hub).
+        IMAGE_NAME = 'vinbox/vinbot'
+        MOVING_TAG = 'latest'
+        // Jenkins Credential (Username with password): username = the
+        // Docker Hub account, password = a Docker Hub Personal Access Token
+        // scoped to Read & Write for the vinbox/vinbot repository. Registry
+        // auth ONLY — see GITHUB_API_CREDENTIALS_ID below for the unrelated
+        // GitHub Checks API credential.
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
 
         // --- GitHub (for gating deploys on Actions results) ---
+        // GITHUB_API_CREDENTIALS_ID authenticates ONLY the Checks API poll
+        // below — it has nothing to do with the container registry any
+        // more. (Renamed from GHCR_CREDENTIALS_ID: back when the registry
+        // was GHCR, one GitHub PAT could authenticate both the registry
+        // push AND this API call, so one variable did double duty. Docker
+        // Hub can't use a GitHub PAT, so that dual-purpose no longer
+        // applies — this is the same `github-pat` credential, same
+        // purpose, just a name that no longer implies it's about GHCR.)
+        GITHUB_API_CREDENTIALS_ID = 'github-pat'
         GITHUB_OWNER = 'keshavkumar-web'
         GITHUB_REPO = 'vinbot'
         // Must exactly match the `name:` fields of the jobs in
@@ -262,8 +284,8 @@ pipeline {
                 echo "START: Checkout"
                 checkout scm
                 script {
-                    env.IMAGE_SHA_TAG    = "${env.REGISTRY}/${env.IMAGE_NAME}:${env.GIT_COMMIT}"
-                    env.IMAGE_MOVING_TAG = "${env.REGISTRY}/${env.IMAGE_NAME}:${env.MOVING_TAG}"
+                    env.IMAGE_SHA_TAG    = "${env.IMAGE_NAME}:${env.GIT_COMMIT}"
+                    env.IMAGE_MOVING_TAG = "${env.IMAGE_NAME}:${env.MOVING_TAG}"
                 }
                 echo "SUCCESS: Checkout commit ${env.GIT_COMMIT} (branch: ${env.GIT_BRANCH ?: env.DEPLOY_BRANCH})"
             }
@@ -299,7 +321,7 @@ pipeline {
                     def allDone = false
                     def checkRuns = [:]
 
-                    withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
+                    withCredentials([usernamePassword(credentialsId: env.GITHUB_API_CREDENTIALS_ID,
                                                        usernameVariable: 'GH_USER', passwordVariable: 'GH_TOKEN')]) {
                         for (int attempt = 1; attempt <= maxAttempts; attempt++) {
                             def response = httpRequest(
@@ -430,24 +452,24 @@ pipeline {
         }
 
         // ---------------------------------------------------------------
-        // 5. Push Image to GHCR — both tags. The deployment server will
-        //    never see a `docker build`; this is the only place the image
-        //    leaves the Jenkins agent.
+        // 5. Push Image to Docker Hub — both tags. The deployment server
+        //    will never see a `docker build`; this is the only place the
+        //    image leaves the Jenkins agent.
         // ---------------------------------------------------------------
-        stage('Push Image to GHCR') {
+        stage('Push Image to Docker Hub') {
             steps {
-                echo "START: Push Image to GHCR"
-                withCredentials([usernamePassword(credentialsId: env.GHCR_CREDENTIALS_ID,
-                                                   usernameVariable: 'GHCR_USER', passwordVariable: 'GHCR_TOKEN')]) {
+                echo "START: Push Image to Docker Hub"
+                withCredentials([usernamePassword(credentialsId: env.DOCKERHUB_CREDENTIALS_ID,
+                                                   usernameVariable: 'DOCKERHUB_USER', passwordVariable: 'DOCKERHUB_TOKEN')]) {
                     sh '''
                         set -euo pipefail
-                        echo "$GHCR_TOKEN" | docker login "$REGISTRY" -u "$GHCR_USER" --password-stdin
+                        echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USER" --password-stdin
                     '''
                     sh "docker push ${env.IMAGE_SHA_TAG}"
                     sh "docker push ${env.IMAGE_MOVING_TAG}"
-                    sh 'docker logout "$REGISTRY" || true'
+                    sh 'docker logout || true'
                 }
-                echo "SUCCESS: Push Image to GHCR"
+                echo "SUCCESS: Push Image to Docker Hub"
             }
         }
 
@@ -578,7 +600,7 @@ pipeline {
             echo "================================================================"
         }
         always {
-            sh 'docker logout "$REGISTRY" || true'
+            sh 'docker logout || true'
             echo "Build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}"
         }
     }

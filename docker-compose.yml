@@ -18,17 +18,19 @@ services:
   vinbot:
     container_name: vinbot
 
-    # Registry-qualified reference — this is the ONLY way this compose file
+    # Repository-qualified reference — this is the ONLY way this compose file
     # obtains an image. No `build:` section exists here on purpose:
     # production servers never build images — Jenkins is the sole build
-    # authority (build once, push to GHCR, tag with the git SHA + a moving
-    # `dev` tag), and every server only ever runs `docker compose pull`
-    # against an already-built, already-tested, immutable image. A bare
-    # "vinbot:tag" would resolve to a purely local image and `pull` would
-    # find nothing — the registry prefix is what makes `pull` meaningful.
-    # IMAGE_TAG is the one value Jenkins changes per deploy (an immutable
-    # per-commit SHA, or the moving `dev` tag) — same file, either way.
-    image: ghcr.io/keshavkumar-web/vinbot:${IMAGE_TAG:-dev}
+    # authority (build once, push to Docker Hub, tag with the git SHA + a
+    # moving `latest` tag), and every server only ever runs
+    # `docker compose pull` against an already-built, already-tested,
+    # immutable image. Unlike the previous GHCR image (`ghcr.io/...`), Docker
+    # Hub needs no registry-hostname prefix at all — `vinbox/vinbot` alone is
+    # a complete, valid reference, since Docker Hub is the default registry
+    # `docker pull`/`compose pull` assume when no hostname is given. IMAGE_TAG
+    # is the one value Jenkins changes per deploy (an immutable per-commit
+    # SHA, or the moving `latest` tag) — same file, either way.
+    image: vinbox/vinbot:${IMAGE_TAG:-latest}
 
     restart: unless-stopped
 
