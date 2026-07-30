@@ -25,12 +25,12 @@ services:
     # moving `latest` tag), and every server only ever runs
     # `docker compose pull` against an already-built, already-tested,
     # immutable image. Unlike the previous GHCR image (`ghcr.io/...`), Docker
-    # Hub needs no registry-hostname prefix at all — `vinbox/vinbot` alone is
-    # a complete, valid reference, since Docker Hub is the default registry
-    # `docker pull`/`compose pull` assume when no hostname is given. IMAGE_TAG
-    # is the one value Jenkins changes per deploy (an immutable per-commit
-    # SHA, or the moving `latest` tag) — same file, either way.
-    image: vinbox/vinbot:${IMAGE_TAG:-latest}
+    # Hub needs no registry-hostname prefix at all — `keshavkumarvinbox/vinbot`
+    # alone is a complete, valid reference, since Docker Hub is the default
+    # registry `docker pull`/`compose pull` assume when no hostname is given.
+    # IMAGE_TAG is the one value Jenkins changes per deploy (an immutable
+    # per-commit SHA, or the moving `latest` tag) — same file, either way.
+    image: keshavkumarvinbox/vinbot:${IMAGE_TAG:-latest}
 
     restart: unless-stopped
 
