@@ -137,12 +137,21 @@ RUN mkdir -p /app/data \
     && chown -R vinbot:vinbot /app \
     && chmod 750 /app/data
 
-# /var/log/vinbot: same reasoning as /app/data above — created and chowned to
-# the non-root `vinbot` user HERE, during the build, so that when the host
-# path is bind-mounted at runtime (`-v /var/log/vinbot:/var/log/vinbot`), the
-# app can actually write app.log into it. logger.py degrades to console-only
-# logging if this path is ever missing/unwritable, so a misconfigured mount
-# will not crash the container — it will just log without a file on disk.
+# /var/log/vinbot: correction to this line's own earlier comment — unlike
+# /app/data (a NAMED VOLUME, which Docker seeds from the image's ownership on
+# first creation), production runs BIND-MOUNT a real host directory here
+# (`-v /var/log/vinbot:/var/log/vinbot`). A bind mount replaces this path
+# with the host directory's inode entirely — its host-side ownership wins,
+# unconditionally, no matter what this RUN instruction sets at build time.
+# See the deployment docs for why, and for the host-side step (Jenkins /
+# deploy script) that actually prepares this directory's ownership in
+# production. This line is still kept because it's not dead code in every
+# case: it's what makes /var/log/vinbot vinbot-owned in the one scenario
+# where nothing IS bind-mounted over it — a plain `docker run` with no `-v`
+# flag at all (e.g. quick local testing) — so logging still works there too.
+# logger.py also degrades to console-only logging if this path is ever
+# missing/unwritable either way, so a misconfigured mount never crashes the
+# container — it just logs without a file on disk.
 RUN mkdir -p /var/log/vinbot \
     && chown -R vinbot:vinbot /var/log/vinbot
 

@@ -81,6 +81,31 @@ def runRemoteCapture(String remoteCmd) {
     }
 }
 
+def prepareLogDirectory() {
+    // Bind-mounted host directories ignore whatever ownership the Docker
+    // image set up at that same path at build time (see Dockerfile — a bind
+    // mount replaces the path with the host inode entirely; it is not seeded
+    // from the image the way a NAMED volume like vinbot-data is). The
+    // container runs as uid 999 (vinbot); without this step, a freshly
+    // provisioned or ecadmin-owned /var/log/vinbot leaves the app unable to
+    // create app.log, exactly as observed manually before this was automated.
+    // Idempotent and safe to run before every single deploy: `mkdir -p` is a
+    // no-op if the directory exists, and re-chowning/re-chmoding already
+    // vinbot-owned files costs nothing. Uses the numeric uid:gid (999:999),
+    // not the name `vinbot`, because the DEPLOYMENT SERVER itself has no
+    // `vinbot` user — that account only exists inside the container's own
+    // /etc/passwd. 750, not 775 (the permissive mode used during the manual
+    // fix this replaces) — group can traverse/read, others get nothing;
+    // vinbot (owner) is the only account that ever needs to write here.
+    // Requires ecadmin to have passwordless sudo for at least these three
+    // commands on the deployment server — confirm this before relying on it.
+    runRemote(
+        "sudo mkdir -p /var/log/vinbot && " +
+        "sudo chown -R 999:999 /var/log/vinbot && " +
+        "sudo chmod 750 /var/log/vinbot"
+    )
+}
+
 def copyComposeFile() {
     // docker-compose.yml lives in this repo (checked out onto the Jenkins
     // agent by the Checkout stage) but COMPOSE_DIR on the deployment server
@@ -454,6 +479,7 @@ pipeline {
                     }
 
                     try {
+                        prepareLogDirectory()
                         copyComposeFile()
                         composeUp(env.GIT_COMMIT)
                         if (!waitForHealthy(20, 3)) {

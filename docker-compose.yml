@@ -86,6 +86,17 @@ services:
       # Bind mount, not a named volume — logs must land at a known, fixed HOST
       # path so tools running directly on the host (Filebeat, logrotate) can
       # read them without going through Docker's own volume storage location.
+      #
+      # PREREQUISITE Compose itself cannot satisfy: the host-side
+      # /var/log/vinbot must already be owned by uid:gid 999:999 (the
+      # container's `vinbot` user) BEFORE this container starts, or `docker
+      # compose up` will succeed while the app silently can't write app.log.
+      # Unlike vinbot-data above (a named volume, which Docker seeds from the
+      # image's ownership on first creation), a bind mount always uses the
+      # HOST directory's existing ownership as-is — Compose has no hook to
+      # chown a host path for you. Run deploy/prepare-vinbot-log-dir.sh once
+      # per host (Jenkins already does this automatically before every
+      # deploy — see prepareLogDirectory() in cicd/Jenkinsfile).
       - /var/log/vinbot:/var/log/vinbot
 
     # --- Security ------------------------------------------------------------
